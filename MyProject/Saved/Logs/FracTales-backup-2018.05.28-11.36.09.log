@@ -1,0 +1,940 @@
+﻿Log file open, 05/28/18 11:01:11
+LogWindows: LoadLibraryWithSearchPaths failed for file aqProf.dll. GetLastError=0
+LogWindows: LoadLibraryWithSearchPaths failed for file VtuneApi.dll. GetLastError=0
+LogWindows: LoadLibraryWithSearchPaths failed for file VtuneApi32e.dll. GetLastError=0
+LogInit: Display: Running engine for game: FracTales
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(1650173287) SRandInit(1650173287).
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.172467
+LogD3D11RHI: Aftermath initialized
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogHMD: Failed initializing OVRPlugin 1.15.0
+LogInit: Build: ++UE4+Release-4.17-CL-3573198
+LogInit: Engine Version: 4.17.0-3573198+++UE4+Release-4.17
+LogInit: Compatible Engine Version: 4.17.0-3573198+++UE4+Release-4.17
+LogInit: Net CL: 3573198
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 20
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 28
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 19
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 7
+LogInit: Compiled (64-bit): Aug  4 2017 16:30:33
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.17
+LogInit: Command line: 
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/UE_4.17/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.05.28-10.01.12:576][  0]LogInit: Selected Device Profile: [Windows]
+[2018.05.28-10.01.12:576][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.05.28-10.01.12:586][  0]LogInit: Computer: MC11671
+[2018.05.28-10.01.12:586][  0]LogInit: User: 1302534
+[2018.05.28-10.01.12:586][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.05.28-10.01.12:586][  0]LogInit: High frequency timer resolution =3.328251 MHz
+[2018.05.28-10.01.12:586][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2018.05.28-10.01.12:586][  0]LogMemory: Platform Memory Stats for Windows
+[2018.05.28-10.01.12:586][  0]LogMemory: Process Physical Memory: 284.56 MB used, 284.56 MB peak
+[2018.05.28-10.01.12:586][  0]LogMemory: Process Virtual Memory: 286.99 MB used, 286.99 MB peak
+[2018.05.28-10.01.12:586][  0]LogMemory: Physical Memory: 5757.46 MB used,  26889.75 MB free, 32647.21 MB total
+[2018.05.28-10.01.12:586][  0]LogMemory: Virtual Memory: 683.97 MB used,  26889.75 MB free, 8388608.00 MB total
+[2018.05.28-10.01.12:828][  0]LogInit: Using OS detected language (en-GB).
+[2018.05.28-10.01.12:828][  0]LogInit: Using OS detected locale (en-GB).
+[2018.05.28-10.01.12:831][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2018.05.28-10.01.13:528][  0]LogD3D11RHI: D3D11 adapters:
+[2018.05.28-10.01.13:564][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080' (Feature Level 11_0)
+[2018.05.28-10.01.13:564][  0]LogD3D11RHI:       8077/0/16067 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.05.28-10.01.13:572][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2018.05.28-10.01.13:572][  0]LogD3D11RHI:       192/0/1632 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2018.05.28-10.01.13:572][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.05.28-10.01.13:579][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.05.28-10.01.13:579][  0]LogD3D11RHI:     GPU DeviceId: 0x1b80 (for the marketing name, search the web for "GPU Device Id")
+[2018.05.28-10.01.13:579][  0]LogWindows: EnumDisplayDevices:
+[2018.05.28-10.01.13:579][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080' (P:1 D:1)
+[2018.05.28-10.01.13:580][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2018.05.28-10.01.13:580][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2018.05.28-10.01.13:580][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2018.05.28-10.01.13:581][  0]LogWindows:    4. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2018.05.28-10.01.13:581][  0]LogWindows:    5. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2018.05.28-10.01.13:581][  0]LogWindows:    6. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2018.05.28-10.01.13:581][  0]LogWindows:    7. 'RDPDD Chained DD' (P:0 D:0)
+[2018.05.28-10.01.13:582][  0]LogWindows:    8. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2018.05.28-10.01.13:582][  0]LogWindows:    9. 'RDP Reflector Display Driver' (P:0 D:0)
+[2018.05.28-10.01.13:582][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2018.05.28-10.01.13:582][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080
+[2018.05.28-10.01.13:582][  0]LogD3D11RHI:   Driver Version: 390.65 (internal:23.21.13.9065, unified:390.65)
+[2018.05.28-10.01.13:582][  0]LogD3D11RHI:      Driver Date: 1-3-2018
+[2018.05.28-10.01.13:582][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2018.05.28-10.01.13:597][  0]LogD3D11RHI: Async texture creation enabled
+[2018.05.28-10.01.13:613][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.05.28-10.01.13:657][  0]LogShaderCompilers: Guid format shader working directory is -21 characters bigger than the processId version (../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Intermediate/Shaders/WorkingDirectory/5228/).
+[2018.05.28-10.01.13:657][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/1302534/AppData/Local/Temp/UnrealShaderWorkingDir/6CB7E603408A113F0525B492E1B3AF95/'.
+[2018.05.28-10.01.13:657][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.05.28-10.01.14:563][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.05.28-10.01.14:645][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.05.28-10.01.14:721][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.05.28-10.01.14:800][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.05.28-10.01.14:880][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.05.28-10.01.14:957][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.05.28-10.01.15:039][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.05.28-10.01.15:118][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.05.28-10.01.15:190][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.05.28-10.01.15:271][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.05.28-10.01.15:349][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.05.28-10.01.15:426][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.05.28-10.01.15:505][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.05.28-10.01.15:581][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.05.28-10.01.15:660][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.05.28-10.01.15:814][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.05.28-10.01.15:814][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.05.28-10.01.15:880][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.05.28-10.01.16:007][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.05.28-10.01.16:041][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.05.28-10.01.16:118][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.05.28-10.01.16:195][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.05.28-10.01.16:275][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.05.28-10.01.16:353][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.05.28-10.01.16:353][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.05.28-10.01.17:003][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.05.28-10.01.17:107][  0]LogDerivedDataCache: Loaded boot cache 0.10s 93MB C:/Users/1302534/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2018.05.28-10.01.17:107][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/1302534/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
+[2018.05.28-10.01.17:107][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.05.28-10.01.17:107][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.05.28-10.01.17:107][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.05.28-10.01.17:107][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.05.28-10.01.17:121][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.05.28-10.01.17:133][  0]LogDerivedDataCache: Using Local data cache path C:/Users/1302534/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.05.28-10.01.17:143][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.05.28-10.01.17:143][  0]LogSlate: Using Freetype 2.6.0
+[2018.05.28-10.01.17:144][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.05.28-10.01.17:144][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.05.28-10.01.17:420][  0]LogAssetRegistry: FAssetRegistry took 0.0245 seconds to start up
+[2018.05.28-10.01.17:604][  0]LogInit: Selected Device Profile: [Windows]
+[2018.05.28-10.01.17:609][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.05.28-10.01.18:130][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.05.28-10.01.18:201][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.05.28-10.01.18:201][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.05.28-10.01.18:201][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.05.28-10.01.18:201][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.05.28-10.01.18:201][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.05.28-10.01.18:563][  0]LogNetVersion: FracTales , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 1863221474)
+[2018.05.28-10.01.18:813][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 2 prioritized culture(s) in 0.041551 seconds
+[2018.05.28-10.01.18:817][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
+[2018.05.28-10.01.18:817][  0]LogUObjectAllocator: 7529112 out of 0 bytes used by permanent object pool.
+[2018.05.28-10.01.18:817][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.05.28-10.01.18:889][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.05.28-10.01.22:293][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.05.28-10.01.22:337][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.05.28-10.01.23:363][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.05.28-10.01.23:973][  0]SourceControl: Source control is disabled
+[2018.05.28-10.01.23:973][  0]SourceControl: Source control is disabled
+[2018.05.28-10.01.24:048][  0]SourceControl: Source control is disabled
+[2018.05.28-10.01.24:121][  0]SourceControl: Source control is disabled
+[2018.05.28-10.01.24:985][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.05.28-10.01.25:370][  0]LogOcInput: OculusInput pre-init called
+[2018.05.28-10.01.25:739][  0]LogEngine: Initializing Engine...
+[2018.05.28-10.01.25:741][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.05.28-10.01.25:965][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.05.28-10.01.25:965][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.05.28-10.01.26:181][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.05.28-10.01.26:195][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.01.26:225][  0]LogInit: FAudioDevice initialized.
+[2018.05.28-10.01.26:287][  0]LogDerivedDataCache: Saved boot cache 0.06s 93MB C:/Users/1302534/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2018.05.28-10.01.26:294][  0]LogInit: Texture streaming: Enabled
+[2018.05.28-10.01.26:433][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.05.28-10.01.26:433][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={2F0F2B9A-4D6D-87A2-E96A-5789A137DED5}
+[2018.05.28-10.01.26:795][  0]LogInit: Transaction tracking system initialized
+[2018.05.28-10.01.27:322][  0]BlueprintLog: New page: Editor Load
+[2018.05.28-10.01.28:745][  0]LocalizationService: Localization service is disabled
+[2018.05.28-10.01.29:550][  0]LogLinker: Warning: Can't find file '/Game/FirstPersonBP/FirstPersonOverview'
+[2018.05.28-10.01.29:550][  0]LogLinker: Warning: Can't find file '/Game/FirstPersonBP/FirstPersonOverview'
+[2018.05.28-10.01.29:550][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/FirstPersonBP/FirstPersonOverview.FirstPersonOverview_C'
+[2018.05.28-10.01.29:844][  0]LogConsoleResponse: Display: 
+[2018.05.28-10.01.30:021][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.05.28-10.01.30:021][  0]LogCook: Display: Mobile HDR setting 1
+[2018.05.28-10.01.30:021][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.05.28-10.01.30:057][  0]LogFileCache: Scanning file cache for directory 'C:/Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/' took 0.02s
+[2018.05.28-10.01.31:616][  0]SourceControl: Source control is disabled
+[2018.05.28-10.01.31:616][  0]Cmd: MAP LOAD FILE="../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.05.28-10.01.31:616][  0]LogEditorServer: Warning: Can't find file '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2018.05.28-10.01.31:616][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.05.28-10.01.31:688][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 71.957ms to complete.
+[2018.05.28-10.01.31:688][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.072
+[2018.05.28-10.01.31:856][  0]LogCollectionManager: Loaded 0 collections in 0.001006 seconds
+[2018.05.28-10.01.31:964][  0]LogFileCache: Scanning file cache for directory 'C:/Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Collections/' took 0.01s
+[2018.05.28-10.01.31:964][  0]LogFileCache: Scanning file cache for directory 'C:/Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/Developers/1302534/Collections/' took 0.01s
+[2018.05.28-10.01.31:964][  0]LogFileCache: Scanning file cache for directory 'C:/Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/Collections/' took 0.01s
+[2018.05.28-10.01.31:964][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2018.05.28-10.01.31:971][  0]LogContentBrowser: Native class hierarchy populated in 0.0072 seconds. Added 2386 classes and 500 folders.
+[2018.05.28-10.01.32:073][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.05.28-10.01.32:123][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.05.28-10.01.32:200][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2018.05.28-10.01.32:218][  0]LogSlate: Took 0.000267 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.05.28-10.01.32:219][  0]LogSlate: Took 0.000346 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.05.28-10.01.32:225][  0]LogSlate: Took 0.000279 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.05.28-10.01.32:315][  0]LogRenderer: Reallocating scene render targets to support 1208x576 Format 10 NumSamples 1 (Frame:1).
+[2018.05.28-10.01.32:529][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0011 seconds. Added 1 classes and 2 folders.
+[2018.05.28-10.01.32:529][  0]LogLoad: (Engine Initialization) Total time: 22.59 seconds
+[2018.05.28-10.01.32:529][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.05.28-10.01.32:529][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2018.05.28-10.01.32:529][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2018.05.28-10.01.32:571][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.05.28-10.01.32:619][  0]LogSlate: Took 0.000344 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.05.28-10.01.32:622][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/' took 0.07s
+[2018.05.28-10.01.32:636][  1]LogAssetRegistry: Asset discovery search completed in 15.2361 seconds
+[2018.05.28-10.01.32:638][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.05.28-10.01.32:638][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000047 seconds (updated 0 objects)
+[2018.05.28-10.01.33:559][106]LogSlate: Took 0.000341 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.05.28-10.01.39:340][668]LogClass: Warning: Enum '/Game/DialogueSystem/Blueprints/Enums/e_DialogueSelectionTypes.e_DialogueSelectionTypes' was upgraded to use FText to store its display name data. Please re-save this asset to avoid issues with localization and determinstic cooking.
+[2018.05.28-10.01.39:686][668]LogClass: Warning: Enum '/Game/DialogueSystem/Blueprints/Enums/e_OptionCategories.e_OptionCategories' was upgraded to use FText to store its display name data. Please re-save this asset to avoid issues with localization and determinstic cooking.
+[2018.05.28-10.01.39:958][668]LogMovieScene: Warning: Legacy data detected in sequence '/Game/DialogueSystem/Widgets/MainWidget (Unknown sequence)'. This will cause deterministic cooking issues. Please resave the package.
+[2018.05.28-10.01.39:958][668]LogMovieScene: Warning: Legacy data detected in sequence '/Game/DialogueSystem/Widgets/MainWidget (FadeToBlack)'. This will cause deterministic cooking issues. Please resave the package.
+[2018.05.28-10.01.39:958][668]LogMovieScene: Warning: Legacy data detected in sequence '/Engine/Transient (Unknown sequence)'. This will cause deterministic cooking issues. Please resave the package.
+[2018.05.28-10.01.39:958][668]LogMovieScene: Warning: Legacy data detected in sequence '/Engine/Transient (FadeToBlack_INST)'. This will cause deterministic cooking issues. Please resave the package.
+[2018.05.28-10.01.39:958][668]LogMovieScene: Warning: Legacy data detected in sequence '/Game/DialogueSystem/Widgets/MainWidget (FadeToBlack)'. This will cause deterministic cooking issues. Please resave the package.
+[2018.05.28-10.01.39:958][668]LogMovieScene: Warning: Legacy data detected in sequence '/Engine/Transient (FadeToBlack_INST)'. This will cause deterministic cooking issues. Please resave the package.
+[2018.05.28-10.01.39:958][668]LogMovieScene: Warning: Legacy data detected in sequence '/Game/DialogueSystem/Widgets/MainWidget (FadeToBlack)'. This will cause deterministic cooking issues. Please resave the package.
+[2018.05.28-10.01.39:958][668]LogMovieScene: Warning: Legacy data detected in sequence '/Engine/Transient (FadeToBlack_INST)'. This will cause deterministic cooking issues. Please resave the package.
+[2018.05.28-10.01.40:042][668]LogSlate: Took 0.000355 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.05.28-10.01.40:424][668]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 113 classes and 0 folders.
+[2018.05.28-10.01.41:249][668]LogSlate: Took 0.000312 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.05.28-10.01.41:301][669]LogSlate: Took 0.000502 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.05.28-10.02.03:064][146]BlueprintLog: New page: Compile BP_TaskList
+[2018.05.28-10.02.06:762][533]LogSavePackage: Save=27.59ms
+[2018.05.28-10.02.06:762][533]LogSavePackage: Moving '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/BP_TaskList923387DA486EF4554F805D833E4BB26B.tmp' to '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/TestingGrounds/Mechanic1/TemplateParts/BP_TaskList.uasset'
+[2018.05.28-10.02.06:766][533]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/TestingGrounds/Mechanic1/TemplateParts/BP_TaskList.uasset
+[2018.05.28-10.02.22:115][994]BlueprintLog: New page: Compile Bp_MasterNPC
+[2018.05.28-10.02.26:141][246]LogSavePackage: Save=337.19ms
+[2018.05.28-10.02.26:141][246]LogSavePackage: Moving '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Bp_MasterNPC987F33644E2BCB8C87655EA76248705D.tmp' to '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/DialogueSystem/Blueprints/AI/Bp_MasterNPC.uasset'
+[2018.05.28-10.02.26:145][246]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/DialogueSystem/Blueprints/AI/Bp_MasterNPC.uasset
+[2018.05.28-10.02.46:197][387]LogLinker: Warning: Can't find file '/Game/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap_BuiltData'
+[2018.05.28-10.02.46:197][387]LogLinker: Warning: Can't find file for asset '/Game/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap_BuiltData' while loading ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap.umap.
+[2018.05.28-10.02.46:197][387]LoadErrors: Error: /Game/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap : Can't find file for asset. /Game/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap_BuiltData
+[2018.05.28-10.02.46:236][387]LogLinker: Warning: Can't find file '/Game/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap_BuiltData'
+[2018.05.28-10.02.46:236][387]LogLinker: Warning: Can't find file for asset '/Game/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap_BuiltData' while loading ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap.umap.
+[2018.05.28-10.02.46:279][387]LogLinker: Warning: Can't find file '/Game/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap_BuiltData'
+[2018.05.28-10.02.46:279][387]LoadErrors: Failed to load /Game/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap_BuiltData.DialogueExampleMap_BuiltData Referenced by PersistentLevel
+[2018.05.28-10.02.46:279][387]LogLinker: Warning: Can't find file for asset '/Game/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap_BuiltData' while loading NULL.
+[2018.05.28-10.02.46:347][387]LogAIModule: Creating AISystem for world DialogueExampleMap
+[2018.05.28-10.02.46:375][387]Cmd: MAP LOAD FILE="../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.05.28-10.02.46:375][387]LightingResults: New page: Lighting Build
+[2018.05.28-10.02.46:447][387]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0006 seconds. Added 5 classes and 0 folders.
+[2018.05.28-10.02.46:448][387]LoadErrors: New page: Loading map: DialogueExampleMap.umap
+[2018.05.28-10.02.46:448][387]MapCheck: New page: Map Check
+[2018.05.28-10.02.46:448][387]LightingResults: New page: Lighting Build
+[2018.05.28-10.02.46:499][387]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.05.28-10.02.46:550][387]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.05.28-10.02.46:669][387]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 119.188ms to complete.
+[2018.05.28-10.02.46:670][387]LogFileHelpers: Loading map 'DialogueExampleMap' took 0.296
+[2018.05.28-10.02.48:680][556]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.02.48:756][556]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.02.48:756][556]PIE: New page: PIE session: DialogueExampleMap (28 May 2018 12:02:48)
+[2018.05.28-10.02.48:756][556]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap
+[2018.05.28-10.02.48:773][556]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017024s)
+[2018.05.28-10.02.48:774][556]LogAIModule: Creating AISystem for world DialogueExampleMap
+[2018.05.28-10.02.48:774][556]LogPlayLevel: PIE: World Init took: (0.000586s)
+[2018.05.28-10.02.48:774][556]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap.DialogueExampleMap to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap.DialogueExampleMap (0.017853s)
+[2018.05.28-10.02.48:794][556]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.02.48:806][556]LogInit: FAudioDevice initialized.
+[2018.05.28-10.02.48:914][556]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.02.48:924][556]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap.DialogueExampleMap up for play (max tick rate 0) at 2018.05.28-11.02.48
+[2018.05.28-10.02.48:926][556]LogWorld: Bringing up level for play took: 0.008954
+[2018.05.28-10.02.49:006][556]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2018.05.28-10.02.49:008][556]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.02.49:008][556]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.02.49:008][556]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.02.49:008][556]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.02.49:011][556]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap -0.153
+[2018.05.28-10.02.54:094][163]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.02.54:519][214]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.02.55:353][314]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.02.55:811][369]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.02.55:919][382]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.00:619][944]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.02:228][137]LogActorComponent: Error: May not destroy component AudioComponent /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap.DialogueExampleMap:PersistentLevel.WorldSettings.AudioComponent_0 owned by WorldSettings /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap.DialogueExampleMap:PersistentLevel.WorldSettings.
+[2018.05.28-10.03.04:270][382]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.04:611][423]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.09:345][991]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.09:620][ 24]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.13:170][450]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.03.17:835][973]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.03.17:856][973]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.03.17:856][973]PIE: New page: PIE session: DialogueExampleMap (28 May 2018 12:03:17)
+[2018.05.28-10.03.17:856][973]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap
+[2018.05.28-10.03.17:875][973]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018685s)
+[2018.05.28-10.03.17:875][973]LogAIModule: Creating AISystem for world DialogueExampleMap
+[2018.05.28-10.03.17:876][973]LogPlayLevel: PIE: World Init took: (0.000632s)
+[2018.05.28-10.03.17:876][973]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/DialogueExampleMap.DialogueExampleMap to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap.DialogueExampleMap (0.019608s)
+[2018.05.28-10.03.17:895][973]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.03.17:903][973]LogInit: FAudioDevice initialized.
+[2018.05.28-10.03.17:937][973]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.03.17:951][973]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap.DialogueExampleMap up for play (max tick rate 0) at 2018.05.28-11.03.17
+[2018.05.28-10.03.17:953][973]LogWorld: Bringing up level for play took: 0.014361
+[2018.05.28-10.03.17:956][973]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.03.17:956][973]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.03.17:956][973]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.03.17:956][973]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.03.17:960][973]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap 0.795
+[2018.05.28-10.03.26:103][948]LogActorComponent: Error: May not destroy component AudioComponent /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap.DialogueExampleMap:PersistentLevel.WorldSettings.AudioComponent_0 owned by WorldSettings /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap.DialogueExampleMap:PersistentLevel.WorldSettings.
+[2018.05.28-10.03.27:861][159]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.03.36:229][163]LogActorComponent: Error: May not destroy component AudioComponent /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap.DialogueExampleMap:PersistentLevel.WorldSettings.AudioComponent_1 owned by WorldSettings /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_DialogueExampleMap.DialogueExampleMap:PersistentLevel.WorldSettings.
+[2018.05.28-10.03.50:125][655]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.03.50:152][655]Cmd: MAP LOAD FILE="../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/TestingGrounds/FPTestingZone/Maps/MergedLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.05.28-10.03.50:152][655]LightingResults: New page: Lighting Build
+[2018.05.28-10.03.50:153][655]LoadErrors: New page: Loading map: MergedLevel.umap
+[2018.05.28-10.03.50:154][655]MapCheck: New page: Map Check
+[2018.05.28-10.03.50:154][655]LightingResults: New page: Lighting Build
+[2018.05.28-10.03.50:205][655]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.05.28-10.03.50:261][655]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.05.28-10.03.50:376][655]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 114.496ms to complete.
+[2018.05.28-10.03.50:377][655]LogFileHelpers: Loading map 'MergedLevel' took 0.225
+[2018.05.28-10.03.52:511][884]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.03.52:553][884]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.03.52:553][884]PIE: New page: PIE session: MergedLevel (28 May 2018 12:03:52)
+[2018.05.28-10.03.52:553][884]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.03.52:563][884]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010368s)
+[2018.05.28-10.03.52:564][884]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.03.52:564][884]LogPlayLevel: PIE: World Init took: (0.000773s)
+[2018.05.28-10.03.52:564][884]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.011417s)
+[2018.05.28-10.03.52:583][884]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.03.52:590][884]LogInit: FAudioDevice initialized.
+[2018.05.28-10.03.52:620][884]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.03.52:624][884]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.03.52
+[2018.05.28-10.03.52:625][884]LogWorld: Bringing up level for play took: 0.003905
+[2018.05.28-10.03.52:627][884]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.03.52:631][884]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel -0.535
+[2018.05.28-10.03.55:481][225]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.55:948][281]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.56:206][312]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.56:414][337]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.56:623][362]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.56:806][384]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.56:989][406]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.57:173][428]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.57:348][449]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.57:531][471]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.57:664][487]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.57:823][506]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.03.57:989][526]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.00:723][854]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.01:073][896]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.03:690][210]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.04.04:465][303]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.04:648][325]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.04:824][346]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.05:008][368]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.05:332][407]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.05:499][427]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.05:674][448]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.05:832][467]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.06:008][488]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.06:124][502]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.06:366][531]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.07:733][695]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.07:933][719]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.08:091][738]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.08:266][759]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.08:449][781]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.08:624][802]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.08:816][825]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.09:016][849]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.09:208][872]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.09:408][896]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.09:608][920]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.09:783][941]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.10:716][ 53]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.10:950][ 81]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.04.18:372][839]BlueprintLog: New page: Compile FirstPersonCharacter
+[2018.05.28-10.04.54:877][488]BlueprintLog: New page: Compile FirstPersonCharacter
+[2018.05.28-10.04.55:217][488]LogBlueprint: Error: [Compiler FirstPersonCharacter] This blueprint (self) is not a BP_ObjectWithTaskList_C, therefore ' Target ' must have a connection.
+[2018.05.28-10.04.55:653][488]LogBlueprint: Warning: [Compiler FirstPersonCharacter] [0225.71] Compile of FirstPersonCharacter failed. 1 Fatal Issue(s) 0 Warning(s) [in 775 ms] (/Game/TestingGrounds/FPTestingZone/Blueprints/FirstPersonCharacter.FirstPersonCharacter)
+[2018.05.28-10.05.12:090][228]BlueprintLog: New page: Compile FirstPersonCharacter
+[2018.05.28-10.05.14:788][415]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.05.14:809][415]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.05.14:809][415]PIE: New page: PIE session: MergedLevel (28 May 2018 12:05:14)
+[2018.05.28-10.05.14:809][415]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.05.14:819][415]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009481s)
+[2018.05.28-10.05.14:819][415]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.05.14:820][415]LogPlayLevel: PIE: World Init took: (0.000701s)
+[2018.05.28-10.05.14:820][415]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.010504s)
+[2018.05.28-10.05.14:839][415]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.05.14:849][415]LogInit: FAudioDevice initialized.
+[2018.05.28-10.05.14:879][415]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.05.14:884][415]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.05.14
+[2018.05.28-10.05.14:885][415]LogWorld: Bringing up level for play took: 0.003950
+[2018.05.28-10.05.14:886][415]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.05.14:890][415]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel -0.279
+[2018.05.28-10.05.32:885][216]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.05.32:906][216]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.05.32:906][216]PIE: New page: PIE session: MergedLevel (28 May 2018 12:05:32)
+[2018.05.28-10.05.32:906][216]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.05.32:915][216]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008990s)
+[2018.05.28-10.05.32:915][216]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.05.32:916][216]LogPlayLevel: PIE: World Init took: (0.000752s)
+[2018.05.28-10.05.32:916][216]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.010208s)
+[2018.05.28-10.05.32:937][216]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.05.32:945][216]LogInit: FAudioDevice initialized.
+[2018.05.28-10.05.32:978][216]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.05.32:983][216]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.05.32
+[2018.05.28-10.05.32:983][216]LogWorld: Bringing up level for play took: 0.003984
+[2018.05.28-10.05.32:985][216]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.05.32:989][216]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel -0.181
+[2018.05.28-10.06.04:959][ 25]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.06.04:981][ 25]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.06.04:981][ 25]PIE: New page: PIE session: MergedLevel (28 May 2018 12:06:04)
+[2018.05.28-10.06.04:981][ 25]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.06.04:991][ 25]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009343s)
+[2018.05.28-10.06.04:991][ 25]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.06.04:992][ 25]LogPlayLevel: PIE: World Init took: (0.000703s)
+[2018.05.28-10.06.04:992][ 25]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.010438s)
+[2018.05.28-10.06.05:012][ 25]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.06.05:020][ 25]LogInit: FAudioDevice initialized.
+[2018.05.28-10.06.05:052][ 25]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.06.05:056][ 25]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.06.05
+[2018.05.28-10.06.05:056][ 25]LogWorld: Bringing up level for play took: 0.003869
+[2018.05.28-10.06.05:058][ 25]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.06.05:062][ 25]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel -0.109
+[2018.05.28-10.06.20:000][405]BlueprintLog: New page: Compile FirstPersonCharacter
+[2018.05.28-10.06.25:090][713]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.06.25:111][713]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.06.25:111][713]PIE: New page: PIE session: MergedLevel (28 May 2018 12:06:25)
+[2018.05.28-10.06.25:111][713]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.06.25:120][713]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009034s)
+[2018.05.28-10.06.25:121][713]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.06.25:121][713]LogPlayLevel: PIE: World Init took: (0.000614s)
+[2018.05.28-10.06.25:121][713]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.009872s)
+[2018.05.28-10.06.25:142][713]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.06.25:151][713]LogInit: FAudioDevice initialized.
+[2018.05.28-10.06.25:179][713]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.06.25:184][713]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.06.25
+[2018.05.28-10.06.25:184][713]LogWorld: Bringing up level for play took: 0.003842
+[2018.05.28-10.06.25:186][713]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.06.25:190][713]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel 0.018
+[2018.05.28-10.06.25:910][784]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.06.26:443][838]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.06.26:686][862]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.06.26:855][879]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.06.27:033][897]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.06.27:176][911]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.06.27:335][927]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.06.58:181][685]BlueprintLog: New page: Compile FirstPersonCharacter
+[2018.05.28-10.07.01:185][849]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.07.01:205][849]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.07.01:205][849]PIE: New page: PIE session: MergedLevel (28 May 2018 12:07:01)
+[2018.05.28-10.07.01:205][849]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.07.01:214][849]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008781s)
+[2018.05.28-10.07.01:214][849]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.07.01:215][849]LogPlayLevel: PIE: World Init took: (0.000622s)
+[2018.05.28-10.07.01:215][849]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.009730s)
+[2018.05.28-10.07.01:234][849]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.07.01:242][849]LogInit: FAudioDevice initialized.
+[2018.05.28-10.07.01:273][849]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.07.01:285][849]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.07.01
+[2018.05.28-10.07.01:287][849]LogWorld: Bringing up level for play took: 0.010955
+[2018.05.28-10.07.01:292][849]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.07.01:304][849]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel 0.131
+[2018.05.28-10.07.01:677][885]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.02:004][918]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.02:160][934]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.02:316][950]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.02:589][978]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.02:844][  4]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.03:102][ 30]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.03:581][ 78]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.04:947][216]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.05:258][247]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.05:476][269]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.05:701][292]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.05:956][318]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.06:524][376]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.19:028][509]LogEditorTransaction: Undo Move Node
+[2018.05.28-10.07.23:134][786]BlueprintLog: New page: Compile FirstPersonCharacter
+[2018.05.28-10.07.26:241][929]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.07.26:262][929]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.07.26:262][929]PIE: New page: PIE session: MergedLevel (28 May 2018 12:07:26)
+[2018.05.28-10.07.26:262][929]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.07.26:271][929]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008936s)
+[2018.05.28-10.07.26:272][929]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.07.26:272][929]LogPlayLevel: PIE: World Init took: (0.000911s)
+[2018.05.28-10.07.26:272][929]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.010168s)
+[2018.05.28-10.07.26:294][929]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.07.26:301][929]LogInit: FAudioDevice initialized.
+[2018.05.28-10.07.26:331][929]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.07.26:335][929]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.07.26
+[2018.05.28-10.07.26:336][929]LogWorld: Bringing up level for play took: 0.003853
+[2018.05.28-10.07.26:337][929]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.07.26:342][929]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel -0.832
+[2018.05.28-10.07.26:450][939]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.27:264][ 23]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.27:597][ 57]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.27:940][ 92]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.28:147][113]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.28:362][135]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.28:557][155]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.28:794][179]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.29:397][241]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.29:670][269]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.29:916][294]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.30:180][321]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.30:775][382]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.31:020][407]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.35:431][862]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.38:113][137]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.43:891][735]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.44:277][774]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.45:030][851]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.45:232][871]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.45:423][890]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.07.47:483][ 77]LogEditorTransaction: Undo Create Pin Link
+[2018.05.28-10.07.49:896][270]LogEditorTransaction: Undo Create Pin Link
+[2018.05.28-10.07.57:820][933]BlueprintLog: New page: Compile FirstPersonCharacter
+[2018.05.28-10.08.00:470][ 50]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.08.00:491][ 50]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.08.00:491][ 50]PIE: New page: PIE session: MergedLevel (28 May 2018 12:08:00)
+[2018.05.28-10.08.00:491][ 50]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.08.00:500][ 50]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008807s)
+[2018.05.28-10.08.00:500][ 50]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.08.00:501][ 50]LogPlayLevel: PIE: World Init took: (0.000700s)
+[2018.05.28-10.08.00:501][ 50]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.009902s)
+[2018.05.28-10.08.00:522][ 50]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.08.00:532][ 50]LogInit: FAudioDevice initialized.
+[2018.05.28-10.08.00:566][ 50]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.08.00:575][ 50]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.08.00
+[2018.05.28-10.08.00:576][ 50]LogWorld: Bringing up level for play took: 0.007922
+[2018.05.28-10.08.00:580][ 50]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.08.00:590][ 50]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel -0.586
+[2018.05.28-10.08.01:033][ 93]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.08.01:034][ 93]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.08.01:299][120]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.08.01:299][120]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.08.01:467][137]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.08.01:467][137]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.08.02:473][209]Cmd: TRANSACTION UNDO
+[2018.05.28-10.08.02:473][209]LogEditorTransaction: Undo Add Node
+[2018.05.28-10.10.23:629][691]BlueprintLog: New page: Compile FirstPersonCharacter
+[2018.05.28-10.10.26:895][876]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.10.26:915][876]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.10.26:915][876]PIE: New page: PIE session: MergedLevel (28 May 2018 12:10:26)
+[2018.05.28-10.10.26:915][876]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.10.26:924][876]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009092s)
+[2018.05.28-10.10.26:925][876]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.10.26:925][876]LogPlayLevel: PIE: World Init took: (0.000870s)
+[2018.05.28-10.10.26:926][876]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.010300s)
+[2018.05.28-10.10.26:945][876]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.10.26:953][876]LogInit: FAudioDevice initialized.
+[2018.05.28-10.10.26:982][876]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.10.26:990][876]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.10.26
+[2018.05.28-10.10.26:992][876]LogWorld: Bringing up level for play took: 0.008596
+[2018.05.28-10.10.26:996][876]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.10.27:006][876]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel -0.175
+[2018.05.28-10.10.27:945][971]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.10.28:319][  9]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.10.28:608][ 38]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.10.28:885][ 66]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.10.29:133][ 91]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.10.29:702][148]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.10.30:123][191]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.10.32:210][402]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.10.34:956][681]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.10.35:734][761]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.10.43:407][535]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.10.54:360][552]BlueprintLog: New page: Compile FirstPersonCharacter
+[2018.05.28-10.10.56:675][641]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.10.56:695][641]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.10.56:695][641]PIE: New page: PIE session: MergedLevel (28 May 2018 12:10:56)
+[2018.05.28-10.10.56:695][641]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.10.56:704][641]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008749s)
+[2018.05.28-10.10.56:705][641]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.10.56:705][641]LogPlayLevel: PIE: World Init took: (0.000752s)
+[2018.05.28-10.10.56:705][641]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.009876s)
+[2018.05.28-10.10.56:725][641]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.10.56:733][641]LogInit: FAudioDevice initialized.
+[2018.05.28-10.10.56:764][641]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.10.56:769][641]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.10.56
+[2018.05.28-10.10.56:770][641]LogWorld: Bringing up level for play took: 0.004032
+[2018.05.28-10.10.56:772][641]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.10.56:776][641]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel -0.406
+[2018.05.28-10.10.57:913][755]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.11.00:557][ 19]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.11.02:729][237]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.11.07:961][763]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.11.08:664][834]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.11.09:439][913]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.11.10:469][ 17]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.11.28:704][745]BlueprintLog: New page: Compile FirstPersonCharacter
+[2018.05.28-10.11.31:163][840]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.11.31:184][840]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.11.31:184][840]PIE: New page: PIE session: MergedLevel (28 May 2018 12:11:31)
+[2018.05.28-10.11.31:184][840]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.11.31:193][840]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008794s)
+[2018.05.28-10.11.31:194][840]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.11.31:194][840]LogPlayLevel: PIE: World Init took: (0.000746s)
+[2018.05.28-10.11.31:194][840]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.009891s)
+[2018.05.28-10.11.31:215][840]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.11.31:225][840]LogInit: FAudioDevice initialized.
+[2018.05.28-10.11.31:254][840]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.11.31:259][840]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.11.31
+[2018.05.28-10.11.31:260][840]LogWorld: Bringing up level for play took: 0.003849
+[2018.05.28-10.11.31:262][840]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.11.31:266][840]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel 0.083
+[2018.05.28-10.11.31:595][873]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.11.32:500][968]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.11.33:307][ 51]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.11.36:010][329]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.11.36:853][414]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.11.37:843][517]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.11.38:839][621]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.11.39:632][703]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.11.40:384][781]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.13.09:399][274]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.13.09:420][274]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.13.09:420][274]PIE: New page: PIE session: MergedLevel (28 May 2018 12:13:09)
+[2018.05.28-10.13.09:420][274]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.13.09:429][274]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009157s)
+[2018.05.28-10.13.09:430][274]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.13.09:430][274]LogPlayLevel: PIE: World Init took: (0.000848s)
+[2018.05.28-10.13.09:430][274]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.010368s)
+[2018.05.28-10.13.09:452][274]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.13.09:462][274]LogInit: FAudioDevice initialized.
+[2018.05.28-10.13.09:488][274]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.13.09:493][274]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.13.09
+[2018.05.28-10.13.09:494][274]LogWorld: Bringing up level for play took: 0.004166
+[2018.05.28-10.13.09:496][274]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.13.09:500][274]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel 0.313
+[2018.05.28-10.13.11:032][424]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.13.12:637][582]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.13.23:811][703]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.13.26:437][966]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.13.27:273][ 50]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.13.28:006][123]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.13.28:778][200]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.13.29:380][261]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.13.29:837][307]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2018.05.28-10.13.35:859][800]BlueprintLog: New page: Compile FirstPersonCharacter
+[2018.05.28-10.13.37:629][844]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.13.37:649][844]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.13.37:649][844]PIE: New page: PIE session: MergedLevel (28 May 2018 12:13:37)
+[2018.05.28-10.13.37:649][844]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.13.37:658][844]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008930s)
+[2018.05.28-10.13.37:659][844]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.13.37:659][844]LogPlayLevel: PIE: World Init took: (0.000779s)
+[2018.05.28-10.13.37:659][844]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.010061s)
+[2018.05.28-10.13.37:679][844]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.13.37:686][844]LogInit: FAudioDevice initialized.
+[2018.05.28-10.13.37:718][844]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.13.37:723][844]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.13.37
+[2018.05.28-10.13.37:723][844]LogWorld: Bringing up level for play took: 0.003921
+[2018.05.28-10.13.37:725][844]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.13.37:729][844]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel 0.541
+[2018.05.28-10.13.43:528][435]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.13.44:373][522]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.13.45:223][609]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Landscape
+[2018.05.28-10.13.46:183][707]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Landscape
+[2018.05.28-10.13.52:839][381]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.13.53:348][433]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.13.54:129][512]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.13.54:779][578]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.13.55:443][646]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.13.56:090][712]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.13.56:315][735]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.13.56:501][754]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.13.56:667][771]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.14.12:110][183]BlueprintLog: New page: Compile FirstPersonCharacter
+[2018.05.28-10.14.15:179][327]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.14.15:200][327]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.14.15:200][327]PIE: New page: PIE session: MergedLevel (28 May 2018 12:14:15)
+[2018.05.28-10.14.15:200][327]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.14.15:209][327]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008799s)
+[2018.05.28-10.14.15:209][327]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.14.15:209][327]LogPlayLevel: PIE: World Init took: (0.000665s)
+[2018.05.28-10.14.15:210][327]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.009832s)
+[2018.05.28-10.14.15:230][327]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.14.15:238][327]LogInit: FAudioDevice initialized.
+[2018.05.28-10.14.15:266][327]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.14.15:270][327]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.14.15
+[2018.05.28-10.14.15:271][327]LogWorld: Bringing up level for play took: 0.003971
+[2018.05.28-10.14.15:272][327]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.14.15:277][327]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel 0.087
+[2018.05.28-10.14.16:999][500]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.14.17:840][586]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Landscape
+[2018.05.28-10.14.18:980][700]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.14.19:552][758]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.14.51:958][704]LogEditorViewport: Clicking on Actor (LMB): Bp_CasualCitizen_C (Bp_CasualCitizen)
+[2018.05.28-10.14.53:598][833]Cmd: DELETE
+[2018.05.28-10.14.53:598][833]Cmd: ACTOR DELETE
+[2018.05.28-10.14.53:598][833]LogEditorActor: Deleted Actor: Bp_CasualCitizen_C
+[2018.05.28-10.14.53:617][833]LogEditorActor: Deleted 1 Actors (0.019 secs)
+[2018.05.28-10.15.08:094][ 13]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.15.08:121][ 13]BlueprintLog: New page: Pre-Play auto-recompile
+[2018.05.28-10.15.08:203][ 13]LogPlayLevel: [PlayLevel] Compiling BP_DialogueManager before play...
+[2018.05.28-10.15.08:252][ 13]LogPlayLevel: [PlayLevel]   Compiling FirstPersonHUD as a dependent...
+[2018.05.28-10.15.08:269][ 13]LogPlayLevel: [PlayLevel]   Compiling Bp_MasterNPC as a dependent...
+[2018.05.28-10.15.08:336][ 13]LogPlayLevel: [PlayLevel]   Compiling FirstPersonCharacter as a dependent...
+[2018.05.28-10.15.08:379][ 13]LogPlayLevel: [PlayLevel]   Compiling ThirdPersonCharacter as a dependent...
+[2018.05.28-10.15.08:403][ 13]LogPlayLevel: [PlayLevel]   Compiling BP_PassiveNPC as a dependent...
+[2018.05.28-10.15.08:933][ 13]LogPlayLevel: PlayLevel: Blueprint regeneration took 811 ms (6 blueprints)
+[2018.05.28-10.15.08:933][ 13]PIE: New page: PIE session: MergedLevel (28 May 2018 12:15:08)
+[2018.05.28-10.15.08:933][ 13]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.15.08:942][ 13]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009332s)
+[2018.05.28-10.15.08:943][ 13]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.15.08:943][ 13]LogPlayLevel: PIE: World Init took: (0.000692s)
+[2018.05.28-10.15.08:943][ 13]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.010250s)
+[2018.05.28-10.15.08:964][ 13]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.15.08:974][ 13]LogInit: FAudioDevice initialized.
+[2018.05.28-10.15.09:002][ 13]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.15.09:007][ 13]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.15.09
+[2018.05.28-10.15.09:007][ 13]LogWorld: Bringing up level for play took: 0.003886
+[2018.05.28-10.15.09:009][ 13]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.15.09:013][ 13]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel 1.822
+[2018.05.28-10.15.11:076][201]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.15.12:275][321]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.15.13:704][464]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.15.14:499][544]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.15.17:096][804]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.15.17:669][861]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.15.18:315][925]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] 
+[2018.05.28-10.15.38:451][369]LogRenderer: Reallocating scene render targets to support 1208x696 Format 10 NumSamples 1 (Frame:1).
+[2018.05.28-10.16.51:219][278]LogActorComponent: ReregisterComponent: (/Game/DialogueSystem/Blueprints/AI/Bp_TimeLimit.Default__Bp_TimeLimit_C:CollisionCylinder) Not currently registered. Aborting.
+[2018.05.28-10.16.51:220][278]LogActorComponent: ReregisterComponent: (/Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel:PersistentLevel.Bp_CasualCitizen_102.CollisionCylinder) Not currently registered. Aborting.
+[2018.05.28-10.16.51:220][278]LogActorComponent: ReregisterComponent: (/Engine/Transient.World_10:PersistentLevel.Bp_TimeLimit_C_0.CollisionCylinder) Not currently registered. Aborting.
+[2018.05.28-10.16.51:220][278]LogActorComponent: ReregisterComponent: (/Engine/Transient.World_11:PersistentLevel.Bp_CasualCitizen_C_0.CollisionCylinder) Not currently registered. Aborting.
+[2018.05.28-10.16.51:220][278]LogActorComponent: ReregisterComponent: (/Game/DialogueSystem/Blueprints/AI/Bp_CasualCitizen.Default__Bp_CasualCitizen_C:CollisionCylinder) Not currently registered. Aborting.
+[2018.05.28-10.16.51:220][278]LogActorComponent: ReregisterComponent: (/Engine/Transient.World_2:PersistentLevel.Bp_MasterNPC_C_0.CollisionCylinder) Not currently registered. Aborting.
+[2018.05.28-10.16.51:220][278]LogActorComponent: ReregisterComponent: (/Engine/Transient.World_3:PersistentLevel.Bp_MasterNPC_C_1.CollisionCylinder) Not currently registered. Aborting.
+[2018.05.28-10.16.51:220][278]LogActorComponent: ReregisterComponent: (/Game/DialogueSystem/Blueprints/AI/BP_PassiveNPC.Default__BP_PassiveNPC_C:CollisionCylinder) Not currently registered. Aborting.
+[2018.05.28-10.16.52:367][357]BlueprintLog: New page: Compile Bp_MasterNPC
+[2018.05.28-10.16.54:730][451]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.16.54:757][451]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.16.54:757][451]PIE: New page: PIE session: MergedLevel (28 May 2018 12:16:54)
+[2018.05.28-10.16.54:757][451]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.16.54:767][451]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010264s)
+[2018.05.28-10.16.54:768][451]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.16.54:768][451]LogPlayLevel: PIE: World Init took: (0.000844s)
+[2018.05.28-10.16.54:768][451]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.011473s)
+[2018.05.28-10.16.54:791][451]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.16.54:798][451]LogInit: FAudioDevice initialized.
+[2018.05.28-10.16.54:826][451]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.16.54:835][451]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.16.54
+[2018.05.28-10.16.54:837][451]LogWorld: Bringing up level for play took: 0.009818
+[2018.05.28-10.16.54:842][451]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.16.54:853][451]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel -0.342
+[2018.05.28-10.16.56:780][678]LogScript: Warning: Accessed None trying to read property CallFunc_Create_ReturnValue
+	Bp_CasualCitizen_C /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel:PersistentLevel.Bp_CasualCitizen_102
+	Function /Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C:ExecuteUbergraph_Bp_MasterNPC:02EB
+[2018.05.28-10.16.56:781][678]PIE: Error: Blueprint Runtime Error: Accessed None trying to read property CallFunc_Create_ReturnValue from function: 'ExecuteUbergraph_Bp_MasterNPC' from node: Set TaskListObject in graph: EventGraph in object: Bp_MasterNPC with description: Accessed None trying to read property CallFunc_Create_ReturnValue
+[2018.05.28-10.16.56:781][678]LogScript: Warning: Accessed None attempting to assign variable on an object
+	Bp_CasualCitizen_C /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel:PersistentLevel.Bp_CasualCitizen_102
+	Function /Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C:ExecuteUbergraph_Bp_MasterNPC:0300
+[2018.05.28-10.16.56:781][678]PIE: Error: Blueprint Runtime Error: Accessed None attempting to assign variable on an object from function: 'ExecuteUbergraph_Bp_MasterNPC' from node: Set TaskListObject in graph: EventGraph in object: Bp_MasterNPC with description: Accessed None attempting to assign variable on an object
+[2018.05.28-10.16.56:781][678]LogScript: Warning: Accessed None trying to read property CallFunc_Create_ReturnValue
+	Bp_CasualCitizen_C /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel:PersistentLevel.Bp_CasualCitizen_102
+	Function /Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C:ExecuteUbergraph_Bp_MasterNPC:030D
+[2018.05.28-10.16.56:781][678]PIE: Error: Blueprint Runtime Error: Accessed None trying to read property CallFunc_Create_ReturnValue from function: 'ExecuteUbergraph_Bp_MasterNPC' from node: Add to Viewport in graph: EventGraph in object: Bp_MasterNPC with description: Accessed None trying to read property CallFunc_Create_ReturnValue
+[2018.05.28-10.17.21:711][603]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2018.05.28-10.17.21:776][603]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2018.05.28-10.17.32:247][747]LogSlate: Took 0.000342 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2018.05.28-10.18.29:185][776]BlueprintLog: New page: Compile Bp_MasterNPC
+[2018.05.28-10.18.34:087][964]BlueprintLog: New page: Compile Bp_MasterNPC
+[2018.05.28-10.18.40:788][308]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.18.40:833][308]BlueprintLog: New page: Pre-Play auto-recompile
+[2018.05.28-10.18.40:847][308]LogPlayLevel: [PlayLevel] Compiling BP_PassiveNPC before play...
+[2018.05.28-10.18.40:870][308]LogPlayLevel: [PlayLevel] Compiling Bp_TimeLimit before play...
+[2018.05.28-10.18.41:055][308]LogPlayLevel: PlayLevel: Blueprint regeneration took 221 ms (2 blueprints)
+[2018.05.28-10.18.41:055][308]PIE: New page: PIE session: MergedLevel (28 May 2018 12:18:41)
+[2018.05.28-10.18.41:055][308]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.18.41:064][308]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008855s)
+[2018.05.28-10.18.41:065][308]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.18.41:065][308]LogPlayLevel: PIE: World Init took: (0.000923s)
+[2018.05.28-10.18.41:066][308]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.010429s)
+[2018.05.28-10.18.41:086][308]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.18.41:097][308]LogInit: FAudioDevice initialized.
+[2018.05.28-10.18.41:131][308]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.18.41:135][308]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.18.41
+[2018.05.28-10.18.41:136][308]LogWorld: Bringing up level for play took: 0.004167
+[2018.05.28-10.18.41:138][308]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.18.41:143][308]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel -0.057
+[2018.05.28-10.20.06:056][773]BlueprintLog: New page: Compile Bp_MasterNPC
+[2018.05.28-10.20.23:334][110]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.20.23:379][110]BlueprintLog: New page: Pre-Play auto-recompile
+[2018.05.28-10.20.23:393][110]LogPlayLevel: [PlayLevel] Compiling BP_PassiveNPC before play...
+[2018.05.28-10.20.23:417][110]LogPlayLevel: [PlayLevel] Compiling Bp_TimeLimit before play...
+[2018.05.28-10.20.23:600][110]LogPlayLevel: PlayLevel: Blueprint regeneration took 220 ms (2 blueprints)
+[2018.05.28-10.20.23:600][110]PIE: New page: PIE session: MergedLevel (28 May 2018 12:20:23)
+[2018.05.28-10.20.23:601][110]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.20.23:610][110]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009027s)
+[2018.05.28-10.20.23:610][110]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.20.23:611][110]LogPlayLevel: PIE: World Init took: (0.000859s)
+[2018.05.28-10.20.23:611][110]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.010492s)
+[2018.05.28-10.20.23:634][110]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.20.23:642][110]LogInit: FAudioDevice initialized.
+[2018.05.28-10.20.23:673][110]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.20.23:677][110]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.20.23
+[2018.05.28-10.20.23:678][110]LogWorld: Bringing up level for play took: 0.004065
+[2018.05.28-10.20.23:680][110]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.20.23:685][110]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel 0.481
+[2018.05.28-10.20.28:233][655]LogScript: Warning: Accessed None trying to read property CreatedTaskList
+	BP_TaskListWidget_C /Engine/Transient.UnrealEdEngine_0:GameInstance_19.BP_TaskListWidget_C_1
+	Function /Game/TestingGrounds/Mechanic1/TemplateParts/BP_TaskListWidget.BP_TaskListWidget_C:ExecuteUbergraph_BP_TaskListWidget:01E2
+[2018.05.28-10.20.28:608][700]LogScript: Warning: Accessed None trying to read property CreatedTaskList
+	BP_TaskListWidget_C /Engine/Transient.UnrealEdEngine_0:GameInstance_19.BP_TaskListWidget_C_1
+	Function /Game/TestingGrounds/Mechanic1/TemplateParts/BP_TaskListWidget.BP_TaskListWidget_C:ExecuteUbergraph_BP_TaskListWidget:03EE
+[2018.05.28-10.20.28:883][733]LogScript: Warning: Accessed None trying to read property CreatedTaskList
+	BP_TaskListWidget_C /Engine/Transient.UnrealEdEngine_0:GameInstance_19.BP_TaskListWidget_C_1
+	Function /Game/TestingGrounds/Mechanic1/TemplateParts/BP_TaskListWidget.BP_TaskListWidget_C:ExecuteUbergraph_BP_TaskListWidget:039D
+[2018.05.28-10.20.39:257][787]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.28-10.20.39:279][787]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.28-10.20.39:280][787]PIE: New page: PIE session: MergedLevel (28 May 2018 12:20:39)
+[2018.05.28-10.20.39:280][787]LogPlayLevel: Creating play world package: /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel
+[2018.05.28-10.20.39:289][787]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008716s)
+[2018.05.28-10.20.39:289][787]LogAIModule: Creating AISystem for world MergedLevel
+[2018.05.28-10.20.39:290][787]LogPlayLevel: PIE: World Init took: (0.000796s)
+[2018.05.28-10.20.39:290][787]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestingGrounds/FPTestingZone/Maps/MergedLevel.MergedLevel to /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel (0.010154s)
+[2018.05.28-10.20.39:315][787]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.28-10.20.39:322][787]LogInit: FAudioDevice initialized.
+[2018.05.28-10.20.39:351][787]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.05.28-10.20.39:356][787]LogWorld: Bringing World /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel.MergedLevel up for play (max tick rate 0) at 2018.05.28-11.20.39
+[2018.05.28-10.20.39:357][787]LogWorld: Bringing up level for play took: 0.004189
+[2018.05.28-10.20.39:359][787]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.20.39:363][787]PIE: Play in editor start time for /Game/TestingGrounds/FPTestingZone/Maps/UEDPIE_0_MergedLevel 0.159
+[2018.05.28-10.20.41:480][ 40]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'Dialogues' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.20.41:481][ 40]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'Dialogues' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.20.43:473][279]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.20.44:247][372]LogScriptCore: Warning: Script Msg: Attempted to access index 1 from array 'Dialogues' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.20.44:248][372]LogScriptCore: Warning: Script Msg: Attempted to access index 1 from array 'Dialogues' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.20.46:239][611]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.20.46:681][664]LogScriptCore: Warning: Script Msg: Attempted to access index 2 from array 'Dialogues' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.20.46:681][664]LogScriptCore: Warning: Script Msg: Attempted to access index 2 from array 'Dialogues' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.20.48:673][903]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'WalkingPath' of length 0 in '/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC_C'!
+[2018.05.28-10.20.50:764][154]LogScript: Warning: Accessed None trying to read property CreatedTaskList
+	BP_TaskListWidget_C /Engine/Transient.UnrealEdEngine_0:GameInstance_20.BP_TaskListWidget_C_2
+	Function /Game/TestingGrounds/Mechanic1/TemplateParts/BP_TaskListWidget.BP_TaskListWidget_C:ExecuteUbergraph_BP_TaskListWidget:03EE
+[2018.05.28-10.20.51:048][188]LogScript: Warning: Accessed None trying to read property CreatedTaskList
+	BP_TaskListWidget_C /Engine/Transient.UnrealEdEngine_0:GameInstance_20.BP_TaskListWidget_C_2
+	Function /Game/TestingGrounds/Mechanic1/TemplateParts/BP_TaskListWidget.BP_TaskListWidget_C:ExecuteUbergraph_BP_TaskListWidget:01E2
+[2018.05.28-10.21.16:545][833]LogEditorViewport: Clicking on Actor (LMB): Bp_CasualCitizen_C (Bp_CasualCitizen)
+[2018.05.28-10.21.34:920][543]LogContentBrowser: Native class hierarchy updated for 'PhAT' in 0.0006 seconds. Added 2 classes and 3 folders.
+[2018.05.28-10.21.35:020][544]LogRenderer: Reallocating scene render targets to support 1208x924 Format 10 NumSamples 1 (Frame:1).
+[2018.05.28-10.22.32:297][ 65]LogSavePackage: Save=196.05ms
+[2018.05.28-10.22.32:298][ 65]LogSavePackage: Moving '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/MergedLevel_Auto1FAF127D14662E833566A58881FD5A67F.tmp' to '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Autosaves/Game/TestingGrounds/FPTestingZone/Maps/MergedLevel_Auto1.umap'
+[2018.05.28-10.22.32:300][ 65]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Autosaves/Game/TestingGrounds/FPTestingZone/Maps/MergedLevel_Auto1.umap
+[2018.05.28-10.22.32:302][ 65]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/TestingGrounds/FPTestingZone/Maps/MergedLevel' took 0.231
+[2018.05.28-10.22.32:302][ 65]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.231
+[2018.05.28-10.22.32:306][ 65]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC] ([1] browsable assets)...
+[2018.05.28-10.22.32:329][ 65]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC.Bp_MasterNPC]
+[2018.05.28-10.22.32:329][ 65]OBJ SavePackage: Finished generating thumbnails for package [/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC]
+[2018.05.28-10.22.32:680][ 65]LogSavePackage: Save=341.15ms
+[2018.05.28-10.22.32:680][ 65]LogSavePackage: Moving '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Bp_MasterNPC_Auto1AA487D00433965C5C89DA6BBC2A9FF58.tmp' to '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Autosaves/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC_Auto1.uasset'
+[2018.05.28-10.22.32:682][ 65]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Autosaves/Game/DialogueSystem/Blueprints/AI/Bp_MasterNPC_Auto1.uasset
+[2018.05.28-10.22.32:684][ 65]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/TestingGrounds/FPTestingZone/Blueprints/FirstPersonCharacter] ([1] browsable assets)...
+[2018.05.28-10.22.32:700][ 65]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/TestingGrounds/FPTestingZone/Blueprints/FirstPersonCharacter.FirstPersonCharacter]
+[2018.05.28-10.22.32:701][ 65]OBJ SavePackage: Finished generating thumbnails for package [/Game/TestingGrounds/FPTestingZone/Blueprints/FirstPersonCharacter]
+[2018.05.28-10.22.32:982][ 65]LogSavePackage: Save=272.57ms
+[2018.05.28-10.22.32:982][ 65]LogSavePackage: Moving '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/FirstPersonCharacter_Auto1D619F4AC408138398640DA91AD19779C.tmp' to '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Autosaves/Game/TestingGrounds/FPTestingZone/Blueprints/FirstPersonCharacter_Auto1.uasset'
+[2018.05.28-10.22.32:985][ 65]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Autosaves/Game/TestingGrounds/FPTestingZone/Blueprints/FirstPersonCharacter_Auto1.uasset
+[2018.05.28-10.22.32:986][ 65]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/DialogueSystem/Blueprints/AI/BP_PassiveNPC] ([1] browsable assets)...
+[2018.05.28-10.22.32:986][ 65]OBJ SavePackage: Finished generating thumbnails for package [/Game/DialogueSystem/Blueprints/AI/BP_PassiveNPC]
+[2018.05.28-10.22.33:073][ 65]LogSavePackage: Save=78.98ms
+[2018.05.28-10.22.33:074][ 65]LogSavePackage: Moving '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/BP_PassiveNPC_Auto1EACD94254A158E0624D03490A94605CB.tmp' to '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Autosaves/Game/DialogueSystem/Blueprints/AI/BP_PassiveNPC_Auto1.uasset'
+[2018.05.28-10.22.33:076][ 65]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Autosaves/Game/DialogueSystem/Blueprints/AI/BP_PassiveNPC_Auto1.uasset
+[2018.05.28-10.22.33:077][ 65]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/DialogueSystem/Blueprints/AI/Bp_CasualCitizen] ([1] browsable assets)...
+[2018.05.28-10.22.33:093][ 65]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/DialogueSystem/Blueprints/AI/Bp_CasualCitizen.Bp_CasualCitizen]
+[2018.05.28-10.22.33:093][ 65]OBJ SavePackage: Finished generating thumbnails for package [/Game/DialogueSystem/Blueprints/AI/Bp_CasualCitizen]
+[2018.05.28-10.22.33:133][ 65]LogSavePackage: Save=32.19ms
+[2018.05.28-10.22.33:134][ 65]LogSavePackage: Moving '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Bp_CasualCitizen_Auto1887A486A428C306E9746A6A20234D1B7.tmp' to '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Autosaves/Game/DialogueSystem/Blueprints/AI/Bp_CasualCitizen_Auto1.uasset'
+[2018.05.28-10.22.33:136][ 65]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Autosaves/Game/DialogueSystem/Blueprints/AI/Bp_CasualCitizen_Auto1.uasset
+[2018.05.28-10.22.33:137][ 65]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/DialogueSystem/Blueprints/AI/Bp_TimeLimit] ([1] browsable assets)...
+[2018.05.28-10.22.33:155][ 65]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/DialogueSystem/Blueprints/AI/Bp_TimeLimit.Bp_TimeLimit]
+[2018.05.28-10.22.33:155][ 65]OBJ SavePackage: Finished generating thumbnails for package [/Game/DialogueSystem/Blueprints/AI/Bp_TimeLimit]
+[2018.05.28-10.22.33:224][ 65]LogSavePackage: Save=60.32ms
+[2018.05.28-10.22.33:224][ 65]LogSavePackage: Moving '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Bp_TimeLimit_Auto11273CDFA43AB3844684738A8B69B322B.tmp' to '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Autosaves/Game/DialogueSystem/Blueprints/AI/Bp_TimeLimit_Auto1.uasset'
+[2018.05.28-10.22.33:226][ 65]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/Autosaves/Game/DialogueSystem/Blueprints/AI/Bp_TimeLimit_Auto1.uasset
+[2018.05.28-10.22.33:226][ 65]LogFileHelpers: Auto-saving content packages took 0.923
+[2018.05.28-10.23.20:146][584]LogSavePackage: Save=191.65ms
+[2018.05.28-10.23.20:146][584]LogSavePackage: Moving '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/MergedLevel05640B954AF507B3E6C1A29B94BD970B.tmp' to '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/TestingGrounds/FPTestingZone/Maps/MergedLevel.umap'
+[2018.05.28-10.23.20:150][584]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/TestingGrounds/FPTestingZone/Maps/MergedLevel.umap
+[2018.05.28-10.23.20:300][584]LogSavePackage: Save=103.97ms
+[2018.05.28-10.23.20:300][584]LogSavePackage: Moving '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Saved/MergedLevel_BuiltData107F962C439D0418E5A9719D40E52708.tmp' to '../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/TestingGrounds/FPTestingZone/Maps/MergedLevel_BuiltData.uasset'
+[2018.05.28-10.23.20:303][584]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/1302534/Downloads/AlgorithmsProject/MyProject/Content/TestingGrounds/FPTestingZone/Maps/MergedLevel_BuiltData.uasset
