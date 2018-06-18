@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{39965887-3F92-4D80-B62E-C6C24C98258F}" SchemaVersion="80">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{39965887-3F92-4D80-B62E-C6C24C98258F}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="intensity" ID="{4035F4C7-60DD-4DF6-B370-E2A2673102C5}">
+					<ChildrenList>
+						<State Name="None" ID="{89DCEE57-A938-4643-8046-F9CEF27C9A7F}"/>
+						<State Name="not_safe" ID="{1D9D4346-FE53-4433-AF6C-90730B773974}"/>
+						<State Name="safe" ID="{BD9C34F1-3F5F-407A-ADE5-E989F22BDED7}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="rain" ID="{2B8501CA-7D01-460E-925D-1B9AED9D9176}">
+					<ChildrenList>
+						<State Name="None" ID="{3A99B726-658F-4DCA-B6A1-92232FFE0745}"/>
+						<State Name="raining" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="wind" ID="{B4EC8214-EF75-454B-96AF-D1920E0152B5}">
+					<ChildrenList>
+						<State Name="None" ID="{11424134-5258-4C51-8A6D-64E394872707}"/>
+						<State Name="light" ID="{C3D2D04C-DA1C-4D6B-B9EA-E4CFB78804E5}"/>
+						<State Name="heavy" ID="{AFA62109-25B3-4F23-BF5F-CEF270B31343}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}" SchemaVersion="80" RootDocumentID="{DAAE67C7-F521-484B-8F6E-21FD388DBAE1}">
+	<GameParameters>
+		<WorkUnit Name="general" ID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}" OwnerID="{DAAE67C7-F521-484B-8F6E-21FD388DBAE1}" PersistMode="Nested">
+			<ChildrenList>
+				<GameParameter Name="waking_up" ID="{74F5C7FD-D1F5-41D0-AC2F-9707493DF0E2}"/>
+				<GameParameter Name="rain_intensity" ID="{AB54190B-0C5D-4C34-89FB-C7488D42F543}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="player_stamina" ID="{1ECFC513-1D72-4DBF-8FE3-00467DB127D9}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="player_movement_speed" ID="{CE186776-CF25-4E9A-B0E5-3EECEDAACC48}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="300"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="water_speed" ID="{5A7BDAFD-EFAA-4F59-8877-6EB2092CDA28}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<Folder Name="distances" ID="{7B46A338-3BDE-4C47-9C7B-F2FF763BF46A}" ShortID="394219242">
+					<ChildrenList>
+						<GameParameter Name="distance_from_shores" ID="{AFF690FA-09F9-45C0-BE20-BFE9864D91D2}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="5000"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="distance_to_cave_entrance" ID="{75827670-F7FF-4868-9CC1-B633606BB4E7}">
+							<PropertyList>
+								<Property Name="Max" Type="Real64" Value="1000"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="distance_to_player" ID="{99B268F5-B2A7-492B-8033-B29029B8F9CC}">
+							<PropertyList>
+								<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="distance_from_sea_rocks" ID="{46842EBB-BC5D-43D4-A48F-FB0A31EC971A}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="character_positions" ID="{C15D7F5B-CD94-42A7-88E2-F3572B743236}" ShortID="207763693">
+					<ChildrenList>
+						<GameParameter Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="26000"/>
+								<Property Name="Min" Type="Real64" Value="-300"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

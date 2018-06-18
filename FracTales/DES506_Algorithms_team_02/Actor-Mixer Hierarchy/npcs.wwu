@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9FADEF33-F83B-4C44-A214-321B71FD54F2}" SchemaVersion="80" RootDocumentID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}">
+	<AudioObjects>
+		<WorkUnit Name="npcs" ID="{9FADEF33-F83B-4C44-A214-321B71FD54F2}" OwnerID="{04AE4530-C76A-4226-8EF9-C31081509EAA}" PersistMode="Nested">
+			<Comment>All Non-Playable Character audio.</Comment>
+			<ChildrenList>
+				<ActorMixer Name="npcs" ID="{C7D79DA1-4DB5-4D35-9F3D-E89E3FFD2F6B}" ShortID="886449356">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="npc_attenuation" ID="{37A1B195-C807-4D62-9F01-AC94FFD392D9}" WorkUnitID="{74E74D40-3965-4399-8C83-DC540386B3F2}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="movement" ID="{361257A2-5C1E-44F9-A137-2F2E628D5EAE}" ShortID="153301559">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="npc_footstep_type" ID="{1AC495C0-10EC-4100-99DA-19540F426C99}" ShortID="66032337">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="npc_attenuation" ID="{37A1B195-C807-4D62-9F01-AC94FFD392D9}" WorkUnitID="{74E74D40-3965-4399-8C83-DC540386B3F2}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="npc_footsteps_run" ID="{87079828-1BF6-4100-98E1-55BAABD72526}" ShortID="687663892">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="npc_footsteps_grass_short_run" ID="{7D93914C-1FB3-4C80-8477-9D46F7C94E55}" ShortID="384851560">
+													<PropertyList>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="npc_footstep_grass_short_run_01" ID="{291A0C66-5D71-47AE-B436-19885B53356F}" ShortID="19596701">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_run_01" ID="{D14213CE-8A9B-4857-AE4D-CB06AAA925E4}" ShortID="158123064">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_run_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_run_01" ID="{D14213CE-8A9B-4857-AE4D-CB06AAA925E4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_run_02" ID="{F8263422-572C-47F9-A408-93A0FED9342A}" ShortID="309739716">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_run_02" ID="{EF70A6CC-A710-498B-B280-08FC09422C69}" ShortID="828143805">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_run_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_run_02" ID="{EF70A6CC-A710-498B-B280-08FC09422C69}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_run_03" ID="{3776C2F6-A79A-47EA-A7E6-6D05B8EB3233}" ShortID="612435745">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_run_03" ID="{727E36C4-85C3-4560-85A0-F4F0C476338F}" ShortID="653919298">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_run_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_run_03" ID="{727E36C4-85C3-4560-85A0-F4F0C476338F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_run_04" ID="{0D490394-53F0-4033-B059-47CD8585D295}" ShortID="476867453">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_run_04" ID="{60CCB660-2434-4407-B49C-2563DDAEE638}" ShortID="800254152">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_run_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_run_04" ID="{60CCB660-2434-4407-B49C-2563DDAEE638}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_run_05" ID="{11539326-0354-4368-8B03-AD3744A8F477}" ShortID="511418237">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_run_05" ID="{608D769E-21D9-455A-A56D-1B09C63D5CD6}" ShortID="579073419">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_run_05.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_run_05" ID="{608D769E-21D9-455A-A56D-1B09C63D5CD6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_run_06" ID="{7B9CA5DA-8C64-4BC9-86A1-AC9A8FA98F47}" ShortID="452641213">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_run_06" ID="{7E497DBF-BFEC-4771-83D3-0DA9270B1BB0}" ShortID="18629287">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_run_06.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_run_06" ID="{7E497DBF-BFEC-4771-83D3-0DA9270B1BB0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_run_07" ID="{A046D060-DA5B-48BC-9089-BBA7B2A6E947}" ShortID="545610502">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_run_07" ID="{5E9B4D0F-A259-4AF1-9CD6-EC598BDAA4E9}" ShortID="857154910">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_run_07.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_run_07" ID="{5E9B4D0F-A259-4AF1-9CD6-EC598BDAA4E9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_run_08" ID="{94A06270-1DDC-4DAD-B1F8-43F198CBAC9F}" ShortID="785158066">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_run_08" ID="{3E3538E7-4069-488D-B159-F83C1A7A688E}" ShortID="455308219">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_run_08.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_run_08" ID="{3E3538E7-4069-488D-B159-F83C1A7A688E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="npc_footsteps_wood_run" ID="{A9239F7E-B5EE-4FFB-9C07-FC3394B6862B}" ShortID="627622464">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="npc_footstep_wood_run_01" ID="{21BB619A-ADF6-4660-A9AC-0658DB8DEA1C}" ShortID="800567181">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_run_01" ID="{672A7AE6-B7D1-452A-BC9D-2B1077D2AA18}" ShortID="176851163">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_run_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_run_01" ID="{672A7AE6-B7D1-452A-BC9D-2B1077D2AA18}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_run_02" ID="{5C7C7CA0-0A67-486D-B8E3-410C7FA0B520}" ShortID="93248911">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_run_02" ID="{1BB809F5-F06D-42E3-9284-8AEFDFEC432F}" ShortID="361296953">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_run_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_run_02" ID="{1BB809F5-F06D-42E3-9284-8AEFDFEC432F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_run_03" ID="{72C2D854-65F3-4057-A4A0-21F4BE8C0918}" ShortID="682295157">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_run_03" ID="{68DB97CE-A2EB-4D71-9592-21EF74EF521F}" ShortID="750522697">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_run_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_run_03" ID="{68DB97CE-A2EB-4D71-9592-21EF74EF521F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_run_04" ID="{302BBFE1-9FA1-43A5-9DD0-B5A0BC2D7286}" ShortID="612714339">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_run_04" ID="{A80C25B7-27E8-423D-9B06-42DCF8D18A26}" ShortID="744885272">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_run_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_run_04" ID="{A80C25B7-27E8-423D-9B06-42DCF8D18A26}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_run_05" ID="{01A4D7D1-09FC-4E14-BB81-0FBB97830627}" ShortID="45385678">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_run_05" ID="{AF3545F6-5FF0-43FB-BA99-5B4E1A4466E7}" ShortID="935625757">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_run_05.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_run_05" ID="{AF3545F6-5FF0-43FB-BA99-5B4E1A4466E7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_run_06" ID="{94758EBC-47A2-45E6-8B16-22FDAF69399F}" ShortID="1018059731">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_run_06" ID="{8BFA47E3-7828-46BC-8C30-23F617329D50}" ShortID="668420732">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_run_06.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_run_06" ID="{8BFA47E3-7828-46BC-8C30-23F617329D50}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_run_07" ID="{5A1270D4-EDDA-4180-A67C-A4CE61B35239}" ShortID="405148180">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_run_07" ID="{22E46629-7305-4B60-A5C6-87DF3D255240}" ShortID="440178366">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_run_07.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_run_07" ID="{22E46629-7305-4B60-A5C6-87DF3D255240}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_run_08" ID="{4B9B5C7F-E27A-4E03-A86A-8E62F6D89D89}" ShortID="755498611">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_run_08" ID="{1BE40B75-8150-4E95-B0EC-2AE2C438D7EB}" ShortID="1009115484">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_run_08.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_run_08" ID="{1BE40B75-8150-4E95-B0EC-2AE2C438D7EB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_run_09" ID="{11183455-45D7-479F-B45E-44F379288C3C}" ShortID="813547261">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_run_09" ID="{FD3C72EE-6CFB-49E5-B9B3-0AE1C52791B1}" ShortID="322077565">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_run_09.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_run_09" ID="{FD3C72EE-6CFB-49E5-B9B3-0AE1C52791B1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_run_10" ID="{1D87FA3D-3573-4D0E-8BCC-142575CFE66B}" ShortID="621839283">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_run_10" ID="{3DC50C9B-75B2-486F-B121-3E72BB57F764}" ShortID="266900749">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_run_10.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_run_10" ID="{3DC50C9B-75B2-486F-B121-3E72BB57F764}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
+												<DefaultSwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="npc_footsteps_grass_short_run" ID="{7D93914C-1FB3-4C80-8477-9D46F7C94E55}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="npc_footsteps_wood_run" ID="{A9239F7E-B5EE-4FFB-9C07-FC3394B6862B}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+														<ItemList>
+															<ItemRef Name="npc_footsteps_grass_short_run" ID="{7D93914C-1FB3-4C80-8477-9D46F7C94E55}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+														<ItemList>
+															<ItemRef Name="npc_footsteps_wood_run" ID="{A9239F7E-B5EE-4FFB-9C07-FC3394B6862B}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="npc_footsteps_walk" ID="{E0D87B0F-3B55-4836-B3F7-B231F08DF1DF}" ShortID="487696672">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="npc_footsteps_grass_short_walk" ID="{7D39E465-D07F-496F-A653-7FC7484A7362}" ShortID="70851332">
+													<PropertyList>
+														<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-17</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="npc_attenuation" ID="{37A1B195-C807-4D62-9F01-AC94FFD392D9}" WorkUnitID="{74E74D40-3965-4399-8C83-DC540386B3F2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="npc_footstep_grass_short_walk_01" ID="{7E6B907A-0E71-4179-9823-C000D5BADCE6}" ShortID="249838640">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_walk_01" ID="{6D4752D9-9760-4308-BB3F-22725359C13A}" ShortID="782827086">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_walk_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_walk_01" ID="{6D4752D9-9760-4308-BB3F-22725359C13A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_walk_02" ID="{DCC1A6E5-C66F-475F-B571-AE8080864D6A}" ShortID="1012095530">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_walk_02" ID="{84659692-ADDB-4C3F-BAA2-340C35AA121E}" ShortID="323643501">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_walk_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_walk_02" ID="{84659692-ADDB-4C3F-BAA2-340C35AA121E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_walk_03" ID="{0DBADA9C-8608-44F8-AF89-A4517CD8FA44}" ShortID="399836466">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_walk_03" ID="{449018DB-CD87-44ED-A458-3C8BDF471E0F}" ShortID="690307407">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_walk_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_walk_03" ID="{449018DB-CD87-44ED-A458-3C8BDF471E0F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_walk_04" ID="{07A91ADB-90A3-43D5-8036-0CB7F0C094C8}" ShortID="783037519">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_walk_04" ID="{5F8DD0C3-0586-4142-BE0D-3BEE890EE0A5}" ShortID="459256703">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_walk_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_walk_04" ID="{5F8DD0C3-0586-4142-BE0D-3BEE890EE0A5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_walk_05" ID="{9DBD16D3-E077-4736-86EE-58823786C4C4}" ShortID="785611016">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_walk_05" ID="{C107F435-7F4A-4DD2-8CBA-732F1C4160AD}" ShortID="945973907">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_walk_05.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_walk_05" ID="{C107F435-7F4A-4DD2-8CBA-732F1C4160AD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_walk_06" ID="{9FC8E92B-F270-48F5-A584-61AE45A45F9A}" ShortID="797520015">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_walk_06" ID="{5598BFA4-00F2-4B87-8909-CEA06A6B102C}" ShortID="74539366">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_walk_06.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_walk_06" ID="{5598BFA4-00F2-4B87-8909-CEA06A6B102C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_walk_07" ID="{62C2E1FE-ACF6-45F8-B143-1FFCA2B4AEC8}" ShortID="768849697">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_walk_07" ID="{4118207E-2B7D-44C4-BAD6-65C603D5D9CA}" ShortID="486318670">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_walk_07.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_walk_07" ID="{4118207E-2B7D-44C4-BAD6-65C603D5D9CA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_walk_08" ID="{B3A1CD5C-CF66-4776-8AB6-AF89ABD41BE2}" ShortID="213809386">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_walk_08" ID="{A139679E-54F2-4070-8973-21C1704BF478}" ShortID="402049056">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_walk_08.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_walk_08" ID="{A139679E-54F2-4070-8973-21C1704BF478}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_walk_09" ID="{274C2D46-536E-48CF-B7E9-016C574A55BF}" ShortID="250427268">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_walk_09" ID="{4837469E-EAD1-4C0F-8CD4-D047FD48F88F}" ShortID="442533989">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_walk_09.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_walk_09" ID="{4837469E-EAD1-4C0F-8CD4-D047FD48F88F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_grass_short_walk_10" ID="{573A2BAD-2F39-490B-90D9-E385FBD520EF}" ShortID="173736714">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_grass_short_walk_10" ID="{F194784A-558D-4A9F-8AEE-3CCB58AA24D2}" ShortID="341995140">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_grass_short_walk_10.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_grass_short_walk_10" ID="{F194784A-558D-4A9F-8AEE-3CCB58AA24D2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="npc_footsteps_wood_walk" ID="{51A0D23D-2D7B-4C81-8999-A9B39AF1A3E6}" ShortID="303369450">
+													<PropertyList>
+														<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="npc_footstep_wood_walk_01" ID="{13DD575B-8095-414F-9206-3023D71C6DCC}" ShortID="158382390">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_walk_01" ID="{84F041DB-8D86-495E-BE0A-9784EB188ADF}" ShortID="185231963">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_walk_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_walk_01" ID="{84F041DB-8D86-495E-BE0A-9784EB188ADF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_walk_02" ID="{3789EAC7-486D-4159-B638-D13C89E034AF}" ShortID="24520551">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_walk_02" ID="{E6045570-DB0A-497A-AC82-DFBCEAB6C7F9}" ShortID="190119472">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_walk_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_walk_02" ID="{E6045570-DB0A-497A-AC82-DFBCEAB6C7F9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_walk_03" ID="{0AEF5BAF-2AF6-4BAE-917D-2493508F1A54}" ShortID="1039962533">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_walk_03" ID="{AC3FFFE6-9375-49BD-8124-8DFF03D3C5FF}" ShortID="1045296318">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_walk_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_walk_03" ID="{AC3FFFE6-9375-49BD-8124-8DFF03D3C5FF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_walk_04" ID="{BBBDBE5D-D589-43DD-A326-E2B6D2CF442B}" ShortID="276428540">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_walk_04" ID="{945B8084-DA8B-4427-9C88-1434BE33C3C0}" ShortID="399196736">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_walk_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_walk_04" ID="{945B8084-DA8B-4427-9C88-1434BE33C3C0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_walk_05" ID="{2488C597-BD32-4936-A5BC-58AA02D426B5}" ShortID="429428245">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_walk_05" ID="{A86C9418-E04C-4B11-B900-F02F31D309DF}" ShortID="70688689">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_walk_05.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_walk_05" ID="{A86C9418-E04C-4B11-B900-F02F31D309DF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_walk_06" ID="{11A50002-23FA-4D49-B6F0-FC522B079F13}" ShortID="248069215">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_walk_06" ID="{DE064EAC-65A0-45C6-957C-6D1EBD001983}" ShortID="204663394">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_walk_06.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_walk_06" ID="{DE064EAC-65A0-45C6-957C-6D1EBD001983}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_walk_07" ID="{5091760B-DBFF-4231-A360-F3DDE5F511E5}" ShortID="854782950">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_walk_07" ID="{EAA41344-5E20-4FCE-918B-C9732174E4B7}" ShortID="268528002">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_walk_07.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_walk_07" ID="{EAA41344-5E20-4FCE-918B-C9732174E4B7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_walk_08" ID="{331DB9CE-D312-43DF-BF38-158A265E0EC7}" ShortID="1002908356">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_walk_08" ID="{E99303F1-ECC9-47D7-A5AC-8131905366C5}" ShortID="1003733689">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_walk_08.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_walk_08" ID="{E99303F1-ECC9-47D7-A5AC-8131905366C5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_walk_09" ID="{F3594094-B540-48E9-908C-0F619472CABD}" ShortID="951856702">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_walk_09" ID="{40E03677-7F21-4180-835D-48128B9CE1B4}" ShortID="366585476">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_walk_09.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_walk_09" ID="{40E03677-7F21-4180-835D-48128B9CE1B4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="npc_footstep_wood_walk_10" ID="{C4A82E23-7E65-4D85-9A70-9CEA985DDE0C}" ShortID="355226902">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="npc_footstep_wood_walk_10" ID="{9C9C9DF1-C337-405F-86A6-C0FE18C5B08D}" ShortID="289959440">
+																	<Language>SFX</Language>
+																	<AudioFile>npc_footstep_wood_walk_10.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="npc_footstep_wood_walk_10" ID="{9C9C9DF1-C337-405F-86A6-C0FE18C5B08D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
+												<DefaultSwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="npc_footsteps_wood_walk" ID="{51A0D23D-2D7B-4C81-8999-A9B39AF1A3E6}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="npc_footsteps_grass_short_walk" ID="{7D39E465-D07F-496F-A653-7FC7484A7362}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+														<ItemList>
+															<ItemRef Name="npc_footsteps_grass_short_walk" ID="{7D39E465-D07F-496F-A653-7FC7484A7362}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+														<ItemList>
+															<ItemRef Name="npc_footsteps_wood_walk" ID="{51A0D23D-2D7B-4C81-8999-A9B39AF1A3E6}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupRef Name="player_movement_speed" ID="{0EF87E37-18CE-490C-B249-D1244C182210}"/>
+										<DefaultSwitchRef Name="walk" ID="{E97B1A68-67E7-4615-9AB0-53AC319CE48A}"/>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="npc_footsteps_walk" ID="{E0D87B0F-3B55-4836-B3F7-B231F08DF1DF}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="npc_footsteps_run" ID="{87079828-1BF6-4100-98E1-55BAABD72526}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="run" ID="{02B38825-0181-4ED1-99D5-51DB148EDFD9}"/>
+												<ItemList>
+													<ItemRef Name="npc_footsteps_run" ID="{87079828-1BF6-4100-98E1-55BAABD72526}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="walk" ID="{E97B1A68-67E7-4615-9AB0-53AC319CE48A}"/>
+												<ItemList>
+													<ItemRef Name="npc_footsteps_walk" ID="{E0D87B0F-3B55-4836-B3F7-B231F08DF1DF}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{7B11A32C-C17B-4E42-AE97-A13F23D2DDB1}"/>
+					</PositioningInfo>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

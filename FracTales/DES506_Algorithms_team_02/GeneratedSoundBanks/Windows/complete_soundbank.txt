@@ -1,0 +1,48 @@
+Event	ID	Name			Wwise Object Path	Notes
+	15662850	ui_button_up			\ui\generic\ui_button_up	
+	18309885	ui_button_enter			\ui\generic\ui_button_enter	
+	53091657	footstep_left			\player\movements\footsteps\footstep_left	
+	156563189	ui_button_down			\ui\generic\ui_button_down	
+	1305133589	player_jump			\player\movements\jumping\player_jump	
+	1464993479	ui_menu_resume			\ui\menu\ui_menu_resume	
+	1882971781	music_credits			\music\soundbank_specific\music_credits	
+	1915543985	pick_up_watering_can			\player\actions\pick_up_watering_can	
+	2074073782	player_damage			\player\player_damage	
+	2199611969	ui_inventory_open			\ui\inventory\ui_inventory_open	
+	2278290679	ui_inventory_close			\ui\inventory\ui_inventory_close	
+	2325560497	ui_button_exit			\ui\generic\ui_button_exit	
+	3237189652	ui_menu_pause			\ui\menu\ui_menu_pause	
+	3383149884	footstep_right			\player\movements\footsteps\footstep_right	
+	3465010427	ui_menu_navigate			\ui\menu\ui_menu_navigate	
+	3474566310	ui_menu_select			\ui\menu\ui_menu_select	
+	3629196698	player_land			\player\movements\jumping\player_land	
+	3741135221	music_region			\music\general\music_region	
+	4129491292	music_title_screen			\music\soundbank_specific\music_title_screen	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1062734446	player_movement_speed			\Default Work Unit\player\player_movement_speed	
+
+Switch	ID	Name	Switch Group			Notes
+	712161704	run	player_movement_speed			
+	2108779966	walk	player_movement_speed			
+	2655407367	crouch	player_movement_speed			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3865314626	material			\Default Work Unit\material	
+
+State	ID	Name	State Group			Notes
+	221480788	heather	material			
+	241501102	grass_long	material			
+	582824249	leaves	material			
+	660835419	plastic	material			
+	748895195	None	material			
+	803837735	sand	material			
+	841620460	concrete	material			
+	1216965916	stone	material			
+	1970351858	fabric	material			
+	2185786256	gravel	material			
+	2195636714	dirt	material			
+	2473969246	metal	material			
+	2654748154	water	material			
+	2705388594	grass_short	material			
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EC2992DF-62EA-4455-B1AA-1DDBA2FDC118}" SchemaVersion="80" RootDocumentID="{497AD17A-CF10-440E-8404-3A8AF2EA68F5}">
+	<Events>
+		<WorkUnit Name="objects" ID="{EC2992DF-62EA-4455-B1AA-1DDBA2FDC118}" OwnerID="{497AD17A-CF10-440E-8404-3A8AF2EA68F5}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="doors" ID="{3CEF08F2-6E8D-4CE9-AE5B-53084E2678C6}" ShortID="244090001">
+					<ChildrenList>
+						<Event Name="door_close" ID="{88790322-AD71-457A-B647-3CB88C436BC5}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
