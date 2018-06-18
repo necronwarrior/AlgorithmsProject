@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{450E41EE-0F7B-41B9-B406-EA8BD7E0FE4C}" SchemaVersion="80" RootDocumentID="{497AD17A-CF10-440E-8404-3A8AF2EA68F5}">
+	<Events>
+		<WorkUnit Name="npc" ID="{450E41EE-0F7B-41B9-B406-EA8BD7E0FE4C}" OwnerID="{497AD17A-CF10-440E-8404-3A8AF2EA68F5}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="movements" ID="{18B1616C-824F-446A-BD87-33CD71A42D5D}" ShortID="172777122">
+					<ChildrenList>
+						<Event Name="play_npc_footsteps" ID="{017BE971-C34B-4A1F-89C1-B433E9098755}">
+							<ChildrenList>
+								<Action Name="" ID="{6726FC89-644C-4DBA-8A97-8E3970B2642D}" ShortID="55856163">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="npc_footsteps_walk" ID="{E0D87B0F-3B55-4836-B3F7-B231F08DF1DF}" WorkUnitID="{9FADEF33-F83B-4C44-A214-321B71FD54F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

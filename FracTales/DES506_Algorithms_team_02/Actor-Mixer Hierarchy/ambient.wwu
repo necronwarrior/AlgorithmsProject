@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8A2AEFEF-14F0-4443-B640-1EAA3D0C49F4}" SchemaVersion="80" RootDocumentID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}">
+	<AudioObjects>
+		<WorkUnit Name="ambient" ID="{8A2AEFEF-14F0-4443-B640-1EAA3D0C49F4}" OwnerID="{04AE4530-C76A-4226-8EF9-C31081509EAA}" PersistMode="Nested">
+			<Comment>All in-game ambiences.</Comment>
+			<ChildrenList>
+				<ActorMixer Name="ambiences" ID="{E5886737-BE7A-4137-8074-C0FF99C96D86}" ShortID="732359686">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<WorkUnit Name="ambience_background" ID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}" PersistMode="Reference"/>
+						<WorkUnit Name="ambience_emitters" ID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}" PersistMode="Reference"/>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

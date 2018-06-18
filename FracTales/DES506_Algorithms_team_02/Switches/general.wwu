@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{79E22627-062D-4585-B570-C50242E768AC}" SchemaVersion="80" RootDocumentID="{F543CF61-D551-4694-AEB6-99D51C0E5943}">
+	<Switches>
+		<WorkUnit Name="general" ID="{79E22627-062D-4585-B570-C50242E768AC}" OwnerID="{F543CF61-D551-4694-AEB6-99D51C0E5943}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchGroup Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}">
+					<ChildrenList>
+						<Switch Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+						<Switch Name="water" ID="{EE0D10B1-DBAF-4592-91C8-A26CB51BAE5B}"/>
+						<Switch Name="rock" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
+						<Switch Name="dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
+						<Switch Name="metal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
+						<Switch Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+						<Switch Name="grass_long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
+						<Switch Name="heather" ID="{967D0897-049D-4310-8E49-57732F48F7BF}"/>
+						<Switch Name="sand" ID="{AA1C18A5-DB77-4DF0-9013-AE229B56D200}"/>
+						<Switch Name="leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}"/>
+						<Switch Name="road" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
+						<Switch Name="stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
+						<Switch Name="fabric" ID="{08628135-B8FA-40A9-829C-3733AF0814FF}"/>
+						<Switch Name="plastic" ID="{D940EB41-0354-41B8-87DD-CEDF2051EC0F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="time_of_day" ID="{FE05044A-59F8-43CC-914D-083D93FC150B}">
+					<ChildrenList>
+						<Switch Name="day" ID="{B1A1A235-C1FB-4D6C-A811-15EC143E61AA}"/>
+						<Switch Name="night" ID="{3A5CBB7F-534A-467F-B295-5864A3056042}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{47468C22-DD98-46A1-84CC-3293EE90A9FC}" SchemaVersion="80" RootDocumentID="{58BE9974-52F0-42A5-A0EF-BF5ECDB7E49C}">
+	<SoundBanks>
+		<WorkUnit Name="Regions" ID="{47468C22-DD98-46A1-84CC-3293EE90A9FC}" OwnerID="{58BE9974-52F0-42A5-A0EF-BF5ECDB7E49C}" PersistMode="Nested">
+			<ChildrenList>
+				<SoundBank Name="cave" ID="{7B243784-6423-4A46-836D-D43B1CA83DCB}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="town" ID="{8586C401-0B06-42BA-9171-91787BC14E3C}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="port" ID="{9C641F1E-5400-4094-A46C-840B8ED4FA42}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="beach" ID="{6891D2FE-24BD-4C38-9553-A2FC5C2AEFCF}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="mountains" ID="{68F96BE9-8523-4F8C-BBAF-D3A8085661C0}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="plains" ID="{E564563B-6A73-447C-85B3-08B52120857C}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

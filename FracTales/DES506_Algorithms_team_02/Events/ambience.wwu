@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{29FCD625-0409-42A4-9F76-1EF728BE7E34}" SchemaVersion="80" RootDocumentID="{497AD17A-CF10-440E-8404-3A8AF2EA68F5}">
+	<Events>
+		<WorkUnit Name="ambience" ID="{29FCD625-0409-42A4-9F76-1EF728BE7E34}" OwnerID="{497AD17A-CF10-440E-8404-3A8AF2EA68F5}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="Town" ID="{DAF53ECB-8CC9-4C18-88A0-EFFB32AA0C7D}" ShortID="146564073">
+					<ChildrenList>
+						<Folder Name="Emitters" ID="{D863C558-DCF2-4D4C-ACCC-A4BD1A4D92D0}" ShortID="521658343"/>
+						<Event Name="event_ambience_town" ID="{F8F9A128-8665-4831-8075-5BEF269B99D3}">
+							<ChildrenList>
+								<Action Name="" ID="{93472524-D7A9-4D81-966A-3F499CFE4A5A}" ShortID="619987171">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_bg_town_birds_loop" ID="{AB0D28FF-4CAF-4D29-88CE-1A5F51DB751F}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

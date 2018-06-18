@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E8A7419F-849D-401C-94F4-F5DA64559134}" SchemaVersion="80" RootDocumentID="{497AD17A-CF10-440E-8404-3A8AF2EA68F5}">
+	<Events>
+		<WorkUnit Name="music" ID="{E8A7419F-849D-401C-94F4-F5DA64559134}" OwnerID="{497AD17A-CF10-440E-8404-3A8AF2EA68F5}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="general" ID="{B148AFA1-2076-438C-A1D2-8D4FEF878611}" ShortID="105749197">
+					<ChildrenList>
+						<Event Name="music_region" ID="{7BBEC494-B92A-4552-8901-64C8B43EC693}">
+							<ChildrenList>
+								<Action Name="" ID="{B46D3FE3-A0F5-4146-9673-7F9EF0F63F7E}" ShortID="873844813">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="music_regions" ID="{90D84D1D-92E2-4636-B2C3-E0D6E0EDD69E}" WorkUnitID="{E016D9A0-6445-4B53-A501-5014C97B6EC3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="soundbank_specific" ID="{D0ECB7D9-78DA-4127-95D9-B857C0F3644E}" ShortID="364074051">
+					<ChildrenList>
+						<Event Name="music_credits" ID="{CBF144B6-00BE-442A-815A-B131BAA23FC9}"/>
+						<Event Name="music_title_screen" ID="{337204C5-BE9D-464A-A412-89071A809375}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

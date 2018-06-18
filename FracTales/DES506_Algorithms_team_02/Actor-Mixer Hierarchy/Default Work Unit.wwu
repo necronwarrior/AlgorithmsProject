@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}" SchemaVersion="80">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="world" ID="{04AE4530-C76A-4226-8EF9-C31081509EAA}" ShortID="501114379">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<WorkUnit Name="ambient" ID="{8A2AEFEF-14F0-4443-B640-1EAA3D0C49F4}" PersistMode="Reference"/>
+						<WorkUnit Name="npcs" ID="{9FADEF33-F83B-4C44-A214-321B71FD54F2}" PersistMode="Reference"/>
+						<WorkUnit Name="world_objects" ID="{CC287363-F8B5-4B76-8393-A460A55292F7}" PersistMode="Reference"/>
+						<WorkUnit Name="player" ID="{026E35F4-4037-4782-BAEC-B01745FF548D}" PersistMode="Reference"/>
+						<WorkUnit Name="enemies" ID="{E974FE5A-EB0B-4945-B016-38B858CBF2BB}" PersistMode="Reference"/>
+						<WorkUnit Name="dialogue" ID="{D28D7403-6FFD-452B-AF8A-FC68AC4B3B48}" PersistMode="Reference"/>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="non_world" ID="{542159F2-0CCF-47F1-BD95-C1C7292BCB56}" ShortID="445522117">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<WorkUnit Name="ui" ID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}" PersistMode="Reference"/>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
