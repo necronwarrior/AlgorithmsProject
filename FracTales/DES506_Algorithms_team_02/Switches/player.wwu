@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E2C9E624-461C-4E6A-9752-2FB605F783DE}" SchemaVersion="80" RootDocumentID="{F543CF61-D551-4694-AEB6-99D51C0E5943}">
+	<Switches>
+		<WorkUnit Name="player" ID="{E2C9E624-461C-4E6A-9752-2FB605F783DE}" OwnerID="{F543CF61-D551-4694-AEB6-99D51C0E5943}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchGroup Name="player_movement_speed" ID="{0EF87E37-18CE-490C-B249-D1244C182210}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="crouch" ID="{49C37899-B19E-4D71-BCD5-1E9812593835}"/>
+						<Switch Name="run" ID="{02B38825-0181-4ED1-99D5-51DB148EDFD9}"/>
+						<Switch Name="walk" ID="{E97B1A68-67E7-4615-9AB0-53AC319CE48A}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="player_movement_speed" ID="{CE186776-CF25-4E9A-B0E5-3EECEDAACC48}"/>
+						<Curve Name="" ID="{D9F32E1D-0033-4FFA-BAAD-04F1F2AAE0D8}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>3</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>250.33784</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>300</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="itemtype_pickup" ID="{A82B1C5E-AAFA-4B16-AB51-3F644D0CA3DF}">
+					<ChildrenList>
+						<Switch Name="map" ID="{DA24746C-7D0D-4AB3-BC15-82FCB8A08D78}"/>
+						<Switch Name="watering_can" ID="{4FD21128-2226-4355-A3E7-3778AAFD43BB}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="item_usability" ID="{87CAD1A4-7859-4A53-BB77-DEC9253686C9}">
+					<ChildrenList>
+						<Switch Name="collectable" ID="{A9DEAF9B-AB0B-4A30-96EA-B3B022F9709C}"/>
+						<Switch Name="usable" ID="{5AC89B8A-F19F-4D79-9532-A1C58725FB1C}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

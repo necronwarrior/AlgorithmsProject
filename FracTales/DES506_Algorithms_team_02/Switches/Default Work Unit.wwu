@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F543CF61-D551-4694-AEB6-99D51C0E5943}" SchemaVersion="80">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{F543CF61-D551-4694-AEB6-99D51C0E5943}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="general" ID="{79E22627-062D-4585-B570-C50242E768AC}" PersistMode="Reference"/>
+				<WorkUnit Name="player" ID="{E2C9E624-461C-4E6A-9752-2FB605F783DE}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
