@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
+	<RootPaths>
+		<ProjectRoot>C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1519764506" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Regions\plains</ObjectPath>
+			<ShortName>plains</ShortName>
+			<Path>plains.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1608679832" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Regions\port</ObjectPath>
+			<ShortName>port</ShortName>
+			<Path>port.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2201105581" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Non_game\Credits</ObjectPath>
+			<ShortName>Credits</ShortName>
+			<Path>Credits.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3091570009" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Regions\town</ObjectPath>
+			<ShortName>town</ShortName>
+			<Path>town.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3853285476" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Non_game\Title_Screen</ObjectPath>
+			<ShortName>Title_Screen</ShortName>
+			<Path>Title_Screen.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3876032357" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Days\day_01</ObjectPath>
+			<ShortName>day_01</ShortName>
+			<Path>day_01.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3876032358" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Days\day_02</ObjectPath>
+			<ShortName>day_02</ShortName>
+			<Path>day_02.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3992294315" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Regions\mountains</ObjectPath>
+			<ShortName>mountains</ShortName>
+			<Path>mountains.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4075332698" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Regions\beach</ObjectPath>
+			<ShortName>beach</ShortName>
+			<Path>beach.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4122393694" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Regions\cave</ObjectPath>
+			<ShortName>cave</ShortName>
+			<Path>cave.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

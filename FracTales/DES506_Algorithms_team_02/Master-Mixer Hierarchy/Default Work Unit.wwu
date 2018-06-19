@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}" SchemaVersion="80">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="fields" ID="{CD731322-4759-4A7B-BD88-934F6E8A9194}">
+							<ChildrenList>
+								<AuxBus Name="field_reverb" ID="{84C28163-90BA-46F5-B555-38B0E514BF7A}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="mountains" ID="{D4252E3C-26DD-49AE-A5E8-613335708C9B}">
+							<ChildrenList>
+								<AuxBus Name="mountains_reverb" ID="{ECCBB1F5-29A3-4E89-85F4-611B9E3438DB}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="town" ID="{C5B41C52-7B09-49A8-AB8D-5F93A43008BF}">
+							<ChildrenList>
+								<AuxBus Name="town_reverb" ID="{88FBE25D-504D-499C-ABCD-6250D5DF7477}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="port" ID="{731A799A-1D48-47CC-8FA7-3EA9AD42F632}">
+							<ChildrenList>
+								<AuxBus Name="port_reverb" ID="{E4901CB3-6D41-4ED9-A605-43704CC4B35E}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="beach" ID="{A5C6FE8D-6B7A-4FEB-9FF1-E37B64B63F2D}">
+							<ChildrenList>
+								<AuxBus Name="beach_reverb" ID="{00CE22E0-D8C9-4EB2-87F2-5FC56574CA83}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="cave" ID="{16E67930-2DD6-4586-9870-D1095AB5BEA8}">
+							<ChildrenList>
+								<AuxBus Name="cave_reverb" ID="{A857F213-F5BF-4AAE-9DC4-EA2F76E6153B}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="forest" ID="{091E0443-4EBF-4884-84A4-2FFBAA7A2A50}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+						<Bus Name="lake" ID="{C5FA43DF-4847-442E-ADBA-6282E449418C}">
+							<ChildrenList>
+								<AuxBus Name="lake_reverb" ID="{AA5BD10C-132E-44D5-AFB4-714330996B36}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="player" ID="{1388FAFE-59EB-42D0-A064-F60E67271206}">
+							<ChildrenList>
+								<Bus Name="footsteps" ID="{E0902819-B7D0-4BE2-963C-D6D936E58CED}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+											<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="weather" ID="{1652EEAA-E94E-4D95-B431-EDD67D18FBC4}">
+							<ChildrenList>
+								<Bus Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
+				<MotionBus Name="Master Motion Bus" ID="{20A630BA-3398-4676-B927-1004DFE41FD8}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

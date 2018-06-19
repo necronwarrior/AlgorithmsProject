@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{93E555CD-4DB7-47E3-9DE2-D264F4335650}" SchemaVersion="80" RootDocumentID="{58BE9974-52F0-42A5-A0EF-BF5ECDB7E49C}">
+	<SoundBanks>
+		<WorkUnit Name="Non_game" ID="{93E555CD-4DB7-47E3-9DE2-D264F4335650}" OwnerID="{58BE9974-52F0-42A5-A0EF-BF5ECDB7E49C}" PersistMode="Nested">
+			<ChildrenList>
+				<SoundBank Name="Credits" ID="{1723FCDF-759D-42AC-A5FC-C772CFD3A000}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Title_Screen" ID="{696E6AEA-5D04-4F21-9940-DC6B624C84F2}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

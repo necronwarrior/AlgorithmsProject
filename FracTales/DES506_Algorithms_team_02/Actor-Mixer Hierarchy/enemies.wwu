@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E974FE5A-EB0B-4945-B016-38B858CBF2BB}" SchemaVersion="80" RootDocumentID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}">
+	<AudioObjects>
+		<WorkUnit Name="enemies" ID="{E974FE5A-EB0B-4945-B016-38B858CBF2BB}" OwnerID="{04AE4530-C76A-4226-8EF9-C31081509EAA}" PersistMode="Nested">
+			<Comment>All enemy audio.</Comment>
+			<ChildrenList>
+				<ActorMixer Name="enemy_shouts" ID="{994E7D87-C86B-4567-8EFD-E568F9310917}" ShortID="778670046">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

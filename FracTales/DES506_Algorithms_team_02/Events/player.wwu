@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{68038EDD-B311-4C02-9799-2EFCCEFE6959}" SchemaVersion="80" RootDocumentID="{497AD17A-CF10-440E-8404-3A8AF2EA68F5}">
+	<Events>
+		<WorkUnit Name="player" ID="{68038EDD-B311-4C02-9799-2EFCCEFE6959}" OwnerID="{497AD17A-CF10-440E-8404-3A8AF2EA68F5}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="movements" ID="{7A66E116-BEF2-4D40-9A2A-BCA5F67AE523}" ShortID="513692469">
+					<ChildrenList>
+						<Folder Name="footsteps" ID="{1C2B16E6-8CE3-4C61-B6CD-4E19C7255175}" ShortID="659077785">
+							<Comment>Left and right footstep events.</Comment>
+							<ChildrenList>
+								<Event Name="footsteps_material" ID="{B93B602C-1ED1-42DA-BB8A-9619F85DCE43}">
+									<ChildrenList>
+										<Action Name="" ID="{F133C6BF-C023-43A0-BFFC-D0D2F3C37BEF}" ShortID="642403261">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="footstep_surface" ID="{A5EBF800-C7E7-457E-BBE6-C77B66B03955}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Folder Name="run" ID="{39A0AA44-F7A4-490B-90AC-8614625A89E4}" ShortID="392478555"/>
+								<Folder Name="walk" ID="{C03D2EA4-D545-4F42-A855-DEFC792898FE}" ShortID="136897551">
+									<ChildrenList>
+										<Event Name="footsteps_grass_short_walk" ID="{ADBB42C2-1AEB-4F2E-B92B-5A0004F136C1}">
+											<ChildrenList>
+												<Action Name="" ID="{0033E911-D35B-442B-8FFA-6EB38F81BFAC}" ShortID="1051398031">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="player_footstep_grass_short_walk" ID="{014DD259-FA6B-4B74-9EEF-E492354EB106}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="footsteps_wood_walk" ID="{853F714D-7A33-4B46-95C8-E01889BDDE1B}">
+											<ChildrenList>
+												<Action Name="" ID="{F0ACF5E3-7753-4229-B641-86FEBE0C2E82}" ShortID="686165604">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="player_footsteps_wood_walk" ID="{08EF9314-439A-4598-AD15-A6E4FA3B4831}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="crouch" ID="{A00DE749-9320-47DD-8518-4C9D70AE8598}" ShortID="357410079"/>
+								<Event Name="play_player_footsteps" ID="{A092C109-7EF1-4E1A-9395-FCE31D41556C}">
+									<ChildrenList>
+										<Action Name="" ID="{3276A33F-6622-4C89-A03E-EDB0BF3063EB}" ShortID="390522222">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="player_footstep_grass_short_run" ID="{B38F9420-844F-4542-8DFE-B741AFF77926}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="jumping" ID="{BD2BF3C4-3119-4AC7-834A-F619D102A09F}" ShortID="134701801">
+							<ChildrenList>
+								<Event Name="player_jump" ID="{A3D4A173-BC0F-47B9-8656-446056F38D29}">
+									<ChildrenList>
+										<Action Name="" ID="{3A3506F3-F250-4701-B56D-49D8A0C7F530}" ShortID="231364044">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="player_jump" ID="{F83CE1BB-EE01-4084-AD98-D66A961EF161}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="player_land" ID="{A801D418-09E6-4CCB-BF94-C636C6F3C633}">
+									<ChildrenList>
+										<Action Name="" ID="{A00496BB-E970-4DBD-82EF-EDDFAD166FA2}" ShortID="98326133">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="player_land" ID="{1FFB9207-1ED6-48E4-AAB6-F29CD004581D}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Event Name="player_damage" ID="{EF45671D-88ED-4C46-9E4D-A8523379D050}">
+					<ChildrenList>
+						<Action Name="" ID="{5F0F14C7-2CDC-4149-816F-2DD247492BC3}" ShortID="880142749">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Quiet_Water" ID="{32D7E3DB-D80F-4B62-965F-13570B031E0D}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="actions" ID="{2A92279E-3716-4CD2-AABD-36847D14D2E3}" ShortID="29714053">
+					<ChildrenList>
+						<Event Name="pick_up_watering_can" ID="{F60C3BF3-9EC6-4D7C-B217-62AA6AB3CCBA}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

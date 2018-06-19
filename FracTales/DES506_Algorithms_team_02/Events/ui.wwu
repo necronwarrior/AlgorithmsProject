@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D6E37829-5B11-4097-AF4D-BB90B7F656D8}" SchemaVersion="80" RootDocumentID="{497AD17A-CF10-440E-8404-3A8AF2EA68F5}">
+	<Events>
+		<WorkUnit Name="ui" ID="{D6E37829-5B11-4097-AF4D-BB90B7F656D8}" OwnerID="{497AD17A-CF10-440E-8404-3A8AF2EA68F5}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="generic" ID="{C504B1CD-D584-4785-9233-4AF7F35DD86E}" ShortID="599551786">
+					<ChildrenList>
+						<Event Name="ui_button_down" ID="{3981D0F0-459C-4D72-898B-95589808230C}">
+							<ChildrenList>
+								<Action Name="" ID="{F53E2A0D-60DA-40C8-89F9-81C7F850FC48}" ShortID="587183215">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ui_button_down" ID="{88A8F047-AB5D-485E-8954-F9E035469B9F}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_button_up" ID="{7BB6E707-14F1-46A3-8F4C-87B5BE0E47AD}">
+							<ChildrenList>
+								<Action Name="" ID="{51A8E1FA-073B-44E9-AA74-FD54E2F946FF}" ShortID="662921963">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ui_button_up" ID="{151E942B-BBC9-4D34-9EB7-E82ACD6F2F2A}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_button_enter" ID="{50BD7A17-D240-4FF0-891A-FAE91609C2FD}">
+							<ChildrenList>
+								<Action Name="" ID="{4410D6B9-F1A3-4504-B02A-2A6195018E1D}" ShortID="571515272">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ui_button_enter" ID="{7EFC6733-243A-4DDE-A36E-1A95367CC382}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_button_exit" ID="{2E50B851-FDAB-41E9-9AFE-F7F0FA92B43B}">
+							<ChildrenList>
+								<Action Name="" ID="{4E778B85-47AD-4D0C-99E9-E1B13EDC3E94}" ShortID="529806525">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ui_button_exit" ID="{C15A7108-8791-4DDC-A62D-0530CD215198}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="HUD" ID="{4201DAAD-21CB-4F39-89BE-572FC9348C40}" ShortID="476858417"/>
+				<Folder Name="menu" ID="{CBA19312-4AEB-493E-B096-834DD84FCDC9}" ShortID="665865313">
+					<ChildrenList>
+						<Event Name="ui_menu_pause" ID="{465EFFE9-E789-431A-A461-2629BB13A55E}">
+							<ChildrenList>
+								<Action Name="" ID="{2F750FB3-1D30-4FDC-B8E1-C83A82BD9418}" ShortID="438353537">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ui_menu_pause" ID="{62CE0233-6852-4700-AFA1-4A8BFF84A36E}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_menu_select" ID="{3BEECA12-E7EF-4D44-9CC7-C2DD165DFACC}">
+							<ChildrenList>
+								<Action Name="" ID="{95682847-0009-41C7-9781-3D9797CBDD97}" ShortID="376869548">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ui_menu_select" ID="{6FCF0B8C-7378-4FA7-B419-5C4B303A375E}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_menu_resume" ID="{F377ACC1-88A1-4629-AC62-90FADDA8747D}">
+							<ChildrenList>
+								<Action Name="" ID="{A95AE1FC-846D-4B1F-8F64-D46CFB12517B}" ShortID="852433521">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ui_menu_resume" ID="{C8F5F4E5-D7F7-46F7-87A6-802256E87F1D}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_menu_navigate" ID="{CA55F67D-10A2-446B-8DFC-3877B0E884CD}">
+							<ChildrenList>
+								<Action Name="" ID="{7306506B-9014-4B62-A6E8-5EF624A40A5D}" ShortID="618033997">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ui_menu_navigate" ID="{A69A09D7-109D-4E78-9323-DE7C7D5B48D9}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="inventory" ID="{C6DDBFBA-8641-4839-9AF1-9EFB0085540D}" ShortID="373259636">
+					<ChildrenList>
+						<Event Name="ui_inventory_open" ID="{6FD0F32E-81AB-4D3B-9F35-CC4D3E17F73E}">
+							<ChildrenList>
+								<Action Name="" ID="{42DE0C6D-0382-464C-B862-A1DE4242215E}" ShortID="811631247">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ui_inventory_open" ID="{96ADF25D-03C5-4F7B-B188-92D80F4CFCE6}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_inventory_close" ID="{19ED326B-D3F1-4726-BFB6-0D0831CCC3E7}">
+							<ChildrenList>
+								<Action Name="" ID="{D46A4132-FCE2-4C87-8668-88AB436449FA}" ShortID="2754078">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ui_inventory_close" ID="{B5C2FCA7-17B9-4EB8-84D0-DAC786294E1C}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
