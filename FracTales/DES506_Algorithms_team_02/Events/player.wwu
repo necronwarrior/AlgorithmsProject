@@ -8,63 +8,18 @@
 						<Folder Name="footsteps" ID="{1C2B16E6-8CE3-4C61-B6CD-4E19C7255175}" ShortID="659077785">
 							<Comment>Left and right footstep events.</Comment>
 							<ChildrenList>
-								<Event Name="footsteps_material" ID="{B93B602C-1ED1-42DA-BB8A-9619F85DCE43}">
-									<ChildrenList>
-										<Action Name="" ID="{F133C6BF-C023-43A0-BFFC-D0D2F3C37BEF}" ShortID="642403261">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="footstep_surface" ID="{A5EBF800-C7E7-457E-BBE6-C77B66B03955}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Folder Name="run" ID="{39A0AA44-F7A4-490B-90AC-8614625A89E4}" ShortID="392478555"/>
-								<Folder Name="walk" ID="{C03D2EA4-D545-4F42-A855-DEFC792898FE}" ShortID="136897551">
-									<ChildrenList>
-										<Event Name="footsteps_grass_short_walk" ID="{ADBB42C2-1AEB-4F2E-B92B-5A0004F136C1}">
-											<ChildrenList>
-												<Action Name="" ID="{0033E911-D35B-442B-8FFA-6EB38F81BFAC}" ShortID="1051398031">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="player_footstep_grass_short_walk" ID="{014DD259-FA6B-4B74-9EEF-E492354EB106}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="footsteps_wood_walk" ID="{853F714D-7A33-4B46-95C8-E01889BDDE1B}">
-											<ChildrenList>
-												<Action Name="" ID="{F0ACF5E3-7753-4229-B641-86FEBE0C2E82}" ShortID="686165604">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="player_footsteps_wood_walk" ID="{08EF9314-439A-4598-AD15-A6E4FA3B4831}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-									</ChildrenList>
-								</Folder>
+								<Folder Name="walk" ID="{C03D2EA4-D545-4F42-A855-DEFC792898FE}" ShortID="136897551"/>
 								<Folder Name="crouch" ID="{A00DE749-9320-47DD-8518-4C9D70AE8598}" ShortID="357410079"/>
 								<Event Name="play_player_footsteps" ID="{A092C109-7EF1-4E1A-9395-FCE31D41556C}">
 									<ChildrenList>
-										<Action Name="" ID="{3276A33F-6622-4C89-A03E-EDB0BF3063EB}" ShortID="390522222">
+										<Action Name="" ID="{9FC451B3-477B-4CFD-B471-1CB0C5B51499}" ShortID="440345060">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="player_footstep_grass_short_run" ID="{B38F9420-844F-4542-8DFE-B741AFF77926}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+													<ObjectRef Name="player_footstep_type" ID="{D075680F-C2F2-47C1-ABAE-C5625F7B7D75}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -123,6 +78,112 @@
 				<Folder Name="actions" ID="{2A92279E-3716-4CD2-AABD-36847D14D2E3}" ShortID="29714053">
 					<ChildrenList>
 						<Event Name="pick_up_watering_can" ID="{F60C3BF3-9EC6-4D7C-B217-62AA6AB3CCBA}"/>
+						<Folder Name="typing" ID="{A0F3F9BB-CBCA-4B7A-8279-07AB71CEE21E}" ShortID="78202894">
+							<ChildrenList>
+								<Event Name="type_letter" ID="{7D7A2363-D2FE-4441-B7D4-627E9CDE047C}">
+									<ChildrenList>
+										<Action Name="" ID="{B452F85E-08EA-4583-A8AB-14B17E5F4353}" ShortID="732259512">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="key_letter" ID="{BC4DC993-9835-4D10-A125-39A47739EBF3}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="type_number" ID="{D3BEBEE5-82CA-4B33-8E59-1C0C08FAF078}">
+									<ChildrenList>
+										<Action Name="" ID="{A656EB37-45A9-4FDC-85D0-0A536F09621E}" ShortID="41464041">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="key_number" ID="{2582898D-BB4F-4881-A2DD-FFBE19B7E6C9}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="type_spacebar" ID="{594A5078-936E-4168-8BC3-8E21E0E0AD39}">
+									<ChildrenList>
+										<Action Name="" ID="{39A84828-6D73-4CF1-B375-7E14F6B9BD80}" ShortID="415232971">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="key_spacebar" ID="{B09A060E-1BD7-4583-9D2E-38C0412FC11A}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="type_enter" ID="{2F50AFE7-BC90-44C1-8E19-86997867DB04}">
+									<ChildrenList>
+										<Action Name="" ID="{9CD4FE28-E245-439B-96EF-09A9F9EB3566}" ShortID="203790017">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="key_enter" ID="{A5C7D012-D8C3-4B3B-BAF3-01CEAEADCE58}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="type_backspace" ID="{7541F229-713E-46ED-BC78-F308C830F0EE}">
+									<ChildrenList>
+										<Action Name="" ID="{DA74734B-D275-4DAC-A12C-C49D8E3D46C3}" ShortID="928118257">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="key_backspace" ID="{8BB43E6A-C4AE-4A81-86A5-4299B8145640}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="writing" ID="{D140156F-50AE-4E72-9FA5-281F33D81B2B}" ShortID="714840901">
+							<ChildrenList>
+								<Event Name="writing_loop_start" ID="{D1FBA8CB-A47F-4AC4-A77A-904EC6A73F47}">
+									<ChildrenList>
+										<Action Name="" ID="{0D64ED07-ED6E-4844-A0E7-77484D8B07FE}" ShortID="299526679">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_writing_loop" ID="{8BE3601D-E8D3-41EE-9CF5-4972B1E9CB6E}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="writing_loop_stop" ID="{48C04787-BD19-4DD2-9DEB-CDE9F07BE09C}">
+									<ChildrenList>
+										<Action Name="" ID="{39695733-F07B-4FFB-81A9-6491C714C8EF}" ShortID="756697979">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_writing_loop" ID="{8BE3601D-E8D3-41EE-9CF5-4972B1E9CB6E}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

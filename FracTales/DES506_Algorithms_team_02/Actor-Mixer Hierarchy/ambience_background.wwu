@@ -657,7 +657,7 @@
 												</Sound>
 											</ChildrenList>
 											<BlendTrackList>
-												<BlendTrack Name="New Blend Track" ID="{380249AA-CB72-403A-930D-165D146DC438}" ShortID="336027755">
+												<BlendTrack Name="rain" ID="{380249AA-CB72-403A-930D-165D146DC438}" ShortID="336027755">
 													<PropertyList>
 														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
@@ -720,14 +720,14 @@
 															<CrossfadingInfo>
 																<LeftEdgePos>0</LeftEdgePos>
 																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>64.4182394179895</RightEdgePos>
+																<RightEdgePos>79.3653293650794</RightEdgePos>
 																<RightFadingMode>Automatic</RightFadingMode>
 															</CrossfadingInfo>
 														</BlendTrackAssoc>
 														<BlendTrackAssoc>
 															<ItemRef Name="rain_heavy_loop_01" ID="{C34EAFFB-030A-4861-AFEA-2F150D2594A1}"/>
 															<CrossfadingInfo>
-																<LeftEdgePos>42.1166521164021</LeftEdgePos>
+																<LeftEdgePos>27.8309378306878</LeftEdgePos>
 																<LeftFadingMode>Automatic</LeftFadingMode>
 																<RightEdgePos>100</RightEdgePos>
 																<RightFadingMode>Automatic</RightFadingMode>
@@ -735,7 +735,7 @@
 														</BlendTrackAssoc>
 													</BlendTrackAssocList>
 												</BlendTrack>
-												<BlendTrack Name="T&amp;L" ID="{47922636-4CE5-417D-9A18-986CEAEEDC8B}" ShortID="668860360">
+												<BlendTrack Name="thunder" ID="{47922636-4CE5-417D-9A18-986CEAEEDC8B}" ShortID="668860360">
 													<PropertyList>
 														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
 														<Property Name="Lowpass" Type="int16">
@@ -743,7 +743,7 @@
 																<RTPC Name="" ID="{0A60A4D3-3AFC-469C-AC42-7EE19A87F694}" ShortID="729319802">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
-																			<ObjectRef Name="rain_intensity" ID="{AB54190B-0C5D-4C34-89FB-C7488D42F543}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																			<ObjectRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<Curve Name="" ID="{CBE60EB4-EA36-42BE-AF11-9AB3E8E8BCA1}">
@@ -791,7 +791,7 @@
 																<RTPC Name="" ID="{4CE4DB99-07F4-400A-AA4B-28328641B38D}" ShortID="569057329">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
-																			<ObjectRef Name="rain_intensity" ID="{AB54190B-0C5D-4C34-89FB-C7488D42F543}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																			<ObjectRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<Curve Name="" ID="{C95C6217-CC9A-4463-A531-F95EF944E3B6}">
@@ -805,8 +805,8 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>30.42328</XPos>
-																				<YPos>-6.82664</YPos>
+																				<XPos>29.7619</XPos>
+																				<YPos>-200</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
@@ -832,7 +832,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="LayerCrossFadeControlInput">
-															<ObjectRef Name="rain_intensity" ID="{AB54190B-0C5D-4C34-89FB-C7488D42F543}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+															<ObjectRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
 														</Reference>
 													</ReferenceList>
 													<BlendTrackAssocList>
@@ -861,7 +861,7 @@
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="rain" ID="{2B8501CA-7D01-460E-925D-1B9AED9D9176}"/>
-										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+										<DefaultSwitchRef Name="None" ID="{3A99B726-658F-4DCA-B6A1-92232FFE0745}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="ambience_rain_intensity" ID="{A970BF43-3E3C-40CD-9451-1B7D0D1C27C3}"/>

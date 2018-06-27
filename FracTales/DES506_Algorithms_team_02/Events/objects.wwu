@@ -5,7 +5,230 @@
 			<ChildrenList>
 				<Folder Name="doors" ID="{3CEF08F2-6E8D-4CE9-AE5B-53084E2678C6}" ShortID="244090001">
 					<ChildrenList>
-						<Event Name="door_close" ID="{88790322-AD71-457A-B647-3CB88C436BC5}"/>
+						<Event Name="door_open_start" ID="{E8B40B86-3092-46F1-9B92-93AC2C3E0AE7}">
+							<ChildrenList>
+								<Action Name="" ID="{9D5FFA8C-262B-4D5F-B5E8-D0465118B591}" ShortID="1000276898">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="door_movement" ID="{9FA83315-1516-4BA2-8F1C-0DAC457EC266}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{03F9BC00-8121-4DEB-8335-4C248AC038C3}" ShortID="1015848995">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="open" ID="{29D850E2-1B3A-4608-ACA4-C85F77D67EFC}" WorkUnitID="{79E22627-062D-4585-B570-C50242E768AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="door_close_start" ID="{E934CFED-C838-4C4C-A33C-CCB5F243271D}">
+							<ChildrenList>
+								<Action Name="" ID="{7EA25116-20FC-446C-AFA8-4A5B2D907929}" ShortID="1048877440">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="door_movement" ID="{9FA83315-1516-4BA2-8F1C-0DAC457EC266}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3DA75031-0274-4D32-9DF5-1A6BFD463F5E}" ShortID="445292505">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="close" ID="{0F78FE01-577A-4E1D-9C02-623D79EAF0F5}" WorkUnitID="{79E22627-062D-4585-B570-C50242E768AC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="alarm_clock" ID="{1DC35B35-DD95-495C-8D64-B1D723A7F6F2}" ShortID="632722038">
+					<ChildrenList>
+						<Event Name="alarm_clock_start" ID="{A3447FE2-48E2-4996-B05E-264B839DC20C}">
+							<ChildrenList>
+								<Action Name="" ID="{E365B8D2-7877-4AF1-8421-FAA0FA12771F}" ShortID="193087465">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_alarm_clock_on" ID="{BB81D966-1606-462A-B87D-E4920E255A69}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="alarm_clock_stop" ID="{4ACAF48B-FC4D-4572-B90C-90D20CE79B94}">
+							<ChildrenList>
+								<Action Name="" ID="{C5143B3B-E146-4EF8-93EF-B7EA6FD55C99}" ShortID="809135943">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_alarm_clock_on" ID="{BB81D966-1606-462A-B87D-E4920E255A69}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{305E5CC8-6DEA-4B1C-9DF4-5AD3AF451A10}" ShortID="674171712">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_alarm_clock_off" ID="{C8DE7A98-8A7F-40FF-ACCB-2EB24882CE9B}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{399B6EB9-D22A-4FF0-840B-59A01772C96E}" ShortID="415085911">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_alarm_turn_off" ID="{94B037D6-ECFD-4C63-99C2-098DAA48FB64}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="toilet" ID="{8A546C6A-8F1F-4919-8914-77201F8F0C55}" ShortID="343360651">
+					<ChildrenList>
+						<Event Name="toilet_flush_start" ID="{8F9B1D25-3E01-4FCF-BADE-F5EBD6CDBA78}">
+							<ChildrenList>
+								<Action Name="" ID="{2A3D9D94-B48A-4BE2-ABED-E30A802D1E09}" ShortID="162332149">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_flushing_toilet" ID="{6784ED0E-4563-45FC-AA56-3A5297E162F1}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="kitchen" ID="{FC9C6CCA-E2F0-49E2-AC59-B11149EEBEE5}" ShortID="384584963">
+					<ChildrenList>
+						<Event Name="kitchen_sounds_start" ID="{FFDCB822-7C33-432A-B9BA-AA90D3C52A99}">
+							<ChildrenList>
+								<Action Name="" ID="{8DFCF3AC-64F9-4F7E-82AF-2855D871B2E3}" ShortID="4936101">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="kitchen_blend" ID="{7E24C398-C5A7-40C8-88ED-3097642793AD}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="kitchen_sounds_stop" ID="{A154B25B-05A4-4E05-A274-20B7ADA96DB8}">
+							<ChildrenList>
+								<Action Name="" ID="{E35F63D9-CECB-4B10-93FB-4C3E20FFC5FB}" ShortID="881317907">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="kitchen_blend" ID="{7E24C398-C5A7-40C8-88ED-3097642793AD}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="sink" ID="{FC776F61-4444-4290-A2CB-5F2180A19714}" ShortID="716489375">
+					<ChildrenList>
+						<Event Name="sink_tap_start" ID="{8B8B8912-3921-4622-A436-379959C0087F}">
+							<ChildrenList>
+								<Action Name="" ID="{E57AB9BE-5FA0-41D7-992E-AE2FCEDE4D63}" ShortID="577862810">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="tap_on" ID="{4FFFFB37-AA43-4A7E-82D7-150C5A1123D9}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sink_tap_stop" ID="{D7CF4832-472A-44C5-A5C0-18AC03BA06C7}">
+							<ChildrenList>
+								<Action Name="" ID="{9A5AEDFB-B6E9-414F-B9E9-D31CC97CED67}" ShortID="627124544">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="tap_on" ID="{4FFFFB37-AA43-4A7E-82D7-150C5A1123D9}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F67C8876-6B8D-4345-A832-CF752B97472D}" ShortID="719965188">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_tap_off" ID="{2EECDF2B-07C9-416A-B257-C16EE64B41C4}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="treadmill" ID="{1C1A0809-2190-4E13-ACD2-47B8BCFF52BD}" ShortID="839977092">
+					<ChildrenList>
+						<Event Name="treadmill_start" ID="{5327C63A-F2DE-4BD9-A421-4887950A7438}">
+							<ChildrenList>
+								<Action Name="" ID="{05D7E336-11F7-4F13-BEFF-9D4276E49487}" ShortID="667823439">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_player_treadmill_loop" ID="{2650D6B0-1247-44B7-A42C-BB939AF5F3C4}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="treadmill_stop" ID="{E71A43CE-34DE-4456-B97B-66961E945A8C}">
+							<ChildrenList>
+								<Action Name="" ID="{3A90A51F-EECA-479F-9DB8-DEE322EF8EC5}" ShortID="891052446">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_player_treadmill_loop" ID="{2650D6B0-1247-44B7-A42C-BB939AF5F3C4}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

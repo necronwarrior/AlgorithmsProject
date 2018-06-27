@@ -10,7 +10,7 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="amb_emit_birds_forest_long" ID="{BBE4D93F-A948-45A6-A9D8-A31CB0744E1A}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+							<ObjectRef Name="amb_emit_forest_birds_long" ID="{BBE4D93F-A948-45A6-A9D8-A31CB0744E1A}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
@@ -18,7 +18,7 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="amb_emit_birds_forest_short" ID="{9504D84C-2C50-4C8F-AEA1-BCD975D89B9E}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+							<ObjectRef Name="amb_emit_forest_birds_short" ID="{9504D84C-2C50-4C8F-AEA1-BCD975D89B9E}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
@@ -153,7 +153,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_from_sea_rocks" ID="{46842EBB-BC5D-43D4-A48F-FB0A31EC971A}"/>
-							<Value>0</Value>
+							<Value>50.1322751322751</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
@@ -181,7 +181,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}"/>
-							<Value>531</Value>
+							<Value>-234.343915343916</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_to_cave_entrance" ID="{75827670-F7FF-4868-9CC1-B633606BB4E7}"/>
@@ -197,7 +197,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="rain_intensity" ID="{AB54190B-0C5D-4C34-89FB-C7488D42F543}"/>
-							<Value>31</Value>
+							<Value>41.466</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
@@ -217,20 +217,25 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="player_movement_speed" ID="{CE186776-CF25-4E9A-B0E5-3EECEDAACC48}"/>
-							<Value>187</Value>
+							<Value>28</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="water_speed" ID="{5A7BDAFD-EFAA-4F59-8877-6EB2092CDA28}"/>
-							<Value>77.1164021164021</Value>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="raining" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
+						<CurrentSwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 						<CurrentSwitchRef Name="day" ID="{B1A1A235-C1FB-4D6C-A811-15EC143E61AA}"/>
 						<CurrentSwitchRef Name="crouch" ID="{49C37899-B19E-4D71-BCD5-1E9812593835}"/>
+						<CurrentSwitchRef Name="close" ID="{0F78FE01-577A-4E1D-9C02-623D79EAF0F5}"/>
 						<CurrentSwitchRef Name="collectable" ID="{A9DEAF9B-AB0B-4A30-96EA-B3B022F9709C}"/>
 						<CurrentSwitchRef Name="map" ID="{DA24746C-7D0D-4AB3-BC15-82FCB8A08D78}"/>
 					</CurrentSwitchList>

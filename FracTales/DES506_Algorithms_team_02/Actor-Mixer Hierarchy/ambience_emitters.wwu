@@ -4,28 +4,6 @@
 		<WorkUnit Name="ambience_emitters" ID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}" OwnerID="{E5886737-BE7A-4137-8074-C0FF99C96D86}" PersistMode="Nested">
 			<Comment>All ambience emitters (3D).</Comment>
 			<ChildrenList>
-				<ActorMixer Name="birds" ID="{A2C4A3EA-9B87-4047-9421-56A536FCD515}" ShortID="215762464">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<RandomSequenceContainer Name="ambience_emitters_birds" ID="{5F41505B-A165-40E1-862E-E1BEC370D701}" ShortID="844841581">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-								</Reference>
-							</ReferenceList>
-						</RandomSequenceContainer>
-					</ChildrenList>
-				</ActorMixer>
 				<ActorMixer Name="insects" ID="{0728EC84-9B56-4240-8778-07CDB7B8EA40}" ShortID="676324016">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -118,7 +96,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="amb_emit_birds_forest_short" ID="{9504D84C-2C50-4C8F-AEA1-BCD975D89B9E}" ShortID="322411181">
+								<RandomSequenceContainer Name="amb_emit_forest_birds_short" ID="{9504D84C-2C50-4C8F-AEA1-BCD975D89B9E}" ShortID="322411181">
 									<PropertyList>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -490,7 +468,7 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="amb_emit_birds_forest_long" ID="{BBE4D93F-A948-45A6-A9D8-A31CB0744E1A}" ShortID="362050128">
+								<RandomSequenceContainer Name="amb_emit_forest_birds_long" ID="{BBE4D93F-A948-45A6-A9D8-A31CB0744E1A}" ShortID="362050128">
 									<PropertyList>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -824,6 +802,56 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="amb_emit_owls" ID="{8875ADB4-AEEB-4425-9F73-B4B55EC04C02}" ShortID="552161836">
+									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="amb_emit_small_birds" ID="{3A8BB9E6-7E9E-408E-95EB-C3FAEC0B4C63}" ShortID="312245907">
+									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="wolves" ID="{909083BF-B980-4824-AC03-3E1A3457EE7E}" ShortID="384526889">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="amb_emit_wolves" ID="{EBE08D98-D3D2-4AB2-A0B4-4D7BDF68EBEA}" ShortID="664665733">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
@@ -1415,79 +1443,6 @@
 										</BlendTrackAssoc>
 									</BlendTrackAssocList>
 								</BlendTrack>
-								<BlendTrack Name="amb_wind_low" ID="{6B9344C8-16A1-4626-BAB5-4F1D215F090E}" ShortID="320607272">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<RTPCList>
-												<RTPC Name="" ID="{6080C008-115C-4983-BE06-228C470EC7EB}" ShortID="614243901">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{EC5BFE4B-9B3F-4110-B7EE-FA8B898DF98E}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>-300</XPos>
-																<YPos>-200</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-6.63416</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>2865.74074</XPos>
-																<YPos>-0.07107</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>26000</XPos>
-																<YPos>-0.81236</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-										</Reference>
-									</ReferenceList>
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="procedural_wind_low" ID="{4BE2F9BF-5543-42B4-AC0D-2A0290EDD3C1}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>-300</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>2830.95238095238</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-								<BlendTrack Name="amb_wind_mid" ID="{7F8D70ED-E9D9-4FC9-AEC2-EBD8D2305AF1}" ShortID="370873336">
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="procedural_wind_mid" ID="{C5FE1187-5C8A-4641-B555-0758F600E3B1}"/>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-								<BlendTrack Name="amb_wind_high" ID="{9A322D42-B73B-41BE-8F9D-A7073502B86E}" ShortID="239291187">
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="procedural_wind_high" ID="{AFC63774-4EA6-4FB2-9B9D-59CD3DC0C7D9}"/>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
 						<BlendContainer Name="amb_emitter_wind_grass" ID="{00CC5D63-332A-409E-8573-52E528EC2377}" ShortID="817820950">
@@ -1503,11 +1458,6 @@
 								<Sound Name="amb_wind_grass" ID="{FEAF4834-F760-468D-AE41-3FCC56306611}" ShortID="253547830">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-810</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-4</Value>
@@ -1782,6 +1732,168 @@
 									</BlendTrackAssocList>
 								</BlendTrack>
 							</BlendTrackList>
+						</BlendContainer>
+						<BlendContainer Name="amb_emitter_wind_trees" ID="{14F1BE33-113F-4012-A09B-6FCE614BB6EB}" ShortID="36281385">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_wind_grass" ID="{540BD643-64A9-47F5-A875-F0F7809BB893}" ShortID="481671876">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-810</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="amb_wind_grass" ID="{14A2F70F-113E-40C6-9A9F-C8A07E9BB121}" ShortID="262753336" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
+											<PropertyList>
+												<Property Name="AverageVelocity" Type="Real32" Value="-1770"/>
+												<Property Name="DirectionRandom" Type="Real32" Value="50"/>
+												<Property Name="FrequencyScale" Type="Real32" Value="3.79"/>
+												<Property Name="GainOffset" Type="Real32" Value="12.6"/>
+												<Property Name="GainOffsetAutomate" Type="bool" Value="True"/>
+												<Property Name="Gustiness" Type="Real32" Value="0.09"/>
+												<Property Name="QFactorScale" Type="Real32" Value="-4"/>
+												<Property Name="Variability" Type="Real32" Value="1"/>
+												<Property Name="VelocityDynamicRange" Type="Real32" Value="0.62"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<PluginData>
+	<CurveList Version="1">
+		<CurveInfo Name="GainOffset">
+			<Curve Name="" ID="{5A6E3445-2603-4B2A-97DE-006D909413B2}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>-16.40455</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>0.92827</XPos>
+						<YPos>-18.34549</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>1.87764</XPos>
+						<YPos>-15.62291</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>2.72152</XPos>
+						<YPos>-10.95778</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>3.22785</XPos>
+						<YPos>-22.83364</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>3.77637</XPos>
+						<YPos>-18.48347</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>4.59916</XPos>
+						<YPos>-31.28545</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>4.89451</XPos>
+						<YPos>-21.27471</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>5.48523</XPos>
+						<YPos>-29.63384</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>5.97046</XPos>
+						<YPos>-37.41088</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>6.56118</XPos>
+						<YPos>-24.57197</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>6.89873</XPos>
+						<YPos>-34.12724</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>7.61603</XPos>
+						<YPos>-21.18393</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>8.48102</XPos>
+						<YPos>-25.92262</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>8.98734</XPos>
+						<YPos>-26.60642</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>9.62025</XPos>
+						<YPos>-24.32937</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>10</XPos>
+						<YPos>-16.40455</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+	</CurveList>
+</PluginData>
+											<PluginInnerObjectList>
+												<List Name="Deflectors">
+													<PluginInnerObject Name="" ID="{CC78C430-D3D2-4298-BAD0-06E9CA38370B}" PluginName="Deflector" CompanyID="0" PluginID="121">
+														<PropertyList>
+															<Property Name="Gain" Type="Real32" Value="24"/>
+															<Property Name="QFactor" Type="Real32" Value="5.09"/>
+														</PropertyList>
+													</PluginInnerObject>
+												</List>
+											</PluginInnerObjectList>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_wind_grass" ID="{14A2F70F-113E-40C6-9A9F-C8A07E9BB121}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
@@ -2521,85 +2633,6 @@
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
-						<Sound Name="waves_mid" ID="{5F656919-8F1C-452E-9962-ABDD57F81D49}" ShortID="342928986">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<SourcePlugin Name="Waves_Mid" ID="{F3DFFB93-5672-48B4-9D3F-C524683A3F4D}" ShortID="216537045" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
-									<PropertyList>
-										<Property Name="AverageVelocity" Type="Real32" Value="-430"/>
-										<Property Name="FrequencyScale" Type="Real32" Value="-1.89"/>
-										<Property Name="Gustiness" Type="Real32" Value="0.3"/>
-										<Property Name="QFactorScale" Type="Real32" Value="0.8"/>
-										<Property Name="Variability" Type="Real32" Value="0.83"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<PluginData/>
-									<PluginInnerObjectList>
-										<List Name="Deflectors">
-											<PluginInnerObject Name="" ID="{46C15D19-5A17-42B5-91CF-B40929FAA1D2}" PluginName="Deflector" CompanyID="0" PluginID="121">
-												<PropertyList>
-													<Property Name="Gain" Type="Real32" Value="13"/>
-													<Property Name="QFactor" Type="Real32" Value="0.1"/>
-												</PropertyList>
-											</PluginInnerObject>
-										</List>
-									</PluginInnerObjectList>
-								</SourcePlugin>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Waves_Mid" ID="{F3DFFB93-5672-48B4-9D3F-C524683A3F4D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="waves_far" ID="{80B26F03-B08E-466B-8CB3-8B2E68EE89DC}" ShortID="189957653">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<SourcePlugin Name="Waves_Far" ID="{C1C4CAEC-6A22-4AE7-B0F8-748DB6184A1C}" ShortID="55087177" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
-									<PropertyList>
-										<Property Name="AverageVelocity" Type="Real32" Value="-1290"/>
-										<Property Name="FrequencyScale" Type="Real32" Value="1.39"/>
-										<Property Name="Gustiness" Type="Real32" Value="0.08"/>
-										<Property Name="QFactorScale" Type="Real32" Value="-0.51"/>
-										<Property Name="Variability" Type="Real32" Value="0.15"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<PluginData/>
-									<PluginInnerObjectList>
-										<List Name="Deflectors">
-											<PluginInnerObject Name="" ID="{7D18FD74-169F-4B48-9FDE-E61F018026BB}" PluginName="Deflector" CompanyID="0" PluginID="121">
-												<PropertyList>
-													<Property Name="Frequency" Type="Real32" Value="261"/>
-													<Property Name="Gain" Type="Real32" Value="7"/>
-													<Property Name="QFactor" Type="Real32" Value="0.5"/>
-												</PropertyList>
-											</PluginInnerObject>
-										</List>
-									</PluginInnerObjectList>
-								</SourcePlugin>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Waves_Far" ID="{C1C4CAEC-6A22-4AE7-B0F8-748DB6184A1C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
