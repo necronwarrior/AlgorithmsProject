@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1118822596	event_amb_town_start			\Default Work Unit\ambience\Town\event_amb_town_start	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	207908541	time_of_day			\Default Work Unit\general\time_of_day	
+
+Switch	ID	Name	Switch Group			Notes
+	311764537	day	time_of_day			
+	1011622525	night	time_of_day			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3418249280	waking_up			\Default Work Unit\general\waking_up	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	938900241	amb_bg_town_birds_loop	C:\Users\1702776\Downloads\Github\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_bg_town_birds_loop_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_region_town\ambience_region_town_blend\ambience_region_town_day\amb_bg_town_birds_loop		891831
+
