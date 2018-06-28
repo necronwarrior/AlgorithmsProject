@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="UserProjectSettings" SchemaVersion="80">
 	<UserProjectSettingsInfo>
-		<UserProjectSettings Name="" ID="{1A49E4C2-BD75-4993-83BC-27A5C9D36944}">
+		<UserProjectSettings Name="" ID="{E6AB5E58-FA81-4D82-BD48-802543B3792E}">
 			<PropertyList>
-				<Property Name="Event Action List\{50BD7A17-D240-4FF0-891A-FAE91609C2FD}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{A801D418-09E6-4CCB-BF94-C636C6F3C633}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{ADBB42C2-1AEB-4F2E-B92B-5A0004F136C1}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{F8F9A128-8665-4831-8075-5BEF269B99D3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
