@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
 	<RootPaths>
-		<ProjectRoot>C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\1302534\Downloads\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\1302534\Downloads\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\1302534\Downloads\AlgorithmsProject\FracTales\Content\WwiseAudio\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\1302534\Downloads\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -40,6 +40,15 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1118822596" Name="event_amb_town_start" ObjectPath="\Events\Default Work Unit\ambience\Town\event_amb_town_start"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="938900241" Language="SFX">
+					<ShortName>amb_bg_town_birds_loop.wav</ShortName>
+					<Path>SFX\amb_bg_town_birds_loop_21CA2154.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="3853285476" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Non_game\Title_Screen</ObjectPath>
