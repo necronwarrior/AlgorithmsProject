@@ -7,56 +7,20 @@
 		{
 			"Name": "FracTales",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"AudioMixer"
+			]
 		}
 	],
 	"Plugins": [
 		{
-			"Name": "WebBrowserWidget",
-			"Enabled": true
-		},
-		{
-			"Name": "StructBox",
-			"Enabled": true
-		},
-		{
-			"Name": "SoundVisualizations",
+			"Name": "Synthesis",
 			"Enabled": true
 		},
 		{
 			"Name": "SoundUtilities",
-			"Enabled": true
-		},
-		{
-			"Name": "SoundMod",
-			"Enabled": true
-		},
-		{
-			"Name": "PerformanceMonitor",
-			"Enabled": true
-		},
-		{
-			"Name": "LiveLink",
-			"Enabled": true
-		},
-		{
-			"Name": "LensDistortion",
-			"Enabled": true
-		},
-		{
-			"Name": "FunctionalTestingEditor",
-			"Enabled": true
-		},
-		{
-			"Name": "EditorTests",
-			"Enabled": true
-		},
-		{
-			"Name": "CodeView",
-			"Enabled": true
-		},
-		{
-			"Name": "BlueprintStats",
 			"Enabled": true
 		}
 	]
