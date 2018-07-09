@@ -17,27 +17,17 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{03F9BC00-8121-4DEB-8335-4C248AC038C3}" ShortID="1015848995">
+							</ChildrenList>
+						</Event>
+						<Event Name="door_close_start" ID="{E934CFED-C838-4C4C-A33C-CCB5F243271D}">
+							<ChildrenList>
+								<Action Name="" ID="{2AEFE0C0-A10E-4EBF-8E94-ACF487B99630}" ShortID="374467024">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="23"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="open" ID="{29D850E2-1B3A-4608-ACA4-C85F77D67EFC}" WorkUnitID="{79E22627-062D-4585-B570-C50242E768AC}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="door_close_start" ID="{E934CFED-C838-4C4C-A33C-CCB5F243271D}">
-							<ChildrenList>
-								<Action Name="" ID="{7EA25116-20FC-446C-AFA8-4A5B2D907929}" ShortID="1048877440">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="door_movement" ID="{9FA83315-1516-4BA2-8F1C-0DAC457EC266}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+											<ObjectRef Name="close" ID="{0F78FE01-577A-4E1D-9C02-623D79EAF0F5}" WorkUnitID="{79E22627-062D-4585-B570-C50242E768AC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

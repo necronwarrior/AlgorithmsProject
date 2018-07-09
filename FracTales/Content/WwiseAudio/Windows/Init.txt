@@ -7,16 +7,25 @@ Switch	ID	Name	Switch Group			Notes
 	2655407367	crouch	player_movement_speed			
 
 State Group	ID	Name			Wwise Object Path	Notes
+	186852181	thunder			\Default Work Unit\weather\thunder	
+	207908541	time_of_day			\Default Work Unit\time_of_day	
 	1537061107	wind			\Default Work Unit\wind	
-	2043403999	rain			\Default Work Unit\rain	
+	2043403999	rain			\Default Work Unit\weather\rain	
 	2470328564	intensity			\Default Work Unit\intensity	
 
 State	ID	Name	State Group			Notes
+	186852181	thunder	thunder			
+	444944035	not_thunder	thunder			
+	748895195	None	thunder			
+	311764537	day	time_of_day			
+	748895195	None	time_of_day			
+	1011622525	night	time_of_day			
 	748895195	None	wind			
 	1935470627	light	wind			
 	2732489590	heavy	wind			
+	5692638	rain_and_thunder	rain			
 	748895195	None	rain			
-	4206963521	raining	rain			
+	2043403999	rain	rain			
 	748895195	None	intensity			
 	938058686	safe	intensity			
 	3808902672	not_safe	intensity			
@@ -42,6 +51,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	491961918	forest			\Default Work Unit\Master Audio Bus\forest	
 	624189772	lake			\Default Work Unit\Master Audio Bus\lake	
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
+	1041687514	wood_footsteps			\Default Work Unit\Master Audio Bus\player\footsteps\wood_footsteps	
 	1069431850	player			\Default Work Unit\Master Audio Bus\player	
 	1608679832	port			\Default Work Unit\Master Audio Bus\port	
 	1686739424	storm			\Default Work Unit\Master Audio Bus\weather\storm	

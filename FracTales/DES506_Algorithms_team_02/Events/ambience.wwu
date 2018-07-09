@@ -242,6 +242,29 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="fauna" ID="{ADC64A60-5BD3-4A87-A3D9-0E261573784F}" ShortID="540679144">
+							<ChildrenList>
+								<Folder Name="forest_birds" ID="{5CD2DCF1-FFC3-4FB5-8FD3-CF79553CAED7}" ShortID="60798746">
+									<ChildrenList>
+										<Event Name="amb_emit_forest_birds_start" ID="{7FDCFBE6-F980-411F-8191-811B49CC2EBB}">
+											<ChildrenList>
+												<Action Name="" ID="{349ED4C8-E14A-4260-8501-CCEA76E40161}" ShortID="568201603">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="amb_forest_birds" ID="{C741F6EB-E334-461C-AC4A-31A445D05C89}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="amb_emit_forest_birds_stop" ID="{2FF5EE5E-07E8-45FD-9844-B3331EA387F4}"/>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

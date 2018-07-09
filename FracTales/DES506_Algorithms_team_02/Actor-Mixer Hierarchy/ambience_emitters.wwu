@@ -4,1340 +4,6 @@
 		<WorkUnit Name="ambience_emitters" ID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}" OwnerID="{E5886737-BE7A-4137-8074-C0FF99C96D86}" PersistMode="Nested">
 			<Comment>All ambience emitters (3D).</Comment>
 			<ChildrenList>
-				<ActorMixer Name="insects" ID="{0728EC84-9B56-4240-8778-07CDB7B8EA40}" ShortID="676324016">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<RandomSequenceContainer Name="ambience_emitters_bees" ID="{4D3FE224-76B2-4666-B8C9-1122AE3D9EE9}" ShortID="405655951">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-25</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="amb_bees" ID="{F344BC3A-02EB-42E5-AF58-2729ABEF9E59}" ShortID="532578741">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="amb_bees" ID="{F3F0C671-4479-46EA-ABF1-2441F3ECE6C8}" ShortID="1012178058">
-											<Language>SFX</Language>
-											<AudioFile>amb_bees.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_bees" ID="{F3F0C671-4479-46EA-ABF1-2441F3ECE6C8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<ActorMixer Name="crickets" ID="{17B2F508-342E-4D7B-A1C1-B3D37F2EF52D}" ShortID="438071660">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="ambience_emitters_crickets" ID="{914D1923-4284-4922-809B-4267B836069A}" ShortID="520655899">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="amb_crickets_01" ID="{A9724CC3-25F8-4B94-A442-829F492C19F7}" ShortID="268133116">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_crickets_01" ID="{79BF320C-3B7E-4605-85EF-B462553AE812}" ShortID="206396060">
-													<Language>SFX</Language>
-													<AudioFile>amb_crickets_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_crickets_01" ID="{79BF320C-3B7E-4605-85EF-B462553AE812}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_crickets_02" ID="{A5622A1F-B4CC-44A4-BB23-438500D94258}" ShortID="87945727">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_crickets_02" ID="{683C83E0-C8C1-4C03-A5DB-A4A8C40622AF}" ShortID="260827312">
-													<Language>SFX</Language>
-													<AudioFile>amb_crickets_02.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_crickets_02" ID="{683C83E0-C8C1-4C03-A5DB-A4A8C40622AF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_crickets_03" ID="{0E732DF6-FA5E-4FE1-A388-36B9898F4445}" ShortID="192879204">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_crickets_03" ID="{891586F6-51F2-4D30-9ADA-57BBE1D2C8B8}" ShortID="286270046">
-													<Language>SFX</Language>
-													<AudioFile>amb_crickets_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_crickets_03" ID="{891586F6-51F2-4D30-9ADA-57BBE1D2C8B8}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_crickets_04" ID="{2F6AAFE9-67F9-429F-9073-D34FD8B27EF5}" ShortID="433913801">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_crickets_04" ID="{DE6B000B-6170-4B00-A1B9-BDC8BF0B1D4A}" ShortID="58459389">
-													<Language>SFX</Language>
-													<AudioFile>amb_crickets_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_crickets_04" ID="{DE6B000B-6170-4B00-A1B9-BDC8BF0B1D4A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_crickets_05" ID="{7ABFEC73-9F96-43AF-BC46-6E0C8A955EEF}" ShortID="990992144">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_crickets_05" ID="{BD725558-46DA-4175-AC65-53369CAF4072}" ShortID="870862613">
-													<Language>SFX</Language>
-													<AudioFile>amb_crickets_05.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_crickets_05" ID="{BD725558-46DA-4175-AC65-53369CAF4072}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_crickets_06" ID="{4D5E7495-3209-4823-AFD6-1EE369AEE083}" ShortID="954042941">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_crickets_06" ID="{1369F856-3973-4466-B243-663C93193E9E}" ShortID="1004230307">
-													<Language>SFX</Language>
-													<AudioFile>amb_crickets_06.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_crickets_06" ID="{1369F856-3973-4466-B243-663C93193E9E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_crickets_07" ID="{B48F9E17-A95A-4526-8E4E-5C751CE0145F}" ShortID="831562497">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_crickets_07" ID="{5E8B87D0-185B-4868-B6BC-C957521A9462}" ShortID="566855525">
-													<Language>SFX</Language>
-													<AudioFile>amb_crickets_07.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_crickets_07" ID="{5E8B87D0-185B-4868-B6BC-C957521A9462}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_crickets_08" ID="{E47FAC0D-4A75-4AD3-9F6B-1E0220CA187D}" ShortID="185172666">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_crickets_08" ID="{EA1BE0CB-1BFE-4672-AE51-7FDA5DE467F0}" ShortID="422302439">
-													<Language>SFX</Language>
-													<AudioFile>amb_crickets_08.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_crickets_08" ID="{EA1BE0CB-1BFE-4672-AE51-7FDA5DE467F0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_crickets_09" ID="{8A22FE5B-D6F8-4AC4-99BD-F17489530069}" ShortID="916719027">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_crickets_09" ID="{D9F3C45F-5D21-4CBF-96FB-0CF8017EACF5}" ShortID="358792151">
-													<Language>SFX</Language>
-													<AudioFile>amb_crickets_09.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_crickets_09" ID="{D9F3C45F-5D21-4CBF-96FB-0CF8017EACF5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_crickets_10" ID="{7B0CF5EF-4A62-4B2D-B84E-763CFF635771}" ShortID="340045706">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_crickets_10" ID="{E0E98EF3-29F0-476E-B90A-FA4F73D465E3}" ShortID="55649380">
-													<Language>SFX</Language>
-													<AudioFile>amb_crickets_10.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_crickets_10" ID="{E0E98EF3-29F0-476E-B90A-FA4F73D465E3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<Sound Name="amb_crickets_loop" ID="{6F010985-8966-4D35-B647-2C1A3A3FC80E}" ShortID="675721983">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-24</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="amb_crickets_loop" ID="{9DD0BB8C-9B6B-43B0-9FD8-ABF869DF10A5}" ShortID="123514961">
-											<Language>SFX</Language>
-											<AudioFile>amb_crickets_loop.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_crickets_loop" ID="{9DD0BB8C-9B6B-43B0-9FD8-ABF869DF10A5}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</ActorMixer>
-					</ChildrenList>
-				</ActorMixer>
-				<ActorMixer Name="fauna" ID="{4D533DEE-947A-4A06-AB20-9F0B05D1D2B0}" ShortID="392538596">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<ActorMixer Name="birds" ID="{CFC06812-E9B5-4897-8648-9F2659F168E6}" ShortID="654129707">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="amb_emit_forest_birds_short" ID="{9504D84C-2C50-4C8F-AEA1-BCD975D89B9E}" ShortID="322411181">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{CDB87413-7AD4-49E3-BDDD-BCFADD7351AF}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="300"/>
-															<Property Name="Min" Type="Real64" Value="-50"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{487FE4C3-E94F-4EDC-B412-E84FC8C42F80}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="3"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-22</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="forest" ID="{091E0443-4EBF-4884-84A4-2FFBAA7A2A50}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="amb_emit_birds_02" ID="{1DEE2B24-5557-4562-8D18-2EB5B4FF11B1}" ShortID="631599783">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_02" ID="{80A16688-2C84-4E80-A794-2C95D367A39E}" ShortID="634816830">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.122279064360119"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.358762160528274"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_02.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_02" ID="{80A16688-2C84-4E80-A794-2C95D367A39E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_03" ID="{1F3C7B8F-FDD9-40C0-A6D1-641AF077CA13}" ShortID="475891377">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_03" ID="{3C34BE22-E674-4430-8C67-4AB09C2D11BC}" ShortID="271627397">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.04037548828125"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.2960869140625"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_03" ID="{3C34BE22-E674-4430-8C67-4AB09C2D11BC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_05" ID="{B3461D2C-5D04-49CF-B020-432849BA15DA}" ShortID="25270370">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_05" ID="{66C90492-A290-4310-9352-C965C54F56CF}" ShortID="1037891212">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="6.15223214285714E-02"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.253138718377976"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_05.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_05" ID="{66C90492-A290-4310-9352-C965C54F56CF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_06" ID="{85E6B925-39F2-48F0-849C-28C4FD277D5D}" ShortID="83710095">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_06" ID="{B6CDDA6B-723B-4CA2-9F4B-5FF0C145D5BC}" ShortID="83170544">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.070751953125"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.2783935546875"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_06.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_06" ID="{B6CDDA6B-723B-4CA2-9F4B-5FF0C145D5BC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_08" ID="{555F2013-5AA9-4281-9A34-266CC28DFFB6}" ShortID="976054427">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_08" ID="{6CA6E0C6-E049-4558-9DFB-677DE901F7E3}" ShortID="230278861">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.1102294921875"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.089208984375"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_08.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_08" ID="{6CA6E0C6-E049-4558-9DFB-677DE901F7E3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_10" ID="{19E3D4F5-8AB6-464A-89E3-9BFDA2F8134F}" ShortID="252815016">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_10" ID="{76269616-8C75-4BA6-9595-E40640124D06}" ShortID="408369438">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_10.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_10" ID="{76269616-8C75-4BA6-9595-E40640124D06}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_12" ID="{989C8AA7-6900-45B1-BB95-A493D664AC45}" ShortID="221104413">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_12" ID="{5F9C7AC0-C38D-4FC5-AD14-5E0D1882C421}" ShortID="498683510">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_12.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_12" ID="{5F9C7AC0-C38D-4FC5-AD14-5E0D1882C421}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_13" ID="{59E85169-FBBA-40D4-94BC-6D523D809FEB}" ShortID="41942963">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_13" ID="{99F60A54-37ED-48BD-BABD-FB196A4BFBF1}" ShortID="983438347">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_13.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_13" ID="{99F60A54-37ED-48BD-BABD-FB196A4BFBF1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_14" ID="{0D9F2453-E891-4CBD-8137-09189FD2673E}" ShortID="975133855">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_14" ID="{FA6B2A1F-E048-49CA-A573-FCD6DC5A019C}" ShortID="508008729">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_14.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_14" ID="{FA6B2A1F-E048-49CA-A573-FCD6DC5A019C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_15" ID="{0166B318-3042-40BB-999B-E131EE0DE711}" ShortID="649540060">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_15" ID="{0673AEDD-CC14-4C0A-BE2B-414D9F4824C3}" ShortID="653180620">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_15.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_15" ID="{0673AEDD-CC14-4C0A-BE2B-414D9F4824C3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_16" ID="{96FCC2F8-F1BA-4F7D-9986-6D83A4B05B84}" ShortID="302505410">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_16" ID="{D072C3D2-27B7-4B12-8978-A19C498AC7D9}" ShortID="474295533">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_16.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_16" ID="{D072C3D2-27B7-4B12-8978-A19C498AC7D9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_17" ID="{F95265A5-2F46-4BE9-9949-8D036078DE4B}" ShortID="1048436005">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_17" ID="{B82E2006-FEE0-464B-BB5B-3A4DEB3616A8}" ShortID="201708958">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_17.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_17" ID="{B82E2006-FEE0-464B-BB5B-3A4DEB3616A8}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_18" ID="{609D37D3-8199-4C83-BD41-EF6276E777D4}" ShortID="1055015844">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_18" ID="{8C046E5E-4535-47CF-AE52-479F47478D3B}" ShortID="775636911">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_18.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_18" ID="{8C046E5E-4535-47CF-AE52-479F47478D3B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_19" ID="{ABBF074C-C979-4575-AD7E-65C8A2132438}" ShortID="9465553">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_19" ID="{747ADF4D-AE08-44F5-AAEC-B1D3E303265D}" ShortID="579556834">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_19.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_19" ID="{747ADF4D-AE08-44F5-AAEC-B1D3E303265D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_20" ID="{8DEB69C0-5F07-42A4-872C-5420FA398B24}" ShortID="171576907">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_20" ID="{28330C57-5630-41B4-899C-C587AD0354F0}" ShortID="63231173">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_20.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_20" ID="{28330C57-5630-41B4-899C-C587AD0354F0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_22" ID="{9BE254E4-110B-4563-A095-C17E340DDA62}" ShortID="313058605">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_22" ID="{A7A5DF8E-D79B-4B90-9C9A-DD8AFCE6223D}" ShortID="140227930">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_22.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_22" ID="{A7A5DF8E-D79B-4B90-9C9A-DD8AFCE6223D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="amb_emit_forest_birds_long" ID="{BBE4D93F-A948-45A6-A9D8-A31CB0744E1A}" ShortID="362050128">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{5AEFDECE-9077-4269-8B08-7EB0B413F6F2}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="300"/>
-															<Property Name="Min" Type="Real64" Value="-50"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{2B0D5B15-2E14-4338-B1CF-33FCA35BD2FC}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="5"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-22</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="forest" ID="{091E0443-4EBF-4884-84A4-2FFBAA7A2A50}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="amb_emit_birds_01" ID="{636F0396-1CA2-431D-A7A5-D250E33106FB}" ShortID="649951266">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_01" ID="{9FDAFD8C-418C-4827-9308-A714D9ACDFD2}" ShortID="690665965">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_01" ID="{9FDAFD8C-418C-4827-9308-A714D9ACDFD2}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_04" ID="{F1D56079-2106-4A08-92EC-98428B051798}" ShortID="60774951">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_04" ID="{E71B7D33-F581-4EFD-B1FE-F0D1D3015E5F}" ShortID="773737687">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_04" ID="{E71B7D33-F581-4EFD-B1FE-F0D1D3015E5F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_07" ID="{A9A7B07F-2419-45B9-A4D7-A6456734F8D3}" ShortID="947446682">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_07" ID="{BA6C0D12-C55E-44E2-9F2B-58EBC1828466}" ShortID="130151736">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_07.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_07" ID="{BA6C0D12-C55E-44E2-9F2B-58EBC1828466}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_09" ID="{5262A0F7-A70A-4E7E-93D0-A8133BA44C39}" ShortID="667197075">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_09" ID="{BD358EEA-62FC-4467-B038-810B97ED9F35}" ShortID="840669048">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_09.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_09" ID="{BD358EEA-62FC-4467-B038-810B97ED9F35}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_11" ID="{9FF276BE-8454-4AB6-B3A6-F69C4EC6F516}" ShortID="147043850">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_11" ID="{F8872337-017C-4D3C-81DD-AC0C64538386}" ShortID="272221947">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_11.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_11" ID="{F8872337-017C-4D3C-81DD-AC0C64538386}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_birds_21" ID="{D177AF64-B626-47EA-9352-F39F31579717}" ShortID="1048350935">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_birds_21" ID="{9C167F7B-9A89-4613-A4C3-551BF3C6A823}" ShortID="49832470">
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_birds_21.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_birds_21" ID="{9C167F7B-9A89-4613-A4C3-551BF3C6A823}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="amb_emit_seagulls" ID="{5DA460A3-C3DE-4C18-8C5F-6A5394C9C034}" ShortID="507593621">
-									<PropertyList>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{E5CC69A1-C13C-4571-A9E9-24001D1E8A3E}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="7"/>
-															<Property Name="Min" Type="Real64" Value="-2"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-29</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="amb_emit_seagulls_01" ID="{28C32CB2-C9A0-464C-A47F-F8BCC14BAD7B}" ShortID="749899071">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_seagulls_01" ID="{FD4E3408-E90E-4AB2-BD23-754E72B7D1B6}" ShortID="475293254">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.237723214285714"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_seagulls_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_seagulls_01" ID="{FD4E3408-E90E-4AB2-BD23-754E72B7D1B6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_seagulls_02" ID="{33E77FED-86A3-4D4B-BD98-21B6A963A919}" ShortID="647184505">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_seagulls_02" ID="{83463BB3-D15F-4DD3-9C92-7A4B942C08A6}" ShortID="421352245">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="4.52008928571428E-02"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.107979910714286"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.679268973214285"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_seagulls_02.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_seagulls_02" ID="{83463BB3-D15F-4DD3-9C92-7A4B942C08A6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_seagulls_03" ID="{C3D17B6B-2FB5-41AC-85FA-379416818BDF}" ShortID="606020378">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_seagulls_03" ID="{E1CFC43F-02A8-4357-8846-30E0FF3F2437}" ShortID="422139352">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.110365513392857"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.137956891741071"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_seagulls_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_seagulls_03" ID="{E1CFC43F-02A8-4357-8846-30E0FF3F2437}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_seagulls_04" ID="{E88EB27B-68EF-4237-97F4-31288624455B}" ShortID="604051039">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_seagulls_04" ID="{72DDD02B-408E-4CC3-B157-32D9F7F8EFFC}" ShortID="1047958180">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.181868489583333"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.506282552083334"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_seagulls_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_seagulls_04" ID="{72DDD02B-408E-4CC3-B157-32D9F7F8EFFC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_seagulls_05" ID="{186F224C-FE27-4B6F-901C-70A89B8C77DE}" ShortID="786283490">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_seagulls_05" ID="{D073D381-6170-4EF7-987D-E1EE0080CA32}" ShortID="901761341">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.333998325892857"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.361831519717263"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_seagulls_05.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_seagulls_05" ID="{D073D381-6170-4EF7-987D-E1EE0080CA32}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_emit_seagulls_06" ID="{44990836-290A-43E6-B3F5-553128C441D1}" ShortID="796282808">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_emit_seagulls_06" ID="{3AA73C43-2E6F-4E18-A03E-38284ADA12FF}" ShortID="311156543">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.358576264880952"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>amb_emit_seagulls_06.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_emit_seagulls_06" ID="{3AA73C43-2E6F-4E18-A03E-38284ADA12FF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="amb_emit_small_birds" ID="{3A8BB9E6-7E9E-408E-95EB-C3FAEC0B4C63}" ShortID="312245907">
-									<PropertyList>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-										</Reference>
-									</ReferenceList>
-								</RandomSequenceContainer>
-								<BlendContainer Name="amb_forest_birds" ID="{C741F6EB-E334-461C-AC4A-31A445D05C89}" ShortID="376011100">
-									<PropertyList>
-										<Property Name="BlendBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="amb_wood_pigeon" ID="{F06A7E53-F553-4A35-8BD9-1767C0B30306}" ShortID="416569800">
-											<PropertyList>
-												<Property Name="InitialDelay" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{5DF4CCE5-3C62-4DA8-92BA-15AF364633FB}">
-																<PropertyList>
-																	<Property Name="Max" Type="Real64" Value="8"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{2C451B7A-ACE3-4F8C-AAFD-5F36118B8074}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="5"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-10</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="amb_wood_pigeon_01" ID="{EC20AA99-1AD5-49E1-9A42-75C8EF1DEAA5}" ShortID="603244802">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="amb_wood_pigeon_01" ID="{0335A131-89F6-4D7D-8166-9556CA64C2FB}" ShortID="239878221">
-															<Language>SFX</Language>
-															<AudioFile>amb_wood_pigeon_01.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="amb_wood_pigeon_01" ID="{0335A131-89F6-4D7D-8166-9556CA64C2FB}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="amb_wood_pigeon_02" ID="{B49A9169-D770-4B72-B8CE-1A453FC835F6}" ShortID="1068366829">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="amb_wood_pigeon_02" ID="{7B72D938-2827-40BB-92C9-D270E5D1B788}" ShortID="531225068">
-															<Language>SFX</Language>
-															<AudioFile>amb_wood_pigeon_02.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="amb_wood_pigeon_02" ID="{7B72D938-2827-40BB-92C9-D270E5D1B788}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="amb_wood_pigeon_03" ID="{2188A286-18FB-4F84-9B8F-078294DEB7D5}" ShortID="107763014">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="amb_wood_pigeon_03" ID="{2AF56ABC-92C5-4630-BAFA-A539C5D9EAD3}" ShortID="911159935">
-															<Language>SFX</Language>
-															<AudioFile>amb_wood_pigeon_03.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="amb_wood_pigeon_03" ID="{2AF56ABC-92C5-4630-BAFA-A539C5D9EAD3}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="amb_wood_pigeon_04" ID="{65754276-23C6-4474-98B7-2F080D4A5421}" ShortID="192224072">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="amb_wood_pigeon_04" ID="{E9A2C760-4804-4951-8B40-35E51089A837}" ShortID="746172129">
-															<Language>SFX</Language>
-															<AudioFile>amb_wood_pigeon_04.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="amb_wood_pigeon_04" ID="{E9A2C760-4804-4951-8B40-35E51089A837}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="amb_wood_pigeon_05" ID="{03A5B738-5F1F-42FB-B84C-59AC0290FDD6}" ShortID="364645477">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="amb_wood_pigeon_05" ID="{FF61DF9C-5DA8-485E-96A2-D1322A4EF3FF}" ShortID="311297241">
-															<Language>SFX</Language>
-															<AudioFile>amb_wood_pigeon_05.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="amb_wood_pigeon_05" ID="{FF61DF9C-5DA8-485E-96A2-D1322A4EF3FF}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="amb_wood_pigeon_06" ID="{0AB80341-4BB0-461D-8120-2CA18F24B773}" ShortID="865421429">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="amb_wood_pigeon_06" ID="{FAD939AF-67AB-49B0-B1AE-6D7037C77FF4}" ShortID="552028554">
-															<Language>SFX</Language>
-															<AudioFile>amb_wood_pigeon_06.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="amb_wood_pigeon_06" ID="{FAD939AF-67AB-49B0-B1AE-6D7037C77FF4}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="amb_wood_pigeon_07" ID="{67217970-DBCB-4D79-9BFB-5E3D949DC33E}" ShortID="310700954">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="amb_wood_pigeon_07" ID="{7D28FA64-CAEE-498E-83DA-F8831236898C}" ShortID="661767251">
-															<Language>SFX</Language>
-															<AudioFile>amb_wood_pigeon_07.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="amb_wood_pigeon_07" ID="{7D28FA64-CAEE-498E-83DA-F8831236898C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="amb_wood_pigeon_08" ID="{8FFFC38A-9B70-480B-9B68-58E8A4390DDA}" ShortID="323469829">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="amb_wood_pigeon_08" ID="{DD1E804D-0085-45C1-B061-E8F6EC45ADC8}" ShortID="668953589">
-															<Language>SFX</Language>
-															<AudioFile>amb_wood_pigeon_08.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="amb_wood_pigeon_08" ID="{DD1E804D-0085-45C1-B061-E8F6EC45ADC8}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="amb_emit_owls" ID="{8875ADB4-AEEB-4425-9F73-B4B55EC04C02}" ShortID="552161836">
-											<PropertyList>
-												<Property Name="InitialDelay" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{CD01D3CF-D91E-4B84-B55E-90CBD1AA0BD8}">
-																<PropertyList>
-																	<Property Name="Max" Type="Real64" Value="10"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-												<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-9</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="amb_owl_01" ID="{6CFBB81B-EEE0-452A-B34A-505F86F38C82}" ShortID="822908114">
-													<PropertyList>
-														<Property Name="Lowpass" Type="int16">
-															<ValueList>
-																<Value>52</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="amb_owl_01" ID="{1D23EC72-C2CE-42E3-A742-2FC4A8139B67}" ShortID="1025937716">
-															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="4.65959821428572E-02"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.8154296875"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.213564918154762"/>
-																<Property Name="TrimEnd" Type="Real64" Value="3.33937872023809"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>amb_owl_01.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="amb_owl_01" ID="{1D23EC72-C2CE-42E3-A742-2FC4A8139B67}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<BlendTrackList>
-										<BlendTrack Name="New Blend Track" ID="{1DF23331-69C6-4C11-974A-8733B1B75E2C}" ShortID="558776221">
-											<BlendTrackAssocList>
-												<BlendTrackAssoc>
-													<ItemRef Name="amb_emit_owls" ID="{8875ADB4-AEEB-4425-9F73-B4B55EC04C02}"/>
-												</BlendTrackAssoc>
-												<BlendTrackAssoc>
-													<ItemRef Name="amb_wood_pigeon" ID="{F06A7E53-F553-4A35-8BD9-1767C0B30306}"/>
-												</BlendTrackAssoc>
-											</BlendTrackAssocList>
-										</BlendTrack>
-									</BlendTrackList>
-								</BlendContainer>
-							</ChildrenList>
-						</ActorMixer>
-					</ChildrenList>
-				</ActorMixer>
 				<ActorMixer Name="wind" ID="{F800BE6D-D1C4-4CF6-91F5-0E110CB12226}" ShortID="26940765">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1879,8 +545,8 @@
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>26000</XPos>
-																<YPos>0</YPos>
+																<XPos>8000</XPos>
+																<YPos>-1.81116</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1904,29 +570,18 @@
 												<RightFadingMode>Automatic</RightFadingMode>
 											</CrossfadingInfo>
 										</BlendTrackAssoc>
-										<BlendTrackAssoc>
-											<ItemRef Name="procedural_wind_mid" ID="{C5FE1187-5C8A-4641-B555-0758F600E3B1}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>715.820043320106</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>12453.4129484127</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-										<BlendTrackAssoc>
-											<ItemRef Name="procedural_wind_high" ID="{AFC63774-4EA6-4FB2-9B9D-59CD3DC0C7D9}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>7262.98979298942</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>26000</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
 									</BlendTrackAssocList>
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
 						<BlendContainer Name="amb_emitter_wind_grass" ID="{00CC5D63-332A-409E-8573-52E528EC2377}" ShortID="817820950">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -1956,13 +611,40 @@
 									<ChildrenList>
 										<SourcePlugin Name="amb_wind_grass" ID="{7641E192-467B-436C-8561-ED48E02AF53A}" ShortID="214703937" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
 											<PropertyList>
-												<Property Name="AverageVelocity" Type="Real32" Value="-1770"/>
+												<Property Name="AverageVelocity" Type="Real32" Value="-1770">
+													<RTPCList>
+														<RTPC Name="" ID="{B3918807-8FAF-4172-A422-162C3EC2EA45}" ShortID="327778705">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{3540EF51-BB4C-4B40-A6BF-9E511B9F3870}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>-2400</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>-1625.39683</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="AverageVelocityRandom" Type="Real32" Value="50"/>
 												<Property Name="DirectionRandom" Type="Real32" Value="50"/>
-												<Property Name="FrequencyScale" Type="Real32" Value="3.79"/>
-												<Property Name="GainOffset" Type="Real32" Value="12.6"/>
+												<Property Name="FrequencyScale" Type="Real32" Value="3.83"/>
 												<Property Name="GainOffsetAutomate" Type="bool" Value="True"/>
-												<Property Name="Gustiness" Type="Real32" Value="0.09"/>
-												<Property Name="QFactorScale" Type="Real32" Value="-4"/>
+												<Property Name="Gustiness" Type="Real32" Value="0.42"/>
+												<Property Name="QFactorScale" Type="Real32" Value="-3.87"/>
 												<Property Name="Variability" Type="Real32" Value="1"/>
 												<Property Name="VelocityDynamicRange" Type="Real32" Value="0.62"/>
 											</PropertyList>
@@ -1979,81 +661,6 @@
 						<XPos>0</XPos>
 						<YPos>-16.40455</YPos>
 						<Flags>5</Flags>
-					</Point>
-					<Point>
-						<XPos>0.822785</XPos>
-						<YPos>-6.07961</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>2.13080166666667</XPos>
-						<YPos>-28.36056</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>2.72151833333333</XPos>
-						<YPos>-15.67543</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>3.08016833333333</XPos>
-						<YPos>-20.94658</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>3.48101333333333</XPos>
-						<YPos>-18.48347</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>4.535865</XPos>
-						<YPos>-36.94663</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>5.12658</XPos>
-						<YPos>-34.01236</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>5.44303833333333</XPos>
-						<YPos>-23.02913</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>5.822785</XPos>
-						<YPos>-30.33441</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>6.35021166666667</XPos>
-						<YPos>-32.12021</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>7.468355</XPos>
-						<YPos>-33.65548</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>8.08017</XPos>
-						<YPos>-24.01452</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>8.81857</XPos>
-						<YPos>-32.52733</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>9.15611833333333</XPos>
-						<YPos>-32.2676</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>9.49367166666667</XPos>
-						<YPos>-20.55525</YPos>
-						<Flags>0</Flags>
 					</Point>
 					<Point>
 						<XPos>10</XPos>
@@ -2215,6 +822,13 @@
 							</BlendTrackList>
 						</BlendContainer>
 						<BlendContainer Name="amb_emitter_wind_trees" ID="{14F1BE33-113F-4012-A09B-6FCE614BB6EB}" ShortID="36281385">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -2224,7 +838,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="amb_wind_grass" ID="{540BD643-64A9-47F5-A875-F0F7809BB893}" ShortID="481671876">
+								<Sound Name="amb_wind_trees" ID="{540BD643-64A9-47F5-A875-F0F7809BB893}" ShortID="481671876">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2247,16 +861,124 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="amb_wind_grass" ID="{14A2F70F-113E-40C6-9A9F-C8A07E9BB121}" ShortID="262753336" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
+										<SourcePlugin Name="amb_wind_tress" ID="{14A2F70F-113E-40C6-9A9F-C8A07E9BB121}" ShortID="262753336" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
 											<PropertyList>
-												<Property Name="AverageVelocity" Type="Real32" Value="-1770"/>
+												<Property Name="AverageVelocity" Type="Real32" Value="-1770">
+													<RTPCList>
+														<RTPC Name="" ID="{68A3114F-489A-4932-AFDE-C4EF6DBCF280}" ShortID="758505552">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{2D2A2A18-EE4E-449E-B568-00FE3CA691DA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>-1407.69231</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="DirectionRandom" Type="Real32" Value="50"/>
 												<Property Name="FrequencyScale" Type="Real32" Value="3.79"/>
-												<Property Name="GainOffset" Type="Real32" Value="12.6"/>
+												<Property Name="GainOffset" Type="Real32" Value="12.6">
+													<RTPCList>
+														<RTPC Name="" ID="{D5957CBA-119A-45BE-8F2B-12C96AA5681C}" ShortID="240165908">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{91E02276-98A1-42E3-BF71-F79D8F9CCE48}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>-5.50161</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>-0.04054</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="GainOffsetAutomate" Type="bool" Value="True"/>
-												<Property Name="Gustiness" Type="Real32" Value="0.09"/>
+												<Property Name="Gustiness" Type="Real32" Value="0.09">
+													<RTPCList>
+														<RTPC Name="" ID="{A011A0A5-C890-4878-8557-FFB2C9817DBD}" ShortID="475308092">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{3433F399-BF80-4982-8D89-96AD1F10E0B2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>0.28606</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>0.66346</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="QFactorScale" Type="Real32" Value="-4"/>
-												<Property Name="Variability" Type="Real32" Value="1"/>
+												<Property Name="Variability" Type="Real32" Value="1">
+													<RTPCList>
+														<RTPC Name="" ID="{F8200192-BABD-4702-A269-208AA6F43FF9}" ShortID="621554362">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{A5B5B638-3622-4B87-9630-0C259B84D517}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>1</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>1</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="VelocityDynamicRange" Type="Real32" Value="0.62"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -2272,81 +994,6 @@
 						<XPos>0</XPos>
 						<YPos>-16.40455</YPos>
 						<Flags>5</Flags>
-					</Point>
-					<Point>
-						<XPos>0.92827</XPos>
-						<YPos>-18.34549</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>1.87764</XPos>
-						<YPos>-15.62291</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>2.72152</XPos>
-						<YPos>-10.95778</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>3.22785</XPos>
-						<YPos>-22.83364</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>3.77637</XPos>
-						<YPos>-18.48347</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>4.59916</XPos>
-						<YPos>-31.28545</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>4.89451</XPos>
-						<YPos>-21.27471</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>5.48523</XPos>
-						<YPos>-29.63384</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>5.97046</XPos>
-						<YPos>-37.41088</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>6.56118</XPos>
-						<YPos>-24.57197</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>6.89873</XPos>
-						<YPos>-34.12724</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>7.61603</XPos>
-						<YPos>-21.18393</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>8.48102</XPos>
-						<YPos>-25.92262</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>8.98734</XPos>
-						<YPos>-26.60642</YPos>
-						<Flags>0</Flags>
-					</Point>
-					<Point>
-						<XPos>9.62025</XPos>
-						<YPos>-24.32937</YPos>
-						<Flags>0</Flags>
 					</Point>
 					<Point>
 						<XPos>10</XPos>
@@ -2371,7 +1018,532 @@
 										</SourcePlugin>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="amb_wind_grass" ID="{14A2F70F-113E-40C6-9A9F-C8A07E9BB121}" Platform="Linked"/>
+										<ActiveSource Name="amb_wind_tress" ID="{14A2F70F-113E-40C6-9A9F-C8A07E9BB121}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="amb_wind" ID="{550D3738-CE84-4B8D-A3C0-9C6BE1721447}" ShortID="246731015">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_SS_wind_bg" ID="{52CC554F-36EA-45FF-85B2-FA3F0499E455}" ShortID="556282450">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="SoundSeed Wind" ID="{BF661BD2-9CD9-49C8-97C9-3E4686AAD691}" ShortID="180089824" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
+											<PropertyList>
+												<Property Name="AttenuationRollOff" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{E065E186-84B9-4473-B19F-B1AC2FEDCABC}" ShortID="538686064">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{3E01A06E-119B-4B52-AC23-15DAAE654690}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>1</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>7127.35962</XPos>
+																		<YPos>0.99038</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>1</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="AverageVelocity" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{A1B93B91-AA94-4DB8-9F35-40DFB96D0401}" ShortID="114827235">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{2AEDC77B-7840-4D61-9520-61FE51D8F3AC}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>-2261.53846</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>2.49716</XPos>
+																		<YPos>-1779.32175</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5525.92592</XPos>
+																		<YPos>-1502.93387</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>7444.6834</XPos>
+																		<YPos>-1369.00239</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>7821.50538</XPos>
+																		<YPos>-1263.03488</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>-1101.66574</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Direction" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{9F09714E-ACB0-4D4E-8D86-9F799B6E60C7}" ShortID="394327739">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{4C27A566-55C2-4212-BBC4-26BD888B228C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="DirectionRandom" Type="Real32" Value="45"/>
+												<Property Name="Duration" Type="Real64" Value="60"/>
+												<Property Name="FrequencyScale" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{525880F8-430F-4215-90A9-F5D81DE376C5}" ShortID="826981496">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{4EAD5545-C467-415E-B1FE-BFA6ED423AB3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>0.36538</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="GainOffset" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{31DD6CC1-2927-4F9F-B722-6A6645AB47FB}" ShortID="841337864">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{B472F240-23A0-4302-930C-3EDE452895BB}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>-0.07212</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>-0.00656</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Gustiness" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{0F2E237F-911C-49E1-8A08-864D083DC64E}" ShortID="590850145">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{7DF1F7BC-A1DA-4B62-A630-E15A7129B1F9}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>0.14183</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>7762.00717</XPos>
+																		<YPos>0.59134</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>0.59615</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="MaxDistance" Type="Real32" Value="1"/>
+												<Property Name="MinDistance" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{727DC3B7-2B64-4ED5-93D0-5661D40FB922}" ShortID="115034068">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{FE8EC2D6-D192-4101-99BA-B3B0C841F195}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>5</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6958.78136</XPos>
+																		<YPos>4.88005</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>5</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="PlaybackRate" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{3BB867B2-F710-4992-A9B4-E2B23FBFDD78}" ShortID="619405163">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{64949A18-EE62-472C-B0F1-EA18FF42B5E2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>10</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>10</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="QFactorScale" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{4498DEBC-1597-48BB-A3CE-8C3D61C16370}" ShortID="899687414">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{284C31F0-A07A-460C-B372-4F1D68469E9C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>7167.02509</XPos>
+																		<YPos>0.01923</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Variability" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{837153B9-13E2-4E38-AA05-DADC3CF26F44}" ShortID="523207515">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{632AE550-DD2B-4A55-BF8D-FE9A3AB25D33}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>0.03846</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.05288</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3795.45998</XPos>
+																		<YPos>0.18269</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>7742.17443</XPos>
+																		<YPos>0.56731</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>0.25</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="VelocityDynamicRange" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{9887DF2D-96B3-4100-8E2C-CA6C71458E70}" ShortID="1037550445">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{715DD533-B70E-4324-B77E-6E736563D843}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-300</XPos>
+																		<YPos>0.74519</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8000</XPos>
+																		<YPos>0.42067</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<PluginData>
+	<CurveList Version="1">
+		<CurveInfo Name="AverageVelocity">
+			<Curve Name="" ID="{2ED5479F-18F7-4AFB-82F9-0F1B783300EE}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>60</XPos>
+						<YPos>0</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+	</CurveList>
+</PluginData>
+											<PluginInnerObjectList>
+												<List Name="Deflectors">
+													<PluginInnerObject Name="" ID="{20C4BCB8-0D83-48A9-9C24-84E34CE2E427}" PluginName="Deflector" CompanyID="0" PluginID="121">
+														<PropertyList>
+															<Property Name="Frequency" Type="Real32" Value="562"/>
+															<Property Name="PanX" Type="Real64" Value="0.597014925373138"/>
+															<Property Name="PanY" Type="Real64" Value="-1.20481927710845"/>
+															<Property Name="QFactor" Type="Real32" Value="15.33"/>
+														</PropertyList>
+													</PluginInnerObject>
+													<PluginInnerObject Name="" ID="{C462FC0F-98C9-442D-AA6C-24D5D267BFFB}" PluginName="Deflector" CompanyID="0" PluginID="121">
+														<PropertyList>
+															<Property Name="Frequency" Type="Real32" Value="648"/>
+															<Property Name="PanX" Type="Real64" Value="-33.4328358208955"/>
+															<Property Name="PanY" Type="Real64" Value="15.6626506024096"/>
+														</PropertyList>
+													</PluginInnerObject>
+													<PluginInnerObject Name="" ID="{664D682C-5BBE-45F1-85B2-CF42A9A91C57}" PluginName="Deflector" CompanyID="0" PluginID="121">
+														<PropertyList>
+															<Property Name="Frequency" Type="Real32" Value="849"/>
+															<Property Name="PanX" Type="Real64" Value="34.0298507462687"/>
+															<Property Name="PanY" Type="Real64" Value="15.6626506024096"/>
+														</PropertyList>
+													</PluginInnerObject>
+												</List>
+											</PluginInnerObjectList>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SoundSeed Wind" ID="{BF661BD2-9CD9-49C8-97C9-3E4686AAD691}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_SS_wooshes_bg" ID="{B68C56E6-2564-40B7-A56D-CFB194A0FACB}" ShortID="986337796">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="SoundSeed Woosh" ID="{EC66D7A0-1C0E-45EC-B86E-C9468A89F4A1}" ShortID="370106084" PluginName="SoundSeed Air/SoundSeed Woosh" CompanyID="0" PluginID="120">
+											<PropertyList>
+												<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{11F1AB51-0F8A-489F-A013-698039D85352}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.25</XPos>
+							<YPos>100</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.5</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{4E930940-CEC7-4DB4-8DD6-20409CAF27CE}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+											<PluginInnerObjectList>
+												<List Name="Deflectors">
+													<PluginInnerObject Name="" ID="{FC7E8716-C854-423B-ACD6-707F75089D36}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+												</List>
+											</PluginInnerObjectList>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SoundSeed Woosh" ID="{EC66D7A0-1C0E-45EC-B86E-C9468A89F4A1}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -3215,138 +2387,6 @@
 												<ActiveSource Name="rain_light_loop_01" ID="{ACE55081-2767-4CFA-81B1-90AE16604B0C}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<RandomSequenceContainer Name="thunder_loud" ID="{4272C992-5BF4-437E-86B1-B8A841B517C9}" ShortID="666966754">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="ambience_emitter_thunder_04" ID="{E5019682-6C0E-4052-A257-F26E3CAB0A5B}" ShortID="315676339">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>12</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="ambience_emitter_thunder_04" ID="{D4F60794-F12D-497E-83AB-3C4296F06454}" ShortID="626910061">
-															<Language>SFX</Language>
-															<AudioFile>ambience_emitter_thunder_04.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="ambience_emitter_thunder_04" ID="{D4F60794-F12D-497E-83AB-3C4296F06454}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="ambience_emitter_thunder_02" ID="{2CD9405D-CFF2-4495-822C-2FBBEB7ABB5D}" ShortID="55146872">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="ambience_emitter_thunder_02" ID="{4706FF8D-5560-4AD4-9657-8358ED423B0E}" ShortID="10468512">
-															<Language>SFX</Language>
-															<AudioFile>ambience_emitter_thunder_02.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="ambience_emitter_thunder_02" ID="{4706FF8D-5560-4AD4-9657-8358ED423B0E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="thunder_quiet" ID="{B844B701-604C-4A8C-85FC-E2E367DD4F15}" ShortID="721974117">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="ambience_emitter_thunder_01" ID="{78EED835-C683-47CF-A582-530B425DD389}" ShortID="369906172">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="ambience_emitter_thunder_01" ID="{7288C44E-D25F-4916-8331-DA9DC7284318}" ShortID="248959906">
-															<Language>SFX</Language>
-															<AudioFile>ambience_emitter_thunder_01.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="ambience_emitter_thunder_01" ID="{7288C44E-D25F-4916-8331-DA9DC7284318}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="ambience_emitter_thunder_03" ID="{6F3F07F4-3DE6-41FB-AAE0-4ADC50EEB86B}" ShortID="212420393">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="ambience_emitter_thunder_03" ID="{0BB184F9-37A4-43D2-94DC-5CB079B33191}" ShortID="980349068">
-															<Language>SFX</Language>
-															<AudioFile>ambience_emitter_thunder_03.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="ambience_emitter_thunder_03" ID="{0BB184F9-37A4-43D2-94DC-5CB079B33191}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="ambience_emitter_thunder_05" ID="{76479D70-71E6-4D2E-A8E2-8848214D0D78}" ShortID="637111429">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="ambience_emitter_thunder_05" ID="{C4E43136-50D5-4339-B7B5-CF61AC02EE58}" ShortID="569046418">
-															<Language>SFX</Language>
-															<AudioFile>ambience_emitter_thunder_05.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="ambience_emitter_thunder_05" ID="{C4E43136-50D5-4339-B7B5-CF61AC02EE58}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
 									</ChildrenList>
 									<BlendTrackList>
 										<BlendTrack Name="rain" ID="{380249AA-CB72-403A-930D-165D146DC438}" ShortID="336027755">
@@ -3449,8 +2489,8 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>13.7566</XPos>
-																		<YPos>100</YPos>
+																		<XPos>0.39681</XPos>
+																		<YPos>67</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -3527,26 +2567,6 @@
 													<ObjectRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
 												</Reference>
 											</ReferenceList>
-											<BlendTrackAssocList>
-												<BlendTrackAssoc>
-													<ItemRef Name="thunder_quiet" ID="{B844B701-604C-4A8C-85FC-E2E367DD4F15}"/>
-													<CrossfadingInfo>
-														<LeftEdgePos>0</LeftEdgePos>
-														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>58.7304087301587</RightEdgePos>
-														<RightFadingMode>Automatic</RightFadingMode>
-													</CrossfadingInfo>
-												</BlendTrackAssoc>
-												<BlendTrackAssoc>
-													<ItemRef Name="thunder_loud" ID="{4272C992-5BF4-437E-86B1-B8A841B517C9}"/>
-													<CrossfadingInfo>
-														<LeftEdgePos>34.973794973545</LeftEdgePos>
-														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>100</RightEdgePos>
-														<RightFadingMode>Automatic</RightFadingMode>
-													</CrossfadingInfo>
-												</BlendTrackAssoc>
-											</BlendTrackAssocList>
 										</BlendTrack>
 									</BlendTrackList>
 								</BlendContainer>
@@ -3564,9 +2584,287 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="raining" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
+										<SwitchRef Name="rain" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
 										<ItemList>
 											<ItemRef Name="ambience_rain_intensity" ID="{A970BF43-3E3C-40CD-9451-1B7D0D1C27C3}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="ambience_thunder" ID="{56F7846A-5B75-439A-84B8-9BEEF0BD8193}" ShortID="937714930">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="ambience_thunder_intensity" ID="{1E39A499-D996-4D6E-9FB8-CB5FCDB05D41}" ShortID="676206422">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="thunder_loud" ID="{4272C992-5BF4-437E-86B1-B8A841B517C9}" ShortID="666966754">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="ambience_emitter_thunder_04" ID="{E5019682-6C0E-4052-A257-F26E3CAB0A5B}" ShortID="315676339">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambience_emitter_thunder_04" ID="{D4F60794-F12D-497E-83AB-3C4296F06454}" ShortID="626910061">
+															<Language>SFX</Language>
+															<AudioFile>ambience_emitter_thunder_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ambience_emitter_thunder_04" ID="{D4F60794-F12D-497E-83AB-3C4296F06454}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ambience_emitter_thunder_02" ID="{2CD9405D-CFF2-4495-822C-2FBBEB7ABB5D}" ShortID="55146872">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambience_emitter_thunder_02" ID="{4706FF8D-5560-4AD4-9657-8358ED423B0E}" ShortID="10468512">
+															<Language>SFX</Language>
+															<AudioFile>ambience_emitter_thunder_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ambience_emitter_thunder_02" ID="{4706FF8D-5560-4AD4-9657-8358ED423B0E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="thunder_quiet" ID="{B844B701-604C-4A8C-85FC-E2E367DD4F15}" ShortID="721974117">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="ambience_emitter_thunder_01" ID="{78EED835-C683-47CF-A582-530B425DD389}" ShortID="369906172">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambience_emitter_thunder_01" ID="{7288C44E-D25F-4916-8331-DA9DC7284318}" ShortID="248959906">
+															<Language>SFX</Language>
+															<AudioFile>ambience_emitter_thunder_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ambience_emitter_thunder_01" ID="{7288C44E-D25F-4916-8331-DA9DC7284318}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ambience_emitter_thunder_03" ID="{6F3F07F4-3DE6-41FB-AAE0-4ADC50EEB86B}" ShortID="212420393">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambience_emitter_thunder_03" ID="{0BB184F9-37A4-43D2-94DC-5CB079B33191}" ShortID="980349068">
+															<Language>SFX</Language>
+															<AudioFile>ambience_emitter_thunder_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ambience_emitter_thunder_03" ID="{0BB184F9-37A4-43D2-94DC-5CB079B33191}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ambience_emitter_thunder_05" ID="{76479D70-71E6-4D2E-A8E2-8848214D0D78}" ShortID="637111429">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambience_emitter_thunder_05" ID="{C4E43136-50D5-4339-B7B5-CF61AC02EE58}" ShortID="569046418">
+															<Language>SFX</Language>
+															<AudioFile>ambience_emitter_thunder_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ambience_emitter_thunder_05" ID="{C4E43136-50D5-4339-B7B5-CF61AC02EE58}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="New Blend Track" ID="{A98A8E30-B65A-4633-9005-3A1F60E80C3C}" ShortID="228724192">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{2D20A0FA-0114-4269-8744-F4F635170F2E}" ShortID="1068577276">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{EF38DA6B-8FD8-4D82-B0A8-E234155FD7B8}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>58</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>47.08994</XPos>
+																		<YPos>7</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{2DF48BCF-0E1C-47C5-B243-4663C5BD3FEF}" ShortID="22256500">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{B15C914E-6DD2-407C-91DB-182C91C56D70}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-11.44194</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="thunder_quiet" ID="{B844B701-604C-4A8C-85FC-E2E367DD4F15}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>55.2379702380952</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="thunder_loud" ID="{4272C992-5BF4-437E-86B1-B8A841B517C9}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>42.1953921957672</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupRef Name="thunder" ID="{6BBA55A6-CB98-48F5-94DA-1AC5DA1C82A5}"/>
+								<DefaultSwitchRef Name="not_thunder" ID="{126C3A53-D071-48CF-A670-92E459AEAE82}"/>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="ambience_thunder_intensity" ID="{1E39A499-D996-4D6E-9FB8-CB5FCDB05D41}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="thunder" ID="{5D690690-8643-4F1A-8A38-315A5A097A39}"/>
+										<ItemList>
+											<ItemRef Name="ambience_thunder_intensity" ID="{1E39A499-D996-4D6E-9FB8-CB5FCDB05D41}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

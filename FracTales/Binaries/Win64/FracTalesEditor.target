@@ -37,47 +37,32 @@
 			"IsPrecompiled" : true
 		},
 		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/WebBrowserWidget/Binaries/Win64/UE4Editor-WebBrowserWidget.dll",
+			"Path" : "$(EngineDir)/Plugins/Runtime/Synthesis/Binaries/Win64/UE4Editor-Synthesis.dll",
 			"Type" : "DynamicLibrary",
 			"IsPrecompiled" : true
 		},
 		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/WebBrowserWidget/Binaries/Win64/UE4Editor-WebBrowserWidget.pdb",
+			"Path" : "$(EngineDir)/Plugins/Runtime/Synthesis/Binaries/Win64/UE4Editor-Synthesis.pdb",
 			"Type" : "SymbolFile",
 			"IsPrecompiled" : true
 		},
 		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/WebBrowserWidget/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-WebBrowserWidget.lib",
+			"Path" : "$(EngineDir)/Plugins/Runtime/Synthesis/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Synthesis.lib",
 			"Type" : "ImportLibrary",
 			"IsPrecompiled" : true
 		},
 		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/StructBox/Binaries/Win64/UE4Editor-StructBox.dll",
+			"Path" : "$(EngineDir)/Plugins/Runtime/Synthesis/Binaries/Win64/UE4Editor-SynthesisEditor.dll",
 			"Type" : "DynamicLibrary",
 			"IsPrecompiled" : true
 		},
 		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/StructBox/Binaries/Win64/UE4Editor-StructBox.pdb",
+			"Path" : "$(EngineDir)/Plugins/Runtime/Synthesis/Binaries/Win64/UE4Editor-SynthesisEditor.pdb",
 			"Type" : "SymbolFile",
 			"IsPrecompiled" : true
 		},
 		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/StructBox/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-StructBox.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/SoundVisualizations/Binaries/Win64/UE4Editor-SoundVisualizations.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/SoundVisualizations/Binaries/Win64/UE4Editor-SoundVisualizations.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/SoundVisualizations/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-SoundVisualizations.lib",
+			"Path" : "$(EngineDir)/Plugins/Runtime/Synthesis/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-SynthesisEditor.lib",
 			"Type" : "ImportLibrary",
 			"IsPrecompiled" : true
 		},
@@ -108,180 +93,6 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Runtime/SoundUtilities/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-SoundUtilitiesEditor.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/SoundMod/Binaries/Win64/UE4Editor-SoundMod.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/SoundMod/Binaries/Win64/UE4Editor-SoundMod.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/SoundMod/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-SoundMod.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/SoundMod/Binaries/Win64/UE4Editor-SoundModImporter.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/SoundMod/Binaries/Win64/UE4Editor-SoundModImporter.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/SoundMod/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-SoundModImporter.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Performance/PerformanceMonitor/Binaries/Win64/UE4Editor-PerformanceMonitor.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Performance/PerformanceMonitor/Binaries/Win64/UE4Editor-PerformanceMonitor.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Performance/PerformanceMonitor/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-PerformanceMonitor.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/LiveLink/Binaries/Win64/UE4Editor-LiveLink.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/LiveLink/Binaries/Win64/UE4Editor-LiveLink.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/LiveLink/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-LiveLink.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Compositing/LensDistortion/Binaries/Win64/UE4Editor-LensDistortion.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Compositing/LensDistortion/Binaries/Win64/UE4Editor-LensDistortion.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Compositing/LensDistortion/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-LensDistortion.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Tests/FunctionalTestingEditor/Binaries/Win64/UE4Editor-FunctionalTestingEditor.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Tests/FunctionalTestingEditor/Binaries/Win64/UE4Editor-FunctionalTestingEditor.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Tests/FunctionalTestingEditor/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-FunctionalTestingEditor.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Tests/EditorTests/Binaries/Win64/UE4Editor-EditorTests.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Tests/EditorTests/Binaries/Win64/UE4Editor-EditorTests.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Tests/EditorTests/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-EditorTests.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/CodeView/Binaries/Win64/UE4Editor-CodeView.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/CodeView/Binaries/Win64/UE4Editor-CodeView.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/CodeView/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-CodeView.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/BlueprintStats/Binaries/Win64/UE4Editor-BlueprintStats.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/BlueprintStats/Binaries/Win64/UE4Editor-BlueprintStats.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/BlueprintStats/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-BlueprintStats.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(ProjectDir)/Plugins/Wwise/Binaries/Win64/UE4Editor-AkAudio.dll",
-			"Type" : "DynamicLibrary"
-		},
-		{
-			"Path" : "$(ProjectDir)/Plugins/Wwise/Binaries/Win64/UE4Editor-AkAudio.pdb",
-			"Type" : "SymbolFile"
-		},
-		{
-			"Path" : "$(ProjectDir)/Plugins/Wwise/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-AkAudio.lib",
-			"Type" : "ImportLibrary"
-		},
-		{
-			"Path" : "$(ProjectDir)/Plugins/Wwise/Binaries/Win64/UE4Editor-AudiokineticTools.dll",
-			"Type" : "DynamicLibrary"
-		},
-		{
-			"Path" : "$(ProjectDir)/Plugins/Wwise/Binaries/Win64/UE4Editor-AudiokineticTools.pdb",
-			"Type" : "SymbolFile"
-		},
-		{
-			"Path" : "$(ProjectDir)/Plugins/Wwise/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-AudiokineticTools.lib",
-			"Type" : "ImportLibrary"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor-MatineeToLevelSequence.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor-MatineeToLevelSequence.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-MatineeToLevelSequence.lib",
 			"Type" : "ImportLibrary",
 			"IsPrecompiled" : true
 		},
@@ -811,6 +622,21 @@
 			"IsPrecompiled" : true
 		},
 		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor-MatineeToLevelSequence.dll",
+			"Type" : "DynamicLibrary",
+			"IsPrecompiled" : true
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor-MatineeToLevelSequence.pdb",
+			"Type" : "SymbolFile",
+			"IsPrecompiled" : true
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-MatineeToLevelSequence.lib",
+			"Type" : "ImportLibrary",
+			"IsPrecompiled" : true
+		},
+		{
 			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystem/Binaries/Win64/UE4Editor-OnlineSubsystem.dll",
 			"Type" : "DynamicLibrary",
 			"IsPrecompiled" : true
@@ -1182,6 +1008,36 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Runtime/WindowsMoviePlayer/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-WindowsMoviePlayer.lib",
+			"Type" : "ImportLibrary",
+			"IsPrecompiled" : true
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Wwise/Binaries/Win64/UE4Editor-AkAudio.dll",
+			"Type" : "DynamicLibrary",
+			"IsPrecompiled" : true
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Wwise/Binaries/Win64/UE4Editor-AkAudio.pdb",
+			"Type" : "SymbolFile",
+			"IsPrecompiled" : true
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Wwise/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-AkAudio.lib",
+			"Type" : "ImportLibrary",
+			"IsPrecompiled" : true
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Wwise/Binaries/Win64/UE4Editor-AudiokineticTools.dll",
+			"Type" : "DynamicLibrary",
+			"IsPrecompiled" : true
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Wwise/Binaries/Win64/UE4Editor-AudiokineticTools.pdb",
+			"Type" : "SymbolFile",
+			"IsPrecompiled" : true
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Wwise/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-AudiokineticTools.lib",
 			"Type" : "ImportLibrary",
 			"IsPrecompiled" : true
 		},
@@ -5758,66 +5614,6 @@
 			"IsPrecompiled" : true
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/Win64/UE4Editor-CEF3Utils.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Binaries/Win64/UE4Editor-CEF3Utils.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-CEF3Utils.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Binaries/Win64/UE4Editor-WebBrowser.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Binaries/Win64/UE4Editor-WebBrowser.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-WebBrowser.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Binaries/Win64/UE4Editor-LiveLinkInterface.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Binaries/Win64/UE4Editor-LiveLinkInterface.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-LiveLinkInterface.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Binaries/Win64/UE4Editor-LiveLinkMessageBusFramework.dll",
-			"Type" : "DynamicLibrary",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Binaries/Win64/UE4Editor-LiveLinkMessageBusFramework.pdb",
-			"Type" : "SymbolFile",
-			"IsPrecompiled" : true
-		},
-		{
-			"Path" : "$(EngineDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-LiveLinkMessageBusFramework.lib",
-			"Type" : "ImportLibrary",
-			"IsPrecompiled" : true
-		},
-		{
 			"Path" : "$(EngineDir)/Binaries/Win64/UE4Editor-Voice.dll",
 			"Type" : "DynamicLibrary",
 			"IsPrecompiled" : true
@@ -5863,10 +5659,6 @@
 			"IsPrecompiled" : true
 		},
 		{
-			"Path" : "$(ProjectDir)/Plugins/Wwise/Binaries/Win64/UE4Editor.modules",
-			"Type" : "RequiredResource"
-		},
-		{
 			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor.modules",
 			"Type" : "RequiredResource"
 		}
@@ -5878,59 +5670,11 @@
 			"Type" : "UFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/WebBrowserWidget/WebBrowserWidget.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/StructBox/StructBox.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/SoundVisualizations/SoundVisualizations.uplugin",
+			"Path" : "$(EngineDir)/Plugins/Runtime/Synthesis/Synthesis.uplugin",
 			"Type" : "UFS"
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Runtime/SoundUtilities/SoundUtilities.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Runtime/SoundMod/SoundMod.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Performance/PerformanceMonitor/PerformanceMonitor.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/LiveLink/LiveLink.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Compositing/LensDistortion/LensDistortion.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Tests/FunctionalTestingEditor/FunctionalTestingEditor.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Tests/EditorTests/EditorTests.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/CodeView/CodeView.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Experimental/BlueprintStats/BlueprintStats.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(ProjectDir)/Plugins/Wwise/Wwise.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/MatineeToLevelSequence.uplugin",
 			"Type" : "UFS"
 		},
 		{
@@ -6030,6 +5774,10 @@
 			"Type" : "UFS"
 		},
 		{
+			"Path" : "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/MatineeToLevelSequence.uplugin",
+			"Type" : "UFS"
+		},
+		{
 			"Path" : "$(EngineDir)/Plugins/Online/OnlineSubsystem/OnlineSubsystem.uplugin",
 			"Type" : "UFS"
 		},
@@ -6099,6 +5847,10 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Runtime/WindowsMoviePlayer/WindowsMoviePlayer.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Wwise/Wwise.uplugin",
 			"Type" : "UFS"
 		},
 		{
@@ -8252,10 +8004,6 @@
 		{
 			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3CookingPROFILE_x64.pdb",
 			"Type" : "DebugNonUFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Binaries/Win64/UnrealCEFSubProcess.exe",
-			"Type" : "NonUFS"
 		}
 	]
 }

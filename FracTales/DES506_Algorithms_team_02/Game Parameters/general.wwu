@@ -41,13 +41,13 @@
 						<GameParameter Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="26000"/>
+								<Property Name="Max" Type="Real64" Value="8000"/>
 								<Property Name="Min" Type="Real64" Value="-300"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="weather" ID="{C126972E-9370-4CE0-AAB5-CD3E40FEBD8F}" ShortID="753243927">
+				<Folder Name="weather_environment" ID="{C126972E-9370-4CE0-AAB5-CD3E40FEBD8F}" ShortID="753243927">
 					<ChildrenList>
 						<GameParameter Name="water_speed" ID="{5A7BDAFD-EFAA-4F59-8877-6EB2092CDA28}">
 							<PropertyList>
@@ -60,6 +60,13 @@
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}"/>
+						<GameParameter Name="time_of_day" ID="{BA244F7E-5D13-427E-992C-334ADCDD0BC2}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="24"/>
+								<Property Name="Max" Type="Real64" Value="24"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="sun_position" ID="{A21C38E2-BE01-43DF-9270-109B80EB9767}"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
