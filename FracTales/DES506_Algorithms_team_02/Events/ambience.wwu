@@ -5,7 +5,6 @@
 			<ChildrenList>
 				<Folder Name="Town" ID="{DAF53ECB-8CC9-4C18-88A0-EFFB32AA0C7D}" ShortID="146564073">
 					<ChildrenList>
-						<Folder Name="Emitters" ID="{D863C558-DCF2-4D4C-ACCC-A4BD1A4D92D0}" ShortID="521658343"/>
 						<Event Name="event_amb_town_start" ID="{F8F9A128-8665-4831-8075-5BEF269B99D3}">
 							<ChildrenList>
 								<Action Name="" ID="{93472524-D7A9-4D81-966A-3F499CFE4A5A}" ShortID="619987171">
@@ -20,6 +19,229 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Emitters" ID="{D863C558-DCF2-4D4C-ACCC-A4BD1A4D92D0}" ShortID="521658343">
+					<ChildrenList>
+						<Folder Name="weather" ID="{5E794D97-4811-4E80-8CB3-CB1649FB9661}" ShortID="183746436">
+							<ChildrenList>
+								<Folder Name="wind" ID="{1702CFFB-F042-4E5D-8BAE-6F71BCB69918}" ShortID="305126007">
+									<ChildrenList>
+										<Event Name="amb_wind_loop_start" ID="{CDAB1751-58B6-4684-9A84-C511DFB5A4B8}">
+											<ChildrenList>
+												<Action Name="" ID="{0F87C635-CFF1-413C-94D1-05FB62685D3E}" ShortID="768443436">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="ambience_wind" ID="{722450CA-B142-427F-8062-790493933190}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="amb_wind_loop_stop" ID="{985CD629-06D4-4151-8CFB-421707D9C68A}">
+											<ChildrenList>
+												<Action Name="" ID="{EB0C0129-A465-4578-81E9-888D441ACCFD}" ShortID="771372333">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="ambience_wind" ID="{722450CA-B142-427F-8062-790493933190}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="wind_grass" ID="{0C0AB825-F7E7-4DB9-A4FA-E6A3D2FBB9D9}" ShortID="346470661">
+									<ChildrenList>
+										<Event Name="amb_wind_grass_loop_start" ID="{288F226B-EEA6-4BE4-B217-7DC4B537664A}">
+											<ChildrenList>
+												<Action Name="" ID="{971FF668-FCEA-4BC1-B780-22CDA3DFF158}" ShortID="229054598">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="amb_emitter_wind_grass" ID="{00CC5D63-332A-409E-8573-52E528EC2377}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="amb_wind_grass_loop_stop" ID="{8C15B92F-9119-4A4E-9F5E-AC55DC5A4A81}">
+											<ChildrenList>
+												<Action Name="" ID="{5C1FB8EE-D70A-425C-AE9C-E230D69636A9}" ShortID="44607974">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="amb_emitter_wind_grass" ID="{00CC5D63-332A-409E-8573-52E528EC2377}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="wind_trees" ID="{2E613687-92B7-4DDE-BF15-71630638535F}" ShortID="23059029">
+									<ChildrenList>
+										<Event Name="amb_wind_trees_loop_start" ID="{60336777-4898-4A88-8319-40C641DCB154}">
+											<ChildrenList>
+												<Action Name="" ID="{685C6158-D744-41B3-AF9E-F02A33A44D26}" ShortID="903508163">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="amb_emitter_wind_trees" ID="{14F1BE33-113F-4012-A09B-6FCE614BB6EB}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="amb_wind_trees_loop_stop" ID="{51CD05A4-0FA5-4B94-AABE-BD3D132D92FF}">
+											<ChildrenList>
+												<Action Name="" ID="{0C6F58BE-C851-4560-8174-6B4AE8B9B989}" ShortID="559587816">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="amb_emitter_wind_trees" ID="{14F1BE33-113F-4012-A09B-6FCE614BB6EB}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="rain" ID="{B75ABEF5-E6DF-47CF-A163-B99FBA600271}" ShortID="565470920">
+									<ChildrenList>
+										<Event Name="amb_rain_loop_start" ID="{4D68976D-8E6A-49AB-AA6E-212F23C71AB9}">
+											<ChildrenList>
+												<Action Name="" ID="{F4BA6791-9848-4D46-90E8-B71109EFAF62}" ShortID="608339262">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="ambience_raining" ID="{57F01E06-5181-4FE0-B06D-C720DE99B5A2}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="amb_rain_loop_stop" ID="{AB161228-7948-42F0-9DC2-DCED5CE8C264}"/>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="water" ID="{D815FBDF-2C34-4E62-A2A1-B5BA1E8367A5}" ShortID="378102770">
+							<ChildrenList>
+								<Folder Name="river" ID="{998BDA57-0570-4EBC-B411-546ED79F68DD}" ShortID="423715788">
+									<ChildrenList>
+										<Event Name="amb_river_loop_stop" ID="{FD0017A5-5CA3-4A6C-AEB6-31CD4BF492F5}">
+											<ChildrenList>
+												<Action Name="" ID="{81F9F21B-9A3A-4727-91CD-8A0BAF5F15CD}" ShortID="652140528">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="river" ID="{E9CB4888-1119-425E-8035-B3137684A2C9}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="amb_river_loop_start" ID="{09FE011D-72B2-4852-AFD9-DD032AE984BA}">
+											<ChildrenList>
+												<Action Name="" ID="{80ABFFA2-0220-4C43-A367-8B4E28256CC9}" ShortID="29046391">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="river" ID="{E9CB4888-1119-425E-8035-B3137684A2C9}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="sea" ID="{9EADB869-BE2F-41D3-81E8-0AD45017CE61}" ShortID="1039124139">
+									<ChildrenList>
+										<Event Name="amb_waves_loop_start" ID="{338BD57D-39FF-4AB6-9095-FBDE3D27FCEB}">
+											<ChildrenList>
+												<Action Name="" ID="{C0F57380-24EA-4226-AD09-BB083A918A23}" ShortID="458604028">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="amb_emit_waves" ID="{486F8955-238E-4AB6-AE59-CC9D9925FA10}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="amb_waves_loop_stop" ID="{5D1E88F2-9617-41A4-ADFB-3075FE7DA8EE}">
+											<ChildrenList>
+												<Action Name="" ID="{7D78ECED-97B8-4C36-9770-DE1D6B1E1C97}" ShortID="404822656">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="amb_emit_waves" ID="{486F8955-238E-4AB6-AE59-CC9D9925FA10}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="towers" ID="{3BB545ED-D67B-49FE-8BF1-2D061968EAAC}" ShortID="465070456">
+							<ChildrenList>
+								<Event Name="override_freq_play" ID="{EBA50BC8-94F6-4182-8998-B4162CD4C8C3}">
+									<ChildrenList>
+										<Action Name="" ID="{46C115BC-A2A3-4861-ACA5-42A02FA7BF8A}" ShortID="980179930">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="tower_01" ID="{6713C24A-3A6D-42C1-9250-1D4FB18BD0FD}" WorkUnitID="{D66131ED-B553-4AF0-A93E-29C9113164ED}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="override_freq_stop" ID="{EAC92FE3-ADE0-431E-B0F2-00264E531423}">
+									<ChildrenList>
+										<Action Name="" ID="{5607FA80-04CA-466B-9CC5-7530A21B11D0}" ShortID="1041297034">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="tower_01" ID="{6713C24A-3A6D-42C1-9250-1D4FB18BD0FD}" WorkUnitID="{D66131ED-B553-4AF0-A93E-29C9113164ED}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
