@@ -56,6 +56,94 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="door_opening_wood_creak" ID="{102DE843-8CFD-44C7-BBA0-7A4D5238AC90}" ShortID="200087079">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="amb_door_creak_11_open" ID="{1C12986D-12CC-47AC-80ED-218CA8D406C4}" ShortID="941744606">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="amb_door_creak_11_open" ID="{B4350768-156C-4839-BF35-48327FF0BF8C}" ShortID="9477390">
+																	<Language>SFX</Language>
+																	<AudioFile>amb_door_creak_11_open.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="amb_door_creak_11_open" ID="{B4350768-156C-4839-BF35-48327FF0BF8C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="amb_door_creak_13_open" ID="{F06D13B0-6C4C-4379-AB82-31141E36CFDF}" ShortID="765472355">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="amb_door_creak_13_open" ID="{7CBE821A-3C3D-4FDE-B88D-9FAC79A1D25F}" ShortID="249016156">
+																	<Language>SFX</Language>
+																	<AudioFile>amb_door_creak_13_open.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="amb_door_creak_13_open" ID="{7CBE821A-3C3D-4FDE-B88D-9FAC79A1D25F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="amb_door_creak_15_open" ID="{11DDAD17-24A1-44B2-BABE-8814C2019F94}" ShortID="873996841">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="amb_door_creak_15_open" ID="{1FD26F02-21A4-436C-9C9E-F9F511B106C1}" ShortID="825306735">
+																	<Language>SFX</Language>
+																	<AudioFile>amb_door_creak_15_open.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="amb_door_creak_15_open" ID="{1FD26F02-21A4-436C-9C9E-F9F511B106C1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="amb_door_creak_16_open" ID="{22BCF2E8-F0D7-43CB-B519-49B656DF8039}" ShortID="1017837336">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="amb_door_creak_16_open" ID="{366D1BDF-CD7B-4279-9B8B-D8078EB5776E}" ShortID="407426544">
+																	<Language>SFX</Language>
+																	<AudioFile>amb_door_creak_16_open.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="amb_door_creak_16_open" ID="{366D1BDF-CD7B-4279-9B8B-D8078EB5776E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<Playlist>
 												<ItemRef Name="door_opening_wood_handle" ID="{692BB128-D8F4-450F-B94A-CDEEAA462867}"/>
@@ -680,6 +768,8 @@
 								<Value>39</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-17</Value>
@@ -1319,10 +1409,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="sfx_player_treadmill_loop" ID="{2650D6B0-1247-44B7-A42C-BB939AF5F3C4}" ShortID="461594774">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
+						<BlendContainer Name="treadmill" ID="{585A9DC5-9A79-4048-AB16-250B98F7615F}" ShortID="1047220028">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -1332,15 +1419,69 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="sfx_player_treadmill_loop" ID="{A1206720-BC94-4B24-A11E-47FB1E94FBB8}" ShortID="545122805">
-									<Language>SFX</Language>
-									<AudioFile>sfx_player_treadmill_loop.wav</AudioFile>
-								</AudioFileSource>
+								<Sound Name="sfx_player_treadmill_loop" ID="{2650D6B0-1247-44B7-A42C-BB939AF5F3C4}" ShortID="461594774">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_player_treadmill_loop" ID="{A1206720-BC94-4B24-A11E-47FB1E94FBB8}" ShortID="545122805">
+											<Language>SFX</Language>
+											<AudioFile>sfx_player_treadmill_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_player_treadmill_loop" ID="{A1206720-BC94-4B24-A11E-47FB1E94FBB8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="player_breathing_treadmill" ID="{4DAC1A7B-ED8B-4983-A2EB-4F55017D322B}" ShortID="209989865">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="player_breathing_treadmill_inhale" ID="{0C4908BB-6421-4E67-AD33-964BFA7F2FA6}" ShortID="360043697">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="player_breathing_treadmill_exhale" ID="{EA35E480-9D5E-4A97-8F9B-45F46F81E312}" ShortID="336101058">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="player_breathing_treadmill_inhale" ID="{0C4908BB-6421-4E67-AD33-964BFA7F2FA6}"/>
+										<ItemRef Name="player_breathing_treadmill_exhale" ID="{EA35E480-9D5E-4A97-8F9B-45F46F81E312}"/>
+									</Playlist>
+								</RandomSequenceContainer>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_player_treadmill_loop" ID="{A1206720-BC94-4B24-A11E-47FB1E94FBB8}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

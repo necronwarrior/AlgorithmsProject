@@ -41,16 +41,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{3DA75031-0274-4D32-9DF5-1A6BFD463F5E}" ShortID="445292505">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="23"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="close" ID="{0F78FE01-577A-4E1D-9C02-623D79EAF0F5}" WorkUnitID="{79E22627-062D-4585-B570-C50242E768AC}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
@@ -209,7 +199,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sfx_player_treadmill_loop" ID="{2650D6B0-1247-44B7-A42C-BB939AF5F3C4}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+											<ObjectRef Name="treadmill" ID="{585A9DC5-9A79-4048-AB16-250B98F7615F}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -223,7 +213,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sfx_player_treadmill_loop" ID="{2650D6B0-1247-44B7-A42C-BB939AF5F3C4}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+											<ObjectRef Name="treadmill" ID="{585A9DC5-9A79-4048-AB16-250B98F7615F}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

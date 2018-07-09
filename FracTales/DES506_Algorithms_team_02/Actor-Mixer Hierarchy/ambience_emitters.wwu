@@ -15,6 +15,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="ambience_emitters_bees" ID="{4D3FE224-76B2-4666-B8C9-1122AE3D9EE9}" ShortID="405655951">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-25</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -23,8 +30,32 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_bees" ID="{F344BC3A-02EB-42E5-AF58-2729ABEF9E59}" ShortID="532578741">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_bees" ID="{F3F0C671-4479-46EA-ABF1-2441F3ECE6C8}" ShortID="1012178058">
+											<Language>SFX</Language>
+											<AudioFile>amb_bees.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_bees" ID="{F3F0C671-4479-46EA-ABF1-2441F3ECE6C8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="ambience_emitters_cicadas" ID="{1994353B-7B9B-4502-B686-9E7789F1032E}" ShortID="313498630">
+						<ActorMixer Name="crickets" ID="{17B2F508-342E-4D7B-A1C1-B3D37F2EF52D}" ShortID="438071660">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -33,37 +64,238 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 								</Reference>
 							</ReferenceList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="ambience_emitters_crickets" ID="{914D1923-4284-4922-809B-4267B836069A}" ShortID="520655899">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-								</Reference>
-							</ReferenceList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="ambience_emitters_flies" ID="{52D8BCCA-A8E0-47AB-B5E2-B346BC0AC2FB}" ShortID="448034686">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-								</Reference>
-							</ReferenceList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="ambience_emitters_dragonflies" ID="{1959340F-5F1E-42D8-8305-74D05DAA490F}" ShortID="99037663">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-								</Reference>
-							</ReferenceList>
-						</RandomSequenceContainer>
+							<ChildrenList>
+								<RandomSequenceContainer Name="ambience_emitters_crickets" ID="{914D1923-4284-4922-809B-4267B836069A}" ShortID="520655899">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="amb_crickets_01" ID="{A9724CC3-25F8-4B94-A442-829F492C19F7}" ShortID="268133116">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_crickets_01" ID="{79BF320C-3B7E-4605-85EF-B462553AE812}" ShortID="206396060">
+													<Language>SFX</Language>
+													<AudioFile>amb_crickets_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_crickets_01" ID="{79BF320C-3B7E-4605-85EF-B462553AE812}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_crickets_02" ID="{A5622A1F-B4CC-44A4-BB23-438500D94258}" ShortID="87945727">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_crickets_02" ID="{683C83E0-C8C1-4C03-A5DB-A4A8C40622AF}" ShortID="260827312">
+													<Language>SFX</Language>
+													<AudioFile>amb_crickets_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_crickets_02" ID="{683C83E0-C8C1-4C03-A5DB-A4A8C40622AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_crickets_03" ID="{0E732DF6-FA5E-4FE1-A388-36B9898F4445}" ShortID="192879204">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_crickets_03" ID="{891586F6-51F2-4D30-9ADA-57BBE1D2C8B8}" ShortID="286270046">
+													<Language>SFX</Language>
+													<AudioFile>amb_crickets_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_crickets_03" ID="{891586F6-51F2-4D30-9ADA-57BBE1D2C8B8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_crickets_04" ID="{2F6AAFE9-67F9-429F-9073-D34FD8B27EF5}" ShortID="433913801">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_crickets_04" ID="{DE6B000B-6170-4B00-A1B9-BDC8BF0B1D4A}" ShortID="58459389">
+													<Language>SFX</Language>
+													<AudioFile>amb_crickets_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_crickets_04" ID="{DE6B000B-6170-4B00-A1B9-BDC8BF0B1D4A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_crickets_05" ID="{7ABFEC73-9F96-43AF-BC46-6E0C8A955EEF}" ShortID="990992144">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_crickets_05" ID="{BD725558-46DA-4175-AC65-53369CAF4072}" ShortID="870862613">
+													<Language>SFX</Language>
+													<AudioFile>amb_crickets_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_crickets_05" ID="{BD725558-46DA-4175-AC65-53369CAF4072}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_crickets_06" ID="{4D5E7495-3209-4823-AFD6-1EE369AEE083}" ShortID="954042941">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_crickets_06" ID="{1369F856-3973-4466-B243-663C93193E9E}" ShortID="1004230307">
+													<Language>SFX</Language>
+													<AudioFile>amb_crickets_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_crickets_06" ID="{1369F856-3973-4466-B243-663C93193E9E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_crickets_07" ID="{B48F9E17-A95A-4526-8E4E-5C751CE0145F}" ShortID="831562497">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_crickets_07" ID="{5E8B87D0-185B-4868-B6BC-C957521A9462}" ShortID="566855525">
+													<Language>SFX</Language>
+													<AudioFile>amb_crickets_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_crickets_07" ID="{5E8B87D0-185B-4868-B6BC-C957521A9462}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_crickets_08" ID="{E47FAC0D-4A75-4AD3-9F6B-1E0220CA187D}" ShortID="185172666">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_crickets_08" ID="{EA1BE0CB-1BFE-4672-AE51-7FDA5DE467F0}" ShortID="422302439">
+													<Language>SFX</Language>
+													<AudioFile>amb_crickets_08.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_crickets_08" ID="{EA1BE0CB-1BFE-4672-AE51-7FDA5DE467F0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_crickets_09" ID="{8A22FE5B-D6F8-4AC4-99BD-F17489530069}" ShortID="916719027">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_crickets_09" ID="{D9F3C45F-5D21-4CBF-96FB-0CF8017EACF5}" ShortID="358792151">
+													<Language>SFX</Language>
+													<AudioFile>amb_crickets_09.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_crickets_09" ID="{D9F3C45F-5D21-4CBF-96FB-0CF8017EACF5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_crickets_10" ID="{7B0CF5EF-4A62-4B2D-B84E-763CFF635771}" ShortID="340045706">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_crickets_10" ID="{E0E98EF3-29F0-476E-B90A-FA4F73D465E3}" ShortID="55649380">
+													<Language>SFX</Language>
+													<AudioFile>amb_crickets_10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_crickets_10" ID="{E0E98EF3-29F0-476E-B90A-FA4F73D465E3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="amb_crickets_loop" ID="{6F010985-8966-4D35-B647-2C1A3A3FC80E}" ShortID="675721983">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_crickets_loop" ID="{9DD0BB8C-9B6B-43B0-9FD8-ABF869DF10A5}" ShortID="123514961">
+											<Language>SFX</Language>
+											<AudioFile>amb_crickets_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_crickets_loop" ID="{9DD0BB8C-9B6B-43B0-9FD8-ABF869DF10A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="fauna" ID="{4D533DEE-947A-4A06-AB20-9F0B05D1D2B0}" ShortID="392538596">
@@ -76,16 +308,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="ambience_emitters_fauna" ID="{FF3E96F0-815A-4F85-A4F7-633153958371}" ShortID="483098923">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-								</Reference>
-							</ReferenceList>
-						</RandomSequenceContainer>
 						<ActorMixer Name="birds" ID="{CFC06812-E9B5-4897-8648-9F2659F168E6}" ShortID="654129707">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -803,20 +1025,6 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="amb_emit_owls" ID="{8875ADB4-AEEB-4425-9F73-B4B55EC04C02}" ShortID="552161836">
-									<PropertyList>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-										</Reference>
-									</ReferenceList>
-								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="amb_emit_small_birds" ID="{3A8BB9E6-7E9E-408E-95EB-C3FAEC0B4C63}" ShortID="312245907">
 									<PropertyList>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -831,19 +1039,10 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
-							</ChildrenList>
-						</ActorMixer>
-						<ActorMixer Name="wolves" ID="{909083BF-B980-4824-AC03-3E1A3457EE7E}" ShortID="384526889">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="amb_emit_wolves" ID="{EBE08D98-D3D2-4AB2-A0B4-4D7BDF68EBEA}" ShortID="664665733">
+								<BlendContainer Name="amb_forest_birds" ID="{C741F6EB-E334-461C-AC4A-31A445D05C89}" ShortID="376011100">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -852,7 +1051,289 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 										</Reference>
 									</ReferenceList>
-								</RandomSequenceContainer>
+									<ChildrenList>
+										<RandomSequenceContainer Name="amb_wood_pigeon" ID="{F06A7E53-F553-4A35-8BD9-1767C0B30306}" ShortID="416569800">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5DF4CCE5-3C62-4DA8-92BA-15AF364633FB}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="8"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{2C451B7A-ACE3-4F8C-AAFD-5F36118B8074}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="5"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="amb_wood_pigeon_01" ID="{EC20AA99-1AD5-49E1-9A42-75C8EF1DEAA5}" ShortID="603244802">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="amb_wood_pigeon_01" ID="{0335A131-89F6-4D7D-8166-9556CA64C2FB}" ShortID="239878221">
+															<Language>SFX</Language>
+															<AudioFile>amb_wood_pigeon_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="amb_wood_pigeon_01" ID="{0335A131-89F6-4D7D-8166-9556CA64C2FB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="amb_wood_pigeon_02" ID="{B49A9169-D770-4B72-B8CE-1A453FC835F6}" ShortID="1068366829">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="amb_wood_pigeon_02" ID="{7B72D938-2827-40BB-92C9-D270E5D1B788}" ShortID="531225068">
+															<Language>SFX</Language>
+															<AudioFile>amb_wood_pigeon_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="amb_wood_pigeon_02" ID="{7B72D938-2827-40BB-92C9-D270E5D1B788}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="amb_wood_pigeon_03" ID="{2188A286-18FB-4F84-9B8F-078294DEB7D5}" ShortID="107763014">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="amb_wood_pigeon_03" ID="{2AF56ABC-92C5-4630-BAFA-A539C5D9EAD3}" ShortID="911159935">
+															<Language>SFX</Language>
+															<AudioFile>amb_wood_pigeon_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="amb_wood_pigeon_03" ID="{2AF56ABC-92C5-4630-BAFA-A539C5D9EAD3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="amb_wood_pigeon_04" ID="{65754276-23C6-4474-98B7-2F080D4A5421}" ShortID="192224072">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="amb_wood_pigeon_04" ID="{E9A2C760-4804-4951-8B40-35E51089A837}" ShortID="746172129">
+															<Language>SFX</Language>
+															<AudioFile>amb_wood_pigeon_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="amb_wood_pigeon_04" ID="{E9A2C760-4804-4951-8B40-35E51089A837}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="amb_wood_pigeon_05" ID="{03A5B738-5F1F-42FB-B84C-59AC0290FDD6}" ShortID="364645477">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="amb_wood_pigeon_05" ID="{FF61DF9C-5DA8-485E-96A2-D1322A4EF3FF}" ShortID="311297241">
+															<Language>SFX</Language>
+															<AudioFile>amb_wood_pigeon_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="amb_wood_pigeon_05" ID="{FF61DF9C-5DA8-485E-96A2-D1322A4EF3FF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="amb_wood_pigeon_06" ID="{0AB80341-4BB0-461D-8120-2CA18F24B773}" ShortID="865421429">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="amb_wood_pigeon_06" ID="{FAD939AF-67AB-49B0-B1AE-6D7037C77FF4}" ShortID="552028554">
+															<Language>SFX</Language>
+															<AudioFile>amb_wood_pigeon_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="amb_wood_pigeon_06" ID="{FAD939AF-67AB-49B0-B1AE-6D7037C77FF4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="amb_wood_pigeon_07" ID="{67217970-DBCB-4D79-9BFB-5E3D949DC33E}" ShortID="310700954">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="amb_wood_pigeon_07" ID="{7D28FA64-CAEE-498E-83DA-F8831236898C}" ShortID="661767251">
+															<Language>SFX</Language>
+															<AudioFile>amb_wood_pigeon_07.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="amb_wood_pigeon_07" ID="{7D28FA64-CAEE-498E-83DA-F8831236898C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="amb_wood_pigeon_08" ID="{8FFFC38A-9B70-480B-9B68-58E8A4390DDA}" ShortID="323469829">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="amb_wood_pigeon_08" ID="{DD1E804D-0085-45C1-B061-E8F6EC45ADC8}" ShortID="668953589">
+															<Language>SFX</Language>
+															<AudioFile>amb_wood_pigeon_08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="amb_wood_pigeon_08" ID="{DD1E804D-0085-45C1-B061-E8F6EC45ADC8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="amb_emit_owls" ID="{8875ADB4-AEEB-4425-9F73-B4B55EC04C02}" ShortID="552161836">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CD01D3CF-D91E-4B84-B55E-90CBD1AA0BD8}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="amb_owl_01" ID="{6CFBB81B-EEE0-452A-B34A-505F86F38C82}" ShortID="822908114">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>52</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="amb_owl_01" ID="{1D23EC72-C2CE-42E3-A742-2FC4A8139B67}" ShortID="1025937716">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="4.65959821428572E-02"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.8154296875"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.213564918154762"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.33937872023809"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>amb_owl_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="amb_owl_01" ID="{1D23EC72-C2CE-42E3-A742-2FC4A8139B67}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="New Blend Track" ID="{1DF23331-69C6-4C11-974A-8733B1B75E2C}" ShortID="558776221">
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="amb_emit_owls" ID="{8875ADB4-AEEB-4425-9F73-B4B55EC04C02}"/>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="amb_wood_pigeon" ID="{F06A7E53-F553-4A35-8BD9-1767C0B30306}"/>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
@@ -1993,8 +2474,10 @@
 												<Property Name="Duration" Type="Real64" Value="60"/>
 												<Property Name="FrequencyScale" Type="Real32" Value="1.64"/>
 												<Property Name="GainOffset" Type="Real32" Value="4.6"/>
-												<Property Name="Gustiness" Type="Real32" Value="0.32"/>
+												<Property Name="Gustiness" Type="Real32" Value="0"/>
 												<Property Name="QFactorScale" Type="Real32" Value="-4"/>
+												<Property Name="Variability" Type="Real32" Value="0"/>
+												<Property Name="VelocityDynamicRange" Type="Real32" Value="0.26"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<PluginData/>
@@ -2100,6 +2583,11 @@
 						<BlendContainer Name="amb_emit_waves" ID="{486F8955-238E-4AB6-AE59-CC9D9925FA10}" ShortID="179610525">
 							<PropertyList>
 								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2633,6 +3121,457 @@
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="weather" ID="{F154F3C8-4875-44D1-A4C6-81A574736559}" ShortID="1023787865">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="ambience_raining" ID="{57F01E06-5181-4FE0-B06D-C720DE99B5A2}" ShortID="240886975">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="ambience_rain_intensity" ID="{A970BF43-3E3C-40CD-9451-1B7D0D1C27C3}" ShortID="929356129">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="rain_heavy_loop_01" ID="{C34EAFFB-030A-4861-AFEA-2F150D2594A1}" ShortID="74079852">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rain_heavy_loop_01" ID="{DF499672-321E-42C7-BC04-1B4D6BFBC5CF}" ShortID="684310661">
+													<Language>SFX</Language>
+													<AudioFile>rain_heavy_loop_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rain_heavy_loop_01" ID="{DF499672-321E-42C7-BC04-1B4D6BFBC5CF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="rain_light_loop_01" ID="{F6EBA2B7-B2D2-425F-9033-29FE08DFA835}" ShortID="242354726">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rain_light_loop_01" ID="{ACE55081-2767-4CFA-81B1-90AE16604B0C}" ShortID="1032039823">
+													<Language>SFX</Language>
+													<AudioFile>rain_light_loop_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rain_light_loop_01" ID="{ACE55081-2767-4CFA-81B1-90AE16604B0C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="thunder_loud" ID="{4272C992-5BF4-437E-86B1-B8A841B517C9}" ShortID="666966754">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="ambience_emitter_thunder_04" ID="{E5019682-6C0E-4052-A257-F26E3CAB0A5B}" ShortID="315676339">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambience_emitter_thunder_04" ID="{D4F60794-F12D-497E-83AB-3C4296F06454}" ShortID="626910061">
+															<Language>SFX</Language>
+															<AudioFile>ambience_emitter_thunder_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ambience_emitter_thunder_04" ID="{D4F60794-F12D-497E-83AB-3C4296F06454}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ambience_emitter_thunder_02" ID="{2CD9405D-CFF2-4495-822C-2FBBEB7ABB5D}" ShortID="55146872">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambience_emitter_thunder_02" ID="{4706FF8D-5560-4AD4-9657-8358ED423B0E}" ShortID="10468512">
+															<Language>SFX</Language>
+															<AudioFile>ambience_emitter_thunder_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ambience_emitter_thunder_02" ID="{4706FF8D-5560-4AD4-9657-8358ED423B0E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="thunder_quiet" ID="{B844B701-604C-4A8C-85FC-E2E367DD4F15}" ShortID="721974117">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="ambience_emitter_thunder_01" ID="{78EED835-C683-47CF-A582-530B425DD389}" ShortID="369906172">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambience_emitter_thunder_01" ID="{7288C44E-D25F-4916-8331-DA9DC7284318}" ShortID="248959906">
+															<Language>SFX</Language>
+															<AudioFile>ambience_emitter_thunder_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ambience_emitter_thunder_01" ID="{7288C44E-D25F-4916-8331-DA9DC7284318}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ambience_emitter_thunder_03" ID="{6F3F07F4-3DE6-41FB-AAE0-4ADC50EEB86B}" ShortID="212420393">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambience_emitter_thunder_03" ID="{0BB184F9-37A4-43D2-94DC-5CB079B33191}" ShortID="980349068">
+															<Language>SFX</Language>
+															<AudioFile>ambience_emitter_thunder_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ambience_emitter_thunder_03" ID="{0BB184F9-37A4-43D2-94DC-5CB079B33191}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ambience_emitter_thunder_05" ID="{76479D70-71E6-4D2E-A8E2-8848214D0D78}" ShortID="637111429">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambience_emitter_thunder_05" ID="{C4E43136-50D5-4339-B7B5-CF61AC02EE58}" ShortID="569046418">
+															<Language>SFX</Language>
+															<AudioFile>ambience_emitter_thunder_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ambience_emitter_thunder_05" ID="{C4E43136-50D5-4339-B7B5-CF61AC02EE58}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="rain" ID="{380249AA-CB72-403A-930D-165D146DC438}" ShortID="336027755">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{2519CBA9-F09F-43F1-8755-C5398EBCD682}" ShortID="596260900">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="rain_intensity" ID="{AB54190B-0C5D-4C34-89FB-C7488D42F543}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{CC18872F-D149-468A-BF65-1D96CFDB77C5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-14.13593</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20.44974</XPos>
+																		<YPos>-7.50634</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>42.98942</XPos>
+																		<YPos>-2.5</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>64.02116</XPos>
+																		<YPos>-2.31399</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>80</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="rain_intensity" ID="{AB54190B-0C5D-4C34-89FB-C7488D42F543}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="rain_light_loop_01" ID="{F6EBA2B7-B2D2-425F-9033-29FE08DFA835}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>79.3653293650794</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="rain_heavy_loop_01" ID="{C34EAFFB-030A-4861-AFEA-2F150D2594A1}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>27.8309378306878</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="thunder" ID="{47922636-4CE5-417D-9A18-986CEAEEDC8B}" ShortID="668860360">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{0A60A4D3-3AFC-469C-AC42-7EE19A87F694}" ShortID="729319802">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{CBE60EB4-EA36-42BE-AF11-9AB3E8E8BCA1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>1</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>13.7566</XPos>
+																		<YPos>100</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>61.11111</XPos>
+																		<YPos>2</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>66.26984</XPos>
+																		<YPos>-100</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>80.42328</XPos>
+																		<YPos>-100</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{4CE4DB99-07F4-400A-AA4B-28328641B38D}" ShortID="569057329">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{C95C6217-CC9A-4463-A531-F95EF944E3B6}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>30.02645</XPos>
+																		<YPos>-8.94316</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>66.00529</XPos>
+																		<YPos>-3.63113</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>86.11111</XPos>
+																		<YPos>-0.18648</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="thunder_quiet" ID="{B844B701-604C-4A8C-85FC-E2E367DD4F15}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>58.7304087301587</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="thunder_loud" ID="{4272C992-5BF4-437E-86B1-B8A841B517C9}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>34.973794973545</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupRef Name="rain" ID="{2B8501CA-7D01-460E-925D-1B9AED9D9176}"/>
+								<DefaultSwitchRef Name="None" ID="{3A99B726-658F-4DCA-B6A1-92232FFE0745}"/>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="ambience_rain_intensity" ID="{A970BF43-3E3C-40CD-9451-1B7D0D1C27C3}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+										</PropertyList>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="raining" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
+										<ItemList>
+											<ItemRef Name="ambience_rain_intensity" ID="{A970BF43-3E3C-40CD-9451-1B7D0D1C27C3}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
