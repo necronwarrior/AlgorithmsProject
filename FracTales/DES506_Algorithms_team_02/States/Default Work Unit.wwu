@@ -14,7 +14,46 @@
 					<ChildrenList>
 						<State Name="None" ID="{3A99B726-658F-4DCA-B6A1-92232FFE0745}"/>
 						<State Name="raining" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
+						<State Name="thunder" ID="{BE5966CD-3A92-4102-9202-27FB3F9E387B}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{3A99B726-658F-4DCA-B6A1-92232FFE0745}"/>
+							<EndState Name="raining" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{3A99B726-658F-4DCA-B6A1-92232FFE0745}"/>
+							<EndState Name="thunder" ID="{BE5966CD-3A92-4102-9202-27FB3F9E387B}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="raining" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
+							<EndState Name="None" ID="{3A99B726-658F-4DCA-B6A1-92232FFE0745}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="raining" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
+							<EndState Name="thunder" ID="{BE5966CD-3A92-4102-9202-27FB3F9E387B}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="thunder" ID="{BE5966CD-3A92-4102-9202-27FB3F9E387B}"/>
+							<EndState Name="None" ID="{3A99B726-658F-4DCA-B6A1-92232FFE0745}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="thunder" ID="{BE5966CD-3A92-4102-9202-27FB3F9E387B}"/>
+							<EndState Name="raining" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="wind" ID="{B4EC8214-EF75-454B-96AF-D1920E0152B5}">
 					<ChildrenList>

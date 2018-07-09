@@ -60,6 +60,17 @@
 											<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Bus Name="wood_footsteps" ID="{68420BEA-C00E-4C9B-A06B-FA1F2DAC2FF3}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+										</Bus>
+									</ChildrenList>
 								</Bus>
 							</ChildrenList>
 						</Bus>

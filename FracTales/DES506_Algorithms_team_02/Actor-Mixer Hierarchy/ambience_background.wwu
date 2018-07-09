@@ -82,7 +82,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="ambience_region_forest_day" ID="{4415E38F-0FC5-4307-888A-94E2AF380DE7}" ShortID="390332992">
+										<BlendContainer Name="amb_region_forest_night" ID="{54A63CA1-FBE9-4204-96D7-F9C36F1B1E1C}" ShortID="483459081">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -91,8 +91,8 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 												</Reference>
 											</ReferenceList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="ambience_region_forest_night" ID="{F24ECA3A-56AE-4DB9-A912-DDC92D10532B}" ShortID="231111794">
+										</BlendContainer>
+										<BlendContainer Name="amb_region_forest_day" ID="{33D3A14E-EA15-4BEA-82C1-8C8D87270449}" ShortID="274958868">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -101,33 +101,19 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 												</Reference>
 											</ReferenceList>
-										</RandomSequenceContainer>
+										</BlendContainer>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="time_of_day" ID="{FE05044A-59F8-43CC-914D-083D93FC150B}"/>
 										<DefaultSwitchRef Name="day" ID="{B1A1A235-C1FB-4D6C-A811-15EC143E61AA}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="ambience_region_forest_night" ID="{F24ECA3A-56AE-4DB9-A912-DDC92D10532B}"/>
+												<ItemRef Name="amb_region_forest_day" ID="{33D3A14E-EA15-4BEA-82C1-8C8D87270449}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="ambience_region_forest_day" ID="{4415E38F-0FC5-4307-888A-94E2AF380DE7}"/>
+												<ItemRef Name="amb_region_forest_night" ID="{54A63CA1-FBE9-4204-96D7-F9C36F1B1E1C}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="day" ID="{B1A1A235-C1FB-4D6C-A811-15EC143E61AA}"/>
-												<ItemList>
-													<ItemRef Name="ambience_region_forest_day" ID="{4415E38F-0FC5-4307-888A-94E2AF380DE7}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="night" ID="{3A5CBB7F-534A-467F-B295-5864A3056042}"/>
-												<ItemList>
-													<ItemRef Name="ambience_region_forest_night" ID="{F24ECA3A-56AE-4DB9-A912-DDC92D10532B}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 								<SwitchContainer Name="ambience_region_town" ID="{3334C181-65AA-4FA2-A5E4-61D89BA83866}" ShortID="157576512">
@@ -530,356 +516,6 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<SwitchContainer Name="ambience_raining" ID="{57F01E06-5181-4FE0-B06D-C720DE99B5A2}" ShortID="240886975">
-									<PropertyList>
-										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<BlendContainer Name="ambience_rain_intensity" ID="{A970BF43-3E3C-40CD-9451-1B7D0D1C27C3}" ShortID="929356129">
-											<PropertyList>
-												<Property Name="BlendBehavior" Type="int16" Value="1"/>
-												<Property Name="OverrideOutput" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="rain_heavy_loop_01" ID="{C34EAFFB-030A-4861-AFEA-2F150D2594A1}" ShortID="74079852">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-1</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="rain_heavy_loop_01" ID="{DF499672-321E-42C7-BC04-1B4D6BFBC5CF}" ShortID="684310661">
-															<Language>SFX</Language>
-															<AudioFile>rain_heavy_loop_01.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="rain_heavy_loop_01" ID="{DF499672-321E-42C7-BC04-1B4D6BFBC5CF}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="rain_light_loop_01" ID="{F6EBA2B7-B2D2-425F-9033-29FE08DFA835}" ShortID="242354726">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-1</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="rain_light_loop_01" ID="{ACE55081-2767-4CFA-81B1-90AE16604B0C}" ShortID="1032039823">
-															<Language>SFX</Language>
-															<AudioFile>rain_light_loop_01.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="rain_light_loop_01" ID="{ACE55081-2767-4CFA-81B1-90AE16604B0C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="ambience_emitter_thunder_01" ID="{78EED835-C683-47CF-A582-530B425DD389}" ShortID="369906172">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="ambience_emitter_thunder_01" ID="{7288C44E-D25F-4916-8331-DA9DC7284318}" ShortID="248959906">
-															<Language>SFX</Language>
-															<AudioFile>ambience_emitter_thunder_01.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="ambience_emitter_thunder_01" ID="{7288C44E-D25F-4916-8331-DA9DC7284318}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="ambience_emitter_thunder_02" ID="{2CD9405D-CFF2-4495-822C-2FBBEB7ABB5D}" ShortID="55146872">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="ambience_emitter_thunder_02" ID="{4706FF8D-5560-4AD4-9657-8358ED423B0E}" ShortID="10468512">
-															<Language>SFX</Language>
-															<AudioFile>ambience_emitter_thunder_02.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="ambience_emitter_thunder_02" ID="{4706FF8D-5560-4AD4-9657-8358ED423B0E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<BlendTrackList>
-												<BlendTrack Name="New Blend Track" ID="{380249AA-CB72-403A-930D-165D146DC438}" ShortID="336027755">
-													<PropertyList>
-														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<RTPCList>
-																<RTPC Name="" ID="{2519CBA9-F09F-43F1-8755-C5398EBCD682}" ShortID="596260900">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="rain_intensity" ID="{AB54190B-0C5D-4C34-89FB-C7488D42F543}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{CC18872F-D149-468A-BF65-1D96CFDB77C5}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-14.13593</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>20.44974</XPos>
-																				<YPos>-7.50634</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>42.98942</XPos>
-																				<YPos>-2.5</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>64.02116</XPos>
-																				<YPos>-2.31399</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>80</XPos>
-																				<YPos>0</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="LayerCrossFadeControlInput">
-															<ObjectRef Name="rain_intensity" ID="{AB54190B-0C5D-4C34-89FB-C7488D42F543}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-														</Reference>
-													</ReferenceList>
-													<BlendTrackAssocList>
-														<BlendTrackAssoc>
-															<ItemRef Name="rain_light_loop_01" ID="{F6EBA2B7-B2D2-425F-9033-29FE08DFA835}"/>
-															<CrossfadingInfo>
-																<LeftEdgePos>0</LeftEdgePos>
-																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>64.4182394179895</RightEdgePos>
-																<RightFadingMode>Automatic</RightFadingMode>
-															</CrossfadingInfo>
-														</BlendTrackAssoc>
-														<BlendTrackAssoc>
-															<ItemRef Name="rain_heavy_loop_01" ID="{C34EAFFB-030A-4861-AFEA-2F150D2594A1}"/>
-															<CrossfadingInfo>
-																<LeftEdgePos>42.1166521164021</LeftEdgePos>
-																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>100</RightEdgePos>
-																<RightFadingMode>Automatic</RightFadingMode>
-															</CrossfadingInfo>
-														</BlendTrackAssoc>
-													</BlendTrackAssocList>
-												</BlendTrack>
-												<BlendTrack Name="T&amp;L" ID="{47922636-4CE5-417D-9A18-986CEAEEDC8B}" ShortID="668860360">
-													<PropertyList>
-														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{0A60A4D3-3AFC-469C-AC42-7EE19A87F694}" ShortID="729319802">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="rain_intensity" ID="{AB54190B-0C5D-4C34-89FB-C7488D42F543}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{CBE60EB4-EA36-42BE-AF11-9AB3E8E8BCA1}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>1</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>13.7566</XPos>
-																				<YPos>100</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>61.11111</XPos>
-																				<YPos>2</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>66.26984</XPos>
-																				<YPos>-100</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>80.42328</XPos>
-																				<YPos>-100</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>-100</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<RTPCList>
-																<RTPC Name="" ID="{4CE4DB99-07F4-400A-AA4B-28328641B38D}" ShortID="569057329">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="rain_intensity" ID="{AB54190B-0C5D-4C34-89FB-C7488D42F543}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{C95C6217-CC9A-4463-A531-F95EF944E3B6}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>30.42328</XPos>
-																				<YPos>-6.82664</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>66.00529</XPos>
-																				<YPos>-3.63113</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>86.11111</XPos>
-																				<YPos>-0.18648</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="LayerCrossFadeControlInput">
-															<ObjectRef Name="rain_intensity" ID="{AB54190B-0C5D-4C34-89FB-C7488D42F543}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-														</Reference>
-													</ReferenceList>
-													<BlendTrackAssocList>
-														<BlendTrackAssoc>
-															<ItemRef Name="ambience_emitter_thunder_01" ID="{78EED835-C683-47CF-A582-530B425DD389}"/>
-															<CrossfadingInfo>
-																<LeftEdgePos>29.4973544973545</LeftEdgePos>
-																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>65.8732658730159</RightEdgePos>
-																<RightFadingMode>Automatic</RightFadingMode>
-															</CrossfadingInfo>
-														</BlendTrackAssoc>
-														<BlendTrackAssoc>
-															<ItemRef Name="ambience_emitter_thunder_02" ID="{2CD9405D-CFF2-4495-822C-2FBBEB7ABB5D}"/>
-															<CrossfadingInfo>
-																<LeftEdgePos>47.2753822751323</LeftEdgePos>
-																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>100</RightEdgePos>
-																<RightFadingMode>Automatic</RightFadingMode>
-															</CrossfadingInfo>
-														</BlendTrackAssoc>
-													</BlendTrackAssocList>
-												</BlendTrack>
-											</BlendTrackList>
-										</BlendContainer>
-									</ChildrenList>
-									<GroupingInfo>
-										<GroupRef Name="rain" ID="{2B8501CA-7D01-460E-925D-1B9AED9D9176}"/>
-										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="ambience_rain_intensity" ID="{A970BF43-3E3C-40CD-9451-1B7D0D1C27C3}"/>
-												<PropertyList>
-													<Property Name="ContinuePlay" Type="bool" Value="True"/>
-												</PropertyList>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="raining" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
-												<ItemList>
-													<ItemRef Name="ambience_rain_intensity" ID="{A970BF43-3E3C-40CD-9451-1B7D0D1C27C3}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
 								<SwitchContainer Name="ambience_region_fields" ID="{F62E3787-45D4-491F-B431-3BAFF989C7F3}" ShortID="677238828">
 									<PropertyList>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
