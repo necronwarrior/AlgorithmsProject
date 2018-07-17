@@ -54,11 +54,18 @@ Switch	ID	Name	Switch Group			Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	207908541	time_of_day			\Default Work Unit\time_of_day	
+	1176052424	location			\Default Work Unit\location	
 
 State	ID	Name	State Group			Notes
 	311764537	day	time_of_day			
 	748895195	None	time_of_day			
 	1011622525	night	time_of_day			
+	438105790	outside	location			
+	748895195	None	location			
+	3553349781	inside	location			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	161358142	inside	location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_town		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	330198422	CharacterPosZ			\Default Work Unit\general\character_positions\CharacterPosZ	
@@ -67,16 +74,18 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2986085364	distance_from_sea_rocks			\Default Work Unit\general\distances\distance_from_sea_rocks	
 	3789669546	water_speed			\Default Work Unit\general\weather_environment\water_speed	
 
+Effect plug-ins	ID	Name	Type				Notes
+	604631160	Low_Pass_20KHz (Custom)	Wwise Parametric EQ			
+
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	180089824	SoundSeed Wind	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\amb_wind\amb_SS_wind_bg\SoundSeed Wind	
 	214703937	amb_wind_grass	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\amb_emitter_wind_grass\amb_wind_grass\amb_wind_grass	
 	255438448	wave_crashes	SoundSeed Air/SoundSeed Woosh		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\waves\amb_emit_waves\wave_crashes_beach\wave_crashes	
 	262753336	amb_wind_tress	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\amb_emitter_wind_trees\amb_wind_trees\amb_wind_tress	
-	333726058	procedural_wind_high_01	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\ambience_wind\procedural_wind_high\procedural_wind_high_01	
 	361476739	Waves_Near	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\waves\amb_emit_waves\waves_near\Waves_Near	Waves crashing on the beach
+	370106084	SoundSeed Woosh	SoundSeed Air/SoundSeed Woosh		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\amb_wind\amb_SS_wooshes_bg\SoundSeed Woosh	
 	506886867	SoundSeed Wind	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\water\river\water_whitenoise\SoundSeed Wind	
-	591967453	Wind_Low	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\ambience_wind\procedural_wind_low\Wind_Low	
 	615499985	SoundSeed Woosh	SoundSeed Air/SoundSeed Woosh		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\waves\amb_emit_waves\wave_crashes_sea_rocks\SoundSeed Woosh	
-	655496012	procedural_wind_mid_01	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\ambience_wind\procedural_wind_mid\procedural_wind_mid_01	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	8370558	player_footstep_gravel_walk_09	C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footstep_gravel_walk_09_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_gravel_walk\player_footstep_gravel_walk_09		8717

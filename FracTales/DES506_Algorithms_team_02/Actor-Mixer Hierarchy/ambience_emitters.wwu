@@ -507,6 +507,24 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="location" ID="{05AEFB21-506C-437E-8441-FDD1255806BB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="inside" ID="{D80F3D7A-8C29-4118-886E-C4E926467233}"/>
+										<State Name="" ID="{6888E230-48BB-4ECE-BC17-3E0283BE035B}" ShortID="1042725881">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16" Value="33"/>
+												<Property Name="Lowpass" Type="int16" Value="75"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<BlendTrackList>
 								<BlendTrack Name="wind_heights" ID="{CEDE8ACC-7E94-4290-AEB1-22EA7BCA74BB}" ShortID="896701773">
 									<PropertyList>
@@ -1097,32 +1115,32 @@
 																<PointList>
 																	<Point>
 																		<XPos>-300</XPos>
-																		<YPos>-2261.53846</YPos>
+																		<YPos>-1778.99878</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>2.49716</XPos>
-																		<YPos>-1779.32175</YPos>
+																		<YPos>-1296.78207</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>5525.92592</XPos>
-																		<YPos>-1502.93387</YPos>
+																		<YPos>-1020.39419</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>7444.6834</XPos>
-																		<YPos>-1369.00239</YPos>
+																		<YPos>-886.46271</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>7821.50538</XPos>
-																		<YPos>-1263.03488</YPos>
+																		<YPos>-780.4952</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>8000</XPos>
-																		<YPos>-1101.66574</YPos>
+																		<YPos>-619.12606</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -1175,7 +1193,7 @@
 																<PointList>
 																	<Point>
 																		<XPos>-300</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
@@ -1470,80 +1488,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="SoundSeed Wind" ID="{BF661BD2-9CD9-49C8-97C9-3E4686AAD691}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="amb_SS_wooshes_bg" ID="{B68C56E6-2564-40B7-A56D-CFB194A0FACB}" ShortID="986337796">
-									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="SoundSeed Woosh" ID="{EC66D7A0-1C0E-45EC-B86E-C9468A89F4A1}" ShortID="370106084" PluginName="SoundSeed Air/SoundSeed Woosh" CompanyID="0" PluginID="120">
-											<PropertyList>
-												<Property Name="SpeedAutomate" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<PluginData>
-	<WooshData>
-		<CurveList Version="1">
-			<CurveInfo Name="Speed">
-				<Curve Name="" ID="{11F1AB51-0F8A-489F-A013-698039D85352}">
-					<PropertyList>
-						<Property Name="Flags" Type="int32" Value="1"/>
-					</PropertyList>
-					<PointList>
-						<Point>
-							<XPos>0</XPos>
-							<YPos>0</YPos>
-							<Flags>5</Flags>
-						</Point>
-						<Point>
-							<XPos>0.25</XPos>
-							<YPos>100</YPos>
-							<Flags>0</Flags>
-						</Point>
-						<Point>
-							<XPos>0.5</XPos>
-							<YPos>0</YPos>
-							<Flags>37</Flags>
-						</Point>
-					</PointList>
-				</Curve>
-			</CurveInfo>
-		</CurveList>
-		<Path Version="1">
-			<Path2D Name="" ID="{4E930940-CEC7-4DB4-8DD6-20409CAF27CE}">
-				<PropertyList>
-					<Property Name="LinearTime" Type="bool" Value="False"/>
-				</PropertyList>
-				<PointList>
-					<Point>
-						<XPos>0</XPos>
-						<YPos>0</YPos>
-						<Flags>12</Flags>
-						<Time>0</Time>
-					</Point>
-				</PointList>
-			</Path2D>
-		</Path>
-	</WooshData>
-</PluginData>
-											<PluginInnerObjectList>
-												<List Name="Deflectors">
-													<PluginInnerObject Name="" ID="{FC7E8716-C854-423B-ACD6-707F75089D36}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
-												</List>
-											</PluginInnerObjectList>
-										</SourcePlugin>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SoundSeed Woosh" ID="{EC66D7A0-1C0E-45EC-B86E-C9468A89F4A1}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -2603,6 +2547,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<BlendContainer Name="ambience_thunder_intensity" ID="{1E39A499-D996-4D6E-9FB8-CB5FCDB05D41}" ShortID="676206422">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -2776,7 +2727,7 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>58</YPos>
+																		<YPos>33</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>

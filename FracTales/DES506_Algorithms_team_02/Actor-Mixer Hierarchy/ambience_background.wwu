@@ -59,6 +59,9 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="ambience_outdoors" ID="{39FA150F-4EDC-413E-8CDE-8F6A088A9B93}" ShortID="35674491">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -338,6 +341,7 @@
 										</BlendContainer>
 										<BlendContainer Name="ambience_region_forest" ID="{BB76F3E7-EB11-43AC-ACA1-EC4DFB042489}" ShortID="931093434">
 											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-6</Value>
@@ -349,30 +353,10 @@
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+													<ObjectRef Name="forest" ID="{091E0443-4EBF-4884-84A4-2FFBAA7A2A50}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="ambience_forest_day_bg_loop" ID="{0AD0EF09-A924-46A6-8673-46BBC2D137AF}" ShortID="668361462">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-												</Sound>
-												<Sound Name="ambience_forest_night_bg_loop" ID="{C339810B-6D55-4E6D-AA09-7CD8EA035592}" ShortID="222041280">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-												</Sound>
 												<RandomSequenceContainer Name="ambience_emitters_bees" ID="{4D3FE224-76B2-4666-B8C9-1122AE3D9EE9}" ShortID="405655951">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
@@ -961,7 +945,7 @@
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-22</Value>
+																		<Value>-28</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -987,7 +971,7 @@
 																		<AudioFileSource Name="amb_emit_birds_02" ID="{80A16688-2C84-4E80-A794-2C95D367A39E}" ShortID="634816830">
 																			<PropertyList>
 																				<Property Name="FadeInDuration" Type="Real64" Value="0.122279064360119"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="0.358762160528274"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.755592331659226"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_02.wav</AudioFile>
@@ -1010,7 +994,7 @@
 																		<AudioFileSource Name="amb_emit_birds_03" ID="{3C34BE22-E674-4430-8C67-4AB09C2D11BC}" ShortID="271627397">
 																			<PropertyList>
 																				<Property Name="FadeInDuration" Type="Real64" Value="0.04037548828125"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="0.2960869140625"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.371069963727678"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_03.wav</AudioFile>
@@ -1033,7 +1017,7 @@
 																		<AudioFileSource Name="amb_emit_birds_05" ID="{66C90492-A290-4310-9352-C965C54F56CF}" ShortID="1037891212">
 																			<PropertyList>
 																				<Property Name="FadeInDuration" Type="Real64" Value="6.15223214285714E-02"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="0.253138718377976"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.464621698288691"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_05.wav</AudioFile>
@@ -1056,7 +1040,7 @@
 																		<AudioFileSource Name="amb_emit_birds_06" ID="{B6CDDA6B-723B-4CA2-9F4B-5FF0C145D5BC}" ShortID="83170544">
 																			<PropertyList>
 																				<Property Name="FadeInDuration" Type="Real64" Value="0.070751953125"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="0.2783935546875"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.52064208984375"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_06.wav</AudioFile>
@@ -1067,6 +1051,13 @@
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="amb_emit_birds_08" ID="{555F2013-5AA9-4281-9A34-266CC28DFFB6}" ShortID="976054427">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-96</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -1079,7 +1070,7 @@
 																		<AudioFileSource Name="amb_emit_birds_08" ID="{6CA6E0C6-E049-4558-9DFB-677DE901F7E3}" ShortID="230278861">
 																			<PropertyList>
 																				<Property Name="FadeInDuration" Type="Real64" Value="0.1102294921875"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="0.089208984375"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.2927490234375"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_08.wav</AudioFile>
@@ -1100,6 +1091,10 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_10" ID="{76269616-8C75-4BA6-9595-E40640124D06}" ShortID="408369438">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="3.66584821428571E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.524049665178572"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_10.wav</AudioFile>
 																		</AudioFileSource>
@@ -1119,6 +1114,10 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_12" ID="{5F9C7AC0-C38D-4FC5-AD14-5E0D1882C421}" ShortID="498683510">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.154576078869048"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.583697730654761"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_12.wav</AudioFile>
 																		</AudioFileSource>
@@ -1138,6 +1137,10 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_13" ID="{99F60A54-37ED-48BD-BABD-FB196A4BFBF1}" ShortID="983438347">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.2630126953125"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.7998046875"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_13.wav</AudioFile>
 																		</AudioFileSource>
@@ -1157,6 +1160,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_14" ID="{FA6B2A1F-E048-49CA-A573-FCD6DC5A019C}" ShortID="508008729">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.956689453125"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_14.wav</AudioFile>
 																		</AudioFileSource>
@@ -1176,6 +1182,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_15" ID="{0673AEDD-CC14-4C0A-BE2B-414D9F4824C3}" ShortID="653180620">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.82672119140625"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_15.wav</AudioFile>
 																		</AudioFileSource>
@@ -1195,6 +1204,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_16" ID="{D072C3D2-27B7-4B12-8978-A19C498AC7D9}" ShortID="474295533">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.69854736328125"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_16.wav</AudioFile>
 																		</AudioFileSource>
@@ -1214,6 +1226,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_17" ID="{B82E2006-FEE0-464B-BB5B-3A4DEB3616A8}" ShortID="201708958">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.1243408203125"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_17.wav</AudioFile>
 																		</AudioFileSource>
@@ -1233,6 +1248,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_18" ID="{8C046E5E-4535-47CF-AE52-479F47478D3B}" ShortID="775636911">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.5537109375"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_18.wav</AudioFile>
 																		</AudioFileSource>
@@ -1252,6 +1270,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_19" ID="{747ADF4D-AE08-44F5-AAEC-B1D3E303265D}" ShortID="579556834">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.87477685546875"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_19.wav</AudioFile>
 																		</AudioFileSource>
@@ -1271,6 +1292,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_20" ID="{28330C57-5630-41B4-899C-C587AD0354F0}" ShortID="63231173">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.43470849609375"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_20.wav</AudioFile>
 																		</AudioFileSource>
@@ -1290,6 +1314,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_22" ID="{A7A5DF8E-D79B-4B90-9C9A-DD8AFCE6223D}" ShortID="140227930">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.859636230468749"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_22.wav</AudioFile>
 																		</AudioFileSource>
@@ -1358,6 +1385,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_01" ID="{9FDAFD8C-418C-4827-9308-A714D9ACDFD2}" ShortID="690665965">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.903203125"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_01.wav</AudioFile>
 																		</AudioFileSource>
@@ -1377,6 +1407,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_04" ID="{E71B7D33-F581-4EFD-B1FE-F0D1D3015E5F}" ShortID="773737687">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.528208031063988"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_04.wav</AudioFile>
 																		</AudioFileSource>
@@ -1396,6 +1429,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_07" ID="{BA6C0D12-C55E-44E2-9F2B-58EBC1828466}" ShortID="130151736">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.04962048921131"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_07.wav</AudioFile>
 																		</AudioFileSource>
@@ -1415,6 +1451,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_09" ID="{BD358EEA-62FC-4467-B038-810B97ED9F35}" ShortID="840669048">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.543075102306548"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_09.wav</AudioFile>
 																		</AudioFileSource>
@@ -1434,6 +1473,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_11" ID="{F8872337-017C-4D3C-81DD-AC0C64538386}" ShortID="272221947">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.821470447358631"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_11.wav</AudioFile>
 																		</AudioFileSource>
@@ -1453,6 +1495,9 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="amb_emit_birds_21" ID="{9C167F7B-9A89-4613-A4C3-551BF3C6A823}" ShortID="49832470">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.925931733630952"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>amb_emit_birds_21.wav</AudioFile>
 																		</AudioFileSource>
@@ -1476,35 +1521,6 @@
 															<ObjectRef Name="time_of_day" ID="{BA244F7E-5D13-427E-992C-334ADCDD0BC2}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
 														</Reference>
 													</ReferenceList>
-													<BlendTrackAssocList>
-														<BlendTrackAssoc>
-															<ItemRef Name="ambience_forest_night_bg_loop" ID="{C339810B-6D55-4E6D-AA09-7CD8EA035592}"/>
-															<CrossfadingInfo>
-																<LeftEdgePos>0</LeftEdgePos>
-																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>7</RightEdgePos>
-																<RightFadingMode>Automatic</RightFadingMode>
-															</CrossfadingInfo>
-														</BlendTrackAssoc>
-														<BlendTrackAssoc>
-															<ItemRef Name="ambience_forest_day_bg_loop" ID="{0AD0EF09-A924-46A6-8673-46BBC2D137AF}"/>
-															<CrossfadingInfo>
-																<LeftEdgePos>6</LeftEdgePos>
-																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>18.9587301587302</RightEdgePos>
-																<RightFadingMode>Automatic</RightFadingMode>
-															</CrossfadingInfo>
-														</BlendTrackAssoc>
-														<BlendTrackAssoc>
-															<ItemRef Name="ambience_forest_night_bg_loop" ID="{C339810B-6D55-4E6D-AA09-7CD8EA035592}"/>
-															<CrossfadingInfo>
-																<LeftEdgePos>17.968253968254</LeftEdgePos>
-																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>24</RightEdgePos>
-																<RightFadingMode>Automatic</RightFadingMode>
-															</CrossfadingInfo>
-														</BlendTrackAssoc>
-													</BlendTrackAssocList>
 												</BlendTrack>
 												<BlendTrack Name="amb_bg_crickets_loop" ID="{A2B24D29-5BA2-4B25-AEBA-4BA7B86095C3}" ShortID="834199930">
 													<PropertyList>
@@ -1567,7 +1583,7 @@
 														<BlendTrackAssoc>
 															<ItemRef Name="amb_crickets_loop" ID="{6F010985-8966-4D35-B647-2C1A3A3FC80E}"/>
 															<CrossfadingInfo>
-																<LeftEdgePos>3.17460317460319E-02</LeftEdgePos>
+																<LeftEdgePos>0</LeftEdgePos>
 																<LeftFadingMode>Automatic</LeftFadingMode>
 																<RightEdgePos>6.53174603174603</RightEdgePos>
 																<RightFadingMode>Automatic</RightFadingMode>
@@ -1602,7 +1618,7 @@
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
@@ -1676,7 +1692,7 @@
 																			</Point>
 																			<Point>
 																				<XPos>4.47619</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
@@ -1818,12 +1834,12 @@
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
 																				<XPos>5.39683</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
@@ -2046,35 +2062,42 @@
 											</ChildrenList>
 										</BlendContainer>
 										<BlendContainer Name="ambience_region_town" ID="{710D96EB-F615-4CF0-AF87-CCEE3838ABD2}" ShortID="699739911">
+											<PropertyList>
+												<Property Name="BypassEffect" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{830124FB-B9D5-4AE8-846E-E94A74652666}">
+														<Effect Name="Low_Pass_20KHz (Custom)" ID="{630A67DB-79CD-453A-86E4-90C34F84700F}" ShortID="604631160" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
+																<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+																<Property Name="FrequencyBand1" Type="Real32" Value="1215"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="20000"/>
+																<Property Name="OnOffBand2" Type="bool" Value="False"/>
+																<Property Name="OnOffBand3" Type="bool" Value="False"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="ambience_town_day_bg_loop" ID="{7D72AD50-5518-4468-9462-D6870F74CC17}" ShortID="754291274">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-												</Sound>
-												<Sound Name="ambience_town_night_bg_loop" ID="{936863F2-E37E-4BEC-9FBA-804667139B08}" ShortID="59860990">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-														</Reference>
-													</ReferenceList>
-												</Sound>
 												<BlendContainer Name="amb_town_bg" ID="{B227D048-0512-4BE9-99DF-9A78E079D760}" ShortID="721025830">
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -2135,6 +2158,23 @@
 													</ChildrenList>
 												</BlendContainer>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="location" ID="{05AEFB21-506C-437E-8441-FDD1255806BB}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="inside" ID="{D80F3D7A-8C29-4118-886E-C4E926467233}"/>
+														<State Name="" ID="{6FF6FDDE-30E1-4526-9EA7-CB4986E5C8F8}" ShortID="161358142">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="57"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</BlendContainer>
 									</ChildrenList>
 									<GroupingInfo>
@@ -2169,6 +2209,14 @@
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{9232EF46-EAB4-437B-99AF-78CBB4C80ABC}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="0.407331975560082"/>
+										<Property Name="PanY" Type="Real64" Value="6.77236045021345E-15"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>

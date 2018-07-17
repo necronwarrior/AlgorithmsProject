@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="80">
-	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Actor-Mixer Hierarchy\ambience_background.wwu" DateLow="1878859655" DateHigh="30676882"/>
-	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Actor-Mixer Hierarchy\ambience_emitters.wwu" DateLow="581517767" DateHigh="30676885"/>
+	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Actor-Mixer Hierarchy\ambience_background.wwu" DateLow="1882666147" DateHigh="30678489"/>
+	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Actor-Mixer Hierarchy\ambience_emitters.wwu" DateLow="1882846147" DateHigh="30678489"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Actor-Mixer Hierarchy\ambient.wwu" DateLow="2546297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2246078106" DateHigh="30677477"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Actor-Mixer Hierarchy\dialogue.wwu" DateLow="2546297088" DateHigh="30674422"/>
@@ -19,14 +19,14 @@
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Control Surface Sessions\Default Work Unit.wwu" DateLow="2546297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Conversion Settings\Default Work Unit.wwu" DateLow="2546297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Conversion Settings\Factory Conversion Settings.wwu" DateLow="2546297088" DateHigh="30674422"/>
-	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\DES506_Algorithms_team_02.1702776.wsettings" DateLow="4078076539" DateHigh="30677451"/>
+	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\DES506_Algorithms_team_02.1702776.wsettings" DateLow="3850579482" DateHigh="30677496"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\DES506_Algorithms_team_02.wproj" DateLow="2546297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1867866880" DateHigh="30674470"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Effects\Default Work Unit.wwu" DateLow="2546297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Effects\Factory Auro Headphone.wwu" DateLow="2546297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Effects\Factory Effects.wwu" DateLow="2546297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Effects\Factory McDSP Effects.wwu" DateLow="2546297088" DateHigh="30674422"/>
-	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Events\ambience.wwu" DateLow="2373068023" DateHigh="30676874"/>
+	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Events\ambience.wwu" DateLow="1882986147" DateHigh="30678489"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Events\Default Work Unit.wwu" DateLow="1447866880" DateHigh="30674470"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Events\music.wwu" DateLow="2546297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Events\npc.wwu" DateLow="2546297088" DateHigh="30674422"/>
@@ -35,7 +35,7 @@
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Events\ui.wwu" DateLow="2402078976" DateHigh="30675669"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Game Parameters\Default Work Unit.wwu" DateLow="2546297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="2546297088" DateHigh="30674422"/>
-	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Game Parameters\general.wwu" DateLow="1176774074" DateHigh="30677494"/>
+	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Game Parameters\general.wwu" DateLow="1883136147" DateHigh="30678489"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="2546297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Interactive Music Hierarchy\music.wwu" DateLow="2546297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3367343616" DateHigh="30674454"/>
@@ -48,10 +48,10 @@
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\SoundBanks\Default Work Unit.wwu" DateLow="2566297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\SoundBanks\Non_game.wwu" DateLow="2566297088" DateHigh="30674422"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\SoundBanks\Regions.wwu" DateLow="2566297088" DateHigh="30674422"/>
-	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1176834074" DateHigh="30677494"/>
-	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\States\Default Work Unit.wwu" DateLow="3437913514" DateHigh="30677479"/>
+	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1883216147" DateHigh="30678489"/>
+	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\States\Default Work Unit.wwu" DateLow="824782627" DateHigh="30678484"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Switches\Default Work Unit.wwu" DateLow="2566297088" DateHigh="30674422"/>
-	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Switches\general.wwu" DateLow="1176734074" DateHigh="30677494"/>
+	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Switches\general.wwu" DateLow="1883086147" DateHigh="30678489"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Switches\player.wwu" DateLow="552376320" DateHigh="30674455"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Triggers\Default Work Unit.wwu" DateLow="3265127290" DateHigh="30677473"/>
 	<ValidationCacheItem File="C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\Virtual Acoustics\Default Work Unit.wwu" DateLow="2566297088" DateHigh="30674422"/>

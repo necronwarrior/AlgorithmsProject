@@ -109,6 +109,27 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="location" ID="{05AEFB21-506C-437E-8441-FDD1255806BB}">
+					<ChildrenList>
+						<State Name="None" ID="{FD984B7C-1854-4741-955B-55979239E1F7}"/>
+						<State Name="inside" ID="{D80F3D7A-8C29-4118-886E-C4E926467233}"/>
+						<State Name="outside" ID="{A5C60CD5-8D9B-463D-A82E-A88EC66C1835}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="inside" ID="{D80F3D7A-8C29-4118-886E-C4E926467233}"/>
+							<EndState Name="outside" ID="{A5C60CD5-8D9B-463D-A82E-A88EC66C1835}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="outside" ID="{A5C60CD5-8D9B-463D-A82E-A88EC66C1835}"/>
+							<EndState Name="inside" ID="{D80F3D7A-8C29-4118-886E-C4E926467233}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
