@@ -13,7 +13,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="door_movement" ID="{9FA83315-1516-4BA2-8F1C-0DAC457EC266}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+											<ObjectRef Name="door_opening" ID="{EB2AA380-3B16-4A70-9674-DBCF5DD3DA7C}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -21,6 +21,16 @@
 						</Event>
 						<Event Name="door_close_start" ID="{E934CFED-C838-4C4C-A33C-CCB5F243271D}">
 							<ChildrenList>
+								<Action Name="" ID="{E95FDA33-9216-4686-B6D9-998536B4312F}" ShortID="200255283">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="door_closing" ID="{F3B89505-3531-418B-8B85-DD3346FEECD0}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{2AEFE0C0-A10E-4EBF-8E94-ACF487B99630}" ShortID="374467024">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="23"/>
@@ -53,9 +63,20 @@
 						</Event>
 						<Event Name="alarm_clock_stop" ID="{4ACAF48B-FC4D-4572-B90C-90D20CE79B94}">
 							<ChildrenList>
-								<Action Name="" ID="{C5143B3B-E146-4EF8-93EF-B7EA6FD55C99}" ShortID="809135943">
+								<Action Name="" ID="{87F837FC-02D3-496B-8525-D81EF529CDB3}" ShortID="50768195">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="alarm_clock" ID="{2AB932F0-0C71-4F2D-8E5D-DA9D5D15DA67}" WorkUnitID="{FF37398D-EAF3-480F-8259-5F4146212717}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B817F8AB-433D-4227-91F4-C17DBDC297D3}" ShortID="198365705">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="0.01"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

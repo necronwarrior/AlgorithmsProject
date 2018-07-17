@@ -4,6 +4,9 @@
 		<WorkUnit Name="object_prop" ID="{9277E9DA-0234-499B-882A-6CADB5778D06}" OwnerID="{42B64277-6FBB-442D-8F93-F5119EDC5875}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="doors" ID="{08FF46A0-1572-4813-AC85-672BE2A13FEF}" ShortID="274580404">
+					<PropertyList>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>

@@ -94,6 +94,21 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
+				<StateGroup Name="on_off" ID="{E4541CD7-90FB-4FCE-ABBF-49A916D1AC30}">
+					<ChildrenList>
+						<State Name="None" ID="{E64D5CEE-4561-4A0E-A1FC-06633F87B2E8}"/>
+						<State Name="on" ID="{2297D761-7856-4432-BCED-1DD92F17B8F3}"/>
+						<State Name="off" ID="{5FBD06F4-D8C1-48CA-9BD7-F1C365E432E1}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="on" ID="{2297D761-7856-4432-BCED-1DD92F17B8F3}"/>
+							<EndState Name="off" ID="{5FBD06F4-D8C1-48CA-9BD7-F1C365E432E1}"/>
+							<Time>0.01</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

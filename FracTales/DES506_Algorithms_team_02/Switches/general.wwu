@@ -26,6 +26,35 @@
 						<Switch Name="close" ID="{0F78FE01-577A-4E1D-9C02-623D79EAF0F5}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="on_off" ID="{8B5AF0FB-4C75-4E81-8A10-838F8C4389F9}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="on" ID="{14751F65-3501-48EA-A780-2011119C214C}"/>
+						<Switch Name="off" ID="{1420DF7A-85B5-4987-9F4A-481382D0014E}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
+						<Curve Name="" ID="{B4CBCC01-1E95-4884-9720-52B0509AF197}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

@@ -69,6 +69,7 @@
 						<GameParameter Name="sun_position" ID="{A21C38E2-BE01-43DF-9270-109B80EB9767}"/>
 					</ChildrenList>
 				</Folder>
+				<GameParameter Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
