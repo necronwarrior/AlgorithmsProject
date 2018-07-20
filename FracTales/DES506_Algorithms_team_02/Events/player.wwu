@@ -8,7 +8,7 @@
 						<Folder Name="footsteps" ID="{1C2B16E6-8CE3-4C61-B6CD-4E19C7255175}" ShortID="659077785">
 							<Comment>Left and right footstep events.</Comment>
 							<ChildrenList>
-								<Event Name="play_player_footsteps" ID="{A092C109-7EF1-4E1A-9395-FCE31D41556C}">
+								<Event Name="player_footsteps_start" ID="{A092C109-7EF1-4E1A-9395-FCE31D41556C}">
 									<ChildrenList>
 										<Action Name="" ID="{9FC451B3-477B-4CFD-B471-1CB0C5B51499}" ShortID="440345060">
 											<PropertyList>
@@ -16,7 +16,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="player_footstep_type" ID="{D075680F-C2F2-47C1-ABAE-C5625F7B7D75}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+													<ObjectRef Name="player_footstep_run" ID="{622CFA8F-C96B-4F90-97BC-2E5C393267AE}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

@@ -533,7 +533,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="player_movement_speed" ID="{CE186776-CF25-4E9A-B0E5-3EECEDAACC48}"/>
-							<Value>30</Value>
+							<Value>29</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}"/>
@@ -549,7 +549,7 @@
 						<CurrentStateRef Name="rain" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="concrete" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
+						<CurrentSwitchRef Name="leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}"/>
 						<CurrentSwitchRef Name="crouch" ID="{49C37899-B19E-4D71-BCD5-1E9812593835}"/>
 						<CurrentSwitchRef Name="open" ID="{29D850E2-1B3A-4608-ACA4-C85F77D67EFC}"/>
 						<CurrentSwitchRef Name="collectable" ID="{A9DEAF9B-AB0B-4A30-96EA-B3B022F9709C}"/>
