@@ -63,7 +63,58 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="HUD" ID="{4201DAAD-21CB-4F39-89BE-572FC9348C40}" ShortID="476858417"/>
+				<Folder Name="HUD" ID="{4201DAAD-21CB-4F39-89BE-572FC9348C40}" ShortID="476858417">
+					<ChildrenList>
+						<Event Name="new_task" ID="{772B5A90-767F-461A-B010-9F5461062670}">
+							<ChildrenList>
+								<Action Name="" ID="{223C8B28-66EC-4BC5-9736-3AA934DF4188}" ShortID="350794921">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="new_task" ID="{00C5CCA9-0CBD-4BFD-9DEF-3932142BD367}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E0688711-5FB5-4A78-8169-2576F522A338}" ShortID="177693618">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="new_task" ID="{7F7F5407-E9D4-4D89-B436-2E1730234674}" WorkUnitID="{FF37398D-EAF3-480F-8259-5F4146212717}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="task_complete" ID="{06C44482-4756-4CFA-A11B-E30D480FAD18}">
+							<ChildrenList>
+								<Action Name="" ID="{0ED04C6C-757E-452C-9740-BB1AA66BA006}" ShortID="1048757878">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="task_complete" ID="{B2F600BC-FACF-45BF-8746-98007F0A05A1}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{124C63EA-6186-4C50-AD86-DE805952EED0}" ShortID="609101146">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="task_complete" ID="{4527BD35-C21C-4BE0-B973-21F13E553B9E}" WorkUnitID="{FF37398D-EAF3-480F-8259-5F4146212717}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="menu" ID="{CBA19312-4AEB-493E-B096-834DD84FCDC9}" ShortID="665865313">
 					<ChildrenList>
 						<Event Name="ui_menu_pause" ID="{465EFFE9-E789-431A-A461-2629BB13A55E}">
@@ -149,6 +200,66 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="ui_inventory_close" ID="{B5C2FCA7-17B9-4EB8-84D0-DAC786294E1C}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="main_menu" ID="{8CD74EEF-EC07-4998-84ED-8E5C825D2F47}" ShortID="283634791">
+					<ChildrenList>
+						<Event Name="select_play" ID="{2118FC36-CA82-4219-8CB3-7FFBD186D227}">
+							<ChildrenList>
+								<Action Name="" ID="{9592DDCB-3E84-4487-B25F-886273C40FDA}" ShortID="262865275">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="select_01" ID="{CDDFC9A4-9AA6-4B9F-AD67-953632C174E2}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="select_back_play" ID="{87A07521-E11A-4652-91B4-A4385247C14A}">
+							<ChildrenList>
+								<Action Name="" ID="{7DD151F9-8A19-4D47-8975-318C67BD022B}" ShortID="542917509">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="select_back_01" ID="{B5F869C7-1334-457D-8605-3C8B70FC4850}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="select_advance_play" ID="{F957C836-2A05-4950-95F6-70715CCA6FEE}">
+							<ChildrenList>
+								<Action Name="" ID="{38D51F5F-2362-44FB-8F62-A6F9268E8B94}" ShortID="668571545">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="select_advance_01" ID="{AFE989E8-9728-4871-AFC1-26440E138C9A}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="select_restricted" ID="{26589422-A9DB-4BE8-9A5A-5D827C34BD29}">
+							<ChildrenList>
+								<Action Name="" ID="{66348D06-2805-4EAF-8E24-E42313492903}" ShortID="497978512">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="select_restricted_01" ID="{F724B69B-7740-4FC0-B3BA-0E4D54DAD6AD}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
