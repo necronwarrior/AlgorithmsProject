@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<Trigger Name="task_complete" ID="{4527BD35-C21C-4BE0-B973-21F13E553B9E}"/>
 				<Trigger Name="new_task" ID="{7F7F5407-E9D4-4D89-B436-2E1730234674}"/>
+				<Trigger Name="alarm_clock" ID="{2AB932F0-0C71-4F2D-8E5D-DA9D5D15DA67}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>

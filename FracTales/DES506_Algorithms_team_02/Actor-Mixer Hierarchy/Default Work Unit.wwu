@@ -4,7 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="world" ID="{04AE4530-C76A-4226-8EF9-C31081509EAA}" ShortID="501114379">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="world_objects_atten" ID="{696EECA4-7332-473E-98B8-95C3291EF440}" WorkUnitID="{74E74D40-3965-4399-8C83-DC540386B3F2}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>

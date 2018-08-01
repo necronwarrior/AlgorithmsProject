@@ -3,14 +3,24 @@
 	<Platform GUID="{B2D8B709-E08B-4EED-B7E4-745D794CBA21}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="2406371463" Timestamp="131752771691262698"/>
-				<File Name="Main" Hash="2993327903" Timestamp="131752771691242698"/>
+				<File Name="Credits" Hash="440755867" Timestamp="131775938886592001"/>
+				<File Name="Init" Hash="4035566056" Timestamp="131775938887332001"/>
+				<File Name="Main" Hash="3660745678" Timestamp="131775938886552001"/>
+				<File Name="Title_Screen" Hash="613766897" Timestamp="131775938886682001"/>
+				<File Name="beach" Hash="2482218530" Timestamp="131775938887032001"/>
+				<File Name="cave" Hash="3242389061" Timestamp="131775938886772001"/>
 				<File Name="complete_soundbank" Hash="3983616370" Timestamp="131727502409852894"/>
+				<File Name="day_01" Hash="3997451588" Timestamp="131775938886362001"/>
+				<File Name="day_02" Hash="2435659881" Timestamp="131775938886482001"/>
+				<File Name="mountains" Hash="285543251" Timestamp="131775938887122001"/>
+				<File Name="plains" Hash="203250096" Timestamp="131775938887212001"/>
+				<File Name="port" Hash="3708543777" Timestamp="131775938886942001"/>
+				<File Name="town" Hash="3482102565" Timestamp="131775938886862001"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3471006542" Timestamp="131752771691292698"/>
+				<File Name="" Hash="2322610659" Timestamp="131775938887362001"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
