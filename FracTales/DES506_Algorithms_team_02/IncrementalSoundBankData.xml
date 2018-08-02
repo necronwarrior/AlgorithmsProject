@@ -4,8 +4,8 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Credits" Hash="440755867" Timestamp="131775938886592001"/>
-				<File Name="Init" Hash="4035566056" Timestamp="131775938887332001"/>
-				<File Name="Main" Hash="3660745678" Timestamp="131775938886552001"/>
+				<File Name="Init" Hash="1256427926" Timestamp="131776961042847546"/>
+				<File Name="Main" Hash="2597572489" Timestamp="131776961042777546"/>
 				<File Name="Title_Screen" Hash="613766897" Timestamp="131775938886682001"/>
 				<File Name="beach" Hash="2482218530" Timestamp="131775938887032001"/>
 				<File Name="cave" Hash="3242389061" Timestamp="131775938886772001"/>
@@ -20,7 +20,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2322610659" Timestamp="131775938887362001"/>
+				<File Name="" Hash="2966432407" Timestamp="131776961042887546"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

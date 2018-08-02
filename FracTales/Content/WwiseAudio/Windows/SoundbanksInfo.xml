@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
 	<RootPaths>
-		<ProjectRoot>C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\Content\WwiseAudio\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\1702776\Downloads\GitHub\Algorithmdave\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -66,6 +66,7 @@
 				<Event Id="2206263592" Name="type_letter" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_letter"/>
 				<Event Id="330604451" Name="type_number" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_number"/>
 				<Event Id="4038065741" Name="type_spacebar" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_spacebar"/>
+				<Event Id="3474566310" Name="ui_menu_select" ObjectPath="\Events\Default Work Unit\ui\menu\ui_menu_select"/>
 				<Event Id="2241535633" Name="writing_loop_start" ObjectPath="\Events\Default Work Unit\player\actions\writing\writing_loop_start"/>
 				<Event Id="1470925707" Name="writing_loop_stop" ObjectPath="\Events\Default Work Unit\player\actions\writing\writing_loop_stop"/>
 			</IncludedEvents>
