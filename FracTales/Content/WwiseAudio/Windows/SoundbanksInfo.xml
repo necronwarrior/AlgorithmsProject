@@ -59,6 +59,7 @@
 				<Event Id="78043339" Name="kitchen_sounds_start" ObjectPath="\Events\Default Work Unit\objects\kitchen\kitchen_sounds_start"/>
 				<Event Id="3086739561" Name="kitchen_sounds_stop" ObjectPath="\Events\Default Work Unit\objects\kitchen\kitchen_sounds_stop"/>
 				<Event Id="908981163" Name="player_footsteps_start" ObjectPath="\Events\Default Work Unit\player\movements\footsteps\player_footsteps_start"/>
+				<Event Id="1059900002" Name="select_back_play" ObjectPath="\Events\Default Work Unit\ui\main_menu\select_back_play"/>
 				<Event Id="3309108327" Name="sink_tap_start" ObjectPath="\Events\Default Work Unit\objects\sink\sink_tap_start"/>
 				<Event Id="930464141" Name="sink_tap_stop" ObjectPath="\Events\Default Work Unit\objects\sink\sink_tap_stop"/>
 				<Event Id="2922160133" Name="type_backspace" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_backspace"/>
@@ -66,7 +67,6 @@
 				<Event Id="2206263592" Name="type_letter" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_letter"/>
 				<Event Id="330604451" Name="type_number" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_number"/>
 				<Event Id="4038065741" Name="type_spacebar" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_spacebar"/>
-				<Event Id="3474566310" Name="ui_menu_select" ObjectPath="\Events\Default Work Unit\ui\menu\ui_menu_select"/>
 				<Event Id="2241535633" Name="writing_loop_start" ObjectPath="\Events\Default Work Unit\player\actions\writing\writing_loop_start"/>
 				<Event Id="1470925707" Name="writing_loop_stop" ObjectPath="\Events\Default Work Unit\player\actions\writing\writing_loop_stop"/>
 			</IncludedEvents>
@@ -186,6 +186,10 @@
 				<File Id="238507940" Language="SFX">
 					<ShortName>sfx_player_typing_spacebar_03.wav</ShortName>
 					<Path>SFX\sfx_player_typing_spacebar_03_50A13F48.wem</Path>
+				</File>
+				<File Id="246578813" Language="SFX">
+					<ShortName>select_back_01.wav</ShortName>
+					<Path>SFX\select_back_01_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="250215763" Language="SFX">
 					<ShortName>player_footstep_wood_creak_10.wav</ShortName>

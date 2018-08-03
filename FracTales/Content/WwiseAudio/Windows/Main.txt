@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	875684730	type_enter			\Default Work Unit\player\actions\typing\type_enter	
 	908981163	player_footsteps_start			\Default Work Unit\player\movements\footsteps\player_footsteps_start	
 	930464141	sink_tap_stop			\Default Work Unit\objects\sink\sink_tap_stop	
+	1059900002	select_back_play			\Default Work Unit\ui\main_menu\select_back_play	
 	1118822596	event_amb_town_start			\Default Work Unit\ambience\Town\event_amb_town_start	
 	1470925707	writing_loop_stop			\Default Work Unit\player\actions\writing\writing_loop_stop	
 	1561534440	amb_wind_loop_stop			\Default Work Unit\ambience\Emitters\weather\wind\amb_wind_loop_stop	
@@ -21,7 +22,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2922160133	type_backspace			\Default Work Unit\player\actions\typing\type_backspace	
 	3086739561	kitchen_sounds_stop			\Default Work Unit\objects\kitchen\kitchen_sounds_stop	
 	3309108327	sink_tap_start			\Default Work Unit\objects\sink\sink_tap_start	
-	3474566310	ui_menu_select			\Default Work Unit\ui\menu\ui_menu_select	
 	3609702808	amb_river_loop_start			\Default Work Unit\ambience\Emitters\water\river\amb_river_loop_start	
 	3678634271	amb_wind_grass_loop_stop			\Default Work Unit\ambience\Emitters\weather\wind_grass\amb_wind_grass_loop_stop	
 	3800124118	alarm_clock_stop			\Default Work Unit\objects\alarm_clock\alarm_clock_stop	
@@ -117,6 +117,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	230141523	player_footsteps_grass_long_walk_04	C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footsteps_grass_long_walk_04_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_run\player_footstep_grass_long_run\player_footsteps_grass_long_walk_04		6294
 	233291211	glasses_05	C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\glasses_05_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\kitchen\kitchen_blend\glasses\glasses_05		9483
 	238507940	sfx_player_typing_spacebar_03	C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_spacebar_03_50A13F48.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_spacebar\sfx_player_typing_spacebar_03		3329
+	246578813	select_back_01	C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\select_back_01_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\non_world\ui\ui\main_menu\version_01\select_back_01		30583
 	250215763	player_footstep_wood_creak_10	C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footstep_wood_creak_10_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_run\player_footsteps_wood_run\player_footsteps_wood_run_creaks\player_footstep_wood_creak_10		7550
 	255400739	Loud_Water	C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\Loud_Water_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\water\river\Loud_Water		165171
 	273213009	amb_door_creak_15	C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_door_creak_15_54FCD2AE.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\doors\door_movement\door_closing\door_wood_closing\door_wood_closing_creak\amb_door_creak_15		13073
