@@ -434,7 +434,7 @@
 											</ChildrenList>
 											<GroupingInfo>
 												<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
-												<DefaultSwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+												<DefaultSwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="npc_footsteps_grass_short_run" ID="{7D93914C-1FB3-4C80-8477-9D46F7C94E55}"/>
@@ -445,13 +445,13 @@
 												</GroupingBehaviorList>
 												<GroupingList>
 													<Grouping>
-														<SwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+														<SwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 														<ItemList>
 															<ItemRef Name="npc_footsteps_grass_short_run" ID="{7D93914C-1FB3-4C80-8477-9D46F7C94E55}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+														<SwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 														<ItemList>
 															<ItemRef Name="npc_footsteps_wood_run" ID="{A9239F7E-B5EE-4FFB-9C07-FC3394B6862B}"/>
 														</ItemList>
@@ -900,7 +900,7 @@
 											</ChildrenList>
 											<GroupingInfo>
 												<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
-												<DefaultSwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+												<DefaultSwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="npc_footsteps_wood_walk" ID="{51A0D23D-2D7B-4C81-8999-A9B39AF1A3E6}"/>
@@ -911,13 +911,13 @@
 												</GroupingBehaviorList>
 												<GroupingList>
 													<Grouping>
-														<SwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+														<SwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 														<ItemList>
 															<ItemRef Name="npc_footsteps_grass_short_walk" ID="{7D39E465-D07F-496F-A653-7FC7484A7362}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+														<SwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 														<ItemList>
 															<ItemRef Name="npc_footsteps_wood_walk" ID="{51A0D23D-2D7B-4C81-8999-A9B39AF1A3E6}"/>
 														</ItemList>
