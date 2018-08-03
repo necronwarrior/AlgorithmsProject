@@ -5,9 +5,37 @@
 			<Comment>All dialogue.</Comment>
 			<ChildrenList>
 				<ActorMixer Name="sam" ID="{3AFECC77-4C12-497D-A811-AE3BD66A04B0}" ShortID="633716799">
+					<PropertyList>
+						<Property Name="OverrideEffect" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom CreatedFrom="{7C225B71-1248-4DB4-8F06-D49750354E6D}">
+								<Effect Name="Dialogue_buzz_removal (Custom)" ID="{C66BC662-77E8-4145-BE9B-608422B0250B}" ShortID="307052752" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<PropertyList>
+										<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="8105"/>
+										<Property Name="GainBand3" Type="Real32" Value="-24"/>
+										<Property Name="OnOffBand1" Type="bool" Value="False"/>
+										<Property Name="OnOffBand2" Type="bool" Value="False"/>
+										<Property Name="QFactorBand3" Type="Real32" Value="10.5"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect1">
+							<Custom CreatedFrom="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}">
+								<Effect Name="Brick_Wall_Minus_1dB_Peak_Slow_Release (Custom)" ID="{8CEA9791-78A8-4761-9673-108D4D3F9049}" ShortID="693203151" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<PropertyList>
+										<Property Name="OutputGain" Type="Real32" Value="-0.1"/>
+										<Property Name="Ratio" Type="Real32" Value="50"/>
+										<Property Name="ReleaseTime" Type="Real32" Value="0.25"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
@@ -25,6 +53,18 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="dlg_sam_01_01" ID="{84D6A909-8CF8-4B99-B1CB-664EDF0AF464}" ShortID="408362320">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>0.001</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -44,6 +84,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_01_02" ID="{6F1CB8D3-2FC6-44EF-BE19-9EC02CF73C16}" ShortID="86919004">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>0.001</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -63,6 +115,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_01_03" ID="{2E310F9B-0D2F-47C5-A12B-EED9E8E4F29D}" ShortID="736593048">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -113,6 +172,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_02_02" ID="{013E47DB-711C-4D14-A5CF-0599E49622CC}" ShortID="863988518">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -132,6 +198,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_02_03" ID="{CD8BD93D-ED4E-44C8-8494-AEF3FC86B413}" ShortID="467395990">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -163,6 +236,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="dlg_sam_03_01" ID="{430D3D36-6ABB-4885-AD77-8B843DEF900B}" ShortID="459879165">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -182,6 +262,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_03_02" ID="{48B07410-4432-45D0-9811-AEC799D20A03}" ShortID="422223726">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -232,6 +319,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="dlg_sam_04_01" ID="{13001154-0B92-4946-8384-151028781D5C}" ShortID="888584257">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -270,6 +364,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_04_03" ID="{E04E5721-A7D9-4191-B66A-9F806202093D}" ShortID="899390815">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -320,6 +421,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_05_02" ID="{6086A482-F9D5-45C7-80DA-E78F7E2EA4F6}" ShortID="973682402">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -339,6 +447,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_05_03" ID="{CFBF1E71-71D1-4F77-9E67-7433451000C6}" ShortID="912567963">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -370,6 +485,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="dlg_sam_06_01" ID="{6F53D879-E8A0-448B-813B-311F3AD5D780}" ShortID="161149790">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -380,6 +502,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="dlg_sam_06_01" ID="{F5FE582B-BE3F-424A-884E-8F90425D28C3}" ShortID="709309083">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="LoopEnd" Type="Real64" Value="6.75"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Sam_06\dlg_sam_06_01.wav</AudioFile>
 										</AudioFileSource>
@@ -389,6 +516,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_06_02" ID="{499C4A7A-46C7-4C3D-9194-35628F934D53}" ShortID="576782447">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -458,6 +592,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_07_02" ID="{177AC55B-7332-43A5-91DC-1D9B5E62E8AF}" ShortID="718652661">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -489,6 +630,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="dlg_sam_12_01" ID="{E4ED6DBB-7B1D-40BA-865E-DF2AA3D1AB39}" ShortID="214222067">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -508,6 +656,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_12_02" ID="{3AB778E8-A05F-4D46-8F77-27B8B213F6A3}" ShortID="708744176">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -537,6 +692,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="dlg_sam_12_03" ID="{946E7F6C-A1D2-4027-B01D-7E3388BD9D34}" ShortID="345476882">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="7.29166666666667E-02"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Sam_12\dlg_sam_12_03.wav</AudioFile>
 										</AudioFileSource>
@@ -558,6 +716,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="dlg_sam_13_01" ID="{80D862CE-139B-479C-8876-803E0EA410B9}" ShortID="641281302">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -608,6 +773,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="dlg_sam_14_01" ID="{F40A6B50-E4AE-447B-BA5E-105D5161CA5E}" ShortID="323803142">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -639,6 +811,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="dlg_sam_15_01" ID="{647ECA01-3FC0-4C81-86CD-72186278FF3D}" ShortID="684785789">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -708,6 +887,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_16_02" ID="{8304D5C2-93B2-4518-B511-C04CCA59AF2A}" ShortID="977152761">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -727,6 +913,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_16_03" ID="{8821AB97-7AB8-4737-879F-CC0390E7E053}" ShortID="137930349">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -777,6 +970,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_17_02" ID="{3B45F8B9-29CC-4545-8499-817AFC2430D3}" ShortID="309816393">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -796,6 +996,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_17_03" ID="{D51FD9FF-E524-4E72-9AA2-7AB4A7EA9BF2}" ShortID="45782262">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -846,6 +1053,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_18_02" ID="{A7698F47-29D5-4781-B652-4509AA8B8E2F}" ShortID="493812837">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -865,6 +1079,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_18_03" ID="{8327C813-80CB-4C39-B7FA-F9F45ACA0B9D}" ShortID="304981794">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -915,6 +1136,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_19_02" ID="{F8E510FE-2C70-400B-BAA7-A3F9E6F1967E}" ShortID="417005877">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -934,6 +1162,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_19_03" ID="{624961C7-1A44-4FBC-A036-F6EFF9230F7A}" ShortID="74811257">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -965,6 +1200,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="dlg_sam_20_01" ID="{3B1FB6F7-D4C6-4774-A392-E46C2EDBADF2}" ShortID="862420748">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -984,6 +1226,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_20_02" ID="{B05DDF21-6277-4558-B1EE-E42D26780E8A}" ShortID="938657092">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -1034,6 +1283,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="dlg_sam_21_01" ID="{6E8D46CD-80B6-4A74-B990-63A41505E1C7}" ShortID="609118796">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -1072,6 +1328,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_21_03" ID="{3E3E579F-BE99-47EA-B9FC-C6AE43F8D2CE}" ShortID="389575364">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -1103,6 +1366,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="dlg_sam_22_01" ID="{46019E57-D623-4F52-B25A-837CD13E7700}" ShortID="887645322">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -3889,9 +4159,29 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="parker" ID="{0F3C76E0-A909-4597-92B0-0B1C8B765ABC}" ShortID="983278769">
+					<PropertyList>
+						<Property Name="OverrideEffect" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom CreatedFrom="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}">
+								<Effect Name="Brick_Wall_Minus_1dB_Peak_Slow_Release (Custom)" ID="{D5653247-8F9C-4B05-9864-4154B1E7F2F5}" ShortID="277662820" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<PropertyList>
+										<Property Name="OutputGain" Type="Real32" Value="24"/>
+										<Property Name="Ratio" Type="Real32" Value="3.8"/>
+										<Property Name="ReleaseTime" Type="Real32" Value="0.25"/>
+										<Property Name="Threshold" Type="Real32" Value="-21.8"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>

@@ -457,7 +457,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="time_of_day" ID="{BA244F7E-5D13-427E-992C-334ADCDD0BC2}"/>
-							<Value>2.754</Value>
+							<Value>9.33333333333333</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_from_sea_rocks" ID="{46842EBB-BC5D-43D4-A48F-FB0A31EC971A}"/>
@@ -551,7 +551,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Concrete" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
 						<CurrentSwitchRef Name="crouch" ID="{49C37899-B19E-4D71-BCD5-1E9812593835}"/>
-						<CurrentSwitchRef Name="open" ID="{29D850E2-1B3A-4608-ACA4-C85F77D67EFC}"/>
+						<CurrentSwitchRef Name="close" ID="{0F78FE01-577A-4E1D-9C02-623D79EAF0F5}"/>
 						<CurrentSwitchRef Name="collectable" ID="{A9DEAF9B-AB0B-4A30-96EA-B3B022F9709C}"/>
 						<CurrentSwitchRef Name="map" ID="{DA24746C-7D0D-4AB3-BC15-82FCB8A08D78}"/>
 						<CurrentSwitchRef Name="off" ID="{1420DF7A-85B5-4987-9F4A-481382D0014E}"/>

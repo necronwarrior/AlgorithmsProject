@@ -30,6 +30,7 @@
 </PluginData>
 				</Effect>
 				<Effect Name="New_Wwise_Pitch_Shifter" ID="{429947C3-81A4-437B-B1E5-CCCD413CD31E}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3"/>
+				<Effect Name="Dialogue_buzz_removal" ID="{7C225B71-1248-4DB4-8F06-D49750354E6D}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
