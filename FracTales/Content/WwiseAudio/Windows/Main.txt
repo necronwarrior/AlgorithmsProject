@@ -39,19 +39,19 @@ Switch	ID	Name	Switch Group			Notes
 	2655407367	crouch	player_movement_speed			
 	1451272583	close	door_movement			
 	3072142513	open	door_movement			
-	241501102	grass_long	material			
-	582824249	leaves	material			
-	660835419	plastic	material			
-	803837735	sand	material			
-	841620460	concrete	material			
-	1216965916	stone	material			
-	1970351858	fabric	material			
-	2058049674	wood	material			
-	2185786256	gravel	material			
-	2195636714	dirt	material			
-	2473969246	metal	material			
-	2654748154	water	material			
-	2705388594	grass_short	material			
+	241501102	Grass_long	material			
+	582824249	Leaves	material			
+	660835419	Plastic	material			
+	803837735	Sand	material			
+	841620460	Concrete	material			
+	1216965916	Stone	material			
+	1970351858	Fabric	material			
+	2058049674	Wood	material			
+	2185786256	Gravel	material			
+	2195636714	Dirt	material			
+	2654748154	Water	material			
+	2705388594	Grass_short	material			
+	2741001191	Mmetal	material			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	207908541	time_of_day			\Default Work Unit\time_of_day	

@@ -145,7 +145,7 @@
 						<CurrentStateRef Name="night" ID="{47F39980-265E-4CA3-A56D-717D2025E975}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+						<CurrentSwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 						<CurrentSwitchRef Name="crouch" ID="{49C37899-B19E-4D71-BCD5-1E9812593835}"/>
 						<CurrentSwitchRef Name="close" ID="{0F78FE01-577A-4E1D-9C02-623D79EAF0F5}"/>
 						<CurrentSwitchRef Name="collectable" ID="{A9DEAF9B-AB0B-4A30-96EA-B3B022F9709C}"/>
@@ -265,7 +265,7 @@
 						<CurrentStateRef Name="rain" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+						<CurrentSwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 						<CurrentSwitchRef Name="crouch" ID="{49C37899-B19E-4D71-BCD5-1E9812593835}"/>
 						<CurrentSwitchRef Name="close" ID="{0F78FE01-577A-4E1D-9C02-623D79EAF0F5}"/>
 						<CurrentSwitchRef Name="collectable" ID="{A9DEAF9B-AB0B-4A30-96EA-B3B022F9709C}"/>
@@ -416,7 +416,7 @@
 						<CurrentStateRef Name="day" ID="{3B89313A-C6C8-4F66-ACA3-57C4A089D996}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+						<CurrentSwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 						<CurrentSwitchRef Name="crouch" ID="{49C37899-B19E-4D71-BCD5-1E9812593835}"/>
 						<CurrentSwitchRef Name="open" ID="{29D850E2-1B3A-4608-ACA4-C85F77D67EFC}"/>
 						<CurrentSwitchRef Name="collectable" ID="{A9DEAF9B-AB0B-4A30-96EA-B3B022F9709C}"/>
@@ -457,7 +457,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="time_of_day" ID="{BA244F7E-5D13-427E-992C-334ADCDD0BC2}"/>
-							<Value>2.754</Value>
+							<Value>9.33333333333333</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_from_sea_rocks" ID="{46842EBB-BC5D-43D4-A48F-FB0A31EC971A}"/>
@@ -541,7 +541,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="water_speed" ID="{5A7BDAFD-EFAA-4F59-8877-6EB2092CDA28}"/>
-							<Value>11</Value>
+							<Value>1</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
@@ -549,9 +549,9 @@
 						<CurrentStateRef Name="rain" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}"/>
+						<CurrentSwitchRef Name="Concrete" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
 						<CurrentSwitchRef Name="crouch" ID="{49C37899-B19E-4D71-BCD5-1E9812593835}"/>
-						<CurrentSwitchRef Name="open" ID="{29D850E2-1B3A-4608-ACA4-C85F77D67EFC}"/>
+						<CurrentSwitchRef Name="close" ID="{0F78FE01-577A-4E1D-9C02-623D79EAF0F5}"/>
 						<CurrentSwitchRef Name="collectable" ID="{A9DEAF9B-AB0B-4A30-96EA-B3B022F9709C}"/>
 						<CurrentSwitchRef Name="map" ID="{DA24746C-7D0D-4AB3-BC15-82FCB8A08D78}"/>
 						<CurrentSwitchRef Name="off" ID="{1420DF7A-85B5-4987-9F4A-481382D0014E}"/>

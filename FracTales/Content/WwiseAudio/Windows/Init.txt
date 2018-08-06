@@ -76,6 +76,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	500826563	lake_reverb			\Default Work Unit\Master Audio Bus\lake\lake_reverb	
+	920301845	forest_reverb			\Default Work Unit\Master Audio Bus\forest\forest_reverb	
 	1792019682	field_reverb			\Default Work Unit\Master Audio Bus\fields\field_reverb	
 	2686381848	town_reverb			\Default Work Unit\Master Audio Bus\town\town_reverb	
 	2714134073	beach_reverb			\Default Work Unit\Master Audio Bus\beach\beach_reverb	
@@ -87,4 +88,5 @@ Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	2080872166	Brick_Wall_Minus_6dB_Peak_Fast_Release	Wwise Peak Limiter			
 	2258521792	Brick_Wall_Minus_1dB_Peak_Slow_Release	Wwise Peak Limiter			
+	3900114836	Metal_Hangar	Wwise RoomVerb			
 

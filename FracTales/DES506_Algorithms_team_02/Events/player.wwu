@@ -20,6 +20,16 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{7170556A-62CD-4B80-9432-14A5D246662E}" ShortID="539270558">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}" WorkUnitID="{79E22627-062D-4585-B570-C50242E768AC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 							</ChildrenList>

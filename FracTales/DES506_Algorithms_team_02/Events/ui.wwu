@@ -217,7 +217,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="select_01" ID="{CDDFC9A4-9AA6-4B9F-AD67-953632C174E2}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+											<ObjectRef Name="select_02" ID="{C78C91A3-AC43-4ED6-9BB7-14E74926EF6A}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -231,7 +231,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="select_back_01" ID="{B5F869C7-1334-457D-8605-3C8B70FC4850}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+											<ObjectRef Name="select_back_02" ID="{F0C4AD50-B10A-460B-A19B-3B6991C38C10}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -245,7 +245,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="select_advance_01" ID="{AFE989E8-9728-4871-AFC1-26440E138C9A}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+											<ObjectRef Name="select_advance_02" ID="{581A8503-15EF-46C3-B2EA-223D72B8E41F}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -259,7 +259,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="select_restricted_01" ID="{F724B69B-7740-4FC0-B3BA-0E4D54DAD6AD}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+											<ObjectRef Name="select_restricted_02" ID="{36037B0C-2A94-4B14-BCA9-93238DCF8DDA}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -100,25 +100,25 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
+												<SwitchRef Name="Stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
 												<ItemList>
 													<ItemRef Name="player_grab_wall" ID="{C0C6D29D-4D8B-4823-BE8E-2B58EA2B20D1}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
+												<SwitchRef Name="Gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
 												<ItemList>
 													<ItemRef Name="player_grab_cliff" ID="{9EC8DDDF-3611-4BD6-BA25-57ED27152C74}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="metal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
+												<SwitchRef Name="Mmetal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
 												<ItemList>
 													<ItemRef Name="player_grab_ladder" ID="{BFD9311E-021D-4D1A-94BF-E287617D982C}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+												<SwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 												<ItemList>
 													<ItemRef Name="player_grab_fence" ID="{35E0DA71-A88E-4640-A72E-D9BEAEE62FC9}"/>
 												</ItemList>
@@ -161,6 +161,7 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="player_footstep_dirt_run" ID="{D66D6749-8999-468F-8B93-B072F72A9E29}" ShortID="671673706">
 													<PropertyList>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
 																<ModifierInfo>
@@ -187,6 +188,9 @@
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="footsteps" ID="{E0902819-B7D0-4BE2-963C-D6D936E58CED}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="mountains_reverb" ID="{ECCBB1F5-29A3-4E89-85F4-611B9E3438DB}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -621,6 +625,7 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="player_footstep_gravel_run" ID="{CB8E58A1-7ED8-4DD9-BD7D-F7DB32288AC4}" ShortID="987675910">
 													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
 																<ModifierInfo>
@@ -647,6 +652,9 @@
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="footsteps" ID="{E0902819-B7D0-4BE2-963C-D6D936E58CED}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="cave_reverb" ID="{A857F213-F5BF-4AAE-9DC4-EA2F76E6153B}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -1866,7 +1874,7 @@
 											</ChildrenList>
 											<GroupingInfo>
 												<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
-												<DefaultSwitchRef Name="dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
+												<DefaultSwitchRef Name="Dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="player_footstep_grass_short_run" ID="{B38F9420-844F-4542-8DFE-B741AFF77926}"/>
@@ -1910,79 +1918,79 @@
 												</GroupingBehaviorList>
 												<GroupingList>
 													<Grouping>
-														<SwitchRef Name="stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
+														<SwitchRef Name="Stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_stone_run" ID="{577DE1BD-6E3E-4C46-AE44-5B1CEFF77DF7}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="fabric" ID="{08628135-B8FA-40A9-829C-3733AF0814FF}"/>
+														<SwitchRef Name="Fabric" ID="{08628135-B8FA-40A9-829C-3733AF0814FF}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_fabric_run" ID="{E9AA734F-3CA7-4FCB-8720-0DCF3AE3889F}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="plastic" ID="{D940EB41-0354-41B8-87DD-CEDF2051EC0F}"/>
+														<SwitchRef Name="Plastic" ID="{D940EB41-0354-41B8-87DD-CEDF2051EC0F}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_plastic_run" ID="{ED90F44D-D9A7-4887-BD76-8FCD59660944}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+														<SwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_grass_short_run" ID="{B38F9420-844F-4542-8DFE-B741AFF77926}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
+														<SwitchRef Name="Gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_gravel_run" ID="{CB8E58A1-7ED8-4DD9-BD7D-F7DB32288AC4}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="metal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
+														<SwitchRef Name="Mmetal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_metal_run" ID="{C082AA29-A9F0-46E3-B300-F4621D62A30D}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="sand" ID="{AA1C18A5-DB77-4DF0-9013-AE229B56D200}"/>
+														<SwitchRef Name="Sand" ID="{AA1C18A5-DB77-4DF0-9013-AE229B56D200}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_sand_run" ID="{12290472-E917-454B-A7AD-CB71331C7FE2}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+														<SwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 														<ItemList>
 															<ItemRef Name="player_footsteps_wood_run" ID="{FE401FC2-E4D8-442E-8956-DBAFC8410F5D}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="water" ID="{EE0D10B1-DBAF-4592-91C8-A26CB51BAE5B}"/>
+														<SwitchRef Name="Water" ID="{EE0D10B1-DBAF-4592-91C8-A26CB51BAE5B}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_water_run" ID="{126C5667-AE42-40C8-AA3E-0EA1A6D1D289}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
+														<SwitchRef Name="Dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_dirt_run" ID="{D66D6749-8999-468F-8B93-B072F72A9E29}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}"/>
+														<SwitchRef Name="Leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_leaves_run" ID="{D56EBD41-2A90-4EA4-90DF-05C83A6A8D38}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="concrete" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
+														<SwitchRef Name="Concrete" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_concrete_run" ID="{A548ED2C-D1A2-4F93-A14A-7236090B1FE2}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="grass_long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
+														<SwitchRef Name="Grass_long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_grass_long_run" ID="{3FCD8853-2860-466E-BAD3-DBACDDCA1ED9}"/>
 														</ItemList>
@@ -3368,7 +3376,7 @@
 											</ChildrenList>
 											<GroupingInfo>
 												<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
-												<DefaultSwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+												<DefaultSwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="player_footstep_metal_walk" ID="{CAEC3407-B71E-4833-AE06-99A2AE3C6B24}"/>
@@ -3412,79 +3420,79 @@
 												</GroupingBehaviorList>
 												<GroupingList>
 													<Grouping>
-														<SwitchRef Name="stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
+														<SwitchRef Name="Stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_stone_walk" ID="{9DF52F5D-D59A-4D83-A6AE-0C9A349AF513}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="fabric" ID="{08628135-B8FA-40A9-829C-3733AF0814FF}"/>
+														<SwitchRef Name="Fabric" ID="{08628135-B8FA-40A9-829C-3733AF0814FF}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_fabric_walk" ID="{E5026430-B914-4733-8E8E-0E9D68B9A26A}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="plastic" ID="{D940EB41-0354-41B8-87DD-CEDF2051EC0F}"/>
+														<SwitchRef Name="Plastic" ID="{D940EB41-0354-41B8-87DD-CEDF2051EC0F}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_plastic_walk" ID="{EF19711C-5E83-42A2-B468-CD92CAC59EDB}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+														<SwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_grass_short_walk" ID="{014DD259-FA6B-4B74-9EEF-E492354EB106}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
+														<SwitchRef Name="Gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_gravel_walk" ID="{53A2DF26-A629-432E-A51B-B9FC255C2207}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="metal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
+														<SwitchRef Name="Mmetal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_metal_walk" ID="{CAEC3407-B71E-4833-AE06-99A2AE3C6B24}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="sand" ID="{AA1C18A5-DB77-4DF0-9013-AE229B56D200}"/>
+														<SwitchRef Name="Sand" ID="{AA1C18A5-DB77-4DF0-9013-AE229B56D200}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_sand_walk" ID="{CDD6811D-3FB1-4303-AD7D-8B2AD549E0A8}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+														<SwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 														<ItemList>
 															<ItemRef Name="player_footsteps_wood_walk" ID="{08EF9314-439A-4598-AD15-A6E4FA3B4831}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="water" ID="{EE0D10B1-DBAF-4592-91C8-A26CB51BAE5B}"/>
+														<SwitchRef Name="Water" ID="{EE0D10B1-DBAF-4592-91C8-A26CB51BAE5B}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_water_walk" ID="{E9D6B47A-CA32-498E-9284-8FE21220784D}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
+														<SwitchRef Name="Dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_dirt_walk" ID="{4055B799-98FF-4E7F-94F7-35CDD18B7301}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}"/>
+														<SwitchRef Name="Leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_leaves_walk" ID="{0FF22EF1-8055-4A2B-B401-E56E1EAF4FF1}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="concrete" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
+														<SwitchRef Name="Concrete" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_concrete_walk" ID="{0B942537-2038-4E6E-B85E-8658B20530C4}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="grass_long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
+														<SwitchRef Name="Grass_long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_grass_long_walk" ID="{4E39B01C-19C0-4064-B575-D0856D5A27A3}"/>
 														</ItemList>
@@ -3687,7 +3695,7 @@
 									</ReferenceList>
 									<GroupingInfo>
 										<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
-										<DefaultSwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+										<DefaultSwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>
