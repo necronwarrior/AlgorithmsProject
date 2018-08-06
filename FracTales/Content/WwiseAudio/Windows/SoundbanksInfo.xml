@@ -91,6 +91,10 @@
 					<ShortName>player_footstep_grass_short_run_07.wav</ShortName>
 					<Path>SFX\player_footstep_grass_short_run_07_C7883B45.wem</Path>
 				</File>
+				<File Id="76039451" Language="SFX">
+					<ShortName>select_back_02.wav</ShortName>
+					<Path>SFX\select_back_02_8A6CA8BA.wem</Path>
+				</File>
 				<File Id="82485298" Language="SFX">
 					<ShortName>sfx_player_typing_number_01.wav</ShortName>
 					<Path>SFX\sfx_player_typing_number_01_493EF07B.wem</Path>
@@ -186,10 +190,6 @@
 				<File Id="238507940" Language="SFX">
 					<ShortName>sfx_player_typing_spacebar_03.wav</ShortName>
 					<Path>SFX\sfx_player_typing_spacebar_03_50A13F48.wem</Path>
-				</File>
-				<File Id="246578813" Language="SFX">
-					<ShortName>select_back_01.wav</ShortName>
-					<Path>SFX\select_back_01_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="250215763" Language="SFX">
 					<ShortName>player_footstep_wood_creak_10.wav</ShortName>
