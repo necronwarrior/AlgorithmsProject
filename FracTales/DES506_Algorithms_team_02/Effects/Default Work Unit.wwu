@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7278E72B-39B7-46E9-9B7C-BFA3E86F63B3}" SchemaVersion="80">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{7278E72B-39B7-46E9-9B7C-BFA3E86F63B3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7278E72B-39B7-46E9-9B7C-BFA3E86F63B3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Wwise_Convolution_Reverb" ID="{086940B5-B3D6-4042-9A97-6E4003867FF6}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">					<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{DDEC740D-CD6C-47CD-9FAF-C350D38C876A}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+				</Effect>
+				<Effect Name="New_Wwise_Pitch_Shifter" ID="{429947C3-81A4-437B-B1E5-CCCD413CD31E}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3"/>
+				<Effect Name="Dialogue_buzz_removal" ID="{7C225B71-1248-4DB4-8F06-D49750354E6D}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

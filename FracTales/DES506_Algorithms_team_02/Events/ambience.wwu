@@ -35,7 +35,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="ambience_wind" ID="{722450CA-B142-427F-8062-790493933190}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+															<ObjectRef Name="amb_wind" ID="{550D3738-CE84-4B8D-A3C0-9C6BE1721447}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -49,7 +49,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="ambience_wind" ID="{722450CA-B142-427F-8062-790493933190}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+															<ObjectRef Name="amb_wind" ID="{550D3738-CE84-4B8D-A3C0-9C6BE1721447}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -132,6 +132,16 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="ambience_raining" ID="{57F01E06-5181-4FE0-B06D-C720DE99B5A2}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{D9EF78D5-46BB-46FD-ABB0-4B2AF5F8FCD5}" ShortID="762850761">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="ambience_thunder" ID="{56F7846A-5B75-439A-84B8-9BEEF0BD8193}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -242,6 +252,61 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="fauna" ID="{ADC64A60-5BD3-4A87-A3D9-0E261573784F}" ShortID="540679144">
+							<ChildrenList>
+								<Folder Name="forest_birds" ID="{5CD2DCF1-FFC3-4FB5-8FD3-CF79553CAED7}" ShortID="60798746">
+									<ChildrenList>
+										<Event Name="amb_emit_forest_birds_start" ID="{7FDCFBE6-F980-411F-8191-811B49CC2EBB}">
+											<ChildrenList>
+												<Action Name="" ID="{349ED4C8-E14A-4260-8501-CCEA76E40161}" ShortID="568201603">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="amb_forest_birds" ID="{C741F6EB-E334-461C-AC4A-31A445D05C89}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="amb_emit_forest_birds_stop" ID="{2FF5EE5E-07E8-45FD-9844-B3331EA387F4}"/>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Forest" ID="{CF6D98C9-294B-4004-A598-D0F5D35EE1F7}" ShortID="1059780312">
+					<ChildrenList>
+						<Event Name="amb_forest_loop_start" ID="{63AF90E6-2A20-4411-ACC7-8BBA9E88903A}">
+							<ChildrenList>
+								<Action Name="" ID="{A5ABB677-4AA3-4896-A2C5-104C24D4C67B}" ShortID="40776669">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ambience_region_forest" ID="{BB76F3E7-EB11-43AC-ACA1-EC4DFB042489}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="amb_forest_loop_stop" ID="{7EFF90A9-3A4B-4501-AD4E-6F6BA804DE45}">
+							<ChildrenList>
+								<Action Name="" ID="{34AE2889-DDFB-4105-8F3B-FBFD0F96FF71}" ShortID="457554202">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ambience_region_forest" ID="{BB76F3E7-EB11-43AC-ACA1-EC4DFB042489}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

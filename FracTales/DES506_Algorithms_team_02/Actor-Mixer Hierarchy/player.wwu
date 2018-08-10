@@ -100,25 +100,25 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
+												<SwitchRef Name="Stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
 												<ItemList>
 													<ItemRef Name="player_grab_wall" ID="{C0C6D29D-4D8B-4823-BE8E-2B58EA2B20D1}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
+												<SwitchRef Name="Gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
 												<ItemList>
 													<ItemRef Name="player_grab_cliff" ID="{9EC8DDDF-3611-4BD6-BA25-57ED27152C74}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="metal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
+												<SwitchRef Name="Mmetal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
 												<ItemList>
 													<ItemRef Name="player_grab_ladder" ID="{BFD9311E-021D-4D1A-94BF-E287617D982C}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+												<SwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 												<ItemList>
 													<ItemRef Name="player_grab_fence" ID="{35E0DA71-A88E-4640-A72E-D9BEAEE62FC9}"/>
 												</ItemList>
@@ -147,6 +147,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<RandomSequenceContainer Name="player_footstep_concrete_run" ID="{A548ED2C-D1A2-4F93-A14A-7236090B1FE2}" ShortID="260707661">
+													<PropertyList>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -157,12 +160,37 @@
 													</ReferenceList>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="player_footstep_dirt_run" ID="{D66D6749-8999-468F-8B93-B072F72A9E29}" ShortID="671673706">
+													<PropertyList>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{35BB8374-67AD-4048-B292-35EA53D38051}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="243"/>
+																			<Property Name="Min" Type="Real64" Value="-221"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-23</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="footsteps" ID="{E0902819-B7D0-4BE2-963C-D6D936E58CED}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="mountains_reverb" ID="{ECCBB1F5-29A3-4E89-85F4-611B9E3438DB}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -359,6 +387,9 @@
 													</ChildrenList>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="player_footstep_fabric_run" ID="{E9AA734F-3CA7-4FCB-8720-0DCF3AE3889F}" ShortID="970864033">
+													<PropertyList>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -393,7 +424,7 @@
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-13</Value>
+																<Value>-19</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -418,7 +449,7 @@
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_run_01" ID="{58EED5F6-5C63-49DB-8904-5E4B1BC86E94}" ShortID="287836931">
 																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.083984375"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.420721726190476"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="0.420721726190476"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
@@ -441,7 +472,7 @@
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_run_02" ID="{EE4CA9D1-232D-4C3E-9B18-E6DDA52B136D}" ShortID="392846846">
 																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="4.48875790550595E-02"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.379427083333333"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="0.379427083333333"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
@@ -464,7 +495,7 @@
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_run_03" ID="{4FFBABBA-7CC1-43CA-9B0D-3666FF3F382F}" ShortID="282621117">
 																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="4.71365792410714E-02"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.332624162946429"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="0.332624162946429"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
@@ -487,8 +518,8 @@
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_run_04" ID="{AF9AE64F-46E1-450A-84C4-2DC7B793E044}" ShortID="93095319">
 																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.320731026785714"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="0.454720633370536"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.368207659040179"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.368207659040179"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>player_footstep_grass_short_run_04.wav</AudioFile>
@@ -510,7 +541,7 @@
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_run_05" ID="{C3D9C555-4F65-4287-A6B5-4CF59E8AE31A}" ShortID="1061421411">
 																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.125565011160714"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.359774925595238"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="0.359774925595238"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
@@ -533,7 +564,7 @@
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_run_06" ID="{D2947449-3316-4B22-A635-93531B549F00}" ShortID="658193402">
 																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.126431710379464"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.418197195870536"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="0.418197195870536"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
@@ -579,7 +610,7 @@
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_run_08" ID="{0D48FC03-45A6-4C63-B2E8-B51584A0E601}" ShortID="197828098">
 																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.240284946986607"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.356722586495536"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="0.356722586495536"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
@@ -593,6 +624,28 @@
 													</ChildrenList>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="player_footstep_gravel_run" ID="{CB8E58A1-7ED8-4DD9-BD7D-F7DB32288AC4}" ShortID="987675910">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{1F88AA59-614A-457B-91EB-5E10E27761A5}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="200"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-17</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -600,7 +653,183 @@
 														<Reference Name="OutputBus">
 															<ObjectRef Name="footsteps" ID="{E0902819-B7D0-4BE2-963C-D6D936E58CED}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="cave_reverb" ID="{A857F213-F5BF-4AAE-9DC4-EA2F76E6153B}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="player_footstep_gravel_run_01" ID="{787CF925-1996-4172-98C1-4927D37E9DA5}" ShortID="613229580">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="player_footstep_gravel_run_01" ID="{E592B37E-88B7-46DB-A0A8-29F302EFC03F}" ShortID="486638492">
+																	<Language>SFX</Language>
+																	<AudioFile>player_footstep_gravel_run_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="player_footstep_gravel_run_01" ID="{E592B37E-88B7-46DB-A0A8-29F302EFC03F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="player_footstep_gravel_run_02" ID="{C82D39B4-21D0-4F9F-8DFF-AA6D7A3E09E7}" ShortID="600755496">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="player_footstep_gravel_run_02" ID="{6C834C03-392B-43AF-9265-36173AA84D7B}" ShortID="936807142">
+																	<Language>SFX</Language>
+																	<AudioFile>player_footstep_gravel_run_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="player_footstep_gravel_run_02" ID="{6C834C03-392B-43AF-9265-36173AA84D7B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="player_footstep_gravel_run_03" ID="{954C5CE3-3D84-4135-B7CA-9A1FBA9EFEFA}" ShortID="733744282">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="player_footstep_gravel_run_03" ID="{45509B7D-98B7-4350-8AC9-873045E6F39B}" ShortID="192961341">
+																	<Language>SFX</Language>
+																	<AudioFile>player_footstep_gravel_run_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="player_footstep_gravel_run_03" ID="{45509B7D-98B7-4350-8AC9-873045E6F39B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="player_footstep_gravel_run_04" ID="{88DE02ED-3525-4AED-9CAB-4C8BC42DBAC9}" ShortID="442529649">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="player_footstep_gravel_run_04" ID="{4C3D2C36-12DE-43B1-8844-A6BBE1147335}" ShortID="573133563">
+																	<Language>SFX</Language>
+																	<AudioFile>player_footstep_gravel_run_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="player_footstep_gravel_run_04" ID="{4C3D2C36-12DE-43B1-8844-A6BBE1147335}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="player_footstep_gravel_run_05" ID="{CC917069-302E-4BD7-88C6-C61DB8982040}" ShortID="1053745505">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="player_footstep_gravel_run_05" ID="{0CAA9403-59E2-44D1-98B5-4D683E4A8A2B}" ShortID="964405282">
+																	<Language>SFX</Language>
+																	<AudioFile>player_footstep_gravel_run_05.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="player_footstep_gravel_run_05" ID="{0CAA9403-59E2-44D1-98B5-4D683E4A8A2B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="player_footstep_gravel_run_06" ID="{66ADA28E-30CA-43CC-944A-4938949C6EA8}" ShortID="291847538">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="player_footstep_gravel_run_06" ID="{56EEAA50-6851-48D0-AA84-2623F557B093}" ShortID="299133134">
+																	<Language>SFX</Language>
+																	<AudioFile>player_footstep_gravel_run_06.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="player_footstep_gravel_run_06" ID="{56EEAA50-6851-48D0-AA84-2623F557B093}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="player_footstep_gravel_run_07" ID="{D9996DF5-A42C-44B7-B49A-D14BA0AFBB29}" ShortID="103942503">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="player_footstep_gravel_run_07" ID="{622C6F2C-DDE2-492E-8B0F-5F2CFDE343B1}" ShortID="396115446">
+																	<Language>SFX</Language>
+																	<AudioFile>player_footstep_gravel_run_07.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="player_footstep_gravel_run_07" ID="{622C6F2C-DDE2-492E-8B0F-5F2CFDE343B1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="player_footstep_gravel_run_08" ID="{74CF54C8-0FA1-4DA5-A525-1A0564CCF8CF}" ShortID="476468564">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="player_footstep_gravel_run_08" ID="{2CECA5FC-DACA-49CF-940E-73E68C8D183A}" ShortID="372208733">
+																	<Language>SFX</Language>
+																	<AudioFile>player_footstep_gravel_run_08.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="player_footstep_gravel_run_08" ID="{2CECA5FC-DACA-49CF-940E-73E68C8D183A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="player_footstep_gravel_run_09" ID="{26BE4373-8416-4C73-A8CA-1A834EE6222A}" ShortID="926072159">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="player_footstep_gravel_run_09" ID="{45A2A826-480F-4B2F-8222-2029351B4550}" ShortID="17585894">
+																	<Language>SFX</Language>
+																	<AudioFile>player_footstep_gravel_run_09.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="player_footstep_gravel_run_09" ID="{45A2A826-480F-4B2F-8222-2029351B4550}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="player_footstep_leaves_run" ID="{D56EBD41-2A90-4EA4-90DF-05C83A6A8D38}" ShortID="296246517">
 													<PropertyList>
@@ -617,9 +846,10 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-10</Value>
+																<Value>-19</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -865,6 +1095,9 @@
 													</ReferenceList>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="player_footstep_water_run" ID="{126C5667-AE42-40C8-AA3E-0EA1A6D1D289}" ShortID="33874800">
+													<PropertyList>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -888,6 +1121,9 @@
 													</ReferenceList>
 													<ChildrenList>
 														<RandomSequenceContainer Name="player_footsteps_wood_run_foot" ID="{8D1D8547-AE69-499B-9ED1-E10B9DFB359F}" ShortID="1059322145">
+															<PropertyList>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -1131,6 +1367,7 @@
 																	</ModifierList>
 																</Property>
 																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-3</Value>
@@ -1426,9 +1663,10 @@
 												</BlendContainer>
 												<RandomSequenceContainer Name="player_footstep_grass_long_run" ID="{3FCD8853-2860-466E-BAD3-DBACDDCA1ED9}" ShortID="537440001">
 													<PropertyList>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-17</Value>
+																<Value>-35</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1636,7 +1874,7 @@
 											</ChildrenList>
 											<GroupingInfo>
 												<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
-												<DefaultSwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+												<DefaultSwitchRef Name="Dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="player_footstep_grass_short_run" ID="{B38F9420-844F-4542-8DFE-B741AFF77926}"/>
@@ -1680,79 +1918,79 @@
 												</GroupingBehaviorList>
 												<GroupingList>
 													<Grouping>
-														<SwitchRef Name="stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
+														<SwitchRef Name="Stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_stone_run" ID="{577DE1BD-6E3E-4C46-AE44-5B1CEFF77DF7}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="fabric" ID="{08628135-B8FA-40A9-829C-3733AF0814FF}"/>
+														<SwitchRef Name="Fabric" ID="{08628135-B8FA-40A9-829C-3733AF0814FF}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_fabric_run" ID="{E9AA734F-3CA7-4FCB-8720-0DCF3AE3889F}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="plastic" ID="{D940EB41-0354-41B8-87DD-CEDF2051EC0F}"/>
+														<SwitchRef Name="Plastic" ID="{D940EB41-0354-41B8-87DD-CEDF2051EC0F}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_plastic_run" ID="{ED90F44D-D9A7-4887-BD76-8FCD59660944}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+														<SwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_grass_short_run" ID="{B38F9420-844F-4542-8DFE-B741AFF77926}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
+														<SwitchRef Name="Gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_gravel_run" ID="{CB8E58A1-7ED8-4DD9-BD7D-F7DB32288AC4}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="metal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
+														<SwitchRef Name="Mmetal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_metal_run" ID="{C082AA29-A9F0-46E3-B300-F4621D62A30D}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="sand" ID="{AA1C18A5-DB77-4DF0-9013-AE229B56D200}"/>
+														<SwitchRef Name="Sand" ID="{AA1C18A5-DB77-4DF0-9013-AE229B56D200}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_sand_run" ID="{12290472-E917-454B-A7AD-CB71331C7FE2}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+														<SwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 														<ItemList>
 															<ItemRef Name="player_footsteps_wood_run" ID="{FE401FC2-E4D8-442E-8956-DBAFC8410F5D}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="water" ID="{EE0D10B1-DBAF-4592-91C8-A26CB51BAE5B}"/>
+														<SwitchRef Name="Water" ID="{EE0D10B1-DBAF-4592-91C8-A26CB51BAE5B}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_water_run" ID="{126C5667-AE42-40C8-AA3E-0EA1A6D1D289}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
+														<SwitchRef Name="Dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_dirt_run" ID="{D66D6749-8999-468F-8B93-B072F72A9E29}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}"/>
+														<SwitchRef Name="Leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_leaves_run" ID="{D56EBD41-2A90-4EA4-90DF-05C83A6A8D38}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="concrete" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
+														<SwitchRef Name="Concrete" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_concrete_run" ID="{A548ED2C-D1A2-4F93-A14A-7236090B1FE2}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="grass_long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
+														<SwitchRef Name="Grass_long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_grass_long_run" ID="{3FCD8853-2860-466E-BAD3-DBACDDCA1ED9}"/>
 														</ItemList>
@@ -2015,7 +2253,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-8</Value>
+																<Value>-9</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -2039,6 +2277,9 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_walk_01" ID="{2540F0EB-303E-447A-8A68-9283B4CC67A9}" ShortID="74771728">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.408854166666667"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>player_footstep_grass_short_walk_01.wav</AudioFile>
 																</AudioFileSource>
@@ -2058,6 +2299,9 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_walk_02" ID="{7ECD51AE-9197-4DD4-91E8-46A11BD9B91E}" ShortID="181884297">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.422916666666667"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>player_footstep_grass_short_walk_02.wav</AudioFile>
 																</AudioFileSource>
@@ -2077,6 +2321,9 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_walk_03" ID="{4BA2FBCB-E827-44A4-B17B-7D6865C9B27D}" ShortID="166973925">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.416145833333333"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>player_footstep_grass_short_walk_03.wav</AudioFile>
 																</AudioFileSource>
@@ -2096,6 +2343,9 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_walk_04" ID="{92000056-21E2-44A7-B48D-240598BC6BB8}" ShortID="248089932">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.390625"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>player_footstep_grass_short_walk_04.wav</AudioFile>
 																</AudioFileSource>
@@ -2115,6 +2365,9 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_walk_05" ID="{30B221EE-FBAB-4E94-ADD8-E5EEA06F0F43}" ShortID="282141169">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.352083333333333"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>player_footstep_grass_short_walk_05.wav</AudioFile>
 																</AudioFileSource>
@@ -2134,6 +2387,9 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_walk_07" ID="{11A6442A-30CB-4C45-882A-4A86F353353D}" ShortID="1030996183">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.396354166666667"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>player_footstep_grass_short_walk_07.wav</AudioFile>
 																</AudioFileSource>
@@ -2153,6 +2409,9 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_walk_08" ID="{D8514237-BAE4-418D-9F22-888C5E1CD006}" ShortID="228292637">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.3484375"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>player_footstep_grass_short_walk_08.wav</AudioFile>
 																</AudioFileSource>
@@ -2172,6 +2431,9 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="player_footstep_grass_short_walk_10" ID="{94B7F0CC-1B5F-41A8-B1DF-13458951EB69}" ShortID="154599281">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.446354166666667"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>player_footstep_grass_short_walk_10.wav</AudioFile>
 																</AudioFileSource>
@@ -3114,7 +3376,7 @@
 											</ChildrenList>
 											<GroupingInfo>
 												<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
-												<DefaultSwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+												<DefaultSwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="player_footstep_metal_walk" ID="{CAEC3407-B71E-4833-AE06-99A2AE3C6B24}"/>
@@ -3158,79 +3420,79 @@
 												</GroupingBehaviorList>
 												<GroupingList>
 													<Grouping>
-														<SwitchRef Name="stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
+														<SwitchRef Name="Stone" ID="{9B7F0903-A961-405D-B4A4-FE27890C2B6D}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_stone_walk" ID="{9DF52F5D-D59A-4D83-A6AE-0C9A349AF513}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="fabric" ID="{08628135-B8FA-40A9-829C-3733AF0814FF}"/>
+														<SwitchRef Name="Fabric" ID="{08628135-B8FA-40A9-829C-3733AF0814FF}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_fabric_walk" ID="{E5026430-B914-4733-8E8E-0E9D68B9A26A}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="plastic" ID="{D940EB41-0354-41B8-87DD-CEDF2051EC0F}"/>
+														<SwitchRef Name="Plastic" ID="{D940EB41-0354-41B8-87DD-CEDF2051EC0F}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_plastic_walk" ID="{EF19711C-5E83-42A2-B468-CD92CAC59EDB}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+														<SwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_grass_short_walk" ID="{014DD259-FA6B-4B74-9EEF-E492354EB106}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
+														<SwitchRef Name="Gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_gravel_walk" ID="{53A2DF26-A629-432E-A51B-B9FC255C2207}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="metal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
+														<SwitchRef Name="Mmetal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_metal_walk" ID="{CAEC3407-B71E-4833-AE06-99A2AE3C6B24}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="sand" ID="{AA1C18A5-DB77-4DF0-9013-AE229B56D200}"/>
+														<SwitchRef Name="Sand" ID="{AA1C18A5-DB77-4DF0-9013-AE229B56D200}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_sand_walk" ID="{CDD6811D-3FB1-4303-AD7D-8B2AD549E0A8}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+														<SwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 														<ItemList>
 															<ItemRef Name="player_footsteps_wood_walk" ID="{08EF9314-439A-4598-AD15-A6E4FA3B4831}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="water" ID="{EE0D10B1-DBAF-4592-91C8-A26CB51BAE5B}"/>
+														<SwitchRef Name="Water" ID="{EE0D10B1-DBAF-4592-91C8-A26CB51BAE5B}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_water_walk" ID="{E9D6B47A-CA32-498E-9284-8FE21220784D}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
+														<SwitchRef Name="Dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_dirt_walk" ID="{4055B799-98FF-4E7F-94F7-35CDD18B7301}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}"/>
+														<SwitchRef Name="Leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_leaves_walk" ID="{0FF22EF1-8055-4A2B-B401-E56E1EAF4FF1}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="concrete" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
+														<SwitchRef Name="Concrete" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_concrete_walk" ID="{0B942537-2038-4E6E-B85E-8658B20530C4}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="grass_long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
+														<SwitchRef Name="Grass_long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_grass_long_walk" ID="{4E39B01C-19C0-4064-B575-D0856D5A27A3}"/>
 														</ItemList>
@@ -3433,7 +3695,7 @@
 									</ReferenceList>
 									<GroupingInfo>
 										<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
-										<DefaultSwitchRef Name="wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+										<DefaultSwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>

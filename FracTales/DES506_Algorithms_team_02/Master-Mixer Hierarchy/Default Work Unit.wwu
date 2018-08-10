@@ -17,7 +17,9 @@
 						</Bus>
 						<Bus Name="mountains" ID="{D4252E3C-26DD-49AE-A5E8-613335708C9B}">
 							<ChildrenList>
-								<AuxBus Name="mountains_reverb" ID="{ECCBB1F5-29A3-4E89-85F4-611B9E3438DB}"/>
+								<AuxBus Name="mountains_reverb" ID="{ECCBB1F5-29A3-4E89-85F4-611B9E3438DB}">
+									<ReferenceList/>
+								</AuxBus>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="town" ID="{C5B41C52-7B09-49A8-AB8D-5F93A43008BF}">
@@ -37,15 +39,26 @@
 						</Bus>
 						<Bus Name="cave" ID="{16E67930-2DD6-4586-9870-D1095AB5BEA8}">
 							<ChildrenList>
-								<AuxBus Name="cave_reverb" ID="{A857F213-F5BF-4AAE-9DC4-EA2F76E6153B}"/>
+								<AuxBus Name="cave_reverb" ID="{A857F213-F5BF-4AAE-9DC4-EA2F76E6153B}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Metal_Hangar" ID="{C4A4605C-42EF-476A-B53C-E31C7A442C24}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="forest" ID="{091E0443-4EBF-4884-84A4-2FFBAA7A2A50}">
-							<ReferenceList>
-								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-									<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-								</Reference>
-							</ReferenceList>
+							<ReferenceList/>
+							<ChildrenList>
+								<AuxBus Name="forest_reverb" ID="{B6460890-0CAB-4F9B-81FA-F26476D07096}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
 						</Bus>
 						<Bus Name="lake" ID="{C5FA43DF-4847-442E-ADBA-6282E449418C}">
 							<ChildrenList>
@@ -55,7 +68,13 @@
 						<Bus Name="player" ID="{1388FAFE-59EB-42D0-A064-F60E67271206}">
 							<ChildrenList>
 								<Bus Name="footsteps" ID="{E0902819-B7D0-4BE2-963C-D6D936E58CED}">
+									<PropertyList>
+										<Property Name="EnablePositioning" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="footsteps" ID="{0A1521FE-FF77-472F-9954-7FC5BA15D6A2}" WorkUnitID="{74E74D40-3965-4399-8C83-DC540386B3F2}"/>
+										</Reference>
 										<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 											<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>

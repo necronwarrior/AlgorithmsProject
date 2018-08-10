@@ -4,7 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="world" ID="{04AE4530-C76A-4226-8EF9-C31081509EAA}" ShortID="501114379">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="world_objects_atten" ID="{696EECA4-7332-473E-98B8-95C3291EF440}" WorkUnitID="{74E74D40-3965-4399-8C83-DC540386B3F2}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
@@ -17,7 +23,6 @@
 						<WorkUnit Name="npcs" ID="{9FADEF33-F83B-4C44-A214-321B71FD54F2}" PersistMode="Reference"/>
 						<WorkUnit Name="world_objects" ID="{CC287363-F8B5-4B76-8393-A460A55292F7}" PersistMode="Reference"/>
 						<WorkUnit Name="player" ID="{026E35F4-4037-4782-BAEC-B01745FF548D}" PersistMode="Reference"/>
-						<WorkUnit Name="enemies" ID="{E974FE5A-EB0B-4945-B016-38B858CBF2BB}" PersistMode="Reference"/>
 						<WorkUnit Name="dialogue" ID="{D28D7403-6FFD-452B-AF8A-FC68AC4B3B48}" PersistMode="Reference"/>
 					</ChildrenList>
 				</ActorMixer>
