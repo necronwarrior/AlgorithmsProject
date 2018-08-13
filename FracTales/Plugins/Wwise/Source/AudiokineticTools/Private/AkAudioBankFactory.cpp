@@ -3,9 +3,8 @@
 /*=============================================================================
 	AkAudioBankFactory.cpp:
 =============================================================================*/
-#include "AudiokineticToolsPrivatePCH.h"
-#include "AkAudioBank.h"
 #include "AkAudioBankFactory.h"
+#include "AkAudioBank.h"
 #include "Misc/Paths.h"
 /*------------------------------------------------------------------------------
 	UAkAudioBankFactory.

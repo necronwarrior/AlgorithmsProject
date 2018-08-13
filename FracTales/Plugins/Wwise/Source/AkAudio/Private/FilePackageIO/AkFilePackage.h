@@ -28,6 +28,7 @@ written agreement between you and Audiokinetic Inc.
 #ifndef _AK_FILE_PACKAGE_H_
 #define _AK_FILE_PACKAGE_H_
 
+#include "AkAudioDevice.h"
 #include "AkFilePackageLUT.h"
 #include <AK/SoundEngine/Common/AkSoundEngine.h>
 #include <AK/Tools/Common/AkObject.h>

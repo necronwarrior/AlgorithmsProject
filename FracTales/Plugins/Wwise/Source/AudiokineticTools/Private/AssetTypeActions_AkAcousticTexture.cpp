@@ -3,11 +3,10 @@
 /*=============================================================================
 AssetTypeActions_AkAcousticTexture.cpp:
 =============================================================================*/
-#include "AudiokineticToolsPrivatePCH.h"
+#include "AssetTypeActions_AkAcousticTexture.h"
 #include "IAssetTools.h"
 #include "AkAudioClasses.h"
 #include "AkAudioDevice.h"
-#include "AssetTypeActions_AkAcousticTexture.h"
 #include "AkAudioDevice.h"
 #include "Toolkits/SimpleAssetEditor.h"
 

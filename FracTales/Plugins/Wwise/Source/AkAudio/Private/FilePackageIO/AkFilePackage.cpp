@@ -25,7 +25,6 @@ written agreement between you and Audiokinetic Inc.
 //
 //////////////////////////////////////////////////////////////////////
 
-#include "AkAudioDevice.h"
 #include "AkFilePackage.h"
 
 // Destroy file package and free memory / destroy pool.

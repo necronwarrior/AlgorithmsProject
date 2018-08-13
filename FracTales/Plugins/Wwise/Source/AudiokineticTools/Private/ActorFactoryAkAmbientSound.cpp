@@ -3,7 +3,6 @@
 /*=============================================================================
 	ActorFactoryAkAmbientSound.cpp: 
 =============================================================================*/
-#include "AudiokineticToolsPrivatePCH.h"
 #include "ActorFactoryAkAmbientSound.h"
 #include "AkAudioClasses.h"
 #include "AssetData.h"

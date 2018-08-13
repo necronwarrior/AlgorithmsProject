@@ -4,8 +4,8 @@
 	AkEvent.cpp:
 =============================================================================*/
 
-#include "AkAudioDevice.h"
 #include "AkAudioEvent.h"
+#include "AkAudioDevice.h"
 #include "AkAudioBank.h"
 
 /**

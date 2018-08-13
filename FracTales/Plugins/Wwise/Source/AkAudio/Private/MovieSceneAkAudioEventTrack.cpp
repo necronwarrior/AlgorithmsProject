@@ -1,12 +1,12 @@
 // Copyright (c) 2006-2016 Audiokinetic Inc. / All Rights Reserved
 
+#include "MovieSceneAkAudioEventTrack.h"
 #include "AkAudioDevice.h"
 #include "AkAudioClasses.h"
 
 #include "IMovieScenePlayer.h"
 #include "MovieScene.h"
 #include "MovieSceneAkAudioEventSection.h"
-#include "MovieSceneAkAudioEventTrack.h"
 
 #include "MovieSceneAkAudioEventTemplate.h"
 
@@ -25,16 +25,29 @@ bool UMovieSceneAkAudioEventTrack::AddNewEvent(float Time, UAkAudioEvent* Event,
 	if (Event == nullptr && EventName.IsEmpty())
 		return false;
 
-	auto NewSection = CastChecked<UMovieSceneAkAudioEventSection>(CreateNewSection());
+    UMovieSceneAkAudioEventSection* NewSection = NewObject<UMovieSceneAkAudioEventSection>(this);
 	ensure(NewSection);
 
 	NewSection->SetEvent(Event, EventName);
-
-	const auto Duration = NewSection->GetAudioDuration();
+	const auto Duration = NewSection->GetEventDuration();
 	NewSection->InitialPlacement(GetAllSections(), Time, Time + Duration.GetUpperBoundValue(), SupportsMultipleRows());
 	AddSection(*NewSection);
 
 	return true;
+}
+
+void UMovieSceneAkAudioEventTrack::WorkUnitChangesDetectedFromSection(UMovieSceneAkAudioEventSection* in_pSection)
+{
+    for (auto Section : Sections)
+    {
+        if (UMovieSceneAkAudioEventSection* AkSection = Cast<UMovieSceneAkAudioEventSection>(Section))
+        {
+            if (AkSection != in_pSection)
+            {
+                AkSection->CheckForWorkunitChanges();
+            }
+        }
+    }
 }
 
 #if WITH_EDITORONLY_DATA
