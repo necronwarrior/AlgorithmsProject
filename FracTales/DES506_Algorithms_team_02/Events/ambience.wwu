@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Town" ID="{DAF53ECB-8CC9-4C18-88A0-EFFB32AA0C7D}" ShortID="146564073">
 					<ChildrenList>
-						<Event Name="event_amb_town_start" ID="{F8F9A128-8665-4831-8075-5BEF269B99D3}">
+						<Event Name="amb_bg_town_start" ID="{F8F9A128-8665-4831-8075-5BEF269B99D3}">
 							<ChildrenList>
 								<Action Name="" ID="{93472524-D7A9-4D81-966A-3F499CFE4A5A}" ShortID="619987171">
 									<PropertyList>
@@ -13,7 +13,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="amb_bg_town_birds_loop" ID="{AB0D28FF-4CAF-4D29-88CE-1A5F51DB751F}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+											<ObjectRef Name="amb_town_bg" ID="{B227D048-0512-4BE9-99DF-9A78E079D760}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -196,7 +196,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="amb_emit_waves" ID="{486F8955-238E-4AB6-AE59-CC9D9925FA10}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+															<ObjectRef Name="waves_near" ID="{80B10E92-B3CC-4D24-96A6-A2759010CD93}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -264,13 +264,122 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="amb_forest_birds" ID="{C741F6EB-E334-461C-AC4A-31A445D05C89}"/>
+															<ObjectRef Name="amb_emit_forest_birds" ID="{5068FDF3-8B3C-4103-8FAD-32EB548735EA}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
 										<Event Name="amb_emit_forest_birds_stop" ID="{2FF5EE5E-07E8-45FD-9844-B3331EA387F4}"/>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="wood_pigeon" ID="{07E27161-DD96-45D0-968E-D0DEF83CF907}" ShortID="561204226">
+									<ChildrenList>
+										<Event Name="amb_emit_wood_pigeon_start" ID="{B869A28C-95DB-436F-BC5D-74B3CF6FA405}">
+											<ChildrenList>
+												<Action Name="" ID="{B9F9F182-E70F-40ED-AE52-47076FBDA25C}" ShortID="576824404">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="amb_wood_pigeon" ID="{F06A7E53-F553-4A35-8BD9-1767C0B30306}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="bees" ID="{91A0A808-DD5E-4B41-B82B-EBC8816B1512}" ShortID="651931693">
+									<ChildrenList>
+										<Event Name="amb_emit_bees_start" ID="{1E964A78-7EB2-4619-9D0B-524B0CEE564B}">
+											<ChildrenList>
+												<Action Name="" ID="{43E82937-01FF-491E-AEFD-2F4895481C02}" ShortID="30192553">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="ambience_emitters_bees" ID="{4D3FE224-76B2-4666-B8C9-1122AE3D9EE9}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="seagulls" ID="{F0FD13C5-54D9-4695-8B4B-31B61E61D836}" ShortID="200868385">
+									<ChildrenList>
+										<Event Name="amb_emit_seagulls_start" ID="{88FB5098-FA7B-4E05-BC5A-4A2CF31479E2}"/>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="crickets" ID="{BDA2D5A1-C1F6-4587-BA1F-DB60919E45CF}" ShortID="260042751">
+									<ChildrenList>
+										<Event Name="amb_emit_crickets_start" ID="{251F546C-B5B6-4AFA-8559-3D99E85ECA4C}">
+											<ChildrenList>
+												<Action Name="" ID="{19988813-AD1E-4102-B8B5-B13890BC4336}" ShortID="471899906">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="ambience_emitters_crickets" ID="{914D1923-4284-4922-809B-4267B836069A}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="amb_bg_crickets_loop_start" ID="{39322281-C1CB-4DC2-ABDE-24A19BE740E8}">
+											<ChildrenList>
+												<Action Name="" ID="{8F943676-7706-47C2-8B13-70490728C3F7}" ShortID="395696193">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="amb_crickets_loop" ID="{6F010985-8966-4D35-B647-2C1A3A3FC80E}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="owl" ID="{7E9C3FC4-6753-4746-AC0D-182742493EA8}" ShortID="477042051">
+									<ChildrenList>
+										<Event Name="amb_emit_owl_start" ID="{6AEAC1D3-6809-4EA2-907E-9CDD6AF41EE0}">
+											<ChildrenList>
+												<Action Name="" ID="{4110D93C-C417-4BC9-A8C5-079F518FF291}" ShortID="877036672">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="amb_emit_owls" ID="{8875ADB4-AEEB-4425-9F73-B4B55EC04C02}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="small_birds" ID="{BDC12855-4484-4D2A-9BD5-0B5DDEBD338C}" ShortID="659121728">
+									<ChildrenList>
+										<Event Name="amb_emit_small_birds_start" ID="{B7E0352C-BED5-4401-9FDC-FC6CE5ADB02B}">
+											<ChildrenList>
+												<Action Name="" ID="{C08972D3-C69E-47F9-B3DB-0E9FEC026D6D}" ShortID="162638349">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="amb_bg_town_birds_loop" ID="{AB0D28FF-4CAF-4D29-88CE-1A5F51DB751F}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>

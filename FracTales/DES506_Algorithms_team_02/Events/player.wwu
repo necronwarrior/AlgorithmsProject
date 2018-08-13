@@ -16,17 +16,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="player_footstep_run" ID="{622CFA8F-C96B-4F90-97BC-2E5C393267AE}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{7170556A-62CD-4B80-9432-14A5D246662E}" ShortID="539270558">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="23"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}" WorkUnitID="{79E22627-062D-4585-B570-C50242E768AC}"/>
+													<ObjectRef Name="player_footstep_type" ID="{D075680F-C2F2-47C1-ABAE-C5625F7B7D75}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

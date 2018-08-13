@@ -11,15 +11,18 @@
 				</GameParameter>
 				<GameParameter Name="player_movement_speed" ID="{CE186776-CF25-4E9A-B0E5-3EECEDAACC48}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="63"/>
+						<Property Name="InitialValue" Type="Real64" Value="10"/>
+						<Property Name="Min" Type="Real64" Value="10"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
 					</PropertyList>
 				</GameParameter>
 				<Folder Name="distances" ID="{7B46A338-3BDE-4C47-9C7B-F2FF763BF46A}" ShortID="394219242">
 					<ChildrenList>
 						<GameParameter Name="distance_from_shores" ID="{AFF690FA-09F9-45C0-BE20-BFE9864D91D2}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="5000"/>
+								<Property Name="InitialValue" Type="Real64" Value="5000"/>
+								<Property Name="Max" Type="Real64" Value="10000"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="distance_to_cave_entrance" ID="{75827670-F7FF-4868-9CC1-B633606BB4E7}">
@@ -33,7 +36,12 @@
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="distance_from_sea_rocks" ID="{46842EBB-BC5D-43D4-A48F-FB0A31EC971A}"/>
+						<GameParameter Name="distance_from_sea_rocks" ID="{46842EBB-BC5D-43D4-A48F-FB0A31EC971A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="10000"/>
+								<Property Name="Max" Type="Real64" Value="10000"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="character_positions" ID="{C15D7F5B-CD94-42A7-88E2-F3572B743236}" ShortID="207763693">

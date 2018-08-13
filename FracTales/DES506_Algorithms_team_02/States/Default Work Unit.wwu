@@ -130,6 +130,121 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="music" ID="{78203ED1-B0AE-4F98-87DF-5ECFE4C88A0D}">
+					<ChildrenList>
+						<State Name="None" ID="{34577E63-E801-4C38-9361-653792A1E19A}"/>
+						<State Name="overworld" ID="{5D2B26F4-A2F4-4D67-94E0-6ABB6EAA4B54}"/>
+						<State Name="tower" ID="{E23ABD7B-C1AE-4481-BC2D-6BB1A02DAD50}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{34577E63-E801-4C38-9361-653792A1E19A}"/>
+							<EndState Name="overworld" ID="{5D2B26F4-A2F4-4D67-94E0-6ABB6EAA4B54}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="overworld" ID="{5D2B26F4-A2F4-4D67-94E0-6ABB6EAA4B54}"/>
+							<EndState Name="tower" ID="{E23ABD7B-C1AE-4481-BC2D-6BB1A02DAD50}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="tower" ID="{E23ABD7B-C1AE-4481-BC2D-6BB1A02DAD50}"/>
+							<EndState Name="overworld" ID="{5D2B26F4-A2F4-4D67-94E0-6ABB6EAA4B54}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="tower" ID="{E23ABD7B-C1AE-4481-BC2D-6BB1A02DAD50}"/>
+							<EndState Name="None" ID="{34577E63-E801-4C38-9361-653792A1E19A}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}">
+					<ChildrenList>
+						<State Name="None" ID="{8C15E2BC-234C-4815-A841-FCE2DC11ABAD}"/>
+						<State Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+						<State Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+						<State Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{8C15E2BC-234C-4815-A841-FCE2DC11ABAD}"/>
+							<EndState Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{8C15E2BC-234C-4815-A841-FCE2DC11ABAD}"/>
+							<EndState Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{8C15E2BC-234C-4815-A841-FCE2DC11ABAD}"/>
+							<EndState Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+							<EndState Name="None" ID="{8C15E2BC-234C-4815-A841-FCE2DC11ABAD}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+							<EndState Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+							<EndState Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+							<EndState Name="None" ID="{8C15E2BC-234C-4815-A841-FCE2DC11ABAD}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+							<EndState Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+							<EndState Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+							<EndState Name="None" ID="{8C15E2BC-234C-4815-A841-FCE2DC11ABAD}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+							<EndState Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+							<EndState Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

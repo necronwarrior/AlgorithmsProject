@@ -5,7 +5,6 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	712161704	run	player_movement_speed			
 	2108779966	walk	player_movement_speed			
-	2655407367	crouch	player_movement_speed			
 	930712164	off	on_off			
 	1651971902	on	on_off			
 
@@ -16,7 +15,9 @@ State Group	ID	Name			Wwise Object Path	Notes
 	1537061107	wind			\Default Work Unit\wind	
 	2043403999	rain			\Default Work Unit\weather\rain	
 	2470328564	intensity			\Default Work Unit\intensity	
+	2986821023	world_location			\Default Work Unit\world_location	
 	3033628004	on_off			\Default Work Unit\on_off	
+	3991942870	music			\Default Work Unit\music	
 
 State	ID	Name	State Group			Notes
 	186852181	thunder	thunder			
@@ -37,9 +38,16 @@ State	ID	Name	State Group			Notes
 	748895195	None	intensity			
 	938058686	safe	intensity			
 	3808902672	not_safe	intensity			
+	748895195	None	world_location			
+	1562068129	overworld	world_location			
+	1737926756	tower	world_location			
+	3091570009	town	world_location			
 	748895195	None	on_off			
 	930712164	off	on_off			
 	1651971902	on	on_off			
+	748895195	None	music			
+	1562068129	overworld	music			
+	1737926756	tower	music			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	

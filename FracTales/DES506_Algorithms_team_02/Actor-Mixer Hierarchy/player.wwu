@@ -82,7 +82,7 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
-										<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
+										<GroupRef Name="Material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
 										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
@@ -112,7 +112,7 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="Mmetal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
+												<SwitchRef Name="Metal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
 												<ItemList>
 													<ItemRef Name="player_grab_ladder" ID="{BFD9311E-021D-4D1A-94BF-E287617D982C}"/>
 												</ItemList>
@@ -168,8 +168,8 @@
 																	<Modifier Name="" ID="{35BB8374-67AD-4048-B292-35EA53D38051}">
 																		<PropertyList>
 																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="243"/>
-																			<Property Name="Min" Type="Real64" Value="-221"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
 																		</PropertyList>
 																	</Modifier>
 																</ModifierInfo>
@@ -178,7 +178,7 @@
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-23</Value>
+																<Value>-30</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -205,6 +205,9 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="player_footsteps_dirt_run_01" ID="{23992D57-2247-4C58-AD1F-5BEEA62D0AE0}" ShortID="915953258">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.112417759486607"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>player_footsteps_dirt_run_01.wav</AudioFile>
 																</AudioFileSource>
@@ -224,6 +227,9 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="player_footsteps_dirt_run_02" ID="{3312B22B-C4EF-475B-9C8C-F6877905249C}" ShortID="320077346">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.316605189732143"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>player_footsteps_dirt_run_02.wav</AudioFile>
 																</AudioFileSource>
@@ -1873,8 +1879,8 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 											<GroupingInfo>
-												<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
-												<DefaultSwitchRef Name="Dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
+												<GroupRef Name="Material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
+												<DefaultSwitchRef Name="Gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="player_footstep_grass_short_run" ID="{B38F9420-844F-4542-8DFE-B741AFF77926}"/>
@@ -1936,7 +1942,7 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+														<SwitchRef Name="Grass_Short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_grass_short_run" ID="{B38F9420-844F-4542-8DFE-B741AFF77926}"/>
 														</ItemList>
@@ -1948,7 +1954,7 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="Mmetal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
+														<SwitchRef Name="Metal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_metal_run" ID="{C082AA29-A9F0-46E3-B300-F4621D62A30D}"/>
 														</ItemList>
@@ -1990,7 +1996,7 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="Grass_long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
+														<SwitchRef Name="Grass_Long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_grass_long_run" ID="{3FCD8853-2860-466E-BAD3-DBACDDCA1ED9}"/>
 														</ItemList>
@@ -3375,8 +3381,8 @@
 												</BlendContainer>
 											</ChildrenList>
 											<GroupingInfo>
-												<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
-												<DefaultSwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+												<GroupRef Name="Material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
+												<DefaultSwitchRef Name="Gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="player_footstep_metal_walk" ID="{CAEC3407-B71E-4833-AE06-99A2AE3C6B24}"/>
@@ -3438,7 +3444,7 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+														<SwitchRef Name="Grass_Short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_grass_short_walk" ID="{014DD259-FA6B-4B74-9EEF-E492354EB106}"/>
 														</ItemList>
@@ -3450,7 +3456,7 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="Mmetal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
+														<SwitchRef Name="Metal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_metal_walk" ID="{CAEC3407-B71E-4833-AE06-99A2AE3C6B24}"/>
 														</ItemList>
@@ -3492,7 +3498,7 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="Grass_long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
+														<SwitchRef Name="Grass_Long" ID="{55277FFE-F380-495B-8B70-ED8B390A97CD}"/>
 														<ItemList>
 															<ItemRef Name="player_footstep_grass_long_walk" ID="{4E39B01C-19C0-4064-B575-D0856D5A27A3}"/>
 														</ItemList>
@@ -3694,7 +3700,7 @@
 										</Reference>
 									</ReferenceList>
 									<GroupingInfo>
-										<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
+										<GroupRef Name="Material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
 										<DefaultSwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 									</GroupingInfo>
 								</SwitchContainer>
