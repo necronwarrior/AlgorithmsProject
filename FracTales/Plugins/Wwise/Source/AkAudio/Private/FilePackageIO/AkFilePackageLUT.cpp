@@ -33,8 +33,8 @@ written agreement between you and Audiokinetic Inc.
 //////////////////////////////////////////////////////////////////////
 
 
-#include "AkAudioDevice.h"
 #include "AkFilePackageLUT.h"
+#include "AkAudioDevice.h"
 #include <AK/SoundEngine/Common/AkMemoryMgr.h>
 #include <AK/SoundEngine/Common/AkSoundEngine.h>	// For string hash.
 #include <AK/Tools/Common/AkPlatformFuncs.h>

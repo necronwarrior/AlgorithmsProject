@@ -1,9 +1,9 @@
 // Copyright (c) 2006-2017 Audiokinetic Inc. / All Rights Reserved
 
+#include "AkComponentCallbackManager.h"
 #include "AkAudioDevice.h"
 #include "AkInclude.h"
 #include "AkAudioClasses.h"
-#include "AkComponentCallbackManager.h"
 #include "Misc/ScopeLock.h"
 
 struct FAkComponentCallbackManager_Constants
