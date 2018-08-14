@@ -9,6 +9,7 @@
 	SGenerateSoundBanks
 ------------------------------------------------------------------------------------*/
 #include "AkAudioBank.h"
+#include "AkAudioEvent.h"
 #include "Widgets/SCompoundWidget.h"
 #include "Widgets/Views/SListView.h"
 #include "Widgets/Views/STableRow.h"
@@ -33,6 +34,9 @@ public:
 
 	bool ShouldDisplayWindow() { return PlatformNames.Num() != 0; }
 
+    /* Set whether the Wwise project should be saved before the soundbanks are generated. */
+    void SetShouldSaveWwiseProject(bool in_bShouldSaveBeforeGeneration);
+
 private:
 	void PopulateList();
 
@@ -50,4 +54,6 @@ private:
 
 	TArray< TSharedPtr<FString> > Banks;
 	TArray< TSharedPtr<FString> > PlatformNames;
+    /* Determines whether the Wwise project is saved (via WAAPI) before the soundbanks are generated. */
+    bool m_bShouldSaveWwiseProject = false;
 };

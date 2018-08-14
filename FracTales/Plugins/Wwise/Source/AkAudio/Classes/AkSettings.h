@@ -1,6 +1,11 @@
 #pragma once
 
+#include "Engine/EngineTypes.h"
 #include "AkSettings.generated.h"
+
+#define AK_MAX_AUX_PER_OBJ	4
+
+DECLARE_EVENT(UAkSettings, AutoConnectChanged);
 
 UCLASS(config = Game, defaultconfig)
 class AKAUDIO_API UAkSettings : public UObject
@@ -23,11 +28,11 @@ class AKAUDIO_API UAkSettings : public UObject
 	UPROPERTY(Config, EditAnywhere, Category="Installation", meta=(FilePathFilter="app", AbsolutePath))
 	FFilePath WwiseMacInstallationPath;
 
+    UPROPERTY(Config, EditAnywhere, Category = "Installation")
+    bool bAutoConnectToWAAPI = false;
+
 	UPROPERTY(Config)
 	bool SuppressWwiseProjectPathWarnings = false;
-
-	UPROPERTY(Config, EditAnywhere, Category = "Experimental Features")
-	bool UseAlternateObstructionOcclusionFeature = false;
 
 protected:
 #if WITH_EDITOR
@@ -43,4 +48,5 @@ private:
 
 public:
 	bool bRequestRefresh = false;
+    mutable AutoConnectChanged OnAutoConnectChanged;
 };

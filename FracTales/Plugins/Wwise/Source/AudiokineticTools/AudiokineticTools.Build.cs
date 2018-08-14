@@ -10,7 +10,7 @@ public class AudiokineticTools : ModuleRules
     public AudiokineticTools(TargetInfo Target)
 #endif
     {
-        PCHUsage = PCHUsageMode.UseSharedPCHs;
+		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		PrivateIncludePaths.Add("AudiokineticTools/Private");
         PrivateIncludePathModuleNames.AddRange(
             new string[]

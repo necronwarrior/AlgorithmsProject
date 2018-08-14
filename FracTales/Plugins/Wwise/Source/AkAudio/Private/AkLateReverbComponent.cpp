@@ -4,6 +4,7 @@
 	AkLateReverbComponent.cpp:
 =============================================================================*/
 
+#include "AkLateReverbComponent.h"
 #include "AkAudioDevice.h"
 #include "AkAudioClasses.h"
 #include "Net/UnrealNetwork.h"
@@ -16,6 +17,8 @@
 UAkLateReverbComponent::UAkLateReverbComponent(const class FObjectInitializer& ObjectInitializer) :
 	Super(ObjectInitializer)
 {
+	ParentVolume = NULL;
+
 	// Property initialization
 	SendLevel = 1.0f;
 	FadeRate = 0.5f;
@@ -30,7 +33,7 @@ bool UAkLateReverbComponent::HasEffectOnLocation(const FVector& Location) const
 {
 	// Need to add a small radius, because on the Mac, EncompassesPoint returns false if
 	// Location is exactly equal to the Volume's location
-	static float RADIUS = 0.01f; 
+	static float RADIUS = 0.01f;
 	return LateReverbIsActive() && ParentVolume->EncompassesPoint(Location, RADIUS);
 }
 
@@ -80,9 +83,13 @@ void UAkLateReverbComponent::PostLoad()
 
 	InitializeParentVolume();
 
-	FAkAudioDevice* AkAudioDevice = FAkAudioDevice::Get();
-	if (AkAudioDevice && LateReverbIsActive())
-		AkAudioDevice->AddLateReverbComponentToPrioritizedList(this);
+	UAkRoomComponent* pRoomCmpt = (UAkRoomComponent*)ParentVolume->GetComponentByClass(UAkRoomComponent::StaticClass());
+	if (!pRoomCmpt || !pRoomCmpt->RoomIsActive())
+	{
+		FAkAudioDevice* AkAudioDevice = FAkAudioDevice::Get();
+		if (AkAudioDevice && LateReverbIsActive())
+			AkAudioDevice->AddLateReverbComponentToPrioritizedList(this);
+	}
 }
 
 void UAkLateReverbComponent::BeginDestroy()

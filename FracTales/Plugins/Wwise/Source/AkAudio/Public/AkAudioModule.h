@@ -1,6 +1,7 @@
 // Copyright (c) 2006-2012 Audiokinetic Inc. / All Rights Reserved
 #pragma once
 
+#include "AkAudioDevice.h"
 #include "ModuleManager.h"
 #include "Containers/Ticker.h"
 

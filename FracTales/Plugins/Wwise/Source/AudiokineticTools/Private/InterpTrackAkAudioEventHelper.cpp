@@ -3,10 +3,9 @@
 /*=============================================================================
 	InterpTrackAkEventHelper.cpp: 
 =============================================================================*/
-#include "AudiokineticToolsPrivatePCH.h"
+#include "InterpTrackAkAudioEventHelper.h"
 #include "MatineeModule.h"
 #include "MatineeClasses.h"
-#include "InterpTrackAkAudioEventHelper.h"
 #include "AkAudioClasses.h"
 #include "PropertyCustomizationHelpers.h"
 #include "SMatineeAkEventKeyFrameAdder.h"

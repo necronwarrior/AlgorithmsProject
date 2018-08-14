@@ -3,8 +3,6 @@
 /*=============================================================================
 AkWwiseAcousticsComponentVisualizer.cpp:
 =============================================================================*/
-#include "AudiokineticToolsPrivatePCH.h"
-
 #include "AkSurfaceReflectorSetComponentVisualizer.h"
 #include "AkAudioDevice.h"
 #include "AkAudioClasses.h"
@@ -24,7 +22,7 @@ AkWwiseAcousticsComponentVisualizer.cpp:
 void FAkSurfaceReflectorSetComponentVisualizer::DrawVisualization(const UActorComponent* Component, const FSceneView* View, FPrimitiveDrawInterface* PDI)
 {
 
-	if (GLevelEditorModeTools().IsModeActive(FBuiltinEditorModes::EM_Geometry))
+	if (GLevelEditorModeTools().IsModeActive(FBuiltinEditorModes::EM_Geometry) || Component == nullptr)
 	{
 		return;
 	}
@@ -48,7 +46,7 @@ void FAkSurfaceReflectorSetComponentVisualizer::DrawVisualization(const UActorCo
 		if (SurfaceReflectorSet->AcousticPolys.Num() > NodeIdx && !SpatialAudioVolume->IsHiddenEd())
 		{
 #if UE_4_19_OR_LATER
-			FDynamicMeshBuilder MeshBuilder(ERHIFeatureLevel::Type::ES2);
+            FDynamicMeshBuilder MeshBuilder(ERHIFeatureLevel::Type::ES2);
 #else
 			FDynamicMeshBuilder MeshBuilder;
 #endif

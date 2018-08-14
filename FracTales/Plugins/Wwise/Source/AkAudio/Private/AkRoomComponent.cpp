@@ -4,6 +4,7 @@
 	AkRoomComponent.cpp:
 =============================================================================*/
 
+#include "AkRoomComponent.h"
 #include "AkAudioDevice.h"
 #include "AkAudioClasses.h"
 #include "Net/UnrealNetwork.h"
@@ -19,10 +20,19 @@
 UAkRoomComponent::UAkRoomComponent(const class FObjectInitializer& ObjectInitializer) :
 	Super(ObjectInitializer)
 {
+	ParentVolume = NULL;
+
 	// Property initialization
 	NextLowerPriorityComponent = NULL;
+	
+	WallOcclusion = 1.0f;
 
 	bEnable = true;
+}
+
+FName UAkRoomComponent::GetName() const
+{
+	return ParentVolume->GetFName();
 }
 
 bool UAkRoomComponent::HasEffectOnLocation(const FVector& Location) const
@@ -84,42 +94,12 @@ void UAkRoomComponent::EndPlay(const EEndPlayReason::Type EndPlayReason)
 	}
 }
 
-void UAkRoomComponent::FindPortalsForRoom(TArray<AAkAcousticPortal*>& out_IntersectingPortals)
-{
-	if(!RoomIsActive())
-		return;
-
-	UWorld* CurrentWorld = ParentVolume->GetWorld();
-
-	for (TActorIterator<AAkAcousticPortal> ActorItr(CurrentWorld); ActorItr; ++ActorItr)
-	{
-		AAkAcousticPortal* pPortal = *ActorItr;
-
-		UBrushComponent* pBrComp = pPortal->GetBrushComponent();
-		if (pBrComp && pBrComp->Brush)
-		{
-			FTransform toWorld = pPortal->GetTransform();
-			for (uint8 iPnt = 0; iPnt < pBrComp->Brush->Points.Num(); iPnt++)
-			{
-				FVector pt = toWorld.TransformPosition(pBrComp->Brush->Points[iPnt]);
-				if (HasEffectOnLocation(pt))
-				{
-					out_IntersectingPortals.Add(pPortal);
-					break;
-				}
-			}
-		}
-	}
-}
-
 void UAkRoomComponent::AddSpatialAudioRoom()
 {
 	if(!RoomIsActive())
 		return;
 
 	TArray<AAkAcousticPortal*> IntersectingPortals;
-
-	FindPortalsForRoom(IntersectingPortals);
 
 	FString nameStr = ParentVolume->GetName();
 
@@ -135,21 +115,22 @@ void UAkRoomComponent::AddSpatialAudioRoom()
 	AkRoomParams params;
 	AkAudioDevice->FVectorToAKVector(Front, params.Front);
 	AkAudioDevice->FVectorToAKVector(Up, params.Up);
-
-	params.pConnectedPortals = NULL;
-	params.uNumPortals = IntersectingPortals.Num();
 	params.strName = *nameStr;
-	if (params.uNumPortals > 0)
-	{
-		params.pConnectedPortals = (AkPortalID*)alloca(sizeof(AkPortalID) * params.uNumPortals);
 
-		for (uint32 i=0; i<params.uNumPortals; ++i)
-		{
-			params.pConnectedPortals[i] = (AkPortalID)IntersectingPortals[i];
-		}
+	params.WallOcclusion = WallOcclusion;
+
+	UAkLateReverbComponent* pRvbCmtp = (UAkLateReverbComponent*)ParentVolume->GetComponentByClass(UAkLateReverbComponent::StaticClass());
+	if (pRvbCmtp)
+	{
+		params.ReverbAuxBus = pRvbCmtp->GetAuxBusId();
+		params.ReverbLevel = pRvbCmtp->SendLevel;
 	}
 
-	AkAudioDevice->AddRoom(this, params);
+	params.Priority = Priority*100.f;
+
+	AkAudioDevice->SetRoom(this, params);
+
+	RoomAdded = true;
 }
 
 void UAkRoomComponent::RemoveSpatialAudioRoom()
@@ -157,6 +138,8 @@ void UAkRoomComponent::RemoveSpatialAudioRoom()
 	FAkAudioDevice* AkAudioDevice = FAkAudioDevice::Get();
 	if(RoomIsActive() && AkAudioDevice)
 		AkAudioDevice->RemoveRoom(this);
+
+	RoomAdded = false;
 }
 
 #if WITH_EDITOR
@@ -164,5 +147,9 @@ void UAkRoomComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyCha
 {
 	Super::PostEditChangeProperty(PropertyChangedEvent);
 	InitializeParentVolume();
+	
+	//Call add again to update the room parameters, if it has already been added.
+	if (RoomAdded)
+		AddSpatialAudioRoom();
 }
 #endif

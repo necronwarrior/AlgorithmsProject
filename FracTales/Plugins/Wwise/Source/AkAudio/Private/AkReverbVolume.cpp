@@ -4,6 +4,7 @@
 	AkReverbVolume.cpp:
 =============================================================================*/
 
+#include "AkReverbVolume.h"
 #include "AkAudioDevice.h"
 #include "AkAudioClasses.h"
 #include "Net/UnrealNetwork.h"
@@ -19,7 +20,7 @@ AAkReverbVolume::AAkReverbVolume(const class FObjectInitializer& ObjectInitializ
 	Super(ObjectInitializer)
 {
 	// Property initialization
-	static FName CollisionProfileName(TEXT("OverlapAll"));
+	static const FName CollisionProfileName(TEXT("OverlapAll"));
 	UBrushComponent* BrushComp = GetBrushComponent();
 	if (BrushComp)
 	{
@@ -34,9 +35,8 @@ AAkReverbVolume::AAkReverbVolume(const class FObjectInitializer& ObjectInitializ
 	FadeRate_DEPRECATED = 0.5f;
 	Priority_DEPRECATED = 1.0f;
 
-
-	FString LateReverbName = TEXT("LateReverb");
-	LateReverbComponent = ObjectInitializer.CreateDefaultSubobject<UAkLateReverbComponent>(this, FName(*LateReverbName));
+	static const FName LateReverbName = TEXT("LateReverb");
+	LateReverbComponent = ObjectInitializer.CreateDefaultSubobject<UAkLateReverbComponent>(this, LateReverbName);
 }
 
 void AAkReverbVolume::Serialize(FArchive& Ar)
