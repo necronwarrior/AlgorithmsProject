@@ -408,6 +408,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
 						<CurrentStateRef Name="outside" ID="{A5C60CD5-8D9B-463D-A82E-A88EC66C1835}"/>
 						<CurrentStateRef Name="rain" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
 						<CurrentStateRef Name="thunder" ID="{5D690690-8643-4F1A-8A38-315A5A097A39}"/>
@@ -415,9 +416,12 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
+						<CurrentSwitchRef Name="overworld" ID="{0E810A7B-576F-4591-977A-BEC86E50482C}"/>
+						<CurrentSwitchRef Name="run" ID="{02B38825-0181-4ED1-99D5-51DB148EDFD9}"/>
 						<CurrentSwitchRef Name="open" ID="{29D850E2-1B3A-4608-ACA4-C85F77D67EFC}"/>
 						<CurrentSwitchRef Name="collectable" ID="{A9DEAF9B-AB0B-4A30-96EA-B3B022F9709C}"/>
 						<CurrentSwitchRef Name="map" ID="{DA24746C-7D0D-4AB3-BC15-82FCB8A08D78}"/>
+						<CurrentSwitchRef Name="off" ID="{1420DF7A-85B5-4987-9F4A-481382D0014E}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Forest_Night" ID="{73DA89B7-FFBC-4022-B2FC-AEA3BF399D02}">
@@ -555,16 +559,6 @@
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="music" ID="{6479EE77-D241-4E15-B1D5-030250456977}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="mus_overworld_start" ID="{7BBEC494-B92A-4552-8901-64C8B43EC693}" WorkUnitID="{E8A7419F-849D-401C-94F4-F5DA64559134}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="mus_tower_start" ID="{EB611498-D295-43C4-B565-6DA572055293}" WorkUnitID="{E8A7419F-849D-401C-94F4-F5DA64559134}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
@@ -576,7 +570,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="time_of_day" ID="{BA244F7E-5D13-427E-992C-334ADCDD0BC2}"/>
-							<Value>12.3968253968254</Value>
+							<Value>22.2</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_from_sea_rocks" ID="{46842EBB-BC5D-43D4-A48F-FB0A31EC971A}"/>
@@ -652,7 +646,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="player_movement_speed" ID="{CE186776-CF25-4E9A-B0E5-3EECEDAACC48}"/>
-							<Value>10</Value>
+							<Value>14</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="thunder_intensity" ID="{91D65C20-AC10-4EDF-9CDF-38748E7C1579}"/>
@@ -664,7 +658,9 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
 						<CurrentStateRef Name="outside" ID="{A5C60CD5-8D9B-463D-A82E-A88EC66C1835}"/>
+						<CurrentStateRef Name="day" ID="{3B89313A-C6C8-4F66-ACA3-57C4A089D996}"/>
 						<CurrentStateRef Name="tower" ID="{E23ABD7B-C1AE-4481-BC2D-6BB1A02DAD50}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

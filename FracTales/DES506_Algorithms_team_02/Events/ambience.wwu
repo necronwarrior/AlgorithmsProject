@@ -418,6 +418,24 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="cave" ID="{6A30A4BE-48E4-40C7-AE1B-066BDF367CB1}" ShortID="530267166">
+					<ChildrenList>
+						<Event Name="cave_rumble_start" ID="{7DBCC7D0-1FE2-4038-B2DE-29DD6A0BBC85}">
+							<ChildrenList>
+								<Action Name="" ID="{AEA2D7B0-7FEB-4939-A38F-EBAF089CF411}" ShortID="534972653">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="cave_rumble" ID="{92A3AAAF-5C12-4F08-BAFF-D6790ABC84FA}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

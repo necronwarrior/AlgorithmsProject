@@ -5,34 +5,6 @@
 			<ChildrenList>
 				<Folder Name="general" ID="{B148AFA1-2076-438C-A1D2-8D4FEF878611}" ShortID="105749197">
 					<ChildrenList>
-						<Event Name="mus_overworld_start" ID="{7BBEC494-B92A-4552-8901-64C8B43EC693}">
-							<ChildrenList>
-								<Action Name="" ID="{B46D3FE3-A0F5-4146-9673-7F9EF0F63F7E}" ShortID="873844813">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="music_state" ID="{1546774D-BA3E-4931-8B82-84FF08A2B26A}" WorkUnitID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="mus_tower_start" ID="{EB611498-D295-43C4-B565-6DA572055293}">
-							<ChildrenList>
-								<Action Name="" ID="{3707679F-E822-4722-8246-0B3CFD7D26AA}" ShortID="733353306">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="music_state" ID="{1546774D-BA3E-4931-8B82-84FF08A2B26A}" WorkUnitID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="music_start" ID="{701BA805-F84F-4791-AA9E-FF33CEB19C73}">
 							<ChildrenList>
 								<Action Name="" ID="{1C603254-1B93-4B1B-A202-8324107E2D40}" ShortID="211909896">

@@ -8,9 +8,9 @@
 						<Folder Name="footsteps" ID="{1C2B16E6-8CE3-4C61-B6CD-4E19C7255175}" ShortID="659077785">
 							<Comment>Left and right footstep events.</Comment>
 							<ChildrenList>
-								<Event Name="player_footsteps_start" ID="{A092C109-7EF1-4E1A-9395-FCE31D41556C}">
+								<Event Name="footsteps_start" ID="{69B8B803-68C4-479E-AB30-E5473D628185}">
 									<ChildrenList>
-										<Action Name="" ID="{9FC451B3-477B-4CFD-B471-1CB0C5B51499}" ShortID="440345060">
+										<Action Name="" ID="{AA12DC1B-F01C-43C9-8012-4C4D20AF4735}" ShortID="237344900">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>

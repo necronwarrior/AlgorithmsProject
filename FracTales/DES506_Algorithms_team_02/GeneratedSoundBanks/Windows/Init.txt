@@ -10,13 +10,14 @@ Switch	ID	Name	Switch Group			Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	186852181	thunder			\Default Work Unit\weather\thunder	
-	207908541	time_of_day			\Default Work Unit\time_of_day	
-	1176052424	location			\Default Work Unit\location	
-	1537061107	wind			\Default Work Unit\wind	
+	207908541	time_of_day			\Default Work Unit\general\time_of_day	
+	1176052424	location			\Default Work Unit\locations\location	
+	1537061107	wind			\Default Work Unit\weather\wind	
 	2043403999	rain			\Default Work Unit\weather\rain	
-	2470328564	intensity			\Default Work Unit\intensity	
-	2986821023	world_location			\Default Work Unit\world_location	
-	3033628004	on_off			\Default Work Unit\on_off	
+	2470328564	intensity			\Default Work Unit\general\intensity	
+	2986821023	world_location			\Default Work Unit\locations\world_location	
+	3033628004	on_off			\Default Work Unit\general\on_off	
+	3865314626	Material			\Default Work Unit\Material	
 	3991942870	music			\Default Work Unit\music	
 
 State	ID	Name	State Group			Notes
@@ -41,13 +42,29 @@ State	ID	Name	State Group			Notes
 	748895195	None	world_location			
 	1562068129	overworld	world_location			
 	1737926756	tower	world_location			
+	2482423965	coast	world_location			
+	2927127661	canyon	world_location			
 	3091570009	town	world_location			
+	4122393694	cave	world_location			
 	748895195	None	on_off			
 	930712164	off	on_off			
 	1651971902	on	on_off			
+	748895195	None	Material			
+	2195636714	Dirt	Material			
+	2705388594	Grass_Short	Material			
 	748895195	None	music			
 	1562068129	overworld	music			
 	1737926756	tower	music			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	31768385	town	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave\cave_reverb		
+	38319550	cave	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\canyon\canyon_reverb		
+	156748668	town	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\canyon\canyon_reverb		
+	450766538	tower	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\canyon\canyon_reverb		
+	936260150	overworld	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\canyon\canyon_reverb		
+	952941441	overworld	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave\cave_reverb		
+	965730922	tower	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\cave\cave_reverb		
+	1009854316	coast	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\canyon\canyon_reverb		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	
@@ -70,12 +87,10 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	491961918	forest			\Default Work Unit\Master Audio Bus\forest	
 	624189772	lake			\Default Work Unit\Master Audio Bus\lake	
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
-	1041687514	wood_footsteps			\Default Work Unit\Master Audio Bus\player\footsteps\wood_footsteps	
-	1069431850	player			\Default Work Unit\Master Audio Bus\player	
+	1562068129	overworld			\Default Work Unit\Master Audio Bus\overworld	
 	1608679832	port			\Default Work Unit\Master Audio Bus\port	
 	1686739424	storm			\Default Work Unit\Master Audio Bus\weather\storm	
-	2385628198	footsteps			\Default Work Unit\Master Audio Bus\player\footsteps	
-	2654819890	fields			\Default Work Unit\Master Audio Bus\fields	
+	2927127661	canyon			\Default Work Unit\Master Audio Bus\canyon	
 	3091570009	town			\Default Work Unit\Master Audio Bus\town	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3992294315	mountains			\Default Work Unit\Master Audio Bus\mountains	
@@ -83,9 +98,10 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	4122393694	cave			\Default Work Unit\Master Audio Bus\cave	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	236820224	overworld_reverb			\Default Work Unit\Master Audio Bus\overworld\overworld_reverb	
 	500826563	lake_reverb			\Default Work Unit\Master Audio Bus\lake\lake_reverb	
 	920301845	forest_reverb			\Default Work Unit\Master Audio Bus\forest\forest_reverb	
-	1792019682	field_reverb			\Default Work Unit\Master Audio Bus\fields\field_reverb	
+	2372048900	canyon_reverb			\Default Work Unit\Master Audio Bus\canyon\canyon_reverb	
 	2686381848	town_reverb			\Default Work Unit\Master Audio Bus\town\town_reverb	
 	2714134073	beach_reverb			\Default Work Unit\Master Audio Bus\beach\beach_reverb	
 	2813652855	port_reverb			\Default Work Unit\Master Audio Bus\port\port_reverb	
@@ -93,8 +109,9 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3617990866	mountains_reverb			\Default Work Unit\Master Audio Bus\mountains\mountains_reverb	
 
 Effect plug-ins	ID	Name	Type				Notes
+	38313047	Metal_Hangar (Custom)	Wwise RoomVerb			
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
-	2080872166	Brick_Wall_Minus_6dB_Peak_Fast_Release	Wwise Peak Limiter			
+	462252930	Wwise RoomVerb (Custom)	Wwise RoomVerb			
+	553420067	Wwise RoomVerb (Custom)	Wwise RoomVerb			
 	2258521792	Brick_Wall_Minus_1dB_Peak_Slow_Release	Wwise Peak Limiter			
-	3900114836	Metal_Hangar	Wwise RoomVerb			
 
