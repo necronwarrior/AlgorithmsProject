@@ -232,6 +232,24 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="street_light" ID="{EAFE8CB0-5497-4C45-84BB-4263220E3940}" ShortID="143410125">
+					<ChildrenList>
+						<Event Name="street_light_start" ID="{03E85BD7-B54D-4BEA-BD07-A1AF882E9168}">
+							<ChildrenList>
+								<Action Name="" ID="{C423CFF1-D177-4A51-A475-67F9482BA31C}" ShortID="235663360">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="frequency_generator_loop_02" ID="{AD74EAF6-E7EE-40BA-8E59-E0A9A1A0C336}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

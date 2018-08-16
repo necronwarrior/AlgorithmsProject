@@ -17,7 +17,6 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2470328564	intensity			\Default Work Unit\general\intensity	
 	2986821023	world_location			\Default Work Unit\locations\world_location	
 	3033628004	on_off			\Default Work Unit\general\on_off	
-	3865314626	Material			\Default Work Unit\Material	
 	3991942870	music			\Default Work Unit\music	
 
 State	ID	Name	State Group			Notes
@@ -49,9 +48,6 @@ State	ID	Name	State Group			Notes
 	748895195	None	on_off			
 	930712164	off	on_off			
 	1651971902	on	on_off			
-	748895195	None	Material			
-	2195636714	Dirt	Material			
-	2705388594	Grass_Short	Material			
 	748895195	None	music			
 	1562068129	overworld	music			
 	1737926756	tower	music			

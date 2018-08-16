@@ -46,10 +46,13 @@
 				<Event Id="643486511" Name="footsteps_start" ObjectPath="\Events\Default Work Unit\player\movements\footsteps\footsteps_start"/>
 				<Event Id="78043339" Name="kitchen_sounds_start" ObjectPath="\Events\Default Work Unit\objects\kitchen\kitchen_sounds_start"/>
 				<Event Id="3086739561" Name="kitchen_sounds_stop" ObjectPath="\Events\Default Work Unit\objects\kitchen\kitchen_sounds_stop"/>
+				<Event Id="2607886720" Name="music_overworld_start" ObjectPath="\Events\Default Work Unit\music\general\music_overworld_start"/>
 				<Event Id="3725903807" Name="music_start" ObjectPath="\Events\Default Work Unit\music\general\music_start"/>
+				<Event Id="45473393" Name="music_tower_start" ObjectPath="\Events\Default Work Unit\music\general\music_tower_start"/>
 				<Event Id="1059900002" Name="select_back_play" ObjectPath="\Events\Default Work Unit\ui\main_menu\select_back_play"/>
 				<Event Id="3309108327" Name="sink_tap_start" ObjectPath="\Events\Default Work Unit\objects\sink\sink_tap_start"/>
 				<Event Id="930464141" Name="sink_tap_stop" ObjectPath="\Events\Default Work Unit\objects\sink\sink_tap_stop"/>
+				<Event Id="709036204" Name="street_light_start" ObjectPath="\Events\Default Work Unit\objects\street_light\street_light_start"/>
 				<Event Id="2922160133" Name="type_backspace" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_backspace"/>
 				<Event Id="875684730" Name="type_enter" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_enter"/>
 				<Event Id="2206263592" Name="type_letter" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_letter"/>
@@ -63,14 +66,6 @@
 					<ShortName>player_footstep_gravel_walk_09.wav</ShortName>
 					<Path>SFX\player_footstep_gravel_walk_09_8A6CA8BA.wem</Path>
 				</File>
-				<File Id="13462329" Language="SFX">
-					<ShortName>player_footstep_wood_walk_06.wav</ShortName>
-					<Path>SFX\player_footstep_wood_walk_06_8A6CA8BA.wem</Path>
-				</File>
-				<File Id="23718557" Language="SFX">
-					<ShortName>player_footstep_wood_walk_10.wav</ShortName>
-					<Path>SFX\player_footstep_wood_walk_10_8A6CA8BA.wem</Path>
-				</File>
 				<File Id="29399829" Language="SFX">
 					<ShortName>door_close_wooden_01.wav</ShortName>
 					<Path>SFX\door_close_wooden_01_6B3EB40D.wem</Path>
@@ -78,10 +73,6 @@
 				<File Id="30517053" Language="SFX">
 					<ShortName>player_footstep_gravel_walk_08.wav</ShortName>
 					<Path>SFX\player_footstep_gravel_walk_08_8A6CA8BA.wem</Path>
-				</File>
-				<File Id="48726108" Language="SFX">
-					<ShortName>player_footstep_wood_walk_09.wav</ShortName>
-					<Path>SFX\player_footstep_wood_walk_09_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="49832470" Language="SFX">
 					<ShortName>amb_emit_birds_21.wav</ShortName>
@@ -163,10 +154,6 @@
 					<ShortName>door_close_wooden_04.wav</ShortName>
 					<Path>SFX\door_close_wooden_04_C597EA4F.wem</Path>
 				</File>
-				<File Id="187037574" Language="SFX">
-					<ShortName>player_footstep_wood_creak_04.wav</ShortName>
-					<Path>SFX\player_footstep_wood_creak_04_8A6CA8BA.wem</Path>
-				</File>
 				<File Id="196547588" Language="SFX">
 					<ShortName>door_open_wood_01.wav</ShortName>
 					<Path>SFX\door_open_wood_01_8A6CA8BA.wem</Path>
@@ -182,10 +169,6 @@
 				<File Id="213050855" Language="SFX">
 					<ShortName>sfx_player_typing_enter_01 - Copy.wav</ShortName>
 					<Path>SFX\sfx_player_typing_enter_01 - Copy_482EDB6C.wem</Path>
-				</File>
-				<File Id="220641643" Language="SFX">
-					<ShortName>player_footstep_wood_creak_11.wav</ShortName>
-					<Path>SFX\player_footstep_wood_creak_11_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="228292637" Language="SFX">
 					<ShortName>player_footstep_grass_short_walk_08.wav</ShortName>
@@ -215,17 +198,9 @@
 					<ShortName>player_footstep_grass_short_walk_04.wav</ShortName>
 					<Path>SFX\player_footstep_grass_short_walk_04_4ABE18BA.wem</Path>
 				</File>
-				<File Id="250215763" Language="SFX">
-					<ShortName>player_footstep_wood_creak_10.wav</ShortName>
-					<Path>SFX\player_footstep_wood_creak_10_8A6CA8BA.wem</Path>
-				</File>
 				<File Id="255400739" Language="SFX">
 					<ShortName>Loud_Water.wav</ShortName>
 					<Path>SFX\Loud_Water_21CA2154.wem</Path>
-				</File>
-				<File Id="261606384" Language="SFX">
-					<ShortName>player_footstep_wood_walk_07.wav</ShortName>
-					<Path>SFX\player_footstep_wood_walk_07_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="271627397" Language="SFX">
 					<ShortName>amb_emit_birds_03.wav</ShortName>
@@ -254,14 +229,6 @@
 				<File Id="287075391" Language="SFX">
 					<ShortName>player_footstep_gravel_walk_02.wav</ShortName>
 					<Path>SFX\player_footstep_gravel_walk_02_8A6CA8BA.wem</Path>
-				</File>
-				<File Id="292088031" Language="SFX">
-					<ShortName>player_footstep_wood_creak_01.wav</ShortName>
-					<Path>SFX\player_footstep_wood_creak_01_8A6CA8BA.wem</Path>
-				</File>
-				<File Id="296382914" Language="SFX">
-					<ShortName>player_footstep_wood_creak_12.wav</ShortName>
-					<Path>SFX\player_footstep_wood_creak_12_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="305683496" Language="SFX">
 					<ShortName>glasses_02.wav</ShortName>
@@ -331,10 +298,6 @@
 					<ShortName>sfx_writing_loop.wav</ShortName>
 					<Path>SFX\sfx_writing_loop_21CA2154.wem</Path>
 				</File>
-				<File Id="424442408" Language="SFX">
-					<ShortName>player_footstep_wood_creak_06.wav</ShortName>
-					<Path>SFX\player_footstep_wood_creak_06_8A6CA8BA.wem</Path>
-				</File>
 				<File Id="431799502" Language="SFX">
 					<ShortName>player_footsteps_dirt_walk_04.wav</ShortName>
 					<Path>SFX\player_footsteps_dirt_walk_04_8A6CA8BA.wem</Path>
@@ -346,10 +309,6 @@
 				<File Id="474295533" Language="SFX">
 					<ShortName>amb_emit_birds_16.wav</ShortName>
 					<Path>SFX\amb_emit_birds_16_C743B201.wem</Path>
-				</File>
-				<File Id="477346487" Language="SFX">
-					<ShortName>player_footstep_wood_walk_03.wav</ShortName>
-					<Path>SFX\player_footstep_wood_walk_03_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="495386261" Language="SFX">
 					<ShortName>sfx_player_typing_number_02.wav</ShortName>
@@ -491,17 +450,9 @@
 					<ShortName>amb_emit_birds_18.wav</ShortName>
 					<Path>SFX\amb_emit_birds_18_42C5089A.wem</Path>
 				</File>
-				<File Id="808774089" Language="SFX">
-					<ShortName>player_footstep_wood_walk_01.wav</ShortName>
-					<Path>SFX\player_footstep_wood_walk_01_8A6CA8BA.wem</Path>
-				</File>
 				<File Id="814700136" Language="SFX">
 					<ShortName>glasses_06.wav</ShortName>
 					<Path>SFX\glasses_06_8A6CA8BA.wem</Path>
-				</File>
-				<File Id="815134765" Language="SFX">
-					<ShortName>player_footstep_wood_creak_09.wav</ShortName>
-					<Path>SFX\player_footstep_wood_creak_09_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="830725429" Language="SFX">
 					<ShortName>dishes_03.wav</ShortName>
@@ -513,19 +464,11 @@
 				</File>
 				<File Id="842886808" Language="SFX">
 					<ShortName>mus_radio_tower_01.wav</ShortName>
-					<Path>SFX\mus_radio_tower_01_8A6CA8BA.wem</Path>
+					<Path>SFX\mus_radio_tower_01_21CA2154.wem</Path>
 				</File>
 				<File Id="850618569" Language="SFX">
 					<ShortName>sfx_player_typing_spacebar_04.wav</ShortName>
 					<Path>SFX\sfx_player_typing_spacebar_04_F2875142.wem</Path>
-				</File>
-				<File Id="867328482" Language="SFX">
-					<ShortName>player_footstep_wood_creak_02.wav</ShortName>
-					<Path>SFX\player_footstep_wood_creak_02_8A6CA8BA.wem</Path>
-				</File>
-				<File Id="868267660" Language="SFX">
-					<ShortName>player_footstep_wood_creak_05.wav</ShortName>
-					<Path>SFX\player_footstep_wood_creak_05_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="878561775" Language="SFX">
 					<ShortName>sfx_player_typing_enter_02 - Copy.wav</ShortName>
@@ -547,21 +490,9 @@
 					<ShortName>amb_wood_pigeon_03.wav</ShortName>
 					<Path>SFX\amb_wood_pigeon_03_8A6CA8BA.wem</Path>
 				</File>
-				<File Id="911487654" Language="SFX">
-					<ShortName>player_footstep_wood_creak_08.wav</ShortName>
-					<Path>SFX\player_footstep_wood_creak_08_8A6CA8BA.wem</Path>
-				</File>
-				<File Id="926938434" Language="SFX">
-					<ShortName>player_footstep_wood_creak_07.wav</ShortName>
-					<Path>SFX\player_footstep_wood_creak_07_8A6CA8BA.wem</Path>
-				</File>
 				<File Id="938900241" Language="SFX">
 					<ShortName>amb_bg_town_birds_loop.wav</ShortName>
 					<Path>SFX\amb_bg_town_birds_loop_21CA2154.wem</Path>
-				</File>
-				<File Id="939627476" Language="SFX">
-					<ShortName>player_footstep_wood_walk_05.wav</ShortName>
-					<Path>SFX\player_footstep_wood_walk_05_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="948697193" Language="SFX">
 					<ShortName>player_footstep_gravel_walk_05.wav</ShortName>
@@ -574,10 +505,6 @@
 				<File Id="958191727" Language="SFX">
 					<ShortName>player_footsteps_dirt_walk_03.wav</ShortName>
 					<Path>SFX\player_footsteps_dirt_walk_03_8A6CA8BA.wem</Path>
-				</File>
-				<File Id="980696911" Language="SFX">
-					<ShortName>player_footstep_wood_walk_02.wav</ShortName>
-					<Path>SFX\player_footstep_wood_walk_02_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="981291210" Language="SFX">
 					<ShortName>sfx_player_typing_letter_03.wav</ShortName>
@@ -599,17 +526,9 @@
 					<ShortName>player_footstep_grass_short_walk_07.wav</ShortName>
 					<Path>SFX\player_footstep_grass_short_walk_07_34333ACF.wem</Path>
 				</File>
-				<File Id="1031144903" Language="SFX">
-					<ShortName>player_footstep_wood_walk_08.wav</ShortName>
-					<Path>SFX\player_footstep_wood_walk_08_8A6CA8BA.wem</Path>
-				</File>
 				<File Id="1037891212" Language="SFX">
 					<ShortName>amb_emit_birds_05.wav</ShortName>
 					<Path>SFX\amb_emit_birds_05_FD6FBD4C.wem</Path>
-				</File>
-				<File Id="1039932269" Language="SFX">
-					<ShortName>player_footstep_wood_creak_03.wav</ShortName>
-					<Path>SFX\player_footstep_wood_creak_03_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="1051689097" Language="SFX">
 					<ShortName>glasses_04.wav</ShortName>
@@ -619,13 +538,13 @@
 					<ShortName>player_footsteps_dirt_walk_02.wav</ShortName>
 					<Path>SFX\player_footsteps_dirt_walk_02_8A6CA8BA.wem</Path>
 				</File>
+				<File Id="1062573506" Language="SFX">
+					<ShortName>frequency_generator_loop_02.wav</ShortName>
+					<Path>SFX\frequency_generator_loop_02_8A6CA8BA.wem</Path>
+				</File>
 				<File Id="1068737448" Language="SFX">
 					<ShortName>door_close_wooden_08.wav</ShortName>
 					<Path>SFX\door_close_wooden_08_633CC519.wem</Path>
-				</File>
-				<File Id="1069302378" Language="SFX">
-					<ShortName>player_footstep_wood_walk_04.wav</ShortName>
-					<Path>SFX\player_footstep_wood_walk_04_8A6CA8BA.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

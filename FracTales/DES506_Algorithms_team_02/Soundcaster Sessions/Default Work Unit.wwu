@@ -408,15 +408,16 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+						<CurrentStateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
 						<CurrentStateRef Name="outside" ID="{A5C60CD5-8D9B-463D-A82E-A88EC66C1835}"/>
 						<CurrentStateRef Name="rain" ID="{CA0BBA20-C7F6-449C-9303-7D9026DF3ABE}"/>
 						<CurrentStateRef Name="thunder" ID="{5D690690-8643-4F1A-8A38-315A5A097A39}"/>
 						<CurrentStateRef Name="day" ID="{3B89313A-C6C8-4F66-ACA3-57C4A089D996}"/>
+						<CurrentStateRef Name="tower" ID="{E23ABD7B-C1AE-4481-BC2D-6BB1A02DAD50}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
-						<CurrentSwitchRef Name="overworld" ID="{0E810A7B-576F-4591-977A-BEC86E50482C}"/>
+						<CurrentSwitchRef Name="Gravel" ID="{FDD4DC73-23B1-4D9C-8827-053C2785B1B8}"/>
+						<CurrentSwitchRef Name="overworld" ID="{B4DE2F1B-8CA3-499E-8BC8-01807933713B}"/>
 						<CurrentSwitchRef Name="run" ID="{02B38825-0181-4ED1-99D5-51DB148EDFD9}"/>
 						<CurrentSwitchRef Name="open" ID="{29D850E2-1B3A-4608-ACA4-C85F77D67EFC}"/>
 						<CurrentSwitchRef Name="collectable" ID="{A9DEAF9B-AB0B-4A30-96EA-B3B022F9709C}"/>
@@ -665,7 +666,6 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Dirt" ID="{9E0096B1-72B9-445D-8B96-B9229A6E92CC}"/>
-						<CurrentSwitchRef Name="overworld" ID="{0E810A7B-576F-4591-977A-BEC86E50482C}"/>
 						<CurrentSwitchRef Name="run" ID="{02B38825-0181-4ED1-99D5-51DB148EDFD9}"/>
 						<CurrentSwitchRef Name="close" ID="{0F78FE01-577A-4E1D-9C02-623D79EAF0F5}"/>
 						<CurrentSwitchRef Name="collectable" ID="{A9DEAF9B-AB0B-4A30-96EA-B3B022F9709C}"/>

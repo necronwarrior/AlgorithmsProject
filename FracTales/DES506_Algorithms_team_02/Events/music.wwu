@@ -19,6 +19,34 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="music_overworld_start" ID="{69AEF927-F703-44A9-82C9-F8664012DB36}">
+							<ChildrenList>
+								<Action Name="" ID="{3C976C70-BFC8-40CA-8854-487132DD093A}" ShortID="861075146">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_overworld_01" ID="{79026A0D-BA04-4DEE-8523-763F55CD420B}" WorkUnitID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="music_tower_start" ID="{5AC0A847-88BB-46F4-8A48-1621F819A78E}">
+							<ChildrenList>
+								<Action Name="" ID="{1BC63096-5ACB-4E78-95CB-51B217792051}" ShortID="125826922">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_radio_tower_01" ID="{02EDC00D-61C3-490D-9D1F-9DE61A61987F}" WorkUnitID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="soundbank_specific" ID="{D0ECB7D9-78DA-4127-95D9-B857C0F3644E}" ShortID="364074051">

@@ -3443,14 +3443,6 @@
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList/>
-							</StateInfo>
 						</ActorMixer>
 						<ActorMixer Name="items" ID="{DE557557-6C6E-483F-BE1E-4C26F65ACE31}" ShortID="563675110">
 							<Comment>Picking up general items</Comment>

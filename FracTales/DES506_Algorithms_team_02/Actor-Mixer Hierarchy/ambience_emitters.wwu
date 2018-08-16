@@ -2863,6 +2863,53 @@
 						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="lights" ID="{05BE9BD5-3AF7-42BE-A74C-A8F115CA2583}" ShortID="651096415">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="frequency_generator_loop_02" ID="{AD74EAF6-E7EE-40BA-8E59-E0A9A1A0C336}" ShortID="602644173">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="frequency_generator_loop_02" ID="{94965E06-6F45-4350-9925-00EB513386F0}" ShortID="1062573506">
+									<Language>SFX</Language>
+									<AudioFile>frequency_generator_loop_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList/>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="frequency_generator_loop_02" ID="{94965E06-6F45-4350-9925-00EB513386F0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList/>
+					</StateInfo>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
