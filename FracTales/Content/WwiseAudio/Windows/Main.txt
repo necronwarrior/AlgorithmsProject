@@ -1,6 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	45473393	music_tower_start			\Default Work Unit\music\general\music_tower_start	
-	78043339	kitchen_sounds_start			\Default Work Unit\objects\kitchen\kitchen_sounds_start	
+	78043339	kitchen_sounds_start			\Default Work Unit\objects\House\kitchen\kitchen_sounds_start	
 	330604451	type_number			\Default Work Unit\player\actions\typing\type_number	
 	572225828	amb_river_loop_stop			\Default Work Unit\ambience\Emitters\water\river\amb_river_loop_stop	
 	643486511	footsteps_start			\Default Work Unit\player\movements\footsteps\footsteps_start	
@@ -8,7 +8,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	727727334	amb_wind_trees_loop_start			\Default Work Unit\ambience\Emitters\weather\wind_trees\amb_wind_trees_loop_start	
 	810755357	amb_wind_grass_loop_start			\Default Work Unit\ambience\Emitters\weather\wind_grass\amb_wind_grass_loop_start	
 	875684730	type_enter			\Default Work Unit\player\actions\typing\type_enter	
-	930464141	sink_tap_stop			\Default Work Unit\objects\sink\sink_tap_stop	
+	930464141	sink_tap_stop			\Default Work Unit\objects\House\sink\sink_tap_stop	
+	1021718997	laser_fence_start			\Default Work Unit\objects\Tower\laser_fence\laser_fence_start	
 	1059900002	select_back_play			\Default Work Unit\ui\main_menu\select_back_play	
 	1096670663	amb_bg_town_start			\Default Work Unit\ambience\Town\amb_bg_town_start	
 	1208428295	amb_emit_wood_pigeon_start			\Default Work Unit\ambience\Emitters\fauna\wood_pigeon\amb_emit_wood_pigeon_start	
@@ -17,20 +18,23 @@ Event	ID	Name			Wwise Object Path	Notes
 	1561534440	amb_wind_loop_stop			\Default Work Unit\ambience\Emitters\weather\wind\amb_wind_loop_stop	
 	1595217012	amb_wind_loop_start			\Default Work Unit\ambience\Emitters\weather\wind\amb_wind_loop_start	
 	1631916329	door_close_start			\Default Work Unit\objects\doors\door_close_start	
-	1705038038	alarm_clock_start			\Default Work Unit\objects\alarm_clock\alarm_clock_start	
+	1705038038	alarm_clock_start			\Default Work Unit\objects\House\alarm_clock\alarm_clock_start	
 	1807091149	door_open_start			\Default Work Unit\objects\doors\door_open_start	
+	2007946354	generators_start			\Default Work Unit\objects\Tower\generators\generators_start	
 	2206263592	type_letter			\Default Work Unit\player\actions\typing\type_letter	
 	2241535633	writing_loop_start			\Default Work Unit\player\actions\writing\writing_loop_start	
 	2257695087	amb_emit_small_birds_start			\Default Work Unit\ambience\Emitters\fauna\small_birds\amb_emit_small_birds_start	
+	2426244745	street_lights_start			\Default Work Unit\objects\Tower\street_lights\street_lights_start	
 	2607886720	music_overworld_start			\Default Work Unit\music\general\music_overworld_start	
 	2861563724	amb_waves_loop_start			\Default Work Unit\ambience\Emitters\water\sea\amb_waves_loop_start	
 	2922160133	type_backspace			\Default Work Unit\player\actions\typing\type_backspace	
-	3086739561	kitchen_sounds_stop			\Default Work Unit\objects\kitchen\kitchen_sounds_stop	
-	3309108327	sink_tap_start			\Default Work Unit\objects\sink\sink_tap_start	
+	3086739561	kitchen_sounds_stop			\Default Work Unit\objects\House\kitchen\kitchen_sounds_stop	
+	3309108327	sink_tap_start			\Default Work Unit\objects\House\sink\sink_tap_start	
 	3609702808	amb_river_loop_start			\Default Work Unit\ambience\Emitters\water\river\amb_river_loop_start	
+	3667364641	amb_coast_start			\Default Work Unit\ambience\coast\amb_coast_start	
 	3678634271	amb_wind_grass_loop_stop			\Default Work Unit\ambience\Emitters\weather\wind_grass\amb_wind_grass_loop_stop	
 	3725903807	music_start			\Default Work Unit\music\general\music_start	
-	3800124118	alarm_clock_stop			\Default Work Unit\objects\alarm_clock\alarm_clock_stop	
+	3800124118	alarm_clock_stop			\Default Work Unit\objects\House\alarm_clock\alarm_clock_stop	
 	3964888102	amb_wind_trees_loop_stop			\Default Work Unit\ambience\Emitters\weather\wind_trees\amb_wind_trees_loop_stop	
 	4038065741	type_spacebar			\Default Work Unit\player\actions\typing\type_spacebar	
 
@@ -83,28 +87,36 @@ State	ID	Name	State Group			Notes
 	1737926756	tower	music			
 
 Custom State	ID	Name	State Group	Owner		Notes
+	11761239	cave	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\waves\amb_emit_waves		
+	28276543	town	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls		
 	38319550	cave	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\canyon\canyon_reverb		
-	38572447	coast	world_location	\Actor-Mixer Hierarchy\Default Work Unit\non_world\music\music_state\mus_radio_tower_01		
+	100995541	overworld	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\waves\amb_emit_waves		
 	156748668	town	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\canyon\canyon_reverb		
 	161358142	inside	location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_town		
 	173413676	inside	location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\amb_emitter_wind_trees		
+	256006118	coast	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_town\amb_town_bg		
 	274703882	inside	location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind		
+	276198933	canyon	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast		
 	286690367	inside	location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\waves		
-	337176163	tower	world_location	\Actor-Mixer Hierarchy\Default Work Unit\non_world\music\music_state\mus_overworld_01		
-	406685719	tower	music	\Actor-Mixer Hierarchy\Default Work Unit\non_world\music\music_state\mus_overworld_01		
-	416216626	canyon	world_location	\Actor-Mixer Hierarchy\Default Work Unit\non_world\music\music_state\mus_radio_tower_01		
+	324291010	cave	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast		
 	450766538	tower	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\canyon\canyon_reverb		
-	476142936	cave	world_location	\Actor-Mixer Hierarchy\Default Work Unit\non_world\music\music_state\mus_radio_tower_01		
 	491562596	cave	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_town\amb_town_bg\amb_bg_town_birds_loop		
+	523306713	tower	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\waves\amb_emit_waves		
 	555920604	tower	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_town\amb_town_bg		
-	561126974	overworld	music	\Actor-Mixer Hierarchy\Default Work Unit\non_world\music\music_state\mus_radio_tower_01		
-	571038755	town	world_location	\Actor-Mixer Hierarchy\Default Work Unit\non_world\music\music_state\mus_radio_tower_01		
+	574427038	tower	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast		
 	632302751	town	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\amb_emitter_wind_trees		
-	773338582	overworld	world_location	\Actor-Mixer Hierarchy\Default Work Unit\non_world\music\music_state\mus_radio_tower_01		
+	634172152	cave	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_town\amb_town_bg		
+	643992913	tower	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls		
+	683699668	town	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast		
+	699402775	overworld	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls		
+	705681638	canyon	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls		
+	900559706	canyon	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\waves\amb_emit_waves		
 	921653587	cave	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest		
 	936260150	overworld	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\canyon\canyon_reverb		
 	937591097	tower	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\amb_emitter_wind_trees		
 	1009854316	coast	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\canyon\canyon_reverb		
+	1048177289	cave	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls		
+	1051159149	town	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\waves\amb_emit_waves		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	207908541	time_of_day			\Default Work Unit\general\weather_environment\time_of_day	
@@ -127,6 +139,7 @@ Effect plug-ins	ID	Name	Type				Notes
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	180089824	SoundSeed Wind	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\amb_wind\amb_SS_wind_bg\SoundSeed Wind	
 	214703937	amb_wind_grass	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\amb_emitter_wind_grass\amb_wind_grass\amb_wind_grass	
+	255438448	wave_crashes	SoundSeed Air/SoundSeed Woosh		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\waves\amb_emit_waves\wave_crashes_beach\wave_crashes	
 	262753336	amb_wind_tress	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\amb_emitter_wind_trees\amb_wind_trees\amb_wind_tress	
 	361476739	Waves_Near	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\waves\amb_emit_waves\waves_near\Waves_Near	Waves crashing on the beach
 	506886867	SoundSeed Wind	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\water\river\water_whitenoise\SoundSeed Wind	
@@ -176,7 +189,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	287075391	player_footstep_gravel_walk_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footstep_gravel_walk_02_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_gravel_walk\player_footstep_gravel_walk_02		8208
 	305683496	glasses_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\glasses_02_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\kitchen\kitchen_blend\glasses\glasses_02		11692
 	305957977	player_footstep_gravel_walk_06	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footstep_gravel_walk_06_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_gravel_walk\player_footstep_gravel_walk_06		8414
+	306170152	sfx_street_light_01	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_street_light_01_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\street_lights\sfx_street_light_01		270641
 	306356301	dishes_01	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\dishes_01_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\kitchen\kitchen_blend\dishes\dishes_01		17438
+	311156543	amb_emit_seagulls_06	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_seagulls_06_AFC5267C.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls\amb_emit_seagulls_06		298463
 	311297241	amb_wood_pigeon_05	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_wood_pigeon_05_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_wood_pigeon\amb_wood_pigeon_05		5342
 	312852208	door_close_wooden_11	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\door_close_wooden_11_A6C7826A.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\doors\door_movement\door_closing\door_wood_closing\door_wood_closing_thump\door_close_wooden_11		9867
 	325148750	sfx_tap_off	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_tap_off_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\sink\sfx_tap_off		16803
@@ -191,9 +206,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	408369438	amb_emit_birds_10	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_10_EA886B72.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_short\amb_emit_birds_10		5991
 	408492904	player_footsteps_dirt_walk_08	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footsteps_dirt_walk_08_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_dirt_walk\player_footsteps_dirt_walk_08		8597
 	419753536	sfx_writing_loop	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_writing_loop_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\writing\sfx_writing_loop		152719
+	421352245	amb_emit_seagulls_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_seagulls_02_D82E81C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls\amb_emit_seagulls_02		7116
+	422139352	amb_emit_seagulls_03	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_seagulls_03_C60B1100.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls\amb_emit_seagulls_03		127395
 	431799502	player_footsteps_dirt_walk_04	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footsteps_dirt_walk_04_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_dirt_walk\player_footsteps_dirt_walk_04		9206
 	460430668	door_close_wooden_07	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\door_close_wooden_07_2DB2244F.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\doors\door_movement\door_closing\door_wood_closing\door_wood_closing_thump\door_close_wooden_07		5083
 	474295533	amb_emit_birds_16	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_16_C743B201.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_short\amb_emit_birds_16		13963
+	475293254	amb_emit_seagulls_01	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_seagulls_01_7EEB66E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls\amb_emit_seagulls_01		15298
 	495386261	sfx_player_typing_number_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_number_02_142B6FF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_number\sfx_player_typing_number_02		3003
 	498683510	amb_emit_birds_12	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_12_958E2312.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_short\amb_emit_birds_12		12851
 	508008729	amb_emit_birds_14	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_14_2D0EE98F.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_short\amb_emit_birds_14		9455
@@ -201,6 +219,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	517115760	cutlery_04	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\cutlery_04_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\kitchen\kitchen_blend\cutlery\cutlery_04		25123
 	531225068	amb_wood_pigeon_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_wood_pigeon_02_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_wood_pigeon\amb_wood_pigeon_02		3191
 	535986198	sfx_player_typing_letter_10	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_letter_10_B66D5BF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_letter\sfx_player_typing_letter_10		3003
+	547117497	sfx_laser_fence_01	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_laser_fence_01_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\laser_fence\sfx_laser_fence_01		105981
 	549122945	sfx_player_typing_enter_01	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_enter_01_37DD529C.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_backspace\sfx_player_typing_enter_01		3614
 	552028554	amb_wood_pigeon_06	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_wood_pigeon_06_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_wood_pigeon\amb_wood_pigeon_06		3530
 	562858116	dishes_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\dishes_02_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\kitchen\kitchen_blend\dishes\dishes_02		15673
@@ -238,6 +257,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	883667452	sfx_alarm_clock_on	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_alarm_clock_on_loop_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\alarm_clock\sfx_alarm_clock_on		103581
 	887647120	sfx_player_typing_number_03	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_number_03_63B41635.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_number\sfx_player_typing_number_03		3157
 	891574831	sfx_player_typing_letter_09	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_letter_09_D0767225.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_letter\sfx_player_typing_letter_09		2849
+	901761341	amb_emit_seagulls_05	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_seagulls_05_AD031CAF.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls\amb_emit_seagulls_05		369250
 	911159935	amb_wood_pigeon_03	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_wood_pigeon_03_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_wood_pigeon\amb_wood_pigeon_03		4970
 	938900241	amb_bg_town_birds_loop	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_bg_town_birds_loop_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_town\amb_town_bg\amb_bg_town_birds_loop		891831
 	948697193	player_footstep_gravel_walk_05	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footstep_gravel_walk_05_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_gravel_walk\player_footstep_gravel_walk_05		7503
@@ -247,10 +267,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	983438347	amb_emit_birds_13	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_13_C8348625.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_short\amb_emit_birds_13		18592
 	993708985	sfx_player_typing_enter_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_enter_02_85BC56F8.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_backspace\sfx_player_typing_enter_02		3349
 	994713484	sfx_alarm_clock_off	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_alarm_clock_off_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\alarm_clock\sfx_alarm_clock_off		23578
+	1009229713	frequency_generator_loop_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\frequency_generator_loop_02_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\generators\frequency_generator_loop_02		25902
 	1030996183	player_footstep_grass_short_walk_07	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footstep_grass_short_walk_07_34333ACF.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_grass_short_walk\player_footstep_grass_short_walk_07		5626
 	1037891212	amb_emit_birds_05	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_05_FD6FBD4C.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_short\amb_emit_birds_05		6804
+	1047958180	amb_emit_seagulls_04	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_seagulls_04_1B6465AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls\amb_emit_seagulls_04		66052
 	1051689097	glasses_04	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\glasses_04_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\kitchen\kitchen_blend\glasses\glasses_04		9980
 	1058677469	player_footsteps_dirt_walk_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footsteps_dirt_walk_02_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_dirt_walk\player_footsteps_dirt_walk_02		6633
-	1062573506	frequency_generator_loop_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\frequency_generator_loop_02_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\lights\frequency_generator_loop_02		25902
 	1068737448	door_close_wooden_08	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\door_close_wooden_08_633CC519.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\doors\door_movement\door_closing\door_wood_closing\door_wood_closing_thump\door_close_wooden_08		9977
 

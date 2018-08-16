@@ -131,7 +131,6 @@
 								</SwitchContainer>
 								<SwitchContainer Name="player_footstep_type" ID="{D075680F-C2F2-47C1-ABAE-C5625F7B7D75}" ShortID="95652361">
 									<PropertyList>
-										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-7</Value>

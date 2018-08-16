@@ -19,12 +19,6 @@
 				</GameParameter>
 				<Folder Name="distances" ID="{7B46A338-3BDE-4C47-9C7B-F2FF763BF46A}" ShortID="394219242">
 					<ChildrenList>
-						<GameParameter Name="distance_from_shores" ID="{AFF690FA-09F9-45C0-BE20-BFE9864D91D2}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="5000"/>
-								<Property Name="Max" Type="Real64" Value="10000"/>
-							</PropertyList>
-						</GameParameter>
 						<GameParameter Name="distance_to_cave_entrance" ID="{75827670-F7FF-4868-9CC1-B633606BB4E7}">
 							<PropertyList>
 								<Property Name="Max" Type="Real64" Value="1000"/>
@@ -34,12 +28,6 @@
 							<PropertyList>
 								<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="distance_from_sea_rocks" ID="{46842EBB-BC5D-43D4-A48F-FB0A31EC971A}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="10000"/>
-								<Property Name="Max" Type="Real64" Value="10000"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>

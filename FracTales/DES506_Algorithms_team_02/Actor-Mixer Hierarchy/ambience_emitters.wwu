@@ -1967,7 +1967,17 @@
 							<ChildrenList>
 								<Sound Name="waves_near" ID="{80B10E92-B3CC-4D24-96A6-A2759010CD93}" ShortID="379628817">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>32</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2010,6 +2020,11 @@
 								</Sound>
 								<Sound Name="wave_crashes_beach" ID="{F4C40265-410A-47F2-98FF-BB440078A7AF}" ShortID="919268142">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>26</Value>
+											</ValueList>
+										</Property>
 										<Property Name="InitialDelay" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
@@ -2023,6 +2038,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2140,6 +2160,11 @@
 								</Sound>
 								<Sound Name="wave_crashes_sea_rocks" ID="{D95C98F5-4F06-4795-9C0F-AF10D08151F1}" ShortID="901190830">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="InitialDelay" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
@@ -2244,8 +2269,60 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+										<State Name="" ID="{E6EE8DB0-D4CD-48D9-82E6-7ACB78E71386}" ShortID="100995541">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-35"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
+										<State Name="" ID="{1C71C6E6-908A-4CE4-AF07-86887FA08030}" ShortID="11761239">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="canyon" ID="{3C99E6D1-2B28-4551-82D0-F028C316F5EF}"/>
+										<State Name="" ID="{650A67D0-270F-4239-BD89-025596BB15CE}" ShortID="900559706">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+										<State Name="" ID="{E7F9B5C3-0757-4939-925B-6FC7E9E8CEE2}" ShortID="523306713">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-20"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+										<State Name="" ID="{D642DA4C-6BD7-4EBC-8645-68AD805CF083}" ShortID="1051159149">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<BlendTrackList>
 								<BlendTrack Name="New Blend Track" ID="{E8DC7226-F252-4554-AEC3-2B8611922D13}" ShortID="913775369">
+									<PropertyList>
+										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+									</PropertyList>
 									<BlendTrackAssocList>
 										<BlendTrackAssoc>
 											<ItemRef Name="wave_crashes_beach" ID="{F4C40265-410A-47F2-98FF-BB440078A7AF}"/>
@@ -2863,7 +2940,110 @@
 						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
-				<ActorMixer Name="lights" ID="{05BE9BD5-3AF7-42BE-A74C-A8F115CA2583}" ShortID="651096415">
+				<ActorMixer Name="street_lights" ID="{05BE9BD5-3AF7-42BE-A74C-A8F115CA2583}" ShortID="651096415">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-29</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_street_light_01" ID="{8B241B43-0B46-40E6-97B8-352FB4E09111}" ShortID="410507880">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_street_light_01" ID="{2EE4B01A-E5E8-4044-8DCC-308B9B8C95C2}" ShortID="306170152">
+									<Language>SFX</Language>
+									<AudioFile>sfx_street_light_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_street_light_01" ID="{2EE4B01A-E5E8-4044-8DCC-308B9B8C95C2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList/>
+					</StateInfo>
+				</ActorMixer>
+				<ActorMixer Name="laser_fence" ID="{703A92AC-5D3B-4423-B7AB-36871B1451EB}" ShortID="909743310">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_laser_fence_01" ID="{60F40A34-E363-42C7-846D-C9B7DAAD60AD}" ShortID="3831744">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_laser_fence_01" ID="{7D19A6E9-E9C2-41DA-AA4E-28CF1685C925}" ShortID="547117497">
+									<Language>SFX</Language>
+									<AudioFile>sfx_laser_fence_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_laser_fence_01" ID="{7D19A6E9-E9C2-41DA-AA4E-28CF1685C925}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_laser_fence_shut_down_01" ID="{1BBF892D-5AA0-403F-9B5A-83640BDB0FDF}" ShortID="546706290">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_laser_fence_shut_down_01" ID="{B2580015-6D69-4244-8AB7-B55A919BE280}" ShortID="774312387">
+									<Language>SFX</Language>
+									<AudioFile>sfx_laser_fence_shut_down_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_laser_fence_shut_down_01" ID="{B2580015-6D69-4244-8AB7-B55A919BE280}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="generators" ID="{EDF3C26E-9A7A-44BF-AB56-5DF8A2F597E5}" ShortID="39954611">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -2874,9 +3054,74 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="frequency_generator_loop_02" ID="{AD74EAF6-E7EE-40BA-8E59-E0A9A1A0C336}" ShortID="602644173">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom CreatedFrom="{696EECA4-7332-473E-98B8-95C3291EF440}">
+										<Attenuation Name="world_objects_atten (Custom)" ID="{56E6DEE6-41A9-477F-802F-63E760D50D8D}" ShortID="739740649">
+											<PropertyList>
+												<Property Name="ConeAttenuation" Type="Real64">
+													<ValueList>
+														<Value>0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ConeUse" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RadiusMax" Type="Real64" Value="2000"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{9AB0B0EF-F1EF-4D45-8373-4A3B0D39D1D5}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log2</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>2000</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
@@ -2886,6 +3131,9 @@
 								<AudioFileSource Name="frequency_generator_loop_02" ID="{94965E06-6F45-4350-9925-00EB513386F0}" ShortID="1062573506">
 									<Language>SFX</Language>
 									<AudioFile>frequency_generator_loop_02.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="1009229713"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<StateInfo>
@@ -2901,14 +3149,6 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
-							</StateGroupInfo>
-						</StateGroupList>
-						<CustomStateList/>
-					</StateInfo>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

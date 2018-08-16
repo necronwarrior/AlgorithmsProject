@@ -55,6 +55,14 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="world_location" ID="{7CB1FD65-50BA-4D66-AC91-AAF97673FDBE}">
+					<ChildrenList>
+						<Switch Name="coast" ID="{C894CCF0-7904-48A4-8436-3B094653F6C0}"/>
+						<Switch Name="overworld" ID="{3E60D385-8399-447A-9838-DE0E76ACA5CB}"/>
+						<Switch Name="tower" ID="{AF88CA91-7FD0-42D0-ABF2-46D3E28A17A2}"/>
+						<Switch Name="canyon" ID="{9FE01DEE-9DE3-4B14-A239-03AAA304D561}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

@@ -198,14 +198,6 @@
 							</Playlist>
 						</MusicPlaylistContainer>
 					</ChildrenList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="music" ID="{78203ED1-B0AE-4F98-87DF-5ECFE4C88A0D}"/>
-							</StateGroupInfo>
-						</StateGroupList>
-						<CustomStateList/>
-					</StateInfo>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{AC9B50E8-A18B-4BF4-9743-12568F8C673C}">
 							<PropertyList>
@@ -275,32 +267,10 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
-					<ArgumentList>
-						<ArgumentRef Name="music" ID="{78203ED1-B0AE-4F98-87DF-5ECFE4C88A0D}"/>
-					</ArgumentList>
 					<EntryList>
 						<Entry>
-							<Path>
-								<PathElementRef Name="music" ID="{78203ED1-B0AE-4F98-87DF-5ECFE4C88A0D}"/>
-							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="area_01" ID="{AACDCC2D-44E8-4E8A-B17C-B1D6E64891A5}" WorkUnitID="{E016D9A0-6445-4B53-A501-5014C97B6EC3}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="overworld" ID="{5D2B26F4-A2F4-4D67-94E0-6ABB6EAA4B54}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="area_01" ID="{AACDCC2D-44E8-4E8A-B17C-B1D6E64891A5}" WorkUnitID="{E016D9A0-6445-4B53-A501-5014C97B6EC3}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="tower" ID="{E23ABD7B-C1AE-4481-BC2D-6BB1A02DAD50}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="area_02" ID="{184D5C25-71F2-4C83-B534-4FC8234CDBAC}" WorkUnitID="{E016D9A0-6445-4B53-A501-5014C97B6EC3}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

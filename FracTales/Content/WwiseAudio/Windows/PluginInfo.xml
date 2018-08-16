@@ -5,5 +5,6 @@
 		<Plugin Name="Wwise Peak Limiter" ID="7208963" DLL="AkPeakLimiter"/>
 		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb"/>
 		<Plugin Name="SoundSeed Air/SoundSeed Wind" ID="7798786" DLL="AkSoundSeedAir"/>
+		<Plugin Name="SoundSeed Air/SoundSeed Woosh" ID="7864322" DLL="AkSoundSeedAir"/>
 	</Plugins>
 </PluginInfo>

@@ -114,14 +114,6 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 										</Reference>
 									</ReferenceList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="music" ID="{78203ED1-B0AE-4F98-87DF-5ECFE4C88A0D}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList/>
-									</StateInfo>
 									<BlendTrackList>
 										<BlendTrack Name="music_blend_overworld" ID="{4C843FB8-2FD4-4E98-87DD-B08A71195497}" ShortID="507508806">
 											<PropertyList>
@@ -203,9 +195,10 @@
 								</BlendContainer>
 								<SwitchContainer Name="music_state" ID="{1546774D-BA3E-4931-8B82-84FF08A2B26A}" ShortID="49506904">
 									<PropertyList>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -236,34 +229,6 @@
 													<AudioFile>mus_overworld_01.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
-													</StateGroupInfo>
-													<StateGroupInfo>
-														<StateGroupRef Name="music" ID="{78203ED1-B0AE-4F98-87DF-5ECFE4C88A0D}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="tower" ID="{E23ABD7B-C1AE-4481-BC2D-6BB1A02DAD50}"/>
-														<State Name="" ID="{3540BBCE-4162-4273-89B4-213008049CEA}" ShortID="406685719">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-96"/>
-															</PropertyList>
-														</State>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
-														<State Name="" ID="{157B240C-67D4-430F-BE3A-B3449366DA36}" ShortID="337176163">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-96"/>
-															</PropertyList>
-														</State>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
 											<ActiveSourceList>
 												<ActiveSource Name="mus_overworld_01" ID="{B67636FB-7542-4B12-83DC-7A5546706618}" Platform="Linked"/>
 											</ActiveSourceList>
@@ -286,82 +251,14 @@
 													<AudioFile>mus_radio_tower_01.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
-													</StateGroupInfo>
-													<StateGroupInfo>
-														<StateGroupRef Name="music" ID="{78203ED1-B0AE-4F98-87DF-5ECFE4C88A0D}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
-														<State Name="" ID="{8C49B603-3D72-4B03-BA81-494499992DBD}" ShortID="773338582">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-96"/>
-															</PropertyList>
-														</State>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
-														<State Name="" ID="{43CC9714-9302-480E-BFD7-810DBF85E755}" ShortID="476142936">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-96"/>
-															</PropertyList>
-														</State>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="canyon" ID="{3C99E6D1-2B28-4551-82D0-F028C316F5EF}"/>
-														<State Name="" ID="{14669F47-FD6D-4127-B7F5-0DFB7B474455}" ShortID="416216626">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-96"/>
-															</PropertyList>
-														</State>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="coast" ID="{2FEC2E20-FB7F-46F8-A5BB-4201832901F9}"/>
-														<State Name="" ID="{8CF446B5-ABF3-4757-A4FB-7DAFF3E3FA32}" ShortID="38572447">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-96"/>
-															</PropertyList>
-														</State>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
-														<State Name="" ID="{024A55DE-B2F1-4A5A-9A2E-22D64AD3275D}" ShortID="571038755">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-96"/>
-															</PropertyList>
-														</State>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="overworld" ID="{5D2B26F4-A2F4-4D67-94E0-6ABB6EAA4B54}"/>
-														<State Name="" ID="{B714E9B0-F159-443E-AF68-0D988B239C45}" ShortID="561126974">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-96"/>
-															</PropertyList>
-														</State>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
 											<ActiveSourceList>
 												<ActiveSource Name="mus_radio_tower_01" ID="{C5B2AFAA-8F24-4A30-81E6-7314049808C7}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList/>
-									</StateInfo>
 									<GroupingInfo>
-										<GroupRef Name="music" ID="{78203ED1-B0AE-4F98-87DF-5ECFE4C88A0D}"/>
-										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+										<GroupRef Name="music" ID="{E8DD0661-C7C0-4599-85EE-CBFFE85AE22C}"/>
+										<DefaultSwitchRef Name="overworld" ID="{52097FDF-157C-4035-9059-E601F04673AF}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="mus_overworld_01" ID="{79026A0D-BA04-4DEE-8523-763F55CD420B}"/>
@@ -386,13 +283,13 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="tower" ID="{E23ABD7B-C1AE-4481-BC2D-6BB1A02DAD50}"/>
+												<SwitchRef Name="tower" ID="{2E5037B9-E1E2-45D1-A041-0AB1D2A6A6CB}"/>
 												<ItemList>
 													<ItemRef Name="mus_radio_tower_01" ID="{02EDC00D-61C3-490D-9D1F-9DE61A61987F}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="overworld" ID="{5D2B26F4-A2F4-4D67-94E0-6ABB6EAA4B54}"/>
+												<SwitchRef Name="overworld" ID="{52097FDF-157C-4035-9059-E601F04673AF}"/>
 												<ItemList>
 													<ItemRef Name="mus_overworld_01" ID="{79026A0D-BA04-4DEE-8523-763F55CD420B}"/>
 												</ItemList>

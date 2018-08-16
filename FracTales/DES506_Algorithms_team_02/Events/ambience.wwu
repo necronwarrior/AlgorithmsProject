@@ -436,6 +436,34 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="coast" ID="{0A1287BF-9E50-40AA-ABFA-0C9F36179FF7}" ShortID="971099467">
+					<ChildrenList>
+						<Event Name="amb_coast_start" ID="{20FB2076-D186-4095-B755-ED4B3662143B}">
+							<ChildrenList>
+								<Action Name="" ID="{AB911613-F678-43A0-9523-CD9F2D42A3C3}" ShortID="553824469">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_emit_seagulls" ID="{5DA460A3-C3DE-4C18-8C5F-6A5394C9C034}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6EE75C2F-3226-408C-B954-FD1768EBD2C7}" ShortID="826437701">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_emit_waves" ID="{486F8955-238E-4AB6-AE59-CC9D9925FA10}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

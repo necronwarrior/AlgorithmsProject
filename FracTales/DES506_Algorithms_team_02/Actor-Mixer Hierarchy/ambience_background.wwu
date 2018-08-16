@@ -82,6 +82,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<BlendContainer Name="ambience_region_cave" ID="{A66D2734-EB42-41A7-B38C-EF12BFD73A7A}" ShortID="985770644">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -217,7 +224,7 @@
 												</Sound>
 											</ChildrenList>
 										</BlendContainer>
-										<BlendContainer Name="ambience_region_beach" ID="{5069367B-E141-4356-8373-1046485A61A6}" ShortID="953112897">
+										<BlendContainer Name="ambience_region_coast" ID="{5069367B-E141-4356-8373-1046485A61A6}" ShortID="953112897">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -418,8 +425,98 @@
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+																<State Name="" ID="{4EB4837B-A1F4-40ED-ABA1-1D09E3FA1EB3}" ShortID="699402775">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
+																<State Name="" ID="{F816C477-93E2-4D7D-AB06-A976584953D1}" ShortID="1048177289">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="canyon" ID="{3C99E6D1-2B28-4551-82D0-F028C316F5EF}"/>
+																<State Name="" ID="{221B981B-EB04-4457-8233-0A45A3F5D672}" ShortID="705681638">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+																<State Name="" ID="{44849413-5BE4-40C3-961D-26A81B1C0337}" ShortID="643992913">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-7"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+																<State Name="" ID="{414A46C3-8D42-45EA-BD01-59081B2EC81B}" ShortID="28276543">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
 												</RandomSequenceContainer>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
+														<State Name="" ID="{44917713-E0D3-4F7A-A83C-1C33FB1588F2}" ShortID="324291010">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-96"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="canyon" ID="{3C99E6D1-2B28-4551-82D0-F028C316F5EF}"/>
+														<State Name="" ID="{B2E58D5B-704B-47EA-B744-5E8CC3FBA3CF}" ShortID="276198933">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-96"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+														<State Name="" ID="{DBF743AA-73AA-4083-AB59-779CE7F3F691}" ShortID="574427038">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-10"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+														<State Name="" ID="{FB0FB9F0-672E-4E57-95B8-F02DC5D44FCD}" ShortID="683699668">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-96"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</BlendContainer>
 										<BlendContainer Name="ambience_region_overworld" ID="{D06ED460-CD24-4935-929C-9564A5D65650}" ShortID="555704741">
 											<ReferenceList>
@@ -2109,6 +2206,13 @@
 											</BlendTrackList>
 										</BlendContainer>
 										<BlendContainer Name="ambience_region_lake" ID="{394162A9-FADE-4655-BC7A-7441D6621C90}" ShortID="532654776">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -2141,6 +2245,13 @@
 											</ChildrenList>
 										</BlendContainer>
 										<BlendContainer Name="ambience_region_mountains" ID="{8E4DB0B2-76EB-4442-B7CC-A1CC71D6F304}" ShortID="930054744">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -2173,6 +2284,13 @@
 											</ChildrenList>
 										</BlendContainer>
 										<BlendContainer Name="ambience_region_port" ID="{5D1F568E-F8F6-4863-98BE-3D4DA956BFAB}" ShortID="747545315">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -2334,6 +2452,22 @@
 														</StateGroupList>
 														<CustomStateList>
 															<CustomState>
+																<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
+																<State Name="" ID="{DE60566E-FE48-439B-823D-BC3328E20168}" ShortID="634172152">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="coast" ID="{2FEC2E20-FB7F-46F8-A5BB-4201832901F9}"/>
+																<State Name="" ID="{FE4FB80A-2DDC-4E79-9DBA-DB87A1E51B48}" ShortID="256006118">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-41"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
 																<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
 																<State Name="" ID="{F62BFA35-1AFF-4C4C-A250-54A178DF753C}" ShortID="555920604">
 																	<PropertyList>
@@ -2375,7 +2509,7 @@
 												<ItemRef Name="ambience_region_overworld" ID="{D06ED460-CD24-4935-929C-9564A5D65650}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="ambience_region_beach" ID="{5069367B-E141-4356-8373-1046485A61A6}"/>
+												<ItemRef Name="ambience_region_coast" ID="{5069367B-E141-4356-8373-1046485A61A6}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="ambience_region_port" ID="{5D1F568E-F8F6-4863-98BE-3D4DA956BFAB}"/>
