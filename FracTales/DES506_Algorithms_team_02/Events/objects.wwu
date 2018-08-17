@@ -289,24 +289,13 @@
 								</Event>
 								<Event Name="alarm_clock_stop" ID="{4ACAF48B-FC4D-4572-B90C-90D20CE79B94}">
 									<ChildrenList>
-										<Action Name="" ID="{87F837FC-02D3-496B-8525-D81EF529CDB3}" ShortID="50768195">
+										<Action Name="" ID="{399B6EB9-D22A-4FF0-840B-59A01772C96E}" ShortID="415085911">
 											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="35"/>
+												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="alarm_clock" ID="{2AB932F0-0C71-4F2D-8E5D-DA9D5D15DA67}" WorkUnitID="{FF37398D-EAF3-480F-8259-5F4146212717}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{B817F8AB-433D-4227-91F4-C17DBDC297D3}" ShortID="198365705">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="Delay" Type="Real64" Value="0.01"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sfx_alarm_clock_on" ID="{BB81D966-1606-462A-B87D-E4920E255A69}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+													<ObjectRef Name="sfx_alarm_turn_off" ID="{94B037D6-ECFD-4C63-99C2-098DAA48FB64}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -317,16 +306,6 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="sfx_alarm_clock_off" ID="{C8DE7A98-8A7F-40FF-ACCB-2EB24882CE9B}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{399B6EB9-D22A-4FF0-840B-59A01772C96E}" ShortID="415085911">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sfx_alarm_turn_off" ID="{94B037D6-ECFD-4C63-99C2-098DAA48FB64}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
