@@ -170,6 +170,10 @@
 					<ShortName>door_close_wooden_03.wav</ShortName>
 					<Path>SFX\door_close_wooden_03_DEE50DE9.wem</Path>
 				</File>
+				<File Id="204918554" Language="SFX">
+					<ShortName>sfx_toilet_flush.wav</ShortName>
+					<Path>SFX\sfx_toilet_flush_8A6CA8BA.wem</Path>
+				</File>
 				<File Id="213050855" Language="SFX">
 					<ShortName>sfx_player_typing_enter_01 - Copy.wav</ShortName>
 					<Path>SFX\sfx_player_typing_enter_01 - Copy_482EDB6C.wem</Path>
@@ -428,7 +432,7 @@
 				</File>
 				<File Id="685657390" Language="SFX">
 					<ShortName>sfx_tap_running_loop.wav</ShortName>
-					<Path>SFX\sfx_tap_running_loop_21CA2154.wem</Path>
+					<Path>SFX\sfx_tap_running_loop_95ADF4AB.wem</Path>
 				</File>
 				<File Id="690665965" Language="SFX">
 					<ShortName>amb_emit_birds_01.wav</ShortName>
