@@ -9,7 +9,65 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="world_objects_atten" ID="{696EECA4-7332-473E-98B8-95C3291EF440}" WorkUnitID="{74E74D40-3965-4399-8C83-DC540386B3F2}"/>
+							<Custom CreatedFrom="{696EECA4-7332-473E-98B8-95C3291EF440}">
+								<Attenuation Name="world_objects_atten (Custom)" ID="{CF496B4D-9B71-4474-B079-CAE3EF6F4774}" ShortID="708423314">
+									<PropertyList>
+										<Property Name="ConeAttenuation" Type="Real64">
+											<ValueList>
+												<Value>0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ConeUse" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RadiusMax" Type="Real64" Value="2000"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{E1DFF05E-9101-4D3B-A0A5-441AA897C611}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Log2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>2000</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -37,6 +95,210 @@
 					</ReferenceList>
 					<ChildrenList>
 						<WorkUnit Name="ui" ID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}" PersistMode="Reference"/>
+						<ActorMixer Name="music" ID="{0F5B05D7-AAD0-4630-8ACC-66C47C9EAFEF}" ShortID="818327312">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="music_blender" ID="{1514AFA7-521C-452E-8C26-E72ED4E0843B}" ShortID="195447670">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<BlendTrackList>
+										<BlendTrack Name="music_blend_overworld" ID="{4C843FB8-2FD4-4E98-87DD-B08A71195497}" ShortID="507508806">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{000B97F6-03FB-42DE-BAC7-4A56EA1267DD}" ShortID="118393780">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{F6DFE681-5A63-4525-ADDE-2F8DEF13C386}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendTrack>
+										<BlendTrack Name="music_blend_tower" ID="{758FE51A-0D79-43E1-BEBC-166FDC8DA33B}" ShortID="800840835">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{91D40F66-E3B6-40BC-8572-1A6049D06D1F}" ShortID="89805468">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{1B3BFA76-42FD-4D8C-890D-D4570E876E96}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<SwitchContainer Name="music_state" ID="{1546774D-BA3E-4931-8B82-84FF08A2B26A}" ShortID="49506904">
+									<PropertyList>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mus_overworld_01" ID="{79026A0D-BA04-4DEE-8523-763F55CD420B}" ShortID="399177850">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="mus_overworld_01" ID="{B67636FB-7542-4B12-83DC-7A5546706618}" ShortID="238272068">
+													<Language>SFX</Language>
+													<AudioFile>mus_overworld_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="mus_overworld_01" ID="{B67636FB-7542-4B12-83DC-7A5546706618}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mus_radio_tower_01" ID="{02EDC00D-61C3-490D-9D1F-9DE61A61987F}" ShortID="788865239">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="mus_radio_tower_01" ID="{C5B2AFAA-8F24-4A30-81E6-7314049808C7}" ShortID="842886808">
+													<Language>SFX</Language>
+													<AudioFile>mus_radio_tower_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="mus_radio_tower_01" ID="{C5B2AFAA-8F24-4A30-81E6-7314049808C7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupRef Name="music" ID="{E8DD0661-C7C0-4599-85EE-CBFFE85AE22C}"/>
+										<DefaultSwitchRef Name="overworld" ID="{52097FDF-157C-4035-9059-E601F04673AF}"/>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="mus_overworld_01" ID="{79026A0D-BA04-4DEE-8523-763F55CD420B}"/>
+												<PropertyList>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>2</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="mus_radio_tower_01" ID="{02EDC00D-61C3-490D-9D1F-9DE61A61987F}"/>
+												<PropertyList>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>2</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="tower" ID="{2E5037B9-E1E2-45D1-A041-0AB1D2A6A6CB}"/>
+												<ItemList>
+													<ItemRef Name="mus_radio_tower_01" ID="{02EDC00D-61C3-490D-9D1F-9DE61A61987F}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="overworld" ID="{52097FDF-157C-4035-9059-E601F04673AF}"/>
+												<ItemList>
+													<ItemRef Name="mus_overworld_01" ID="{79026A0D-BA04-4DEE-8523-763F55CD420B}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

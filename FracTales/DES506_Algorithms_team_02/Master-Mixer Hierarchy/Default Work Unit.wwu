@@ -10,16 +10,31 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="fields" ID="{CD731322-4759-4A7B-BD88-934F6E8A9194}">
+						<Bus Name="overworld" ID="{CD731322-4759-4A7B-BD88-934F6E8A9194}">
 							<ChildrenList>
-								<AuxBus Name="field_reverb" ID="{84C28163-90BA-46F5-B555-38B0E514BF7A}"/>
+								<AuxBus Name="overworld_reverb" ID="{84C28163-90BA-46F5-B555-38B0E514BF7A}">
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise RoomVerb (Custom)" ID="{B97A1119-E835-45FC-B3BB-1C8C367E2701}" ShortID="462252930" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="0.2"/>
+														<Property Name="Density" Type="Real32" Value="100"/>
+														<Property Name="HFDamping" Type="Real32" Value="8"/>
+														<Property Name="PreDelay" Type="Real32" Value="0"/>
+														<Property Name="Quality" Type="int32" Value="10"/>
+														<Property Name="RoomSize" Type="Real32" Value="-100"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="mountains" ID="{D4252E3C-26DD-49AE-A5E8-613335708C9B}">
 							<ChildrenList>
-								<AuxBus Name="mountains_reverb" ID="{ECCBB1F5-29A3-4E89-85F4-611B9E3438DB}">
-									<ReferenceList/>
-								</AuxBus>
+								<AuxBus Name="mountains_reverb" ID="{ECCBB1F5-29A3-4E89-85F4-611B9E3438DB}"/>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="town" ID="{C5B41C52-7B09-49A8-AB8D-5F93A43008BF}">
@@ -37,19 +52,7 @@
 								<AuxBus Name="beach_reverb" ID="{00CE22E0-D8C9-4EB2-87F2-5FC56574CA83}"/>
 							</ChildrenList>
 						</Bus>
-						<Bus Name="cave" ID="{16E67930-2DD6-4586-9870-D1095AB5BEA8}">
-							<ChildrenList>
-								<AuxBus Name="cave_reverb" ID="{A857F213-F5BF-4AAE-9DC4-EA2F76E6153B}">
-									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-											<ObjectRef Name="Metal_Hangar" ID="{C4A4605C-42EF-476A-B53C-E31C7A442C24}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-										</Reference>
-									</ReferenceList>
-								</AuxBus>
-							</ChildrenList>
-						</Bus>
 						<Bus Name="forest" ID="{091E0443-4EBF-4884-84A4-2FFBAA7A2A50}">
-							<ReferenceList/>
 							<ChildrenList>
 								<AuxBus Name="forest_reverb" ID="{B6460890-0CAB-4F9B-81FA-F26476D07096}">
 									<ReferenceList>
@@ -65,34 +68,6 @@
 								<AuxBus Name="lake_reverb" ID="{AA5BD10C-132E-44D5-AFB4-714330996B36}"/>
 							</ChildrenList>
 						</Bus>
-						<Bus Name="player" ID="{1388FAFE-59EB-42D0-A064-F60E67271206}">
-							<ChildrenList>
-								<Bus Name="footsteps" ID="{E0902819-B7D0-4BE2-963C-D6D936E58CED}">
-									<PropertyList>
-										<Property Name="EnablePositioning" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="footsteps" ID="{0A1521FE-FF77-472F-9954-7FC5BA15D6A2}" WorkUnitID="{74E74D40-3965-4399-8C83-DC540386B3F2}"/>
-										</Reference>
-										<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
-											<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Bus Name="wood_footsteps" ID="{68420BEA-C00E-4C9B-A06B-FA1F2DAC2FF3}">
-											<PropertyList>
-												<Property Name="BusVolume" Type="Real64">
-													<ValueList>
-														<Value>-9</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-										</Bus>
-									</ChildrenList>
-								</Bus>
-							</ChildrenList>
-						</Bus>
 						<Bus Name="weather" ID="{1652EEAA-E94E-4D95-B431-EDD67D18FBC4}">
 							<ChildrenList>
 								<Bus Name="storm" ID="{12D064F0-0862-428A-8C5C-E96F07929E18}">
@@ -104,6 +79,145 @@
 										</Property>
 									</PropertyList>
 								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="cave" ID="{51E00D5E-D3B3-4414-9C85-AAABEB40CC53}">
+							<ChildrenList>
+								<AuxBus Name="cave_reverb" ID="{A857F213-F5BF-4AAE-9DC4-EA2F76E6153B}">
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{C4A4605C-42EF-476A-B53C-E31C7A442C24}">
+												<Effect Name="Metal_Hangar (Custom)" ID="{BD4CCACD-86FF-447B-A74E-D71B9037917B}" ShortID="38313047" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="6.1"/>
+														<Property Name="Density" Type="Real32" Value="100"/>
+														<Property Name="ERLevel" Type="Real32" Value="-96"/>
+														<Property Name="ERPattern" Type="int32" Value="30"/>
+														<Property Name="EnableToneControls" Type="bool" Value="True"/>
+														<Property Name="Filter1Freq" Type="Real32" Value="400"/>
+														<Property Name="Filter1Gain" Type="Real32" Value="-7"/>
+														<Property Name="Filter2Freq" Type="Real32" Value="2200"/>
+														<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+														<Property Name="Filter2Q" Type="Real32" Value="0.1"/>
+														<Property Name="Filter3Freq" Type="Real32" Value="950"/>
+														<Property Name="Filter3Gain" Type="Real32" Value="-12"/>
+														<Property Name="HFDamping" Type="Real32" Value="4.95"/>
+														<Property Name="PreDelay" Type="Real32" Value="53"/>
+														<Property Name="Quality" Type="int32" Value="16"/>
+														<Property Name="RoomSize" Type="Real32" Value="71"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+												<State Name="" ID="{DE824B01-D8E3-43CC-9812-0FB264C858B2}" ShortID="952941441">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+												<State Name="" ID="{9FFBF24A-88BA-4538-9ED1-96A41116D90D}" ShortID="965730922">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+												<State Name="" ID="{E188502B-B665-4709-9A3D-E365298C534A}" ShortID="31768385">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="canyon" ID="{10299A6C-349C-4591-97DA-380BAC9E1F31}">
+							<ChildrenList>
+								<AuxBus Name="canyon_reverb" ID="{D7362F1A-C089-4BB4-91B4-E08746F06F21}">
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise RoomVerb (Custom)" ID="{8DDEFAAB-50E2-4187-B3E1-9A631DB263B8}" ShortID="553420067" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="1.3"/>
+														<Property Name="Density" Type="Real32" Value="57"/>
+														<Property Name="ERLevel" Type="Real32" Value="-13"/>
+														<Property Name="ERPattern" Type="int32" Value="26"/>
+														<Property Name="HFDamping" Type="Real32" Value="2.15"/>
+														<Property Name="PreDelay" Type="Real32" Value="41"/>
+														<Property Name="Quality" Type="int32" Value="16"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
+														<Property Name="RoomSize" Type="Real32" Value="-25"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+												<State Name="" ID="{931A9294-4BF0-466F-8088-05ECF4360EDC}" ShortID="936260150">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
+												<State Name="" ID="{871647F2-9CBD-42EF-AD3D-78615B9002A6}" ShortID="38319550">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="coast" ID="{2FEC2E20-FB7F-46F8-A5BB-4201832901F9}"/>
+												<State Name="" ID="{1AF11DF7-A535-400E-BD23-1D7CCB43ED64}" ShortID="1009854316">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+												<State Name="" ID="{77282034-81A9-4F02-861F-223E034FE988}" ShortID="450766538">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+												<State Name="" ID="{48139B05-6E35-483D-85E1-3E9CA0BCC098}" ShortID="156748668">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</AuxBus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>
