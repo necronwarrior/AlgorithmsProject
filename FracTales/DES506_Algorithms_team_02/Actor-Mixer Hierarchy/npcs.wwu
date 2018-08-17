@@ -433,8 +433,8 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 											<GroupingInfo>
-												<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
-												<DefaultSwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+												<GroupRef Name="Material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
+												<DefaultSwitchRef Name="Grass_Short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="npc_footsteps_grass_short_run" ID="{7D93914C-1FB3-4C80-8477-9D46F7C94E55}"/>
@@ -445,7 +445,7 @@
 												</GroupingBehaviorList>
 												<GroupingList>
 													<Grouping>
-														<SwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+														<SwitchRef Name="Grass_Short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 														<ItemList>
 															<ItemRef Name="npc_footsteps_grass_short_run" ID="{7D93914C-1FB3-4C80-8477-9D46F7C94E55}"/>
 														</ItemList>
@@ -899,8 +899,8 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 											<GroupingInfo>
-												<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
-												<DefaultSwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+												<GroupRef Name="Material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
+												<DefaultSwitchRef Name="Grass_Short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="npc_footsteps_wood_walk" ID="{51A0D23D-2D7B-4C81-8999-A9B39AF1A3E6}"/>
@@ -911,7 +911,7 @@
 												</GroupingBehaviorList>
 												<GroupingList>
 													<Grouping>
-														<SwitchRef Name="Grass_short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
+														<SwitchRef Name="Grass_Short" ID="{522EFA44-EDA4-40D5-9863-047BD5563EC7}"/>
 														<ItemList>
 															<ItemRef Name="npc_footsteps_grass_short_walk" ID="{7D39E465-D07F-496F-A653-7FC7484A7362}"/>
 														</ItemList>

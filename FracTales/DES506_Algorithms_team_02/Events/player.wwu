@@ -8,25 +8,15 @@
 						<Folder Name="footsteps" ID="{1C2B16E6-8CE3-4C61-B6CD-4E19C7255175}" ShortID="659077785">
 							<Comment>Left and right footstep events.</Comment>
 							<ChildrenList>
-								<Event Name="player_footsteps_start" ID="{A092C109-7EF1-4E1A-9395-FCE31D41556C}">
+								<Event Name="footsteps_start" ID="{69B8B803-68C4-479E-AB30-E5473D628185}">
 									<ChildrenList>
-										<Action Name="" ID="{9FC451B3-477B-4CFD-B471-1CB0C5B51499}" ShortID="440345060">
+										<Action Name="" ID="{AA12DC1B-F01C-43C9-8012-4C4D20AF4735}" ShortID="237344900">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="player_footstep_run" ID="{622CFA8F-C96B-4F90-97BC-2E5C393267AE}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{7170556A-62CD-4B80-9432-14A5D246662E}" ShortID="539270558">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="23"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Leaves" ID="{9839D3BE-A01C-42D0-AA49-193BB3726A2C}" WorkUnitID="{79E22627-062D-4585-B570-C50242E768AC}"/>
+													<ObjectRef Name="player_footstep_type" ID="{D075680F-C2F2-47C1-ABAE-C5625F7B7D75}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

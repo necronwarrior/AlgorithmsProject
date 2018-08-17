@@ -77,3 +77,5 @@ FracTales/Plugins/*/Intermediate/*
 FracTales/DerivedDataCache/*
 FracTales/DES506_Algorithms_team_02/DES506_Algorithms_team_02.1302534.validationcache
 FracTales/DES506_Algorithms_team_02/DES506_Algorithms_team_02.1302534.wsettings
+*.uasset
+FracTales/Content/Mechanics/TaskListObjects/Day3/Puzzle3Terminals/Symbols/2.uasset
