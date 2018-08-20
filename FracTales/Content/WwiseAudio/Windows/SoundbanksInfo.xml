@@ -52,6 +52,8 @@
 				<Event Id="2607886720" Name="music_overworld_start" ObjectPath="\Events\Default Work Unit\music\general\music_overworld_start"/>
 				<Event Id="3725903807" Name="music_start" ObjectPath="\Events\Default Work Unit\music\general\music_start"/>
 				<Event Id="45473393" Name="music_tower_start" ObjectPath="\Events\Default Work Unit\music\general\music_tower_start"/>
+				<Event Id="4049529127" Name="radio_start" ObjectPath="\Events\Default Work Unit\objects\House\radio\radio_start"/>
+				<Event Id="3322242893" Name="radio_stop" ObjectPath="\Events\Default Work Unit\objects\House\radio\radio_stop"/>
 				<Event Id="1059900002" Name="select_back_play" ObjectPath="\Events\Default Work Unit\ui\main_menu\select_back_play"/>
 				<Event Id="3309108327" Name="sink_tap_start" ObjectPath="\Events\Default Work Unit\objects\House\sink\sink_tap_start"/>
 				<Event Id="930464141" Name="sink_tap_stop" ObjectPath="\Events\Default Work Unit\objects\House\sink\sink_tap_stop"/>
@@ -69,6 +71,10 @@
 				<File Id="8370558" Language="SFX">
 					<ShortName>player_footstep_gravel_walk_09.wav</ShortName>
 					<Path>SFX\player_footstep_gravel_walk_09_8A6CA8BA.wem</Path>
+				</File>
+				<File Id="10936495" Language="SFX">
+					<ShortName>sfx_radio_01.wav</ShortName>
+					<Path>SFX\sfx_radio_01_21CA2154.wem</Path>
 				</File>
 				<File Id="29399829" Language="SFX">
 					<ShortName>door_close_wooden_01.wav</ShortName>
@@ -128,7 +134,7 @@
 				</File>
 				<File Id="134950809" Language="SFX">
 					<ShortName>sfx_tap_on.wav</ShortName>
-					<Path>SFX\sfx_tap_on_8A6CA8BA.wem</Path>
+					<Path>SFX\sfx_tap_on_956F3484.wem</Path>
 				</File>
 				<File Id="140227930" Language="SFX">
 					<ShortName>amb_emit_birds_22.wav</ShortName>
@@ -321,6 +327,10 @@
 				<File Id="422139352" Language="SFX">
 					<ShortName>amb_emit_seagulls_03.wav</ShortName>
 					<Path>SFX\amb_emit_seagulls_03_C60B1100.wem</Path>
+				</File>
+				<File Id="423911496" Language="SFX">
+					<ShortName>sfx_radio_01.wav</ShortName>
+					<Path>SFX\sfx_radio_01_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="431799502" Language="SFX">
 					<ShortName>player_footsteps_dirt_walk_04.wav</ShortName>

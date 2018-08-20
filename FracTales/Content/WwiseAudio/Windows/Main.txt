@@ -30,6 +30,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2922160133	type_backspace			\Default Work Unit\player\actions\typing\type_backspace	
 	3086739561	kitchen_sounds_stop			\Default Work Unit\objects\House\kitchen\kitchen_sounds_stop	
 	3309108327	sink_tap_start			\Default Work Unit\objects\House\sink\sink_tap_start	
+	3322242893	radio_stop			\Default Work Unit\objects\House\radio\radio_stop	
 	3609702808	amb_river_loop_start			\Default Work Unit\ambience\Emitters\water\river\amb_river_loop_start	
 	3667364641	amb_coast_start			\Default Work Unit\ambience\coast\amb_coast_start	
 	3678634271	amb_wind_grass_loop_stop			\Default Work Unit\ambience\Emitters\weather\wind_grass\amb_wind_grass_loop_stop	
@@ -37,17 +38,24 @@ Event	ID	Name			Wwise Object Path	Notes
 	3800124118	alarm_clock_stop			\Default Work Unit\objects\House\alarm_clock\alarm_clock_stop	
 	3964888102	amb_wind_trees_loop_stop			\Default Work Unit\ambience\Emitters\weather\wind_trees\amb_wind_trees_loop_stop	
 	4038065741	type_spacebar			\Default Work Unit\player\actions\typing\type_spacebar	
+	4049529127	radio_start			\Default Work Unit\objects\House\radio\radio_start	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1062734446	player_movement_speed			\Default Work Unit\player\player_movement_speed	
+	2420253395	radio_volume			\Default Work Unit\general\radio_volume	
 	2525703071	door_movement			\Default Work Unit\general\door_movement	
+	3384723076	alarm_clock_volume			\Default Work Unit\general\alarm_clock_volume	
 	3865314626	Material			\Default Work Unit\general\Material	
 
 Switch	ID	Name	Switch Group			Notes
 	712161704	run	player_movement_speed			
 	2108779966	walk	player_movement_speed			
+	930712164	off	radio_volume			
+	1651971902	on	radio_volume			
 	1451272583	close	door_movement			
 	3072142513	open	door_movement			
+	930712164	off	alarm_clock_volume			
+	1651971902	on	alarm_clock_volume			
 	241501102	Grass_Long	Material			
 	582824249	Leaves	Material			
 	660835419	Plastic	Material			
@@ -146,6 +154,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	8370558	player_footstep_gravel_walk_09	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footstep_gravel_walk_09_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_gravel_walk\player_footstep_gravel_walk_09		8717
+	10936495	sfx_radio_on	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_radio_01_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\radio\sfx_radio\sfx_radio_on		335419
 	29399829	door_close_wooden_01	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\door_close_wooden_01_6B3EB40D.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\doors\door_movement\door_closing\door_wood_closing\door_wood_closing_thump\door_close_wooden_01		5756
 	30517053	player_footstep_gravel_walk_08	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footstep_gravel_walk_08_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_gravel_walk\player_footstep_gravel_walk_08		9456
 	49832470	amb_emit_birds_21	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_21_0FDA81B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_long\amb_emit_birds_21		16843
@@ -160,7 +169,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	103926659	sfx_player_typing_enter_03 - Copy	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_enter_03 - Copy_75D0EB82.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_enter\sfx_player_typing_enter_03 - Copy		2689
 	114216827	door_close_wooden_10	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\door_close_wooden_10_2AF6EF1C.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\doors\door_movement\door_closing\door_wood_closing\door_wood_closing_thump\door_close_wooden_10		10223
 	130151736	amb_emit_birds_07	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_07_E8C964EE.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_long\amb_emit_birds_07		25341
-	134950809	sfx_tap_on	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_tap_on_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\sink\tap_on\sfx_tap_on		10425
+	134950809	sfx_tap_on	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_tap_on_956F3484.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\sink\tap_on\sfx_tap_on		9745
 	140227930	amb_emit_birds_22	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_22_37E80BB3.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_short\amb_emit_birds_22		12262
 	154599281	player_footstep_grass_short_walk_10	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footstep_grass_short_walk_10_A41C41E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_grass_short_walk\player_footstep_grass_short_walk_10		8127
 	162514170	player_footsteps_dirt_walk_01	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footsteps_dirt_walk_01_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_dirt_walk\player_footsteps_dirt_walk_01		6693
@@ -209,6 +218,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	419753536	sfx_writing_loop	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_writing_loop_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\writing\sfx_writing_loop		152719
 	421352245	amb_emit_seagulls_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_seagulls_02_D82E81C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls\amb_emit_seagulls_02		7116
 	422139352	amb_emit_seagulls_03	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_seagulls_03_C60B1100.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls\amb_emit_seagulls_03		127395
+	423911496	sfx_radio_off	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_radio_01_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\radio\sfx_radio\sfx_radio_off		335419
 	431799502	player_footsteps_dirt_walk_04	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footsteps_dirt_walk_04_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_dirt_walk\player_footsteps_dirt_walk_04		9206
 	460430668	door_close_wooden_07	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\door_close_wooden_07_2DB2244F.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\doors\door_movement\door_closing\door_wood_closing\door_wood_closing_thump\door_close_wooden_07		5083
 	474295533	amb_emit_birds_16	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_16_C743B201.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_short\amb_emit_birds_16		13963
@@ -255,7 +265,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	842886808	mus_radio_tower_01	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\mus_radio_tower_01_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\non_world\music\music_state\mus_radio_tower_01		1561434
 	850618569	sfx_player_typing_spacebar_04	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_spacebar_04_F2875142.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_spacebar\sfx_player_typing_spacebar_04		3650
 	878561775	sfx_player_typing_enter_02 - Copy	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_enter_02 - Copy_F363B9F0.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_enter\sfx_player_typing_enter_02 - Copy		3221
-	883667452	sfx_alarm_clock_on	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_alarm_clock_on_loop_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\alarm_clock\sfx_alarm_clock_on		103581
+	883667452	sfx_alarm_clock_on	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_alarm_clock_on_loop_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\alarm_clock\alarm_clock_switch\sfx_alarm_clock_on		103581
 	887647120	sfx_player_typing_number_03	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_number_03_63B41635.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_number\sfx_player_typing_number_03		3157
 	891574831	sfx_player_typing_letter_09	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_letter_09_D0767225.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_letter\sfx_player_typing_letter_09		2849
 	901761341	amb_emit_seagulls_05	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_seagulls_05_AD031CAF.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast\amb_emit_seagulls\amb_emit_seagulls_05		369250
@@ -267,7 +277,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	981291210	sfx_player_typing_letter_03	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_letter_03_A630B943.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_letter\sfx_player_typing_letter_03		4022
 	983438347	amb_emit_birds_13	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_13_C8348625.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_short\amb_emit_birds_13		18592
 	993708985	sfx_player_typing_enter_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_enter_02_85BC56F8.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_backspace\sfx_player_typing_enter_02		3349
-	994713484	sfx_alarm_clock_off	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_alarm_clock_off_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\alarm_clock\sfx_alarm_clock_off		23578
+	994713484	sfx_alarm_clock_off	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_alarm_clock_off_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\alarm_clock\alarm_clock_switch\sfx_alarm_clock_off		23578
 	1009229713	frequency_generator_loop_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\frequency_generator_loop_02_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\generators\frequency_generator_loop_02		25902
 	1030996183	player_footstep_grass_short_walk_07	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footstep_grass_short_walk_07_34333ACF.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_grass_short_walk\player_footstep_grass_short_walk_07		5626
 	1037891212	amb_emit_birds_05	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_05_FD6FBD4C.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_short\amb_emit_birds_05		6804

@@ -228,7 +228,7 @@
 										<Action Name="" ID="{E57AB9BE-5FA0-41D7-992E-AE2FCEDE4D63}" ShortID="577862810">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
-												<Property Name="Delay" Type="Real64" Value="2"/>
+												<Property Name="Delay" Type="Real64" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -239,7 +239,8 @@
 										<Action Name="" ID="{0BF2D521-FB57-4F50-8A34-5AB603CE0B87}" ShortID="434695709">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
-												<Property Name="Delay" Type="Real64" Value="7"/>
+												<Property Name="Delay" Type="Real64" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -297,13 +298,13 @@
 							<ChildrenList>
 								<Event Name="alarm_clock_start" ID="{A3447FE2-48E2-4996-B05E-264B839DC20C}">
 									<ChildrenList>
-										<Action Name="" ID="{E365B8D2-7877-4AF1-8421-FAA0FA12771F}" ShortID="193087465">
+										<Action Name="" ID="{7A0A23AE-FAA1-4E9C-802D-01C288755619}" ShortID="299766882">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_alarm_clock_on" ID="{BB81D966-1606-462A-B87D-E4920E255A69}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+													<ObjectRef Name="alarm_clock_switch" ID="{DD829F31-EBDE-4A24-9CBA-0D163CD334F7}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -311,6 +312,16 @@
 								</Event>
 								<Event Name="alarm_clock_stop" ID="{4ACAF48B-FC4D-4572-B90C-90D20CE79B94}">
 									<ChildrenList>
+										<Action Name="" ID="{305E5CC8-6DEA-4B1C-9DF4-5AD3AF451A10}" ShortID="674171712">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="alarm_clock_switch" ID="{DD829F31-EBDE-4A24-9CBA-0D163CD334F7}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{399B6EB9-D22A-4FF0-840B-59A01772C96E}" ShortID="415085911">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
@@ -321,13 +332,35 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{305E5CC8-6DEA-4B1C-9DF4-5AD3AF451A10}" ShortID="674171712">
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="radio" ID="{AA142318-2E86-46FF-A2FF-E343272ED7DF}" ShortID="283009304">
+							<ChildrenList>
+								<Event Name="radio_start" ID="{59759962-8FCF-49ED-BF52-91353B66037E}">
+									<ChildrenList>
+										<Action Name="" ID="{10C5C5F2-C9F7-44A1-8409-C9268613D483}" ShortID="559251442">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_alarm_clock_off" ID="{C8DE7A98-8A7F-40FF-ACCB-2EB24882CE9B}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+													<ObjectRef Name="sfx_radio" ID="{06F55001-26B3-43FD-80D3-A3E429C8B9AD}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="radio_stop" ID="{2C66D887-83D7-4D1E-8C69-9C5E99009C82}">
+									<ChildrenList>
+										<Action Name="" ID="{C781E1A8-4223-44F1-BD58-8A419B21BD70}" ShortID="734307766">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_radio" ID="{06F55001-26B3-43FD-80D3-A3E429C8B9AD}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
