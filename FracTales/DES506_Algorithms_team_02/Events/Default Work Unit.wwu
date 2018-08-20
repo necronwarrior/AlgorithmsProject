@@ -19,20 +19,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Post_Event_select_play" ID="{885CC5BB-F96C-4A9C-AE59-08A07191DB8F}">
-					<ChildrenList>
-						<Action Name="" ID="{98DCD103-D3CD-42FB-8977-30BAD2763248}" ShortID="112415773">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="select_play" ID="{2118FC36-CA82-4219-8CB3-7FFBD186D227}" WorkUnitID="{D6E37829-5B11-4097-AF4D-BB90B7F656D8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

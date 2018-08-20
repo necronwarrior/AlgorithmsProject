@@ -3,6 +3,8 @@
 /*=============================================================================
 	AkComponentVisualizer.cpp:
 =============================================================================*/
+#include "AudiokineticToolsPrivatePCH.h"
+
 #include "AkComponentVisualizer.h"
 #include "AkAudioDevice.h"
 #include "AkAudioClasses.h"

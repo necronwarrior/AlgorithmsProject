@@ -44,7 +44,6 @@ class AKAUDIO_API UAkLateReverbComponent : public USceneComponent
 	/** We keep a  linked list of ReverbVolumes sorted by priority for faster finding of reverb volumes at a specific location.
 	 *	This points to the next volume in the list.
 	 */
-	UPROPERTY(transient)
 	class UAkLateReverbComponent* NextLowerPriorityComponent;
 
 	bool HasEffectOnLocation(const FVector& Location) const;

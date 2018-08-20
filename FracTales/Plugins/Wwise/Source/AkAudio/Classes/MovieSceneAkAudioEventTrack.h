@@ -8,7 +8,6 @@
 #include "AkAudioEvent.h"
 #include "MovieSceneAkAudioEventTrack.generated.h"
 
-class UMovieSceneAkAudioEventSection;
 
 UCLASS(MinimalAPI)
 class UMovieSceneAkAudioEventTrack : public UMovieSceneAkTrack
@@ -33,8 +32,6 @@ public:
 #endif
 
 	AKAUDIO_API bool AddNewEvent(float Time, UAkAudioEvent* Event, const FString& EventName = FString());
-
-    void WorkUnitChangesDetectedFromSection(UMovieSceneAkAudioEventSection* in_pSection);
 
 protected:
 	AKAUDIO_API virtual FMovieSceneEvalTemplatePtr CreateTemplateForSection(const UMovieSceneSection& InSection) const override;

@@ -5,9 +5,10 @@
 ------------------------------------------------------------------------------------*/
 #pragma once
 
-#include "WwisePicker/SWwisePicker.h"
-#include "WaapiPicker/WwiseTreeItem.h"
+#include "WwisePicker/WwiseTreeItem.h"
 #include "XmlFile.h"
+
+typedef TTextFilter< const FString& > StringFilter;
 
 class FWwiseWwuParser
 {

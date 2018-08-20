@@ -5,15 +5,43 @@
 			<ChildrenList>
 				<Folder Name="general" ID="{B148AFA1-2076-438C-A1D2-8D4FEF878611}" ShortID="105749197">
 					<ChildrenList>
-						<Event Name="music_region" ID="{7BBEC494-B92A-4552-8901-64C8B43EC693}">
+						<Event Name="music_start" ID="{701BA805-F84F-4791-AA9E-FF33CEB19C73}">
 							<ChildrenList>
-								<Action Name="" ID="{B46D3FE3-A0F5-4146-9673-7F9EF0F63F7E}" ShortID="873844813">
+								<Action Name="" ID="{1C603254-1B93-4B1B-A202-8324107E2D40}" ShortID="211909896">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="music_regions" ID="{90D84D1D-92E2-4636-B2C3-E0D6E0EDD69E}" WorkUnitID="{E016D9A0-6445-4B53-A501-5014C97B6EC3}"/>
+											<ObjectRef Name="music_state" ID="{1546774D-BA3E-4931-8B82-84FF08A2B26A}" WorkUnitID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="music_overworld_start" ID="{69AEF927-F703-44A9-82C9-F8664012DB36}">
+							<ChildrenList>
+								<Action Name="" ID="{3C976C70-BFC8-40CA-8854-487132DD093A}" ShortID="861075146">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_overworld_01" ID="{79026A0D-BA04-4DEE-8523-763F55CD420B}" WorkUnitID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="music_tower_start" ID="{5AC0A847-88BB-46F4-8A48-1621F819A78E}">
+							<ChildrenList>
+								<Action Name="" ID="{1BC63096-5ACB-4E78-95CB-51B217792051}" ShortID="125826922">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_radio_tower_01" ID="{02EDC00D-61C3-490D-9D1F-9DE61A61987F}" WorkUnitID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

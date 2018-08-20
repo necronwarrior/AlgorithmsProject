@@ -21,7 +21,7 @@ under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
 OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 
-  Version: v2017.2.6  Build: 6581
+  Version: v2017.1.8  Build: 6461
   Copyright (c) 2006-2018 Audiokinetic Inc.
 *******************************************************************************/
 
@@ -68,6 +68,16 @@ struct AkPlatformInitSettings
 };
 
 struct AkInitSettings;
+
+/// Used with \ref AK::SoundEngine::AddSecondaryOutput to specify the type of secondary output.
+enum AkAudioOutputType
+{
+	AkOutput_None = 0,		///< Used for uninitialized type, do not use.
+	AkOutput_Dummy,			///< Dummy output, simply eats the audio stream and outputs nothing.
+	AkOutput_Main,			///< Main output.  This cannot be used with AddSecondaryOutput, but can be used to query information about the main output (GetSpeakerConfiguration for example).	
+	AkOutput_NumBuiltInOutputs,		///< Do not use.
+	AkOutput_Plugin			///< Specify if using Audio Device Plugin Sink.
+};
 
 namespace AK
 {

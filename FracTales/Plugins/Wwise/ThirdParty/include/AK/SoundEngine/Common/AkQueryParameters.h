@@ -21,7 +21,7 @@ under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
 OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 
-  Version: v2017.2.6  Build: 6636
+  Version: v2017.1.8  Build: 6488
   Copyright (c) 2006-2018 Audiokinetic Inc.
 *******************************************************************************/
 
@@ -46,7 +46,7 @@ struct AkPositioningInfo
 	AkPannerType	    pannerType;			///< Positioning Type (2D, 3D)
 	AkPositionSourceType posSourceType;		///< Positioning source (GameDef or UserDef)
 	bool				bUpdateEachFrame;   ///< Update at each frame (valid only with game-defined)
-	Ak3DSpatializationMode e3DSpatializationMode; ///< Spatialization mode
+	bool				bUseSpatialization; ///< Use spatialization
 	bool				bUseAttenuation;	///< Use attenuation parameter set
 
 	bool				bUseConeAttenuation; ///< Use the cone attenuation
@@ -300,7 +300,9 @@ namespace AK
 			//@{
 
 			/// Get the environmental ratios used by the specified game object.
+			/// The array size cannot exceed AK_MAX_AUX_PER_OBJ.
 			/// To clear the game object's environments, in_uNumEnvValues must be 0.
+			/// \aknote The actual maximum number of environments in which a game object can be is AK_MAX_AUX_PER_OBJ. \endaknote
 			/// \sa 
 			/// - \ref soundengine_environments
 			/// - \ref soundengine_environments_dynamic_aux_bus_routing
@@ -310,9 +312,10 @@ namespace AK
 			AK_EXTERNAPIFUNC( AKRESULT, GetGameObjectAuxSendValues )( 
 				AkGameObjectID		in_gameObjectID,		///< Associated game object ID
 				AkAuxSendValue*		out_paAuxSendValues,	///< Variable-size array of AkAuxSendValue structures
-																///< (it may be NULL if no aux send must be set)
+																///< (it may be NULL if no aux send must be set, and its size 
+																///< cannot exceed AK_MAX_AUX_PER_OBJ)
 				AkUInt32&			io_ruNumSendValues		///< The number of Auxilliary busses at the pointer's address
-															///< (it must be 0 if no aux bus is set)
+															///< (it must be 0 if no aux bus is set, and can not exceed AK_MAX_AUX_PER_OBJ)
 				);
 
 			/// Get the environmental dry level to be used for the specified game object
@@ -533,7 +536,6 @@ namespace AK
 				);
 
 			/// Get the value of a custom property of integer or boolean type.
-			/// \return AK_PartialSuccess if the object was found but no matching custom property was found on this object. Note that it could mean this value is the default value. 
 			AK_EXTERNAPIFUNC( AKRESULT, GetCustomPropertyValue )(
 				AkUniqueID in_ObjectID,			///< Object ID, this is the 32bit ShortID of the AudioFileSource or Sound object found in the .wwu XML file. At runtime it can only be retrieved by the AK_Duration callback when registered with PostEvent(), or by calling Query::QueryAudioObjectIDs() to get all the shortIDs associated with an event.
 				AkUInt32 in_uPropID,			///< Property ID of your custom property found under the Custom Properties tab of the Wwise project settings.
@@ -541,7 +543,6 @@ namespace AK
 				);
 
 			/// Get the value of a custom property of real type.
-			/// \return AK_PartialSuccess if the object was found but no matching custom property was found on this object. Note that it could mean this value is the default value.
 			AK_EXTERNAPIFUNC( AKRESULT, GetCustomPropertyValue )(
 				AkUniqueID in_ObjectID,			///< Object ID, this is the 32bit ShortID of the AudioFileSource or Sound object found in the .wwu XML file. At runtime it can only be retrieved by the AK_Duration callback when registered with PostEvent(), or by calling Query::QueryAudioObjectIDs() to get all the shortIDs associated with an event.
 				AkUInt32 in_uPropID,			///< Property ID of your custom property found under the Custom Properties tab of the Wwise project settings.

@@ -3,9 +3,10 @@
 /*=============================================================================
 	InterpTrackAkRTPCHelper.cpp: 
 =============================================================================*/
-#include "InterpTrackAkAudioRTPCHelper.h"
+#include "AudiokineticToolsPrivatePCH.h"
 #include "AkAudioClasses.h"
 #include "MatineeClasses.h"
+#include "InterpTrackAkAudioRTPCHelper.h"
 
 /*-----------------------------------------------------------------------------
 	UInterpTrackAkAudioRTPCHelper

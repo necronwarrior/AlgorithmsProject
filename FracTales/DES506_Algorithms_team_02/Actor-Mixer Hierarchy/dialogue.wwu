@@ -6,6 +6,11 @@
 			<ChildrenList>
 				<ActorMixer Name="sam" ID="{3AFECC77-4C12-497D-A811-AE3BD66A04B0}" ShortID="633716799">
 					<PropertyList>
+						<Property Name="BypassEffect0" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideEffect" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -1899,6 +1904,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dlg_sam_31_03" ID="{4731A982-8465-4519-BA0A-187978DF0EAD}" ShortID="938934062">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>

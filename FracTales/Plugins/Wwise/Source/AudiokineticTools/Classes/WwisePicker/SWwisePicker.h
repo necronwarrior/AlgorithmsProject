@@ -8,10 +8,10 @@
 /*------------------------------------------------------------------------------------
 	SWwisePicker
 ------------------------------------------------------------------------------------*/
-#include "WaapiPicker/WwiseTreeItem.h"
+#include "WwiseTreeItem.h"
 #include "TextFilter.h"
-
-typedef TTextFilter< const FString& > StringFilter;
+#include "Views/ITypedTableView.h"
+#include "Views/STreeView.h"
 #include "WwiseWwuParser.h"
 
 class SWwisePicker : public SCompoundWidget
@@ -120,16 +120,4 @@ private:
 	FDelegateHandle ProjectDirectoryModifiedDelegateHandle;
 	FString ProjectFolder;
 	FString ProjectName;
-
-
-	/* Callback handles. */
-	FDelegateHandle ProjectLoadedHandle;
-	FDelegateHandle ConnectionLostHandle;
-	FDelegateHandle ClientBeginDestroyHandle;
-	void RemoveClientCallbacks();
-
-	/* Used to show/hide the Picker/Warning */
-	EVisibility isPickerAllowed() const;
-	EVisibility isWarningVisible() const;
-	bool isPickerVisible;
 };

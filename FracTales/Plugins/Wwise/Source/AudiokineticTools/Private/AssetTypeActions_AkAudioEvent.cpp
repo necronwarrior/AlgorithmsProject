@@ -3,10 +3,11 @@
 /*=============================================================================
 	AssetTypeActions_AkAudioEvent.cpp:
 =============================================================================*/
-#include "AssetTypeActions_AkAudioEvent.h"
+#include "AudiokineticToolsPrivatePCH.h"
 #include "IAssetTools.h"
 #include "AkAudioClasses.h"
 #include "AkAudioDevice.h"
+#include "AssetTypeActions_AkAudioEvent.h"
 #include "AkAudioDevice.h"
 #include "Toolkits/SimpleAssetEditor.h"
 #include "MultiBox/MultiBoxBuilder.h"

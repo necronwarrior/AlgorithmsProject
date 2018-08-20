@@ -4,8 +4,8 @@
 	AkEvent.cpp:
 =============================================================================*/
 
-#include "AkAcousticTexture.h"
 #include "AkAudioDevice.h"
+#include "AkAcousticTexture.h"
 
 /**
  * Constructor

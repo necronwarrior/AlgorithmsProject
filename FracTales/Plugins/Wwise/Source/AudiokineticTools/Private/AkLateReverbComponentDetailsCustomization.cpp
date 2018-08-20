@@ -1,5 +1,6 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 
+#include "AudiokineticToolsPrivatePCH.h"
 #include "AkLateReverbComponentDetailsCustomization.h"
 #include "AkComponent.h"
 #include "AkLateReverbComponent.h"

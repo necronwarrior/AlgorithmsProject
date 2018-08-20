@@ -14,11 +14,10 @@
 
 #include "CoreTypes.h" // includes platform defines
 
-#if PLATFORM_WINDOWS
-
 // Currently, Wwise SDK builds with the default 8 byte alignment, whereas Unreal builds with 4 byte alignment under VC.
 // This causes data corruption if the headers are not included with forced alignment directives.
 // http://msdn.microsoft.com/en-us/library/xh3e3fd0%28VS.80%29.aspx
+#if PLATFORM_WINDOWS
 #pragma pack(push, 8)
 #include "AllowWindowsPlatformTypes.h"
 #include "AllowWindowsPlatformAtomics.h"

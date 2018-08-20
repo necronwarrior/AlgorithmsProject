@@ -8,7 +8,6 @@
 						<Property Name="UseGameParameter" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Switch Name="crouch" ID="{49C37899-B19E-4D71-BCD5-1E9812593835}"/>
 						<Switch Name="run" ID="{02B38825-0181-4ED1-99D5-51DB148EDFD9}"/>
 						<Switch Name="walk" ID="{E97B1A68-67E7-4615-9AB0-53AC319CE48A}"/>
 					</ChildrenList>
@@ -20,13 +19,13 @@
 							</PropertyList>
 							<PointList>
 								<Point>
-									<XPos>0</XPos>
-									<YPos>3</YPos>
+									<XPos>10</XPos>
+									<YPos>2</YPos>
 									<Flags>5</Flags>
 								</Point>
 								<Point>
-									<XPos>29.89865</XPos>
-									<YPos>2</YPos>
+									<XPos>80.06757</XPos>
+									<YPos>1</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>

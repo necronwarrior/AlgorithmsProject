@@ -1,10 +1,9 @@
 // Copyright (c) 2006-2012 Audiokinetic Inc. / All Rights Reserved
 
 /*=============================================================================
-	AkSpatialAudioVolume.cpp:
+	AkReverbVolume.cpp:
 =============================================================================*/
 
-#include "AkSpatialAudioVolume.h"
 #include "AkAudioDevice.h"
 #include "AkAudioClasses.h"
 #include "Net/UnrealNetwork.h"
@@ -18,23 +17,23 @@ AAkSpatialAudioVolume::AAkSpatialAudioVolume(const class FObjectInitializer& Obj
 	Super(ObjectInitializer)
 {
 	// Property initialization
-	static const FName CollisionProfileName(TEXT("OverlapAll"));
+	static FName CollisionProfileName(TEXT("OverlapAll"));
 	UBrushComponent* BrushComp = GetBrushComponent();
 	if (BrushComp)
 	{
 		BrushComp->SetCollisionProfileName(CollisionProfileName);
 	}
 
-	static const FName SurfReflSetName = TEXT("SurfaceReflector");
-	SurfaceReflectorSet = ObjectInitializer.CreateDefaultSubobject<UAkSurfaceReflectorSetComponent>(this, SurfReflSetName);
+	FString SurfReflSetName = TEXT("SurfaceReflector");
+	SurfaceReflectorSet = ObjectInitializer.CreateDefaultSubobject<UAkSurfaceReflectorSetComponent>(this, FName(*SurfReflSetName));
 	SurfaceReflectorSet->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
-	static const FName LateReverbame = TEXT("LateReverb");
-	LateReverb = ObjectInitializer.CreateDefaultSubobject<UAkLateReverbComponent>(this, LateReverbame);
+	FString LateReverbame = TEXT("LateReverb");
+	LateReverb = ObjectInitializer.CreateDefaultSubobject<UAkLateReverbComponent>(this, FName(*LateReverbame));
 	LateReverb->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
-	static const FName RoomName = TEXT("Room");
-	Room = ObjectInitializer.CreateDefaultSubobject<UAkRoomComponent>(this, RoomName);
+	FString RoomName = TEXT("Room");
+	Room = ObjectInitializer.CreateDefaultSubobject<UAkRoomComponent>(this, FName(*RoomName));
 	Room->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
 	bColored = true;

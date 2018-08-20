@@ -1,6 +1,5 @@
 // Copyright (c) 2006-2016 Audiokinetic Inc. / All Rights Reserved
 
-#include "MovieSceneAkAudioRTPCTrack.h"
 #include "AkAudioDevice.h"
 #include "AkAudioClasses.h"
 
@@ -8,6 +7,7 @@
 #include "MovieSceneCommonHelpers.h"
 
 #include "MovieSceneAkAudioRTPCSection.h"
+#include "MovieSceneAkAudioRTPCTrack.h"
 
 #include "MovieSceneAkAudioRTPCTemplate.h"
 
