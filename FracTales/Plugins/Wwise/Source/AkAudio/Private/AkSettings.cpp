@@ -1,8 +1,8 @@
 // Copyright 1998-2014 Epic Games, Inc. All Rights Reserved.
 
-#include "AkSettings.h"
 #include "AkAudioDevice.h"
-#include "Misc/Paths.h"
+#include "AkSettings.h"
+
 #if WITH_EDITOR
 #include "Misc/MessageDialog.h"
 #include "HAL/FileManager.h"
@@ -46,7 +46,6 @@ namespace UAkSettings_Helper
 #endif // UE_4_18_OR_LATER
 	}
 
-#if WITH_EDITOR
 	void SanitizePath(FString& Path, const FString& PreviousPath, const FText& DialogMessage)
 	{
 		TrimPath(Path);
@@ -90,7 +89,7 @@ namespace UAkSettings_Helper
 
 			if (!FPaths::FileExists(TempPath))
 			{
-                if (EAppReturnType::Ok == FMessageDialog::Open(EAppMsgType::Ok, DialogMessage))
+				if (EAppReturnType::Ok == FMessageDialog::Open(EAppMsgType::Ok, DialogMessage))
 				{
 					Path = PreviousPath;
 					return;
@@ -104,12 +103,10 @@ namespace UAkSettings_Helper
 
 		if (Path != PreviousPath)
 		{
-			TSharedRef<SDockTab> WaapiPickerTab = FGlobalTabmanager::Get()->InvokeTab(FName("WaapiPicker"));
 			TSharedRef<SDockTab> WwisePickerTab = FGlobalTabmanager::Get()->InvokeTab(FName("WwisePicker"));
 			bRequestRefresh = true;
 		}
 	}
-#endif //WITH_EDITOR
 }
 
 void UAkSettings::PreEditChange(UProperty* PropertyAboutToChange)
@@ -145,10 +142,6 @@ void UAkSettings::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedE
 	{
 		UAkSettings_Helper::SanitizeProjectPath(WwiseProjectPath.FilePath, PreviousWwiseProjectPath, FText::FromString("Please enter a valid Wwise project"), bRequestRefresh);
 	}
-    else if (MemberPropertyName == GET_MEMBER_NAME_CHECKED(UAkSettings, bAutoConnectToWAAPI))
-    {
-        OnAutoConnectChanged.Broadcast();
-    }
 
 	Super::PostEditChangeProperty(PropertyChangedEvent);
 }

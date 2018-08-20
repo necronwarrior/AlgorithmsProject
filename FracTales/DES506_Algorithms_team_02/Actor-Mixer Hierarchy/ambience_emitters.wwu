@@ -5,6 +5,14 @@
 			<Comment>All ambience emitters (3D).</Comment>
 			<ChildrenList>
 				<ActorMixer Name="wind" ID="{F800BE6D-D1C4-4CF6-91F5-0E110CB12226}" ShortID="26940765">
+					<PropertyList>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -594,6 +602,7 @@
 						</BlendContainer>
 						<BlendContainer Name="amb_emitter_wind_grass" ID="{00CC5D63-332A-409E-8573-52E528EC2377}" ShortID="817820950">
 							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>12</Value>
@@ -601,6 +610,53 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom CreatedFrom="{140C8668-903A-46B7-B003-9391C877BB4E}">
+										<Attenuation Name="wind (Custom)" ID="{8AACDE60-472A-4347-82D7-569BFE234A1D}" ShortID="928967590">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{9940CD2F-DF8C-487D-8B9A-56C76F4E0741}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
 								</Reference>
@@ -629,37 +685,11 @@
 									<ChildrenList>
 										<SourcePlugin Name="amb_wind_grass" ID="{7641E192-467B-436C-8561-ED48E02AF53A}" ShortID="214703937" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
 											<PropertyList>
-												<Property Name="AverageVelocity" Type="Real32" Value="-1770">
-													<RTPCList>
-														<RTPC Name="" ID="{B3918807-8FAF-4172-A422-162C3EC2EA45}" ShortID="327778705">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="CharacterPosZ" ID="{55675BB6-56D8-4789-9C0D-165A5F507FDB}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{3540EF51-BB4C-4B40-A6BF-9E511B9F3870}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>-300</XPos>
-																		<YPos>-2400</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>8000</XPos>
-																		<YPos>-1625.39683</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="AverageVelocity" Type="Real32" Value="-1770"/>
 												<Property Name="AverageVelocityRandom" Type="Real32" Value="50"/>
 												<Property Name="DirectionRandom" Type="Real32" Value="50"/>
 												<Property Name="FrequencyScale" Type="Real32" Value="3.83"/>
+												<Property Name="GainOffset" Type="Real32" Value="23.4"/>
 												<Property Name="GainOffsetAutomate" Type="bool" Value="True"/>
 												<Property Name="Gustiness" Type="Real32" Value="0.42"/>
 												<Property Name="QFactorScale" Type="Real32" Value="-3.87"/>
@@ -707,6 +737,15 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<BlendTrackList>
+								<BlendTrack Name="New Blend Track" ID="{D8F1774A-CFE9-4B85-BF56-34084084FD16}" ShortID="552236100">
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="amb_wind_grass" ID="{FEAF4834-F760-468D-AE41-3FCC56306611}"/>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
 						</BlendContainer>
 						<BlendContainer Name="amb_wind_cave" ID="{0E247CAE-9B80-4913-A1CC-9AE3F1F116E9}" ShortID="665424706">
 							<ReferenceList>
@@ -841,6 +880,7 @@
 						</BlendContainer>
 						<BlendContainer Name="amb_emitter_wind_trees" ID="{14F1BE33-113F-4012-A09B-6FCE614BB6EB}" ShortID="36281385">
 							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>
@@ -968,7 +1008,7 @@
 														</RTPC>
 													</RTPCList>
 												</Property>
-												<Property Name="QFactorScale" Type="Real32" Value="-4"/>
+												<Property Name="QFactorScale" Type="Real32" Value="-3.62"/>
 												<Property Name="Variability" Type="Real32" Value="1">
 													<RTPCList>
 														<RTPC Name="" ID="{F8200192-BABD-4702-A269-208AA6F43FF9}" ShortID="621554362">
@@ -1028,7 +1068,7 @@
 													<PluginInnerObject Name="" ID="{CC78C430-D3D2-4298-BAD0-06E9CA38370B}" PluginName="Deflector" CompanyID="0" PluginID="121">
 														<PropertyList>
 															<Property Name="Gain" Type="Real32" Value="24"/>
-															<Property Name="QFactor" Type="Real32" Value="5.09"/>
+															<Property Name="QFactor" Type="Real32" Value="5.62"/>
 														</PropertyList>
 													</PluginInnerObject>
 												</List>
@@ -1040,6 +1080,42 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="location" ID="{05AEFB21-506C-437E-8441-FDD1255806BB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="inside" ID="{D80F3D7A-8C29-4118-886E-C4E926467233}"/>
+										<State Name="" ID="{D44A3ECE-5709-4FAA-B7CE-C94BC1BBF5E9}" ShortID="173413676">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+										<State Name="" ID="{219BC894-B2E5-433E-AD10-DCC3CDF2C8EE}" ShortID="937591097">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-46"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+										<State Name="" ID="{2737F1F2-1F98-40C9-B317-D0105D3CCB9B}" ShortID="632302751">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-19"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</BlendContainer>
 						<BlendContainer Name="amb_wind" ID="{550D3738-CE84-4B8D-A3C0-9C6BE1721447}" ShortID="246731015">
 							<ReferenceList>
@@ -1493,6 +1569,31 @@
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{9546DEF6-4FB8-4C50-95A7-EA657ABFE07A}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="0.407331975560085"/>
+								<Property Name="PanY" Type="Real64" Value="6.55031584528842E-15"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="location" ID="{05AEFB21-506C-437E-8441-FDD1255806BB}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="inside" ID="{D80F3D7A-8C29-4118-886E-C4E926467233}"/>
+								<State Name="" ID="{B0233D6C-41CD-47DB-9A6D-747CAE37FB40}" ShortID="274703882">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</ActorMixer>
 				<ActorMixer Name="water" ID="{FACE9456-437E-43C5-B68E-EA88968B292F}" ShortID="632094294">
 					<ReferenceList>
@@ -1687,7 +1788,109 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="waves" ID="{CC30238B-C81F-421C-92A6-31F4033556CE}" ShortID="815865963">
+					<PropertyList>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom CreatedFrom="{4E5F242D-03A3-483C-ADA1-AD51795AF860}">
+								<Attenuation Name="waves (Custom)" ID="{99B4E335-972B-4BC5-8E7A-FC39AECC3A68}" ShortID="494750520">
+									<PropertyList>
+										<Property Name="ConeAttenuation" Type="Real64">
+											<ValueList>
+												<Value>0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ConeInnerAngle" Type="int32" Value="170"/>
+										<Property Name="ConeOuterAngle" Type="int32" Value="285"/>
+										<Property Name="ConeUse" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RadiusMax" Type="Real64" Value="10000"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{08418AA2-0A78-41E9-A116-7A8C3A1FDA0D}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>10000</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="LowPassFilter" ID="{1DAF6A42-F744-422D-862E-97D9725FEE5A}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="65537"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>10000</XPos>
+															<YPos>39</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None">
+												<Curve Name="HighPassFilter" ID="{193E47AC-74CD-4716-A92E-D002E55183AE}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="65537"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>10000</XPos>
+															<YPos>100</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
 						</Reference>
@@ -1699,6 +1902,7 @@
 						<BlendContainer Name="amb_emit_waves" ID="{486F8955-238E-4AB6-AE59-CC9D9925FA10}" ShortID="179610525">
 							<PropertyList>
 								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>7</Value>
@@ -1706,6 +1910,53 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom CreatedFrom="{4E5F242D-03A3-483C-ADA1-AD51795AF860}">
+										<Attenuation Name="waves (Custom)" ID="{47676E12-BE46-4648-B08B-E87A74F8BC29}" ShortID="437952749">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{715E8D1C-4C68-4024-8611-07B67C20EC89}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
 								</Reference>
@@ -1716,7 +1967,17 @@
 							<ChildrenList>
 								<Sound Name="waves_near" ID="{80B10E92-B3CC-4D24-96A6-A2759010CD93}" ShortID="379628817">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>32</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1759,6 +2020,11 @@
 								</Sound>
 								<Sound Name="wave_crashes_beach" ID="{F4C40265-410A-47F2-98FF-BB440078A7AF}" ShortID="919268142">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>26</Value>
+											</ValueList>
+										</Property>
 										<Property Name="InitialDelay" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
@@ -1772,6 +2038,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1889,6 +2160,11 @@
 								</Sound>
 								<Sound Name="wave_crashes_sea_rocks" ID="{D95C98F5-4F06-4795-9C0F-AF10D08151F1}" ShortID="901190830">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="InitialDelay" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
@@ -1993,251 +2269,92 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+										<State Name="" ID="{E6EE8DB0-D4CD-48D9-82E6-7ACB78E71386}" ShortID="100995541">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-35"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
+										<State Name="" ID="{1C71C6E6-908A-4CE4-AF07-86887FA08030}" ShortID="11761239">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="canyon" ID="{3C99E6D1-2B28-4551-82D0-F028C316F5EF}"/>
+										<State Name="" ID="{650A67D0-270F-4239-BD89-025596BB15CE}" ShortID="900559706">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+										<State Name="" ID="{E7F9B5C3-0757-4939-925B-6FC7E9E8CEE2}" ShortID="523306713">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-20"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+										<State Name="" ID="{D642DA4C-6BD7-4EBC-8645-68AD805CF083}" ShortID="1051159149">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<BlendTrackList>
-								<BlendTrack Name="amb_waves" ID="{6FF9A0D3-C22A-4D0D-8263-C8039B50991D}" ShortID="192307216">
+								<BlendTrack Name="New Blend Track" ID="{E8DC7226-F252-4554-AEC3-2B8611922D13}" ShortID="913775369">
 									<PropertyList>
 										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-										<Property Name="Lowpass" Type="int16">
-											<RTPCList>
-												<RTPC Name="" ID="{D69E079B-2734-41FF-A685-72592CC2C427}" ShortID="786310406">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="distance_from_shores" ID="{AFF690FA-09F9-45C0-BE20-BFE9864D91D2}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{A41B509E-D4D1-43BB-90CA-09C5268A7991}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>5000</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<RTPCList>
-												<RTPC Name="" ID="{DA22D5E6-3B46-4002-94F8-9C06F1FA0740}" ShortID="33592788">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="distance_from_shores" ID="{AFF690FA-09F9-45C0-BE20-BFE9864D91D2}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{EBA12C3F-2CF6-4B02-9669-0A57702CF3C0}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-0.47825</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>5000</XPos>
-																<YPos>-200</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
 									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="distance_from_shores" ID="{AFF690FA-09F9-45C0-BE20-BFE9864D91D2}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-										</Reference>
-									</ReferenceList>
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="waves_near" ID="{80B10E92-B3CC-4D24-96A6-A2759010CD93}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>0</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>5000</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-								<BlendTrack Name="amb_wave_crashes_beach" ID="{F401DEC0-BAC4-4B05-B404-FAB697BE408B}" ShortID="412491556">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-										<Property Name="Lowpass" Type="int16">
-											<RTPCList>
-												<RTPC Name="" ID="{72F4FD91-99CF-4FA5-B785-A3010656CB0A}" ShortID="982322025">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="distance_from_shores" ID="{AFF690FA-09F9-45C0-BE20-BFE9864D91D2}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{8A59B2BD-FE8D-4ED3-B2DB-BF7F0FC305FC}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-3</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>5000</XPos>
-																<YPos>55</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<RTPCList>
-												<RTPC Name="" ID="{7A8FFB02-8348-4821-A7F7-6AD06B4DC2DF}" ShortID="938505113">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="distance_from_shores" ID="{AFF690FA-09F9-45C0-BE20-BFE9864D91D2}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{D010C630-1DBA-49D3-BBD6-A1EFC65876A8}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-0.31588</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>2030.42328</XPos>
-																<YPos>-31.44182</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>5000</XPos>
-																<YPos>-200</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="distance_from_shores" ID="{AFF690FA-09F9-45C0-BE20-BFE9864D91D2}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-										</Reference>
-									</ReferenceList>
 									<BlendTrackAssocList>
 										<BlendTrackAssoc>
 											<ItemRef Name="wave_crashes_beach" ID="{F4C40265-410A-47F2-98FF-BB440078A7AF}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>0</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>2037.03728703704</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
 										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-								<BlendTrack Name="amb_waves_crashes_rocks" ID="{FB1A29F0-E1F4-4DAA-9120-9CBBF4616EC6}" ShortID="441566851">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-										<Property Name="Lowpass" Type="int16">
-											<RTPCList>
-												<RTPC Name="" ID="{C3E929D1-1647-4F6C-8611-F2121AF74BB9}" ShortID="548191310">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="distance_from_sea_rocks" ID="{46842EBB-BC5D-43D4-A48F-FB0A31EC971A}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{187EB234-EA28-4FA8-94A3-D2C99FBB56D9}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>36</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<RTPCList>
-												<RTPC Name="" ID="{5BB637A0-2E77-4FCC-8247-D84D17106AC4}" ShortID="967426183">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="distance_from_sea_rocks" ID="{46842EBB-BC5D-43D4-A48F-FB0A31EC971A}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{D245F999-24C4-45F9-8DC7-A7E8A526598B}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-0.31589</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>44.70899</XPos>
-																<YPos>-200</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>-200</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="distance_from_shores" ID="{AFF690FA-09F9-45C0-BE20-BFE9864D91D2}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
-										</Reference>
-									</ReferenceList>
-									<BlendTrackAssocList>
 										<BlendTrackAssoc>
-											<ItemRef Name="wave_crashes_sea_rocks" ID="{D95C98F5-4F06-4795-9C0F-AF10D08151F1}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>0</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>2228.83597883598</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
+											<ItemRef Name="waves_near" ID="{80B10E92-B3CC-4D24-96A6-A2759010CD93}"/>
 										</BlendTrackAssoc>
 									</BlendTrackAssocList>
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="location" ID="{05AEFB21-506C-437E-8441-FDD1255806BB}"/>
+							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="inside" ID="{D80F3D7A-8C29-4118-886E-C4E926467233}"/>
+								<State Name="" ID="{77395E55-7A13-4A3B-8C24-3A455B0B4906}" ShortID="286690367">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</ActorMixer>
 				<ActorMixer Name="weather" ID="{F154F3C8-4875-44D1-A4C6-81A574736559}" ShortID="1023787865">
 					<ReferenceList>
@@ -2821,6 +2938,219 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="street_lights" ID="{05BE9BD5-3AF7-42BE-A74C-A8F115CA2583}" ShortID="651096415">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-29</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_street_light_01" ID="{8B241B43-0B46-40E6-97B8-352FB4E09111}" ShortID="410507880">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_street_light_01" ID="{2EE4B01A-E5E8-4044-8DCC-308B9B8C95C2}" ShortID="306170152">
+									<Language>SFX</Language>
+									<AudioFile>sfx_street_light_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_street_light_01" ID="{2EE4B01A-E5E8-4044-8DCC-308B9B8C95C2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList/>
+					</StateInfo>
+				</ActorMixer>
+				<ActorMixer Name="laser_fence" ID="{703A92AC-5D3B-4423-B7AB-36871B1451EB}" ShortID="909743310">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_laser_fence_01" ID="{60F40A34-E363-42C7-846D-C9B7DAAD60AD}" ShortID="3831744">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_laser_fence_01" ID="{7D19A6E9-E9C2-41DA-AA4E-28CF1685C925}" ShortID="547117497">
+									<Language>SFX</Language>
+									<AudioFile>sfx_laser_fence_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_laser_fence_01" ID="{7D19A6E9-E9C2-41DA-AA4E-28CF1685C925}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_laser_fence_shut_down_01" ID="{1BBF892D-5AA0-403F-9B5A-83640BDB0FDF}" ShortID="546706290">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_laser_fence_shut_down_01" ID="{B2580015-6D69-4244-8AB7-B55A919BE280}" ShortID="774312387">
+									<Language>SFX</Language>
+									<AudioFile>sfx_laser_fence_shut_down_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_laser_fence_shut_down_01" ID="{B2580015-6D69-4244-8AB7-B55A919BE280}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="generators" ID="{EDF3C26E-9A7A-44BF-AB56-5DF8A2F597E5}" ShortID="39954611">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="frequency_generator_loop_02" ID="{AD74EAF6-E7EE-40BA-8E59-E0A9A1A0C336}" ShortID="602644173">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom CreatedFrom="{696EECA4-7332-473E-98B8-95C3291EF440}">
+										<Attenuation Name="world_objects_atten (Custom)" ID="{56E6DEE6-41A9-477F-802F-63E760D50D8D}" ShortID="739740649">
+											<PropertyList>
+												<Property Name="ConeAttenuation" Type="Real64">
+													<ValueList>
+														<Value>0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ConeUse" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RadiusMax" Type="Real64" Value="2000"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{9AB0B0EF-F1EF-4D45-8373-4A3B0D39D1D5}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log2</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>2000</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="frequency_generator_loop_02" ID="{94965E06-6F45-4350-9925-00EB513386F0}" ShortID="1062573506">
+									<Language>SFX</Language>
+									<AudioFile>frequency_generator_loop_02.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="1009229713"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList/>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="frequency_generator_loop_02" ID="{94965E06-6F45-4350-9925-00EB513386F0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

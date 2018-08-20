@@ -6,8 +6,70 @@
 				<ActorMixer Name="doors" ID="{08FF46A0-1572-4813-AC85-672BE2A13FEF}" ShortID="274580404">
 					<PropertyList>
 						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom CreatedFrom="{696EECA4-7332-473E-98B8-95C3291EF440}">
+								<Attenuation Name="world_objects_atten (Custom)" ID="{A758AB2F-19F0-4621-B774-30937906F664}" ShortID="83424575">
+									<PropertyList>
+										<Property Name="ConeAttenuation" Type="Real64">
+											<ValueList>
+												<Value>0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ConeUse" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RadiusMax" Type="Real64" Value="2000"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{EC99132A-FE6F-4BCB-AA1D-8C390D302FD5}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Log2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>2000</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
 						</Reference>
@@ -236,7 +298,7 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
-										<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
+										<GroupRef Name="Material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
 										<DefaultSwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
@@ -248,7 +310,7 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="Mmetal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
+												<SwitchRef Name="Metal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
 												<ItemList>
 													<ItemRef Name="door_metal_opening" ID="{F64D9625-5B14-42B6-8A97-C53DFAC391E8}"/>
 												</ItemList>
@@ -755,7 +817,7 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
-										<GroupRef Name="material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
+										<GroupRef Name="Material" ID="{71BA39A1-C6B2-40CD-BCA3-EDE7410A1A1C}"/>
 										<DefaultSwitchRef Name="Wood" ID="{B02901AF-D99F-4C94-BB42-DC3487FBE8F0}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
@@ -767,7 +829,7 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="Mmetal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
+												<SwitchRef Name="Metal" ID="{15CF797A-86A2-4B8A-B7E3-7FFE63C82983}"/>
 												<ItemList>
 													<ItemRef Name="door_metal_closing" ID="{973C624B-D67F-4623-9ED9-0F98BC1B5970}"/>
 												</ItemList>
@@ -818,7 +880,6 @@
 								<Value>39</Value>
 							</ValueList>
 						</Property>
-						<Property Name="OverridePositioning" Type="bool" Value="True"/>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -929,9 +990,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="sfx_tap_loop" ID="{7C6A7310-3435-49AA-A0C4-F97147670362}" ShortID="793441063">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -942,6 +1000,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="sfx_tap_running_loop" ID="{62B0B11D-84FF-4D3B-8196-406363BC8CF6}" ShortID="685657390">
+											<PropertyList>
+												<Property Name="TrimEnd" Type="Real64" Value="4.59917192150298"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>sfx_tap_running_loop.wav</AudioFile>
 										</AudioFileSource>

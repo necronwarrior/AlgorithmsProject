@@ -4,11 +4,12 @@
 	SMatineeAkEventKeyFrameAdder.cpp
 ------------------------------------------------------------------------------------*/
 
-#include "SMatineeAkEventKeyFrameAdder.h"
+#include "AudiokineticToolsPrivatePCH.h"
 #include "AkAudioClasses.h"
 #include "AkAudioDevice.h"
 #include "PropertyEditorModule.h"
 #include "PropertyCustomizationHelpers.h"
+#include "SMatineeAkEventKeyFrameAdder.h"
 #include "Images/SImage.h"
 #include "Text/STextBlock.h"
 #include "Input/SEditableTextBox.h"

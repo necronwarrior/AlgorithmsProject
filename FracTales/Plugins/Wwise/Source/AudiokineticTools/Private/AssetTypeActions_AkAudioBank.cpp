@@ -3,13 +3,14 @@
 /*=============================================================================
 	AssetTypeActions_AkAudioBank.cpp:
 =============================================================================*/
-#include "AssetTypeActions_AkAudioBank.h"
+#include "AudiokineticToolsPrivatePCH.h"
 #include "AkAudioClasses.h"
 #include "IAssetTools.h"
+#include "AssetTypeActions_AkAudioBank.h"
 #include "SGenerateSoundBanks.h"
 #include "AkAudioDevice.h"
 #include "Toolkits/SimpleAssetEditor.h"
-#include "AkAudioBankGenerationHelpers.h"
+#include "MultiBox/MultiBoxBuilder.h"
 
 #define LOCTEXT_NAMESPACE "AssetTypeActions"
 
@@ -113,9 +114,11 @@ void FAssetTypeActions_AkAudioBank::AssetsActivated( const TArray<UObject*>& InO
 	}
 }
 
+extern void CreateGenerateSoundBankWindow(TArray<TWeakObjectPtr<UAkAudioBank>>* pSoundBanks);
+
 void FAssetTypeActions_AkAudioBank::GenerateDefinitionFile(TArray<TWeakObjectPtr<UAkAudioBank>> Objects)
 {
-	WwiseBnkGenHelper::CreateGenerateSoundBankWindow(&Objects, /*save Wwise project before generation*/false);
+	CreateGenerateSoundBankWindow(&Objects);
 }
 
 void FAssetTypeActions_AkAudioBank::LoadBank(TArray<TWeakObjectPtr<UAkAudioBank>> Objects)

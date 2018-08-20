@@ -1,9 +1,11 @@
 // Copyright (c) 2006-2016 Audiokinetic Inc. / All Rights Reserved
 
-#include "AkMatineeImportTools.h"
+#include "AudiokineticToolsPrivatePCH.h"
+
 #include "AkAudioDevice.h"
 #include "AkAudioClasses.h"
 
+#include "AkMatineeImportTools.h"
 #include "MatineeImportTools.h"
 
 #include "MovieSceneCommonHelpers.h"

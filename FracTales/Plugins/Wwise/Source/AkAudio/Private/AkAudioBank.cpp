@@ -4,8 +4,8 @@
 	AkBank.cpp:
 =============================================================================*/
 
-#include "AkAudioBank.h"
 #include "AkAudioDevice.h"
+#include "AkAudioBank.h"
 
 /**
  * Constructor
@@ -24,7 +24,7 @@ UAkAudioBank::UAkAudioBank(const class FObjectInitializer& ObjectInitializer)
 void UAkAudioBank::PostLoad()
 {
 	Super::PostLoad();
-	if ( AutoLoad && !HasAnyFlags(RF_ClassDefaultObject))
+	if ( AutoLoad )
 	{
 		Load();
 	}
@@ -35,7 +35,7 @@ void UAkAudioBank::PostLoad()
  */
 void UAkAudioBank::BeginDestroy()
 {
-	if( AutoLoad && !HasAnyFlags(RF_ClassDefaultObject) )
+	if( AutoLoad )
 	{
 		Unload();
 	}

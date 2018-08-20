@@ -8,7 +8,6 @@
 #include "GameFramework/Volume.h"
 #include "AkSurfaceReflectorSetComponent.h"
 #include "AkLateReverbComponent.h"
-#include "AkRoomComponent.h"
 #include "AkSpatialAudioVolume.generated.h"
 
 /*------------------------------------------------------------------------------------

@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "AkAudioDevice.h"
+#include "AkInclude.h"
 
 
 struct AkUserCallbackPackage
@@ -57,6 +57,6 @@ private:
 
 	FCriticalSection CriticalSection;
 
-	typedef AkGameObjectIdKeyFuncs<PackageSet, false> PackageSetGameObjectIDKeyFuncs;
-	TMap<AkGameObjectID, PackageSet, FDefaultSetAllocator, PackageSetGameObjectIDKeyFuncs> GameObjectToPackagesMap;
+	typedef AkGameObjectIdKeyFuncs<PackageSet, false> PackageSetGamneObjectIDKeyFuncs;
+	TMap<AkGameObjectID, PackageSet, FDefaultSetAllocator, PackageSetGamneObjectIDKeyFuncs> GameObjectToPackagesMap;
 };

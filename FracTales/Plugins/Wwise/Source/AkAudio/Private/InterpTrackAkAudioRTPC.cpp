@@ -4,7 +4,6 @@
 	InterpTrackAkAudioRTPC.h:
 =============================================================================*/
 
-#include "InterpTrackAkAudioRTPC.h"
 #include "AkAudioDevice.h"
 #include "AkAudioClasses.h"
 #include "EngineClasses.h"

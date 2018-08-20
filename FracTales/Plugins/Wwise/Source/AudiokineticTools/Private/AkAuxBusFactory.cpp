@@ -3,8 +3,9 @@
 /*=============================================================================
 	AkAuxBusFactory.cpp:
 =============================================================================*/
-#include "AkAuxBusFactory.h"
+#include "AudiokineticToolsPrivatePCH.h"
 #include "AkAuxBus.h"
+#include "AkAuxBusFactory.h"
 
 /*------------------------------------------------------------------------------
 	UAkAuxBusFactory.

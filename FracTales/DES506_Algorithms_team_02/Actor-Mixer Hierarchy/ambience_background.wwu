@@ -82,6 +82,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<BlendContainer Name="ambience_region_cave" ID="{A66D2734-EB42-41A7-B38C-EF12BFD73A7A}" ShortID="985770644">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -101,9 +108,123 @@
 														</Reference>
 													</ReferenceList>
 												</Sound>
+												<Sound Name="cave_rumble" ID="{92A3AAAF-5C12-4F08-BAFF-D6790ABC84FA}" ShortID="608007671">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-21</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+															<ObjectRef Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="SoundSeed Wind" ID="{E714D05E-AEC4-4AF5-8427-39A8B6137F40}" ShortID="1029915086" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
+															<PropertyList>
+																<Property Name="AverageVelocity" Type="Real32" Value="1470"/>
+																<Property Name="FrequencyScale" Type="Real32" Value="-4"/>
+																<Property Name="GainOffset" Type="Real32" Value="-0.1"/>
+																<Property Name="Gustiness" Type="Real32" Value="0.1"/>
+																<Property Name="QFactorScale" Type="Real32" Value="-4"/>
+																<Property Name="Variability" Type="Real32" Value="0"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<PluginData/>
+															<PluginInnerObjectList>
+																<List Name="Deflectors">
+																	<PluginInnerObject Name="" ID="{F141A57F-5046-435D-8892-AC56568EDFC1}" PluginName="Deflector" CompanyID="0" PluginID="121">
+																		<PropertyList>
+																			<Property Name="Frequency" Type="Real32" Value="37"/>
+																			<Property Name="QFactor" Type="Real32" Value="0.1"/>
+																		</PropertyList>
+																	</PluginInnerObject>
+																	<PluginInnerObject Name="" ID="{A1096261-5E9A-4BAA-9AC9-56D024E0C1FC}" PluginName="Deflector" CompanyID="0" PluginID="121">
+																		<PropertyList>
+																			<Property Name="Frequency" Type="Real32" Value="20"/>
+																			<Property Name="PanX" Type="Real64" Value="1.49253731343283"/>
+																			<Property Name="PanY" Type="Real64" Value="-100"/>
+																			<Property Name="QFactor" Type="Real32" Value="0.1"/>
+																		</PropertyList>
+																	</PluginInnerObject>
+																	<PluginInnerObject Name="" ID="{ACDF0A7D-10AC-43B2-9365-B93AA49E9D29}" PluginName="Deflector" CompanyID="0" PluginID="121">
+																		<PropertyList>
+																			<Property Name="Frequency" Type="Real32" Value="20"/>
+																			<Property Name="PanX" Type="Real64" Value="0.298507462686575"/>
+																			<Property Name="PanY" Type="Real64" Value="100"/>
+																			<Property Name="QFactor" Type="Real32" Value="0.1"/>
+																		</PropertyList>
+																	</PluginInnerObject>
+																	<PluginInnerObject Name="" ID="{98E5D057-5350-409C-85DC-A5DC13B46E9C}" PluginName="Deflector" CompanyID="0" PluginID="121">
+																		<PropertyList>
+																			<Property Name="Frequency" Type="Real32" Value="20"/>
+																			<Property Name="PanX" Type="Real64" Value="-100"/>
+																			<Property Name="PanY" Type="Real64" Value="-8.21565038222616E-15"/>
+																			<Property Name="QFactor" Type="Real32" Value="0.1"/>
+																		</PropertyList>
+																	</PluginInnerObject>
+																	<PluginInnerObject Name="" ID="{4851E903-1370-4B81-BD0E-1B0238F5391A}" PluginName="Deflector" CompanyID="0" PluginID="121">
+																		<PropertyList>
+																			<Property Name="Frequency" Type="Real32" Value="20"/>
+																			<Property Name="PanX" Type="Real64" Value="100"/>
+																			<Property Name="PanY" Type="Real64" Value="-1.80722891566264"/>
+																			<Property Name="QFactor" Type="Real32" Value="0.1"/>
+																		</PropertyList>
+																	</PluginInnerObject>
+																</List>
+															</PluginInnerObjectList>
+														</SourcePlugin>
+													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+																<State Name="" ID="{2F068902-081E-47F4-80FE-6D1D817E7B7E}" ShortID="873388354">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+																<State Name="" ID="{611AB561-497E-439A-BE8E-B6A55D0062E0}" ShortID="678752392">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+																<State Name="" ID="{A67E6E62-5757-4022-9F5A-D3B3A0F4F4BE}" ShortID="500261804">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="SoundSeed Wind" ID="{E714D05E-AEC4-4AF5-8427-39A8B6137F40}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 										</BlendContainer>
-										<BlendContainer Name="ambience_region_beach" ID="{5069367B-E141-4356-8373-1046485A61A6}" ShortID="953112897">
+										<BlendContainer Name="ambience_region_coast" ID="{5069367B-E141-4356-8373-1046485A61A6}" ShortID="953112897">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -304,10 +425,100 @@
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+																<State Name="" ID="{4EB4837B-A1F4-40ED-ABA1-1D09E3FA1EB3}" ShortID="699402775">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
+																<State Name="" ID="{F816C477-93E2-4D7D-AB06-A976584953D1}" ShortID="1048177289">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="canyon" ID="{3C99E6D1-2B28-4551-82D0-F028C316F5EF}"/>
+																<State Name="" ID="{221B981B-EB04-4457-8233-0A45A3F5D672}" ShortID="705681638">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+																<State Name="" ID="{44849413-5BE4-40C3-961D-26A81B1C0337}" ShortID="643992913">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-7"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+																<State Name="" ID="{414A46C3-8D42-45EA-BD01-59081B2EC81B}" ShortID="28276543">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
 												</RandomSequenceContainer>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
+														<State Name="" ID="{44917713-E0D3-4F7A-A83C-1C33FB1588F2}" ShortID="324291010">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-96"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="canyon" ID="{3C99E6D1-2B28-4551-82D0-F028C316F5EF}"/>
+														<State Name="" ID="{B2E58D5B-704B-47EA-B744-5E8CC3FBA3CF}" ShortID="276198933">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-96"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+														<State Name="" ID="{DBF743AA-73AA-4083-AB59-779CE7F3F691}" ShortID="574427038">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-10"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+														<State Name="" ID="{FB0FB9F0-672E-4E57-95B8-F02DC5D44FCD}" ShortID="683699668">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-96"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</BlendContainer>
-										<BlendContainer Name="ambience_region_field" ID="{D06ED460-CD24-4935-929C-9564A5D65650}" ShortID="555704741">
+										<BlendContainer Name="ambience_region_overworld" ID="{D06ED460-CD24-4935-929C-9564A5D65650}" ShortID="555704741">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -342,6 +553,8 @@
 										<BlendContainer Name="ambience_region_forest" ID="{BB76F3E7-EB11-43AC-ACA1-EC4DFB042489}" ShortID="931093434">
 											<PropertyList>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-6</Value>
@@ -349,6 +562,9 @@
 												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="world_objects_atten" ID="{696EECA4-7332-473E-98B8-95C3291EF440}" WorkUnitID="{74E74D40-3965-4399-8C83-DC540386B3F2}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 												</Reference>
@@ -431,7 +647,7 @@
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-10</Value>
+																<Value>-7</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -600,9 +816,10 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="ambience_emitters_crickets" ID="{914D1923-4284-4922-809B-4267B836069A}" ShortID="520655899">
 													<PropertyList>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-18</Value>
+																<Value>-1</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -810,6 +1027,7 @@
 												<Sound Name="amb_crickets_loop" ID="{6F010985-8966-4D35-B647-2C1A3A3FC80E}" ShortID="675721983">
 													<PropertyList>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-24</Value>
@@ -847,11 +1065,13 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
 														<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -860,6 +1080,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="world_objects_atten" ID="{696EECA4-7332-473E-98B8-95C3291EF440}" WorkUnitID="{74E74D40-3965-4399-8C83-DC540386B3F2}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 														</Reference>
@@ -1511,6 +1734,23 @@
 													</ChildrenList>
 												</BlendContainer>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
+														<State Name="" ID="{17CA1979-3D1C-466D-860F-19ED18A7E457}" ShortID="921653587">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-96"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<BlendTrackList>
 												<BlendTrack Name="ambience_forest_bg_loop_ToD" ID="{F32DE015-7A7C-493E-A1F3-23567E7113D0}" ShortID="339180517">
 													<PropertyList>
@@ -1966,6 +2206,13 @@
 											</BlendTrackList>
 										</BlendContainer>
 										<BlendContainer Name="ambience_region_lake" ID="{394162A9-FADE-4655-BC7A-7441D6621C90}" ShortID="532654776">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -1998,6 +2245,13 @@
 											</ChildrenList>
 										</BlendContainer>
 										<BlendContainer Name="ambience_region_mountains" ID="{8E4DB0B2-76EB-4442-B7CC-A1CC71D6F304}" ShortID="930054744">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -2030,6 +2284,13 @@
 											</ChildrenList>
 										</BlendContainer>
 										<BlendContainer Name="ambience_region_port" ID="{5D1F568E-F8F6-4863-98BE-3D4DA956BFAB}" ShortID="747545315">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -2079,27 +2340,24 @@
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 												</Reference>
-												<Reference Name="Effect0">
-													<Custom CreatedFrom="{830124FB-B9D5-4AE8-846E-E94A74652666}">
-														<Effect Name="Low_Pass_20KHz (Custom)" ID="{630A67DB-79CD-453A-86E4-90C34F84700F}" ShortID="604631160" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-															<PropertyList>
-																<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
-																<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-																<Property Name="FrequencyBand1" Type="Real32" Value="1215"/>
-																<Property Name="FrequencyBand3" Type="Real32" Value="20000"/>
-																<Property Name="OnOffBand2" Type="bool" Value="False"/>
-																<Property Name="OnOffBand3" Type="bool" Value="False"/>
-															</PropertyList>
-														</Effect>
-													</Custom>
-												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<BlendContainer Name="amb_town_bg" ID="{B227D048-0512-4BE9-99DF-9A78E079D760}" ShortID="721025830">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="world_objects_atten" ID="{696EECA4-7332-473E-98B8-95C3291EF440}" WorkUnitID="{74E74D40-3965-4399-8C83-DC540386B3F2}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
 														</Reference>
@@ -2120,18 +2378,28 @@
 														</RandomSequenceContainer>
 														<Sound Name="amb_bg_town_birds_loop" ID="{AB0D28FF-4CAF-4D29-88CE-1A5F51DB751F}" ShortID="653525935">
 															<PropertyList>
+																<Property Name="EnablePanner" Type="bool" Value="True"/>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="OverrideConversion" Type="bool" Value="True"/>
+																<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-17</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="Effect0">
+																	<Custom>
+																		<Effect Name="Wwise Parametric EQ (Custom)" ID="{EB2640DA-867B-4013-A5F9-821450C4F6A4}" ShortID="823138412" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																			<PropertyList>
+																				<Property Name="FilterTypeBand2" Type="int32" Value="3"/>
+																				<Property Name="FrequencyBand2" Type="Real32" Value="5665"/>
+																				<Property Name="FrequencyBand3" Type="Real32" Value="11667"/>
+																				<Property Name="GainBand3" Type="Real32" Value="-24"/>
+																				<Property Name="OnOffBand2" Type="bool" Value="False"/>
+																			</PropertyList>
+																		</Effect>
+																	</Custom>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
@@ -2146,16 +2414,69 @@
 															<PositioningInfo>
 																<Panner Name="" ID="{7FAEB199-FCA3-403F-9B84-B724BD0439D8}">
 																	<PropertyList>
-																		<Property Name="PanX" Type="Real64" Value="-2.85132382892057"/>
-																		<Property Name="PanY" Type="Real64" Value="97.6241900647948"/>
+																		<Property Name="PanX" Type="Real64" Value="-0.407331975560085"/>
+																		<Property Name="PanY" Type="Real64" Value="-0.43196544276459"/>
 																	</PropertyList>
 																</Panner>
 															</PositioningInfo>
+															<StateInfo>
+																<StateGroupList>
+																	<StateGroupInfo>
+																		<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+																	</StateGroupInfo>
+																</StateGroupList>
+																<CustomStateList>
+																	<CustomState>
+																		<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
+																		<State Name="" ID="{A5B46759-AC54-4E6B-BBDC-50CD4A7A856D}" ShortID="491562596">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64" Value="-96"/>
+																			</PropertyList>
+																		</State>
+																	</CustomState>
+																</CustomStateList>
+															</StateInfo>
 															<ActiveSourceList>
 																<ActiveSource Name="amb_bg_town_birds_loop" ID="{69AEAF20-2FF0-4ACD-949D-3106C6C62A65}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="location" ID="{05AEFB21-506C-437E-8441-FDD1255806BB}"/>
+															</StateGroupInfo>
+															<StateGroupInfo>
+																<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
+																<State Name="" ID="{DE60566E-FE48-439B-823D-BC3328E20168}" ShortID="634172152">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="coast" ID="{2FEC2E20-FB7F-46F8-A5BB-4201832901F9}"/>
+																<State Name="" ID="{FE4FB80A-2DDC-4E79-9DBA-DB87A1E51B48}" ShortID="256006118">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-41"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
+																<State Name="" ID="{F62BFA35-1AFF-4C4C-A250-54A178DF753C}" ShortID="555920604">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
 												</BlendContainer>
 											</ChildrenList>
 											<StateInfo>
@@ -2185,10 +2506,10 @@
 												<ItemRef Name="ambience_region_cave" ID="{A66D2734-EB42-41A7-B38C-EF12BFD73A7A}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="ambience_region_field" ID="{D06ED460-CD24-4935-929C-9564A5D65650}"/>
+												<ItemRef Name="ambience_region_overworld" ID="{D06ED460-CD24-4935-929C-9564A5D65650}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="ambience_region_beach" ID="{5069367B-E141-4356-8373-1046485A61A6}"/>
+												<ItemRef Name="ambience_region_coast" ID="{5069367B-E141-4356-8373-1046485A61A6}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="ambience_region_port" ID="{5D1F568E-F8F6-4863-98BE-3D4DA956BFAB}"/>

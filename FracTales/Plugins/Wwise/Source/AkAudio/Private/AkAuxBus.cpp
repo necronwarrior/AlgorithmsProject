@@ -4,7 +4,6 @@
 	AkReverbVolume.cpp:
 =============================================================================*/
 
-#include "AkAuxBus.h"
 #include "AkAudioDevice.h"
 #include "AkAudioClasses.h"
 #include "Net/UnrealNetwork.h"

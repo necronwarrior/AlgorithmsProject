@@ -3,8 +3,9 @@
 /*=============================================================================
 	AkAudioTextureFactory.cpp:
 =============================================================================*/
-#include "AkAcousticTextureFactory.h"
+#include "AudiokineticToolsPrivatePCH.h"
 #include "AkAcousticTexture.h"
+#include "AkAcousticTextureFactory.h"
 
 /*------------------------------------------------------------------------------
 	UAkAudioEventFactory.

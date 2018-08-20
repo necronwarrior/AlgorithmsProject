@@ -1,8 +1,9 @@
 // Copyright (c) 2006-2016 Audiokinetic Inc. / All Rights Reserved
 
-#include "MovieSceneAkAudioRTPCSection.h"
 #include "AkAudioDevice.h"
 #include "AkAudioClasses.h"
+
+#include "MovieSceneAkAudioRTPCSection.h"
 
 #include "MovieSceneAkAudioRTPCTemplate.h"
 
