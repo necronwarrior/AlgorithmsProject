@@ -72,6 +72,7 @@ FracTales/Saved/*
 # Compiled source files for the engine to use
 FracTales/Intermediate/*
 FracTales/Plugins/*/Intermediate/*
+FracTales/Plugins/*
 
 # Cache files for the editor to use
 FracTales/DerivedDataCache/*

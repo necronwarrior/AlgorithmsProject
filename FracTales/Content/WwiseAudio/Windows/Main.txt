@@ -130,6 +130,8 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	207908541	time_of_day			\Default Work Unit\general\weather_environment\time_of_day	
 	330198422	CharacterPosZ			\Default Work Unit\general\character_positions\CharacterPosZ	
 	1062734446	player_movement_speed			\Default Work Unit\general\player_movement_speed	
+	2420253395	radio_volume			\Default Work Unit\general\radio_volume	
+	3384723076	alarm_clock_volume			\Default Work Unit\general\alarm_clock_volume	
 	3789669546	water_speed			\Default Work Unit\general\weather_environment\water_speed	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
