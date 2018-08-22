@@ -35,7 +35,7 @@
 						<Switch Name="off" ID="{1420DF7A-85B5-4987-9F4A-481382D0014E}"/>
 					</ChildrenList>
 					<SwitchOnRTPC>
-						<GameParameterRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
+						<GameParameterRef Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
 						<Curve Name="" ID="{B4CBCC01-1E95-4884-9720-52B0509AF197}">
 							<PropertyList>
 								<Property Name="Flags" Type="int32" Value="65537"/>
@@ -47,8 +47,8 @@
 									<Flags>5</Flags>
 								</Point>
 								<Point>
-									<XPos>100</XPos>
-									<YPos>1</YPos>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
 									<Flags>37</Flags>
 								</Point>
 							</PointList>

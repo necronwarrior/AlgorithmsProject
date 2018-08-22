@@ -123,7 +123,7 @@
 														<RTPC Name="" ID="{000B97F6-03FB-42DE-BAC7-4A56EA1267DD}" ShortID="118393780">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																	<ObjectRef Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{F6DFE681-5A63-4525-ADDE-2F8DEF13C386}">
@@ -137,7 +137,7 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>100</XPos>
+																		<XPos>1</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -149,7 +149,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+													<ObjectRef Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
 												</Reference>
 											</ReferenceList>
 										</BlendTrack>
@@ -161,7 +161,7 @@
 														<RTPC Name="" ID="{91D40F66-E3B6-40BC-8572-1A6049D06D1F}" ShortID="89805468">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+																	<ObjectRef Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{1B3BFA76-42FD-4D8C-890D-D4570E876E96}">
@@ -175,7 +175,7 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>100</XPos>
+																		<XPos>1</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -187,7 +187,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
+													<ObjectRef Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}" WorkUnitID="{84542D74-EA0C-4578-BDBF-5617DC458D5F}"/>
 												</Reference>
 											</ReferenceList>
 										</BlendTrack>
@@ -236,6 +236,11 @@
 										<Sound Name="mus_radio_tower_01" ID="{02EDC00D-61C3-490D-9D1F-9DE61A61987F}" ShortID="788865239">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -262,23 +267,9 @@
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="mus_overworld_01" ID="{79026A0D-BA04-4DEE-8523-763F55CD420B}"/>
-												<PropertyList>
-													<Property Name="FadeOutTime" Type="Real64">
-														<ValueList>
-															<Value>2</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="mus_radio_tower_01" ID="{02EDC00D-61C3-490D-9D1F-9DE61A61987F}"/>
-												<PropertyList>
-													<Property Name="FadeOutTime" Type="Real64">
-														<ValueList>
-															<Value>2</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>

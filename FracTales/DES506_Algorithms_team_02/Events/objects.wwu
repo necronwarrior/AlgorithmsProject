@@ -370,6 +370,11 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="puzzles" ID="{A82201AB-EDE5-4453-9637-63C53427027A}" ShortID="851028797">
+					<ChildrenList>
+						<Event Name="puzzle03_complete" ID="{81D57E20-414A-4D7A-ABD9-D9219761F182}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

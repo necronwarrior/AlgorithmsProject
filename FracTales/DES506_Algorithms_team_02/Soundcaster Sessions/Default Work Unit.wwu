@@ -319,7 +319,7 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
+							<GameParameterRef Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -449,7 +449,7 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
+							<GameParameterRef Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -552,7 +552,7 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
+							<GameParameterRef Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -675,7 +675,7 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
+							<GameParameterRef Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -792,8 +792,8 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
-							<Value>100</Value>
+							<GameParameterRef Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
@@ -860,7 +860,11 @@
 							<Value>29</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+						<CurrentStateRef Name="outside" ID="{A5C60CD5-8D9B-463D-A82E-A88EC66C1835}"/>
+						<CurrentStateRef Name="tower" ID="{2E5037B9-E1E2-45D1-A041-0AB1D2A6A6CB}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Concrete" ID="{D01B66EE-29B6-46F5-95A2-F47419C46C0B}"/>
 						<CurrentSwitchRef Name="overworld" ID="{B4DE2F1B-8CA3-499E-8BC8-01807933713B}"/>

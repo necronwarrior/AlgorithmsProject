@@ -15,6 +15,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1208428295	amb_emit_wood_pigeon_start			\Default Work Unit\ambience\Emitters\fauna\wood_pigeon\amb_emit_wood_pigeon_start	
 	1346007313	amb_emit_forest_birds_start			\Default Work Unit\ambience\Emitters\fauna\forest_birds\amb_emit_forest_birds_start	
 	1470925707	writing_loop_stop			\Default Work Unit\player\actions\writing\writing_loop_stop	
+	1543676268	puzzle03_complete			\Default Work Unit\objects\puzzles\puzzle03_complete	
 	1561534440	amb_wind_loop_stop			\Default Work Unit\ambience\Emitters\weather\wind\amb_wind_loop_stop	
 	1595217012	amb_wind_loop_start			\Default Work Unit\ambience\Emitters\weather\wind\amb_wind_loop_start	
 	1631916329	door_close_start			\Default Work Unit\objects\doors\door_close_start	
@@ -102,6 +103,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 	156748668	town	world_location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\canyon\canyon_reverb		
 	161358142	inside	location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_town		
 	173413676	inside	location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind\amb_emitter_wind_trees		
+	186721268	inside	location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\street_lights		
 	256006118	coast	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_town\amb_town_bg		
 	274703882	inside	location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\wind		
 	276198933	canyon	world_location	\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_coast		
@@ -156,7 +158,6 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	8370558	player_footstep_gravel_walk_09	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footstep_gravel_walk_09_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_gravel_walk\player_footstep_gravel_walk_09		8717
-	10936495	sfx_radio_on	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_radio_01_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\radio\sfx_radio\sfx_radio_on		335419
 	29399829	door_close_wooden_01	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\door_close_wooden_01_6B3EB40D.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\doors\door_movement\door_closing\door_wood_closing\door_wood_closing_thump\door_close_wooden_01		5756
 	30517053	player_footstep_gravel_walk_08	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\player_footstep_gravel_walk_08_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\movement\player_footstep_type\player_footstep_walk\player_footstep_gravel_walk\player_footstep_gravel_walk_08		9456
 	49832470	amb_emit_birds_21	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\amb_emit_birds_21_0FDA81B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_background\ambience_regions\ambience_outdoors\ambience_outdoors\ambience_region_forest\amb_emit_forest_birds\amb_emit_forest_birds_long\amb_emit_birds_21		16843
@@ -253,6 +254,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	702287358	sfx_player_typing_enter_04	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_enter_04_C60C73B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_backspace\sfx_player_typing_enter_04		3863
 	708637609	door_close_wooden_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\door_close_wooden_02_E5E10951.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\doors\door_movement\door_closing\door_wood_closing\door_wood_closing_thump\door_close_wooden_02		14335
 	716460172	sfx_player_typing_enter_03	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\sfx_player_typing_enter_03_9593E04D.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\player\player\actions\keyboard\key_backspace\sfx_player_typing_enter_03		3389
+	716975346	dlg_radio_line04_v1	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\dlg_radio_line04_v1_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\radio\sfx_radio\dlg_radio_line04_v1		298730
 	735184499	Quiet_Water	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\Quiet_Water_21CA2154.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\ambient\ambiences\ambience_emitters\water\river\Quiet_Water		333055
 	743505641	door_close_wooden_05	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\door_close_wooden_05_19D17CF5.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\doors\door_movement\door_closing\door_wood_closing\door_wood_closing_thump\door_close_wooden_05		13263
 	744466491	cutlery_02	C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\SFX\cutlery_02_8A6CA8BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\world\world_objects\objects\object_prop\kitchen\kitchen_blend\cutlery\cutlery_02		34978

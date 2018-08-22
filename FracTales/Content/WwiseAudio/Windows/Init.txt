@@ -3,6 +3,7 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 	2420253395	radio_volume			\Default Work Unit\general\radio_volume	
 	3033628004	on_off			\Default Work Unit\general\on_off	
 	3384723076	alarm_clock_volume			\Default Work Unit\general\alarm_clock_volume	
+	3991942870	music			\Default Work Unit\music	
 
 Switch	ID	Name	Switch Group			Notes
 	712161704	run	player_movement_speed			
@@ -13,6 +14,8 @@ Switch	ID	Name	Switch Group			Notes
 	1651971902	on	on_off			
 	930712164	off	alarm_clock_volume			
 	1651971902	on	alarm_clock_volume			
+	1562068129	overworld	music			
+	1737926756	tower	music			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	186852181	thunder			\Default Work Unit\weather\thunder	

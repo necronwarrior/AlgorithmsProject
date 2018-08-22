@@ -152,6 +152,32 @@
 								<ItemRef Name="frequency_generator_loop_02" ID="{BE8099B3-123A-4BA7-B5D0-CF723AFF66A7}"/>
 							</Playlist>
 						</RandomSequenceContainer>
+						<Sound Name="tower_siren_01" ID="{D78D15B0-FA61-4C6B-B3CF-472C4D06CA15}" ShortID="763822350">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-23</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="binary_siren_01" ID="{2DB256DC-CCE0-47A2-81BB-ED41A49708D1}" ShortID="693969089">
+									<Language>SFX</Language>
+									<AudioFile>binary_siren_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="binary_siren_01" ID="{2DB256DC-CCE0-47A2-81BB-ED41A49708D1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

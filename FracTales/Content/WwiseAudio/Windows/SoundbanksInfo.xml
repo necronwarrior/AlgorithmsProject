@@ -52,6 +52,7 @@
 				<Event Id="2607886720" Name="music_overworld_start" ObjectPath="\Events\Default Work Unit\music\general\music_overworld_start"/>
 				<Event Id="3725903807" Name="music_start" ObjectPath="\Events\Default Work Unit\music\general\music_start"/>
 				<Event Id="45473393" Name="music_tower_start" ObjectPath="\Events\Default Work Unit\music\general\music_tower_start"/>
+				<Event Id="1543676268" Name="puzzle03_complete" ObjectPath="\Events\Default Work Unit\objects\puzzles\puzzle03_complete"/>
 				<Event Id="4049529127" Name="radio_start" ObjectPath="\Events\Default Work Unit\objects\House\radio\radio_start"/>
 				<Event Id="3322242893" Name="radio_stop" ObjectPath="\Events\Default Work Unit\objects\House\radio\radio_stop"/>
 				<Event Id="1059900002" Name="select_back_play" ObjectPath="\Events\Default Work Unit\ui\main_menu\select_back_play"/>
@@ -71,10 +72,6 @@
 				<File Id="8370558" Language="SFX">
 					<ShortName>player_footstep_gravel_walk_09.wav</ShortName>
 					<Path>SFX\player_footstep_gravel_walk_09_8A6CA8BA.wem</Path>
-				</File>
-				<File Id="10936495" Language="SFX">
-					<ShortName>sfx_radio_01.wav</ShortName>
-					<Path>SFX\sfx_radio_01_21CA2154.wem</Path>
 				</File>
 				<File Id="29399829" Language="SFX">
 					<ShortName>door_close_wooden_01.wav</ShortName>
@@ -459,6 +456,10 @@
 				<File Id="716460172" Language="SFX">
 					<ShortName>sfx_player_typing_enter_03.wav</ShortName>
 					<Path>SFX\sfx_player_typing_enter_03_9593E04D.wem</Path>
+				</File>
+				<File Id="716975346" Language="SFX">
+					<ShortName>dlg_radio_line04_v1.wav</ShortName>
+					<Path>SFX\dlg_radio_line04_v1_21CA2154.wem</Path>
 				</File>
 				<File Id="735184499" Language="SFX">
 					<ShortName>Quiet_Water.wav</ShortName>
