@@ -453,10 +453,39 @@
 								<Action Name="" ID="{6EE75C2F-3226-408C-B954-FD1768EBD2C7}" ShortID="826437701">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="amb_emit_waves" ID="{486F8955-238E-4AB6-AE59-CC9D9925FA10}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+											<ObjectRef Name="waves" ID="{133627F6-3E72-445A-8E89-95C82B540AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F87218EA-3D6A-422A-833C-CA67A46A9272}" ShortID="41129690">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_coast_birds_loop" ID="{E8BD1E55-F558-4A87-A92F-DB1F39F3027F}" WorkUnitID="{6A24845D-8B1E-44A5-95A1-4A5BA67C2D40}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="amb_coast_waves_start" ID="{276582D5-D392-48B6-A0D7-3ABF6A81C9B6}">
+							<ChildrenList>
+								<Action Name="" ID="{7F032016-463D-4160-9816-2DD0EF2D2BAD}" ShortID="732141424">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_coast_waves_01" ID="{8BE14918-47D1-4572-AECD-8C983C2EFE9B}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

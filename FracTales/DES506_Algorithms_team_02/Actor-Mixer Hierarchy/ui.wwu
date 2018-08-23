@@ -24,6 +24,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="ui_button_exit" ID="{C15A7108-8791-4DDC-A62D-0530CD215198}" ShortID="391557888">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -34,6 +41,13 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="ui_button_enter" ID="{7EFC6733-243A-4DDE-A36E-1A95367CC382}" ShortID="19685956">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -44,6 +58,13 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="ui_button_up" ID="{151E942B-BBC9-4D34-9EB7-E82ACD6F2F2A}" ShortID="587305842">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -54,6 +75,13 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="ui_button_down" ID="{88A8F047-AB5D-485E-8954-F9E035469B9F}" ShortID="129222676">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -76,6 +104,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="ui_inventory_close" ID="{B5C2FCA7-17B9-4EB8-84D0-DAC786294E1C}" ShortID="97790676">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -86,6 +121,13 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="ui_inventory_open" ID="{96ADF25D-03C5-4F7B-B188-92D80F4CFCE6}" ShortID="740548065">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -108,6 +150,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="ui_menu_navigate" ID="{A69A09D7-109D-4E78-9323-DE7C7D5B48D9}" ShortID="867378235">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -118,6 +167,13 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="ui_menu_pause" ID="{62CE0233-6852-4700-AFA1-4A8BFF84A36E}" ShortID="658559586">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -128,6 +184,13 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="ui_menu_resume" ID="{C8F5F4E5-D7F7-46F7-87A6-802256E87F1D}" ShortID="373313503">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -138,6 +201,13 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="ui_menu_select" ID="{6FCF0B8C-7378-4FA7-B419-5C4B303A375E}" ShortID="331454738">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -313,7 +383,9 @@
 											<ChildrenList>
 												<AudioFileSource Name="select_02" ID="{F03A8801-6DF0-4E0F-90A9-392BCA27273B}" ShortID="613518462">
 													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.561978934151786"/>
 														<Property Name="TrimBegin" Type="Real64" Value="4.99536830357143E-02"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.740979631696428"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>select_02.wav</AudioFile>
@@ -496,6 +568,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="new_destination" ID="{CF1F1D67-6B8F-498E-9E75-CCDC5BC3F810}" ShortID="840900199">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -506,6 +585,13 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="weather_update" ID="{4A1E51FE-EC6E-4716-91D9-EE92B763552D}" ShortID="138718134">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -516,6 +602,13 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="answer_call" ID="{BB964033-662A-4A79-8434-215E62E97D95}" ShortID="819081796">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -526,6 +619,13 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="incoming_call" ID="{14029F3B-F9E0-47F5-8E03-26AD5CD25C88}" ShortID="916820638">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -536,6 +636,13 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="warning" ID="{B22CF6F2-CA28-4061-AC9D-54E317962556}" ShortID="777610335">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -544,6 +651,35 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 										</Reference>
 									</ReferenceList>
+								</Sound>
+								<Sound Name="computer_click" ID="{4AED15C8-076D-49F9-B10C-6B7E6C8AD833}" ShortID="812050962">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-28</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="computer_click" ID="{4C5F2A6E-7FE5-4D40-9802-A70579CBBC63}" ShortID="323635405">
+											<PropertyList>
+												<Property Name="TrimEnd" Type="Real64" Value="1.53434244791667E-03"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>computer_click.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="computer_click" ID="{4C5F2A6E-7FE5-4D40-9802-A70579CBBC63}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>

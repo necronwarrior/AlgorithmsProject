@@ -28,24 +28,30 @@
 			<IncludedEvents>
 				<Event Id="1705038038" Name="alarm_clock_start" ObjectPath="\Events\Default Work Unit\objects\House\alarm_clock\alarm_clock_start"/>
 				<Event Id="3800124118" Name="alarm_clock_stop" ObjectPath="\Events\Default Work Unit\objects\House\alarm_clock\alarm_clock_stop"/>
+				<Event Id="4240897341" Name="all_tasks_complete" ObjectPath="\Events\Default Work Unit\ui\ui_prompts\all_tasks_complete"/>
 				<Event Id="1096670663" Name="amb_bg_town_start" ObjectPath="\Events\Default Work Unit\ambience\Town\amb_bg_town_start"/>
 				<Event Id="3667364641" Name="amb_coast_start" ObjectPath="\Events\Default Work Unit\ambience\coast\amb_coast_start"/>
+				<Event Id="2998204182" Name="amb_coast_waves_start" ObjectPath="\Events\Default Work Unit\ambience\coast\amb_coast_waves_start"/>
 				<Event Id="1346007313" Name="amb_emit_forest_birds_start" ObjectPath="\Events\Default Work Unit\ambience\Emitters\fauna\forest_birds\amb_emit_forest_birds_start"/>
 				<Event Id="2257695087" Name="amb_emit_small_birds_start" ObjectPath="\Events\Default Work Unit\ambience\Emitters\fauna\small_birds\amb_emit_small_birds_start"/>
 				<Event Id="1208428295" Name="amb_emit_wood_pigeon_start" ObjectPath="\Events\Default Work Unit\ambience\Emitters\fauna\wood_pigeon\amb_emit_wood_pigeon_start"/>
 				<Event Id="3609702808" Name="amb_river_loop_start" ObjectPath="\Events\Default Work Unit\ambience\Emitters\water\river\amb_river_loop_start"/>
 				<Event Id="572225828" Name="amb_river_loop_stop" ObjectPath="\Events\Default Work Unit\ambience\Emitters\water\river\amb_river_loop_stop"/>
-				<Event Id="2861563724" Name="amb_waves_loop_start" ObjectPath="\Events\Default Work Unit\ambience\Emitters\water\sea\amb_waves_loop_start"/>
 				<Event Id="810755357" Name="amb_wind_grass_loop_start" ObjectPath="\Events\Default Work Unit\ambience\Emitters\weather\wind_grass\amb_wind_grass_loop_start"/>
 				<Event Id="3678634271" Name="amb_wind_grass_loop_stop" ObjectPath="\Events\Default Work Unit\ambience\Emitters\weather\wind_grass\amb_wind_grass_loop_stop"/>
 				<Event Id="1595217012" Name="amb_wind_loop_start" ObjectPath="\Events\Default Work Unit\ambience\Emitters\weather\wind\amb_wind_loop_start"/>
 				<Event Id="1561534440" Name="amb_wind_loop_stop" ObjectPath="\Events\Default Work Unit\ambience\Emitters\weather\wind\amb_wind_loop_stop"/>
 				<Event Id="727727334" Name="amb_wind_trees_loop_start" ObjectPath="\Events\Default Work Unit\ambience\Emitters\weather\wind_trees\amb_wind_trees_loop_start"/>
 				<Event Id="3964888102" Name="amb_wind_trees_loop_stop" ObjectPath="\Events\Default Work Unit\ambience\Emitters\weather\wind_trees\amb_wind_trees_loop_stop"/>
+				<Event Id="131379173" Name="begin_game" ObjectPath="\Events\Default Work Unit\ui\main_menu\begin_game"/>
+				<Event Id="530070631" Name="complete_all_tasks" ObjectPath="\Events\Default Work Unit\ui\ui_prompts\complete_all_tasks"/>
+				<Event Id="2064491080" Name="complete_all_tasks_delayed" ObjectPath="\Events\Default Work Unit\ui\ui_prompts\complete_all_tasks_delayed"/>
+				<Event Id="2533884647" Name="computer_click" ObjectPath="\Events\Default Work Unit\ui\tasks\computer\computer_click"/>
 				<Event Id="1631916329" Name="door_close_start" ObjectPath="\Events\Default Work Unit\objects\doors\door_close_start"/>
 				<Event Id="1807091149" Name="door_open_start" ObjectPath="\Events\Default Work Unit\objects\doors\door_open_start"/>
 				<Event Id="643486511" Name="footsteps_start" ObjectPath="\Events\Default Work Unit\player\movements\footsteps\footsteps_start"/>
 				<Event Id="2007946354" Name="generators_start" ObjectPath="\Events\Default Work Unit\objects\Tower\generators\generators_start"/>
+				<Event Id="236640468" Name="grid_select" ObjectPath="\Events\Default Work Unit\ui\tasks\computer\grid_select"/>
 				<Event Id="78043339" Name="kitchen_sounds_start" ObjectPath="\Events\Default Work Unit\objects\House\kitchen\kitchen_sounds_start"/>
 				<Event Id="3086739561" Name="kitchen_sounds_stop" ObjectPath="\Events\Default Work Unit\objects\House\kitchen\kitchen_sounds_stop"/>
 				<Event Id="1021718997" Name="laser_fence_start" ObjectPath="\Events\Default Work Unit\objects\Tower\laser_fence\laser_fence_start"/>
@@ -60,11 +66,15 @@
 				<Event Id="930464141" Name="sink_tap_stop" ObjectPath="\Events\Default Work Unit\objects\House\sink\sink_tap_stop"/>
 				<Event Id="709036204" Name="street_light_start" ObjectPath="\Events\Default Work Unit\objects\street_light\street_light_start"/>
 				<Event Id="2426244745" Name="street_lights_start" ObjectPath="\Events\Default Work Unit\objects\Tower\street_lights\street_lights_start"/>
+				<Event Id="1134601432" Name="system_initialised" ObjectPath="\Events\Default Work Unit\ui\ui_prompts\system_initialised"/>
+				<Event Id="3806709326" Name="task_updated" ObjectPath="\Events\Default Work Unit\ui\tasks\task_updated"/>
+				<Event Id="1898143866" Name="task_updated_delay" ObjectPath="\Events\Default Work Unit\ui\tasks\task_updated_delay"/>
 				<Event Id="2922160133" Name="type_backspace" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_backspace"/>
 				<Event Id="875684730" Name="type_enter" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_enter"/>
 				<Event Id="2206263592" Name="type_letter" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_letter"/>
 				<Event Id="330604451" Name="type_number" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_number"/>
 				<Event Id="4038065741" Name="type_spacebar" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_spacebar"/>
+				<Event Id="2187538097" Name="user_behaviour_noted" ObjectPath="\Events\Default Work Unit\ui\ui_prompts\user_behaviour_noted"/>
 				<Event Id="2241535633" Name="writing_loop_start" ObjectPath="\Events\Default Work Unit\player\actions\writing\writing_loop_start"/>
 				<Event Id="1470925707" Name="writing_loop_stop" ObjectPath="\Events\Default Work Unit\player\actions\writing\writing_loop_stop"/>
 			</IncludedEvents>
@@ -72,6 +82,10 @@
 				<File Id="8370558" Language="SFX">
 					<ShortName>player_footstep_gravel_walk_09.wav</ShortName>
 					<Path>SFX\player_footstep_gravel_walk_09_8A6CA8BA.wem</Path>
+				</File>
+				<File Id="15163499" Language="SFX">
+					<ShortName>amb_coast_waves_01.wav</ShortName>
+					<Path>SFX\amb_coast_waves_01_21CA2154.wem</Path>
 				</File>
 				<File Id="29399829" Language="SFX">
 					<ShortName>door_close_wooden_01.wav</ShortName>
@@ -100,6 +114,10 @@
 				<File Id="76039451" Language="SFX">
 					<ShortName>select_back_02.wav</ShortName>
 					<Path>SFX\select_back_02_8A6CA8BA.wem</Path>
+				</File>
+				<File Id="78087515" Language="SFX">
+					<ShortName>select_advance_02_01.wav</ShortName>
+					<Path>SFX\select_advance_02_01_6978FED1.wem</Path>
 				</File>
 				<File Id="82485298" Language="SFX">
 					<ShortName>sfx_player_typing_number_01.wav</ShortName>
@@ -157,6 +175,10 @@
 					<ShortName>player_footstep_grass_short_walk_02.wav</ShortName>
 					<Path>SFX\player_footstep_grass_short_walk_02_18108AE8.wem</Path>
 				</File>
+				<File Id="183317508" Language="SFX">
+					<ShortName>amb_coast_birds_loop.wav</ShortName>
+					<Path>SFX\amb_coast_birds_loop_21CA2154.wem</Path>
+				</File>
 				<File Id="185563663" Language="SFX">
 					<ShortName>door_close_wooden_04.wav</ShortName>
 					<Path>SFX\door_close_wooden_04_C597EA4F.wem</Path>
@@ -176,6 +198,10 @@
 				<File Id="204918554" Language="SFX">
 					<ShortName>sfx_toilet_flush.wav</ShortName>
 					<Path>SFX\sfx_toilet_flush_8A6CA8BA.wem</Path>
+				</File>
+				<File Id="206784681" Language="SFX">
+					<ShortName>dlg_ui_04.wav</ShortName>
+					<Path>SFX\dlg_ui_04_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="213050855" Language="SFX">
 					<ShortName>sfx_player_typing_enter_01 - Copy.wav</ShortName>
@@ -269,6 +295,10 @@
 					<ShortName>door_close_wooden_11.wav</ShortName>
 					<Path>SFX\door_close_wooden_11_A6C7826A.wem</Path>
 				</File>
+				<File Id="323635405" Language="SFX">
+					<ShortName>computer_click.wav</ShortName>
+					<Path>SFX\computer_click_844FE370.wem</Path>
+				</File>
 				<File Id="325148750" Language="SFX">
 					<ShortName>sfx_tap_off.wav</ShortName>
 					<Path>SFX\sfx_tap_off_8A6CA8BA.wem</Path>
@@ -292,6 +322,10 @@
 				<File Id="358484779" Language="SFX">
 					<ShortName>sfx_player_typing_letter_06.wav</ShortName>
 					<Path>SFX\sfx_player_typing_letter_06_C6BCC72E.wem</Path>
+				</File>
+				<File Id="371547735" Language="SFX">
+					<ShortName>dlg_ui_03.wav</ShortName>
+					<Path>SFX\dlg_ui_03_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="372014110" Language="SFX">
 					<ShortName>door_close_wooden_06.wav</ShortName>
@@ -317,14 +351,6 @@
 					<ShortName>sfx_writing_loop.wav</ShortName>
 					<Path>SFX\sfx_writing_loop_21CA2154.wem</Path>
 				</File>
-				<File Id="421352245" Language="SFX">
-					<ShortName>amb_emit_seagulls_02.wav</ShortName>
-					<Path>SFX\amb_emit_seagulls_02_D82E81C4.wem</Path>
-				</File>
-				<File Id="422139352" Language="SFX">
-					<ShortName>amb_emit_seagulls_03.wav</ShortName>
-					<Path>SFX\amb_emit_seagulls_03_C60B1100.wem</Path>
-				</File>
 				<File Id="423911496" Language="SFX">
 					<ShortName>sfx_radio_01.wav</ShortName>
 					<Path>SFX\sfx_radio_01_8A6CA8BA.wem</Path>
@@ -340,10 +366,6 @@
 				<File Id="474295533" Language="SFX">
 					<ShortName>amb_emit_birds_16.wav</ShortName>
 					<Path>SFX\amb_emit_birds_16_C743B201.wem</Path>
-				</File>
-				<File Id="475293254" Language="SFX">
-					<ShortName>amb_emit_seagulls_01.wav</ShortName>
-					<Path>SFX\amb_emit_seagulls_01_7EEB66E1.wem</Path>
 				</File>
 				<File Id="495386261" Language="SFX">
 					<ShortName>sfx_player_typing_number_02.wav</ShortName>
@@ -373,6 +395,10 @@
 					<ShortName>sfx_player_typing_letter_10.wav</ShortName>
 					<Path>SFX\sfx_player_typing_letter_10_B66D5BF1.wem</Path>
 				</File>
+				<File Id="542979499" Language="SFX">
+					<ShortName>dlg_ui_01.wav</ShortName>
+					<Path>SFX\dlg_ui_01_8A6CA8BA.wem</Path>
+				</File>
 				<File Id="547117497" Language="SFX">
 					<ShortName>sfx_laser_fence_01.wav</ShortName>
 					<Path>SFX\sfx_laser_fence_01_8A6CA8BA.wem</Path>
@@ -401,9 +427,17 @@
 					<ShortName>glasses_03.wav</ShortName>
 					<Path>SFX\glasses_03_8A6CA8BA.wem</Path>
 				</File>
+				<File Id="613518462" Language="SFX">
+					<ShortName>select_02.wav</ShortName>
+					<Path>SFX\select_02_7DFCDC67.wem</Path>
+				</File>
 				<File Id="615687686" Language="SFX">
 					<ShortName>sfx_player_typing_spacebar_02.wav</ShortName>
 					<Path>SFX\sfx_player_typing_spacebar_02_81286C89.wem</Path>
+				</File>
+				<File Id="616941282" Language="SFX">
+					<ShortName>dlg_ui_05.wav</ShortName>
+					<Path>SFX\dlg_ui_05_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="632058047" Language="SFX">
 					<ShortName>cutlery_01.wav</ShortName>
@@ -529,6 +563,10 @@
 					<ShortName>sfx_player_typing_letter_09.wav</ShortName>
 					<Path>SFX\sfx_player_typing_letter_09_D0767225.wem</Path>
 				</File>
+				<File Id="901263882" Language="SFX">
+					<ShortName>dlg_ui_02.wav</ShortName>
+					<Path>SFX\dlg_ui_02_8A6CA8BA.wem</Path>
+				</File>
 				<File Id="901761341" Language="SFX">
 					<ShortName>amb_emit_seagulls_05.wav</ShortName>
 					<Path>SFX\amb_emit_seagulls_05_AD031CAF.wem</Path>
@@ -552,6 +590,10 @@
 				<File Id="958191727" Language="SFX">
 					<ShortName>player_footsteps_dirt_walk_03.wav</ShortName>
 					<Path>SFX\player_footsteps_dirt_walk_03_8A6CA8BA.wem</Path>
+				</File>
+				<File Id="969226647" Language="SFX">
+					<ShortName>select_advance_01.wav</ShortName>
+					<Path>SFX\select_advance_01_A53AB105.wem</Path>
 				</File>
 				<File Id="981291210" Language="SFX">
 					<ShortName>sfx_player_typing_letter_03.wav</ShortName>
@@ -580,10 +622,6 @@
 				<File Id="1037891212" Language="SFX">
 					<ShortName>amb_emit_birds_05.wav</ShortName>
 					<Path>SFX\amb_emit_birds_05_FD6FBD4C.wem</Path>
-				</File>
-				<File Id="1047958180" Language="SFX">
-					<ShortName>amb_emit_seagulls_04.wav</ShortName>
-					<Path>SFX\amb_emit_seagulls_04_1B6465AD.wem</Path>
 				</File>
 				<File Id="1051689097" Language="SFX">
 					<ShortName>glasses_04.wav</ShortName>

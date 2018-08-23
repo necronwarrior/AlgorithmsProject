@@ -8987,6 +8987,7 @@
 				</ActorMixer>
 				<ActorMixer Name="ui_dialogue" ID="{EB5CBCCB-8C3B-4400-A879-0CD474634750}" ShortID="423108515">
 					<PropertyList>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-13</Value>
