@@ -2985,8 +2985,20 @@
 							<StateGroupInfo>
 								<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
 							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="location" ID="{05AEFB21-506C-437E-8441-FDD1255806BB}"/>
+							</StateGroupInfo>
 						</StateGroupList>
-						<CustomStateList/>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="inside" ID="{D80F3D7A-8C29-4118-886E-C4E926467233}"/>
+								<State Name="" ID="{98762951-E6E8-4E1C-978C-A93E19E7A7DC}" ShortID="186721268">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+						</CustomStateList>
 					</StateInfo>
 				</ActorMixer>
 				<ActorMixer Name="laser_fence" ID="{703A92AC-5D3B-4423-B7AB-36871B1451EB}" ShortID="909743310">
@@ -3149,6 +3161,32 @@
 							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="frequency_generator_loop_02" ID="{94965E06-6F45-4350-9925-00EB513386F0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="generator_rise_01" ID="{8C8562DA-BE7E-434B-A331-0C06E4DFE5E4}" ShortID="711902629">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-25</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="computer_rise_01" ID="{8F7728F6-5575-48DD-B862-821A6180870D}" ShortID="229600495">
+									<Language>SFX</Language>
+									<AudioFile>computer_rise_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="computer_rise_01" ID="{8F7728F6-5575-48DD-B862-821A6180870D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

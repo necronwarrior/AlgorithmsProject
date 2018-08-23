@@ -35,7 +35,7 @@
 						<Switch Name="off" ID="{1420DF7A-85B5-4987-9F4A-481382D0014E}"/>
 					</ChildrenList>
 					<SwitchOnRTPC>
-						<GameParameterRef Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
+						<GameParameterRef Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
 						<Curve Name="" ID="{B4CBCC01-1E95-4884-9720-52B0509AF197}">
 							<PropertyList>
 								<Property Name="Flags" Type="int32" Value="65537"/>
@@ -47,8 +47,8 @@
 									<Flags>5</Flags>
 								</Point>
 								<Point>
-									<XPos>100</XPos>
-									<YPos>1</YPos>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
 									<Flags>37</Flags>
 								</Point>
 							</PointList>
@@ -62,6 +62,64 @@
 						<Switch Name="tower" ID="{AF88CA91-7FD0-42D0-ABF2-46D3E28A17A2}"/>
 						<Switch Name="canyon" ID="{9FE01DEE-9DE3-4B14-A239-03AAA304D561}"/>
 					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="alarm_clock_volume" ID="{C7D5EB48-1194-463F-977D-F6FB28396E47}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="on" ID="{C55D0FED-19FF-4951-B8EF-E4E93C876BE2}"/>
+						<Switch Name="off" ID="{06BADBEC-0292-471D-B5B5-928BF0C128EF}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="alarm_clock_volume" ID="{4E8A89AD-F8B2-4320-AD7E-103C691BE74D}"/>
+						<Curve Name="" ID="{EB8624E2-B080-4EDB-B5A5-73007F6FA968}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="radio_volume" ID="{9E26EB6D-243B-4D85-A56F-26D1F8F3EE2D}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="on" ID="{BDF441E3-D5B1-4E0A-A527-4E375C867F03}"/>
+						<Switch Name="off" ID="{5390D3F9-4A55-405F-BBE3-E82BBB031513}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="radio_volume" ID="{10C111E0-CDFF-4AFA-8DBC-ED8988691447}"/>
+						<Curve Name="" ID="{BA1635E2-EE5F-4ACA-969C-7D9F350559E7}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
 				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
