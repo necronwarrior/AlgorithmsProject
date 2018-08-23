@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
 	<RootPaths>
-		<ProjectRoot>C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\Content\WwiseAudio\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\1702776\Downloads\GitHub\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\1302534\Downloads\AlgoProj2\AlgorithmsProject\FracTales\DES506_Algorithms_team_02\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -29,7 +29,6 @@
 				<Event Id="1705038038" Name="alarm_clock_start" ObjectPath="\Events\Default Work Unit\objects\House\alarm_clock\alarm_clock_start"/>
 				<Event Id="3800124118" Name="alarm_clock_stop" ObjectPath="\Events\Default Work Unit\objects\House\alarm_clock\alarm_clock_stop"/>
 				<Event Id="1096670663" Name="amb_bg_town_start" ObjectPath="\Events\Default Work Unit\ambience\Town\amb_bg_town_start"/>
-				<Event Id="3667364641" Name="amb_coast_start" ObjectPath="\Events\Default Work Unit\ambience\coast\amb_coast_start"/>
 				<Event Id="1346007313" Name="amb_emit_forest_birds_start" ObjectPath="\Events\Default Work Unit\ambience\Emitters\fauna\forest_birds\amb_emit_forest_birds_start"/>
 				<Event Id="2257695087" Name="amb_emit_small_birds_start" ObjectPath="\Events\Default Work Unit\ambience\Emitters\fauna\small_birds\amb_emit_small_birds_start"/>
 				<Event Id="1208428295" Name="amb_emit_wood_pigeon_start" ObjectPath="\Events\Default Work Unit\ambience\Emitters\fauna\wood_pigeon\amb_emit_wood_pigeon_start"/>
@@ -45,10 +44,8 @@
 				<Event Id="1631916329" Name="door_close_start" ObjectPath="\Events\Default Work Unit\objects\doors\door_close_start"/>
 				<Event Id="1807091149" Name="door_open_start" ObjectPath="\Events\Default Work Unit\objects\doors\door_open_start"/>
 				<Event Id="643486511" Name="footsteps_start" ObjectPath="\Events\Default Work Unit\player\movements\footsteps\footsteps_start"/>
-				<Event Id="2007946354" Name="generators_start" ObjectPath="\Events\Default Work Unit\objects\Tower\generators\generators_start"/>
 				<Event Id="78043339" Name="kitchen_sounds_start" ObjectPath="\Events\Default Work Unit\objects\House\kitchen\kitchen_sounds_start"/>
 				<Event Id="3086739561" Name="kitchen_sounds_stop" ObjectPath="\Events\Default Work Unit\objects\House\kitchen\kitchen_sounds_stop"/>
-				<Event Id="1021718997" Name="laser_fence_start" ObjectPath="\Events\Default Work Unit\objects\Tower\laser_fence\laser_fence_start"/>
 				<Event Id="2607886720" Name="music_overworld_start" ObjectPath="\Events\Default Work Unit\music\general\music_overworld_start"/>
 				<Event Id="3725903807" Name="music_start" ObjectPath="\Events\Default Work Unit\music\general\music_start"/>
 				<Event Id="45473393" Name="music_tower_start" ObjectPath="\Events\Default Work Unit\music\general\music_tower_start"/>
@@ -56,7 +53,6 @@
 				<Event Id="3309108327" Name="sink_tap_start" ObjectPath="\Events\Default Work Unit\objects\House\sink\sink_tap_start"/>
 				<Event Id="930464141" Name="sink_tap_stop" ObjectPath="\Events\Default Work Unit\objects\House\sink\sink_tap_stop"/>
 				<Event Id="709036204" Name="street_light_start" ObjectPath="\Events\Default Work Unit\objects\street_light\street_light_start"/>
-				<Event Id="2426244745" Name="street_lights_start" ObjectPath="\Events\Default Work Unit\objects\Tower\street_lights\street_lights_start"/>
 				<Event Id="2922160133" Name="type_backspace" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_backspace"/>
 				<Event Id="875684730" Name="type_enter" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_enter"/>
 				<Event Id="2206263592" Name="type_letter" ObjectPath="\Events\Default Work Unit\player\actions\typing\type_letter"/>
@@ -128,7 +124,7 @@
 				</File>
 				<File Id="134950809" Language="SFX">
 					<ShortName>sfx_tap_on.wav</ShortName>
-					<Path>SFX\sfx_tap_on_8A6CA8BA.wem</Path>
+					<Path>SFX\sfx_tap_on_956F3484.wem</Path>
 				</File>
 				<File Id="140227930" Language="SFX">
 					<ShortName>amb_emit_birds_22.wav</ShortName>
@@ -246,17 +242,9 @@
 					<ShortName>player_footstep_gravel_walk_06.wav</ShortName>
 					<Path>SFX\player_footstep_gravel_walk_06_8A6CA8BA.wem</Path>
 				</File>
-				<File Id="306170152" Language="SFX">
-					<ShortName>sfx_street_light_01.wav</ShortName>
-					<Path>SFX\sfx_street_light_01_21CA2154.wem</Path>
-				</File>
 				<File Id="306356301" Language="SFX">
 					<ShortName>dishes_01.wav</ShortName>
 					<Path>SFX\dishes_01_8A6CA8BA.wem</Path>
-				</File>
-				<File Id="311156543" Language="SFX">
-					<ShortName>amb_emit_seagulls_06.wav</ShortName>
-					<Path>SFX\amb_emit_seagulls_06_AFC5267C.wem</Path>
 				</File>
 				<File Id="311297241" Language="SFX">
 					<ShortName>amb_wood_pigeon_05.wav</ShortName>
@@ -314,14 +302,6 @@
 					<ShortName>sfx_writing_loop.wav</ShortName>
 					<Path>SFX\sfx_writing_loop_21CA2154.wem</Path>
 				</File>
-				<File Id="421352245" Language="SFX">
-					<ShortName>amb_emit_seagulls_02.wav</ShortName>
-					<Path>SFX\amb_emit_seagulls_02_D82E81C4.wem</Path>
-				</File>
-				<File Id="422139352" Language="SFX">
-					<ShortName>amb_emit_seagulls_03.wav</ShortName>
-					<Path>SFX\amb_emit_seagulls_03_C60B1100.wem</Path>
-				</File>
 				<File Id="431799502" Language="SFX">
 					<ShortName>player_footsteps_dirt_walk_04.wav</ShortName>
 					<Path>SFX\player_footsteps_dirt_walk_04_8A6CA8BA.wem</Path>
@@ -333,10 +313,6 @@
 				<File Id="474295533" Language="SFX">
 					<ShortName>amb_emit_birds_16.wav</ShortName>
 					<Path>SFX\amb_emit_birds_16_C743B201.wem</Path>
-				</File>
-				<File Id="475293254" Language="SFX">
-					<ShortName>amb_emit_seagulls_01.wav</ShortName>
-					<Path>SFX\amb_emit_seagulls_01_7EEB66E1.wem</Path>
 				</File>
 				<File Id="495386261" Language="SFX">
 					<ShortName>sfx_player_typing_number_02.wav</ShortName>
@@ -365,10 +341,6 @@
 				<File Id="535986198" Language="SFX">
 					<ShortName>sfx_player_typing_letter_10.wav</ShortName>
 					<Path>SFX\sfx_player_typing_letter_10_B66D5BF1.wem</Path>
-				</File>
-				<File Id="547117497" Language="SFX">
-					<ShortName>sfx_laser_fence_01.wav</ShortName>
-					<Path>SFX\sfx_laser_fence_01_8A6CA8BA.wem</Path>
 				</File>
 				<File Id="549122945" Language="SFX">
 					<ShortName>sfx_player_typing_enter_01.wav</ShortName>
@@ -518,10 +490,6 @@
 					<ShortName>sfx_player_typing_letter_09.wav</ShortName>
 					<Path>SFX\sfx_player_typing_letter_09_D0767225.wem</Path>
 				</File>
-				<File Id="901761341" Language="SFX">
-					<ShortName>amb_emit_seagulls_05.wav</ShortName>
-					<Path>SFX\amb_emit_seagulls_05_AD031CAF.wem</Path>
-				</File>
 				<File Id="911159935" Language="SFX">
 					<ShortName>amb_wood_pigeon_03.wav</ShortName>
 					<Path>SFX\amb_wood_pigeon_03_8A6CA8BA.wem</Path>
@@ -569,10 +537,6 @@
 				<File Id="1037891212" Language="SFX">
 					<ShortName>amb_emit_birds_05.wav</ShortName>
 					<Path>SFX\amb_emit_birds_05_FD6FBD4C.wem</Path>
-				</File>
-				<File Id="1047958180" Language="SFX">
-					<ShortName>amb_emit_seagulls_04.wav</ShortName>
-					<Path>SFX\amb_emit_seagulls_04_1B6465AD.wem</Path>
 				</File>
 				<File Id="1051689097" Language="SFX">
 					<ShortName>glasses_04.wav</ShortName>

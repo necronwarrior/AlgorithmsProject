@@ -99,44 +99,6 @@
 								<State Name="canyon" ID="{3C99E6D1-2B28-4551-82D0-F028C316F5EF}"/>
 								<State Name="coast" ID="{2FEC2E20-FB7F-46F8-A5BB-4201832901F9}"/>
 							</ChildrenList>
-							<TransitionList>
-								<Transition>
-									<StartState Name="None" ID="{8C15E2BC-234C-4815-A841-FCE2DC11ABAD}"/>
-									<EndState Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
-									<Time>1</Time>
-									<IsShared>true</IsShared>
-								</Transition>
-								<Transition>
-									<StartState Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
-									<EndState Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
-									<Time>1</Time>
-									<IsShared>true</IsShared>
-								</Transition>
-								<Transition>
-									<StartState Name="coast" ID="{2FEC2E20-FB7F-46F8-A5BB-4201832901F9}"/>
-									<EndState Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
-									<Time>1</Time>
-									<IsShared>true</IsShared>
-								</Transition>
-								<Transition>
-									<StartState Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
-									<EndState Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
-									<Time>1</Time>
-									<IsShared>true</IsShared>
-								</Transition>
-								<Transition>
-									<StartState Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
-									<EndState Name="canyon" ID="{3C99E6D1-2B28-4551-82D0-F028C316F5EF}"/>
-									<Time>1</Time>
-									<IsShared>true</IsShared>
-								</Transition>
-								<Transition>
-									<StartState Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
-									<EndState Name="None" ID="{8C15E2BC-234C-4815-A841-FCE2DC11ABAD}"/>
-									<Time>1</Time>
-									<IsShared>false</IsShared>
-								</Transition>
-							</TransitionList>
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
@@ -188,31 +150,14 @@
 					</ChildrenList>
 				</Folder>
 				<StateGroup Name="music" ID="{E8DD0661-C7C0-4599-85EE-CBFFE85AE22C}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{4A2F24F2-96DD-490E-B3CD-AE3B44F65BE2}"/>
 						<State Name="overworld" ID="{52097FDF-157C-4035-9059-E601F04673AF}"/>
 						<State Name="tower" ID="{2E5037B9-E1E2-45D1-A041-0AB1D2A6A6CB}"/>
 					</ChildrenList>
-					<TransitionList>
-						<Transition>
-							<StartState Name="overworld" ID="{52097FDF-157C-4035-9059-E601F04673AF}"/>
-							<EndState Name="tower" ID="{2E5037B9-E1E2-45D1-A041-0AB1D2A6A6CB}"/>
-							<Time>1</Time>
-							<IsShared>true</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="None" ID="{4A2F24F2-96DD-490E-B3CD-AE3B44F65BE2}"/>
-							<EndState Name="overworld" ID="{52097FDF-157C-4035-9059-E601F04673AF}"/>
-							<Time>1</Time>
-							<IsShared>true</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="None" ID="{4A2F24F2-96DD-490E-B3CD-AE3B44F65BE2}"/>
-							<EndState Name="tower" ID="{2E5037B9-E1E2-45D1-A041-0AB1D2A6A6CB}"/>
-							<Time>1</Time>
-							<IsShared>true</IsShared>
-						</Transition>
-					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

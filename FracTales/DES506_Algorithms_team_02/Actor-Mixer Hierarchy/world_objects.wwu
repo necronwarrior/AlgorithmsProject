@@ -13,7 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<WorkUnit Name="object_destructable" ID="{D66131ED-B553-4AF0-A93E-29C9113164ED}" PersistMode="Reference"/>
+						<WorkUnit Name="object_interactable" ID="{D66131ED-B553-4AF0-A93E-29C9113164ED}" PersistMode="Reference"/>
 						<WorkUnit Name="object_prop" ID="{9277E9DA-0234-499B-882A-6CADB5778D06}" PersistMode="Reference"/>
 					</ChildrenList>
 				</ActorMixer>

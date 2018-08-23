@@ -6,10 +6,33 @@
 				<WorkUnit Name="general" ID="{79E22627-062D-4585-B570-C50242E768AC}" PersistMode="Reference"/>
 				<WorkUnit Name="player" ID="{E2C9E624-461C-4E6A-9752-2FB605F783DE}" PersistMode="Reference"/>
 				<SwitchGroup Name="music" ID="{277E2E41-CE01-4236-A375-18192D51DB1F}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Switch Name="overworld" ID="{B4DE2F1B-8CA3-499E-8BC8-01807933713B}"/>
 						<Switch Name="tower" ID="{5BDD36E9-87F4-43C6-9CAF-5A0C10FEF0DD}"/>
 					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
+						<Curve Name="" ID="{277720C8-9403-431E-8120-552E71F66870}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
 				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
