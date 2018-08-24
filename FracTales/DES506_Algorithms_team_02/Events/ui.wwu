@@ -267,6 +267,81 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="tasks" ID="{B31D84E4-1C2E-4DDD-A8F4-BD13766729D7}" ShortID="725808775">
+					<ChildrenList>
+						<Event Name="finish_computer_task" ID="{675BD8F9-3460-4755-93AE-95986BB2E64B}">
+							<ChildrenList>
+								<Action Name="" ID="{ED3E5763-F71D-4EAD-95E7-8621BA9F3C13}" ShortID="934827487">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="select_advance_02_01" ID="{6BFE9C7A-47D1-4408-8C5A-B8409DF54439}" WorkUnitID="{CC9155E2-E556-4C78-91E2-A0F7D48E3AAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6D9EF5B2-07DC-4EE3-B652-0E186AB3D677}" ShortID="649840800">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="0.75"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dlg_ui_05" ID="{342397C1-EAA8-45CD-993F-E015EE96BD78}" WorkUnitID="{D28D7403-6FFD-452B-AF8A-FC68AC4B3B48}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="task_updated" ID="{F9321627-49C4-46A5-92C3-2FFFC30B0F36}">
+							<ChildrenList>
+								<Action Name="" ID="{B349B7E2-630A-498E-9C2D-F67D322B547D}" ShortID="482486844">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dlg_ui_02" ID="{2A68D357-7DE8-4758-9CB2-43EE4ACC198E}" WorkUnitID="{D28D7403-6FFD-452B-AF8A-FC68AC4B3B48}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="ui_prompts" ID="{118CB5D4-6399-4FA0-A4D0-C552327C91E9}" ShortID="784366831">
+					<ChildrenList>
+						<Event Name="system_initialised" ID="{7F7E8516-3E79-4725-99AC-712F0B5F673E}">
+							<ChildrenList>
+								<Action Name="" ID="{6220D6BF-7546-4D18-A041-B57F99217DA1}" ShortID="169830893">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dlg_ui_01" ID="{71E7F9D8-4BCD-48C6-A0A2-8D593D84AEA3}" WorkUnitID="{D28D7403-6FFD-452B-AF8A-FC68AC4B3B48}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="complete_all_tasks" ID="{1B8D60E6-A1F7-45FE-9005-A7900865CA3F}">
+							<ChildrenList>
+								<Action Name="" ID="{B5C77EEB-8366-47FC-B1BF-CBE8CD3586D6}" ShortID="252480679">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dlg_ui_03" ID="{F67BA8D6-CCA5-437D-906A-4984ADC6AD19}" WorkUnitID="{D28D7403-6FFD-452B-AF8A-FC68AC4B3B48}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

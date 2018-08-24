@@ -65,7 +65,24 @@
 						<GameParameter Name="sun_position" ID="{A21C38E2-BE01-43DF-9270-109B80EB9767}"/>
 					</ChildrenList>
 				</Folder>
-				<GameParameter Name="volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}"/>
+				<GameParameter Name="music_volume" ID="{966365CE-4FBA-4696-AB7C-8C41CD105AF4}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="radio_volume" ID="{10C111E0-CDFF-4AFA-8DBC-ED8988691447}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="alarm_clock_volume" ID="{4E8A89AD-F8B2-4320-AD7E-103C691BE74D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
