@@ -143,7 +143,24 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="siren" ID="{EE43459C-5FC1-484B-8DF2-06E8ECBA5748}" ShortID="413532793"/>
+						<Folder Name="siren" ID="{EE43459C-5FC1-484B-8DF2-06E8ECBA5748}" ShortID="413532793">
+							<ChildrenList>
+								<Event Name="siren_start" ID="{B2C8AD8C-A609-4880-B3EA-8E7CD7774E5A}">
+									<ChildrenList>
+										<Action Name="" ID="{B39B8037-DDA6-4990-8493-DC0D9B71C7B0}" ShortID="471810660">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="tower_siren_01" ID="{D78D15B0-FA61-4C6B-B3CF-472C4D06CA15}" WorkUnitID="{D66131ED-B553-4AF0-A93E-29C9113164ED}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="House" ID="{EDC744C3-1B2A-4161-8B76-0A6EE97D62D1}" ShortID="563178800">
