@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{EC9809C8-B319-403B-8053-D6B218D0E3A7}" SchemaVersion="80">
+<WwiseDocument Type="WorkUnit" ID="{D66131ED-B553-4AF0-A93E-29C9113164ED}" SchemaVersion="80" RootDocumentID="{A3567111-A355-43C8-9FC3-2DEDCA7A8A70}">
 	<AudioObjects>
-		<WorkUnit Name="object_interactable" ID="{EC9809C8-B319-403B-8053-D6B218D0E3A7}" PersistMode="Standalone">
+		<WorkUnit Name="object_interactable" ID="{D66131ED-B553-4AF0-A93E-29C9113164ED}" OwnerID="{42B64277-6FBB-442D-8F93-F5119EDC5875}" PersistMode="Nested">
 			<ChildrenList>
-				<ActorMixer Name="towers" ID="{4F95F129-D55B-4412-93C1-0A5195743140}" ShortID="862537202">
+				<ActorMixer Name="towers" ID="{DF22ADC6-6AFF-4624-A136-9CD041737BDD}" ShortID="862537201">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -13,7 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="tower_01" ID="{778B9AFD-1D5E-4832-96A8-455BD76C9D6A}" ShortID="362716565">
+						<RandomSequenceContainer Name="tower_01" ID="{6713C24A-3A6D-42C1-9250-1D4FB18BD0FD}" ShortID="362716564">
 							<PropertyList>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -28,7 +28,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="frequency_generator_01" ID="{F01DE335-1CBE-410F-B96A-05DD74B25D60}" ShortID="895732638">
+								<Sound Name="frequency_generator_01" ID="{B041F510-A01C-479B-B8A8-70D74A145056}" ShortID="895732637">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -38,7 +38,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="frequency_generator_01" ID="{C9DD6ECD-973E-40DA-A44D-F3CB0C032688}" ShortID="463291412">
+										<AudioFileSource Name="frequency_generator_01" ID="{51C90317-A8CD-4B46-B813-D890D20B2EA1}" ShortID="463291411">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="1.37660788690476"/>
 												<Property Name="TrimBegin" Type="Real64" Value="1.82480580357143"/>
@@ -49,10 +49,10 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="frequency_generator_01" ID="{C9DD6ECD-973E-40DA-A44D-F3CB0C032688}" Platform="Linked"/>
+										<ActiveSource Name="frequency_generator_01" ID="{51C90317-A8CD-4B46-B813-D890D20B2EA1}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="frequency_generator_loop_01" ID="{C09DAB74-7CB0-4FB1-A005-7773BB5FB63A}" ShortID="180230768">
+								<Sound Name="frequency_generator_loop_01" ID="{6196EC8C-0198-4639-B6DA-91F19B99D8E6}" ShortID="180230767">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
@@ -65,18 +65,22 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="frequency_generator_loop_01" ID="{D7021D35-55A7-4D5C-A954-53F8B64CF2FE}" ShortID="468336691">
+										<AudioFileSource Name="frequency_generator_loop_01" ID="{A8F574E5-7F0D-40E9-869E-B3DD107CDCAF}" ShortID="468336690">
 											<Language>SFX</Language>
 											<AudioFile>frequency_generator_loop_01.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="frequency_generator_loop_01" ID="{D7021D35-55A7-4D5C-A954-53F8B64CF2FE}" Platform="Linked"/>
+										<ActiveSource Name="frequency_generator_loop_01" ID="{A8F574E5-7F0D-40E9-869E-B3DD107CDCAF}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="frequency_generator_01" ID="{B041F510-A01C-479B-B8A8-70D74A145056}"/>
+								<ItemRef Name="frequency_generator_loop_01" ID="{6196EC8C-0198-4639-B6DA-91F19B99D8E6}"/>
+							</Playlist>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="tower_02" ID="{30A2DBF0-118D-4C2E-B441-D6B9E9F13108}" ShortID="994696595">
+						<RandomSequenceContainer Name="tower_02" ID="{D1DBE007-3C84-45D7-B21B-761CFF4B96FB}" ShortID="994696594">
 							<PropertyList>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -96,7 +100,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="frequency_generator_02" ID="{2F6AF3CF-AB52-40B3-BDCE-E29EDD65C9A4}" ShortID="264085160">
+								<Sound Name="frequency_generator_02" ID="{9310DC29-962E-48AC-AE04-F116C209AF7B}" ShortID="264085159">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -106,7 +110,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="frequency_generator_02" ID="{79EE1A55-C858-4D07-850B-640F75247EE9}" ShortID="916330629">
+										<AudioFileSource Name="frequency_generator_02" ID="{498B4E4B-899B-4DF0-B273-47E887BBAE0D}" ShortID="916330628">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="1.04324279203869"/>
 												<Property Name="TrimBegin" Type="Real64" Value="1.79122819010417"/>
@@ -117,10 +121,10 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="frequency_generator_02" ID="{79EE1A55-C858-4D07-850B-640F75247EE9}" Platform="Linked"/>
+										<ActiveSource Name="frequency_generator_02" ID="{498B4E4B-899B-4DF0-B273-47E887BBAE0D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="frequency_generator_loop_02" ID="{590B791B-8EFC-4DCC-A50C-3AD20AAB020E}" ShortID="689334402">
+								<Sound Name="frequency_generator_loop_02" ID="{BE8099B3-123A-4BA7-B5D0-CF723AFF66A7}" ShortID="689334401">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
@@ -133,16 +137,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="frequency_generator_loop_02" ID="{49BC5B9A-DD2F-4D48-972F-AEBE10C388C9}" ShortID="1009229714">
+										<AudioFileSource Name="frequency_generator_loop_02" ID="{EF45F5B8-1B7D-498C-AA0C-0722E164263C}" ShortID="1009229713">
 											<Language>SFX</Language>
 											<AudioFile>frequency_generator_loop_02.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="frequency_generator_loop_02" ID="{49BC5B9A-DD2F-4D48-972F-AEBE10C388C9}" Platform="Linked"/>
+										<ActiveSource Name="frequency_generator_loop_02" ID="{EF45F5B8-1B7D-498C-AA0C-0722E164263C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="frequency_generator_02" ID="{9310DC29-962E-48AC-AE04-F116C209AF7B}"/>
+								<ItemRef Name="frequency_generator_loop_02" ID="{BE8099B3-123A-4BA7-B5D0-CF723AFF66A7}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 						<Sound Name="tower_siren_01" ID="{D78D15B0-FA61-4C6B-B3CF-472C4D06CA15}" ShortID="763822350">
 							<PropertyList>

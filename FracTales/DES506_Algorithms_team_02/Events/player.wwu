@@ -24,6 +24,38 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="bed" ID="{60C107BE-EE38-42AE-A484-5163568A7BA8}" ShortID="102637143">
+							<ChildrenList>
+								<Event Name="player_in_bed" ID="{40D2B69C-9755-4A95-A2D1-4550DAE3C199}">
+									<ChildrenList>
+										<Action Name="" ID="{1998B469-8DE4-4E24-8ECC-0AA5A28FF4AF}" ShortID="70419095">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="into_bed_foley" ID="{8258DFB8-4AC2-47C3-9C8E-16853142394B}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="player_out_bed" ID="{F7553787-19DE-4748-BE3F-5C7035F7E2C2}">
+									<ChildrenList>
+										<Action Name="" ID="{BCDD2414-F49E-40F4-8885-5F95D1315AA7}" ShortID="106834423">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="out_of_bed_foley" ID="{C0B511B5-80F4-4B0F-B0AC-53B71E94BDAA}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="actions" ID="{2A92279E-3716-4CD2-AABD-36847D14D2E3}" ShortID="29714053">
