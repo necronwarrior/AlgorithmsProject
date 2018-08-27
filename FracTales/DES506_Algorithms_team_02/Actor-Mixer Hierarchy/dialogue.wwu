@@ -8987,6 +8987,7 @@
 				</ActorMixer>
 				<ActorMixer Name="ui_dialogue" ID="{EB5CBCCB-8C3B-4400-A879-0CD474634750}" ShortID="423108515">
 					<PropertyList>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-13</Value>
@@ -9684,174 +9685,58 @@
 										<ActiveSource Name="dlg_ui_08" ID="{04209C16-248C-4D66-ACF5-F6A5D4B1D0D3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="dlg_ui_09" ID="{BB73952D-5345-47ED-9AED-D8D4CBE8AA7D}" ShortID="937747624">
-									<Comment>"Entry denied - return to path"</Comment>
-									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
-									</PropertyList>
+								<RandomSequenceContainer Name="dlg_ui_9_10" ID="{F7861870-1F56-472F-BA30-B79E4D462C08}" ShortID="54729088">
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<Custom CreatedFrom="{696EECA4-7332-473E-98B8-95C3291EF440}">
-												<Attenuation Name="world_objects_atten (Custom)" ID="{5AA2AA6E-1666-46E9-B742-8CB8C040AAEB}" ShortID="50332889">
-													<PropertyList>
-														<Property Name="ConeAttenuation" Type="Real64">
-															<ValueList>
-																<Value>0</Value>
-															</ValueList>
-														</Property>
-														<Property Name="ConeUse" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
-														<Property Name="RadiusMax" Type="Real64" Value="2000"/>
-													</PropertyList>
-													<CurveUsageInfoList>
-														<VolumeDryUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="VolumeDry" ID="{D42C6C4D-59A0-412A-8407-6C66BBDB1854}">
-																	<PropertyList>
-																		<Property Name="Flags" Type="int32" Value="3"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>0</XPos>
-																			<YPos>0</YPos>
-																			<Flags>5</Flags>
-																			<SegmentShape>Log2</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>2000</XPos>
-																			<YPos>-200</YPos>
-																			<Flags>37</Flags>
-																		</Point>
-																	</PointList>
-																</Curve>
-															</CurveUsageInfo>
-														</VolumeDryUsage>
-														<VolumeWetGameUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-														</VolumeWetGameUsage>
-														<VolumeWetUserUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</VolumeWetUserUsage>
-														<LowPassFilterUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</LowPassFilterUsage>
-														<HighPassFilterUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</HighPassFilterUsage>
-														<SpreadUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</SpreadUsage>
-														<FocusUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</FocusUsage>
-													</CurveUsageInfoList>
-												</Attenuation>
-											</Custom>
-										</Reference>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="dlg_ui_09" ID="{680397C1-2288-44FC-AB68-6AB0BDB67F3E}" ShortID="605120406">
-											<Language>SFX</Language>
-											<AudioFile>dlg_ui_09.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="dlg_ui_09" ID="{BB73952D-5345-47ED-9AED-D8D4CBE8AA7D}" ShortID="937747624">
+											<Comment>"Entry denied - return to path"</Comment>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dlg_ui_09" ID="{680397C1-2288-44FC-AB68-6AB0BDB67F3E}" ShortID="605120406">
+													<Language>SFX</Language>
+													<AudioFile>dlg_ui_09.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dlg_ui_09" ID="{680397C1-2288-44FC-AB68-6AB0BDB67F3E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="dlg_ui_10" ID="{E29869C7-7289-493D-BA52-7F17AD2B7230}" ShortID="360262955">
+											<Comment>"Return to path"</Comment>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dlg_ui_10" ID="{8BFC87BA-3E6D-431A-8C0E-C6EC11D88315}" ShortID="133197142">
+													<Language>SFX</Language>
+													<AudioFile>dlg_ui_10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dlg_ui_10" ID="{8BFC87BA-3E6D-431A-8C0E-C6EC11D88315}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="dlg_ui_09" ID="{680397C1-2288-44FC-AB68-6AB0BDB67F3E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="dlg_ui_10" ID="{E29869C7-7289-493D-BA52-7F17AD2B7230}" ShortID="360262955">
-									<Comment>"Return to path"</Comment>
-									<PropertyList>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<Custom CreatedFrom="{696EECA4-7332-473E-98B8-95C3291EF440}">
-												<Attenuation Name="world_objects_atten (Custom)" ID="{BCBEBC5B-9701-4953-AC7A-AAFBB7059C7A}" ShortID="415050053">
-													<PropertyList>
-														<Property Name="ConeAttenuation" Type="Real64">
-															<ValueList>
-																<Value>0</Value>
-															</ValueList>
-														</Property>
-														<Property Name="ConeUse" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
-														<Property Name="RadiusMax" Type="Real64" Value="2000"/>
-													</PropertyList>
-													<CurveUsageInfoList>
-														<VolumeDryUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="VolumeDry" ID="{E8A48C86-BC45-419B-ABB6-D7BD194B83AA}">
-																	<PropertyList>
-																		<Property Name="Flags" Type="int32" Value="3"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>0</XPos>
-																			<YPos>0</YPos>
-																			<Flags>5</Flags>
-																			<SegmentShape>Log2</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>2000</XPos>
-																			<YPos>-200</YPos>
-																			<Flags>37</Flags>
-																		</Point>
-																	</PointList>
-																</Curve>
-															</CurveUsageInfo>
-														</VolumeDryUsage>
-														<VolumeWetGameUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-														</VolumeWetGameUsage>
-														<VolumeWetUserUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</VolumeWetUserUsage>
-														<LowPassFilterUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</LowPassFilterUsage>
-														<HighPassFilterUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</HighPassFilterUsage>
-														<SpreadUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</SpreadUsage>
-														<FocusUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</FocusUsage>
-													</CurveUsageInfoList>
-												</Attenuation>
-											</Custom>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="dlg_ui_10" ID="{8BFC87BA-3E6D-431A-8C0E-C6EC11D88315}" ShortID="133197142">
-											<Language>SFX</Language>
-											<AudioFile>dlg_ui_10.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="dlg_ui_10" ID="{8BFC87BA-3E6D-431A-8C0E-C6EC11D88315}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
@@ -9861,16 +9746,13 @@
 										<ItemRef Name="dlg_ui_07" ID="{491C581B-05B3-4FA7-AB57-9476CDC69273}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="dlg_ui_09" ID="{BB73952D-5345-47ED-9AED-D8D4CBE8AA7D}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
 										<ItemRef Name="dlg_ui_02" ID="{2A68D357-7DE8-4758-9CB2-43EE4ACC198E}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="dlg_ui_05" ID="{342397C1-EAA8-45CD-993F-E015EE96BD78}"/>
+										<ItemRef Name="dlg_ui_9_10" ID="{F7861870-1F56-472F-BA30-B79E4D462C08}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="dlg_ui_10" ID="{E29869C7-7289-493D-BA52-7F17AD2B7230}"/>
+										<ItemRef Name="dlg_ui_05" ID="{342397C1-EAA8-45CD-993F-E015EE96BD78}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="dlg_ui_03" ID="{F67BA8D6-CCA5-437D-906A-4984ADC6AD19}"/>

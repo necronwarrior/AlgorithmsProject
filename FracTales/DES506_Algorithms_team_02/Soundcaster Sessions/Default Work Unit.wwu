@@ -777,7 +777,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="alarm_clock_volume" ID="{4E8A89AD-F8B2-4320-AD7E-103C691BE74D}"/>
-							<Value>1</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="sun_position" ID="{A21C38E2-BE01-43DF-9270-109B80EB9767}"/>
@@ -861,7 +861,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+						<CurrentStateRef Name="coast" ID="{2FEC2E20-FB7F-46F8-A5BB-4201832901F9}"/>
 						<CurrentStateRef Name="outside" ID="{A5C60CD5-8D9B-463D-A82E-A88EC66C1835}"/>
 						<CurrentStateRef Name="tower" ID="{2E5037B9-E1E2-45D1-A041-0AB1D2A6A6CB}"/>
 					</CurrentStateList>

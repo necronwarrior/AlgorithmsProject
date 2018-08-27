@@ -258,7 +258,7 @@
 													<PropertyList>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{E5CC69A1-C13C-4571-A9E9-24001D1E8A3E}">
@@ -288,6 +288,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<Sound Name="amb_emit_seagulls_01" ID="{28C32CB2-C9A0-464C-A47F-F8BCC14BAD7B}" ShortID="749899071">
+															<PropertyList>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -310,6 +317,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="amb_emit_seagulls_02" ID="{33E77FED-86A3-4D4B-BD98-21B6A963A919}" ShortID="647184505">
+															<PropertyList>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -334,6 +348,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="amb_emit_seagulls_03" ID="{C3D17B6B-2FB5-41AC-85FA-379416818BDF}" ShortID="606020378">
+															<PropertyList>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -357,6 +378,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="amb_emit_seagulls_04" ID="{E88EB27B-68EF-4237-97F4-31288624455B}" ShortID="604051039">
+															<PropertyList>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
@@ -475,48 +503,75 @@
 														</CustomStateList>
 													</StateInfo>
 												</RandomSequenceContainer>
+												<Sound Name="amb_coast_birds_loop" ID="{E8BD1E55-F558-4A87-A92F-DB1F39F3027F}" ShortID="405847624">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="amb_coast_birds_loop" ID="{84B77D54-169F-4D33-B950-18AB21732CE7}" ShortID="183317508">
+															<Language>SFX</Language>
+															<AudioFile>amb_coast_birds_loop.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="overworld" ID="{428F752F-81C8-40F8-9ED1-082C330D979B}"/>
+																<State Name="" ID="{CDD589DC-E233-4432-A1EC-77F206B6E1C3}" ShortID="841902472">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
+																<State Name="" ID="{AE00296A-642E-482E-B5CB-D880487E7F7A}" ShortID="81998252">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="canyon" ID="{3C99E6D1-2B28-4551-82D0-F028C316F5EF}"/>
+																<State Name="" ID="{688A36A4-DF98-4D59-84E5-92FF515C1C36}" ShortID="1014370459">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
+																<State Name="" ID="{C2C32B27-D6A7-48F4-902D-51AEF28817A3}" ShortID="34110048">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="amb_coast_birds_loop" ID="{84B77D54-169F-4D33-B950-18AB21732CE7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<StateInfo>
-												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="world_location" ID="{63AB2A8E-6CCD-4199-A379-DC14D1F0E66D}"/>
-													</StateGroupInfo>
-												</StateGroupList>
-												<CustomStateList>
-													<CustomState>
-														<StateRef Name="cave" ID="{ECEAAFAB-903A-433F-8796-4793BEE61E7F}"/>
-														<State Name="" ID="{44917713-E0D3-4F7A-A83C-1C33FB1588F2}" ShortID="324291010">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-96"/>
-															</PropertyList>
-														</State>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="canyon" ID="{3C99E6D1-2B28-4551-82D0-F028C316F5EF}"/>
-														<State Name="" ID="{B2E58D5B-704B-47EA-B744-5E8CC3FBA3CF}" ShortID="276198933">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-96"/>
-															</PropertyList>
-														</State>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="tower" ID="{3610A8A9-C939-4A6C-8F8C-604A1C702D38}"/>
-														<State Name="" ID="{DBF743AA-73AA-4083-AB59-779CE7F3F691}" ShortID="574427038">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-10"/>
-															</PropertyList>
-														</State>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="town" ID="{47F19846-F780-4D1B-B4C7-55C1BF0536F1}"/>
-														<State Name="" ID="{FB0FB9F0-672E-4E57-95B8-F02DC5D44FCD}" ShortID="683699668">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-96"/>
-															</PropertyList>
-														</State>
-													</CustomState>
-												</CustomStateList>
-											</StateInfo>
 										</BlendContainer>
 										<BlendContainer Name="ambience_region_overworld" ID="{D06ED460-CD24-4935-929C-9564A5D65650}" ShortID="555704741">
 											<ReferenceList>
@@ -2456,6 +2511,16 @@
 																<State Name="" ID="{DE60566E-FE48-439B-823D-BC3328E20168}" ShortID="634172152">
 																	<PropertyList>
 																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="canyon" ID="{3C99E6D1-2B28-4551-82D0-F028C316F5EF}"/>
+																<State Name="" ID="{D9EA8715-F801-4D08-BF87-E813BB7A51DE}" ShortID="1053730561">
+																	<PropertyList>
+																		<Property Name="Highpass" Type="int16" Value="-1"/>
+																		<Property Name="Lowpass" Type="int16" Value="48"/>
+																		<Property Name="Volume" Type="Real64" Value="-15"/>
 																	</PropertyList>
 																</State>
 															</CustomState>

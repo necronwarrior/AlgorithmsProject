@@ -1839,20 +1839,83 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="sfx_gate_open" ID="{9537F534-8847-4A8B-9105-4D6C353D6663}" ShortID="230828181">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom CreatedFrom="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}">
+										<Effect Name="Have_U_Ever_Been_Outside (Custom)" ID="{4FE5E87F-020F-4B44-9140-E671DD0E1DDB}" ShortID="922013831" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="DecayTime" Type="Real32" Value="6"/>
+												<Property Name="Density" Type="Real32" Value="84"/>
+												<Property Name="Diffusion" Type="Real32" Value="55"/>
+												<Property Name="ERLevel" Type="Real32" Value="-18"/>
+												<Property Name="ERPattern" Type="int32" Value="11"/>
+												<Property Name="EnableToneControls" Type="bool" Value="True"/>
+												<Property Name="Filter1Freq" Type="Real32" Value="210"/>
+												<Property Name="Filter1Gain" Type="Real32" Value="1.5"/>
+												<Property Name="Filter2Freq" Type="Real32" Value="6670"/>
+												<Property Name="Filter2Gain" Type="Real32" Value="-24"/>
+												<Property Name="Filter2Q" Type="Real32" Value="10"/>
+												<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+												<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
+												<Property Name="HFDamping" Type="Real32" Value="5.05"/>
+												<Property Name="PreDelay" Type="Real32" Value="67"/>
+												<Property Name="Quality" Type="int32" Value="16"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-32"/>
+												<Property Name="RoomSize" Type="Real32" Value="41"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_metal_gate_01" ID="{A216EE9C-CF1C-4DA9-AA77-F258006C67D5}" ShortID="365470289">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.308870861235119"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.62904187593006"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.1074150390625"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_metal_gate_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_metal_gate_01" ID="{A216EE9C-CF1C-4DA9-AA77-F258006C67D5}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="radio" ID="{AF1D9132-C7D1-4914-AE23-1F3656D73F24}" ShortID="785784614">
 					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>31</Value>
+							</ValueList>
+						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -2023,6 +2086,23 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="location" ID="{05AEFB21-506C-437E-8441-FDD1255806BB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="outside" ID="{A5C60CD5-8D9B-463D-A82E-A88EC66C1835}"/>
+										<State Name="" ID="{E3FA90D5-5B0B-4FCC-AC30-FE83C3A30A95}" ShortID="794334811">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<GroupingInfo>
 								<GroupRef Name="radio_volume" ID="{9E26EB6D-243B-4D85-A56F-26D1F8F3EE2D}"/>
 								<DefaultSwitchRef Name="on" ID="{BDF441E3-D5B1-4E0A-A527-4E375C867F03}"/>
@@ -2053,6 +2133,142 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="computer" ID="{23B2CC5D-E46F-4CA3-B3CF-E1A543DBE320}" ShortID="1012364606">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="computer_click" ID="{C8BB9500-9B62-44A3-A369-4F6AAE0E802A}" ShortID="910880143">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+						</Sound>
+						<Sound Name="computer_bootup_01" ID="{477A9C44-2FD8-4861-BEED-46991B87E488}" ShortID="72755988">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-19</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="computer_bootup_01" ID="{404ECBEC-C1D4-4CC8-A8BF-89173CBDA952}" ShortID="359519254">
+									<Language>SFX</Language>
+									<AudioFile>computer_bootup_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="computer_bootup_01" ID="{404ECBEC-C1D4-4CC8-A8BF-89173CBDA952}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="computer_bootup_02" ID="{EB5B6AFD-4F85-4738-9B84-84526F985A0B}" ShortID="137967005">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="computer_bootup_02" ID="{53E49301-8E9C-4F9F-A8CF-3979A6A22FBD}" ShortID="506378846">
+									<Language>SFX</Language>
+									<AudioFile>computer_bootup_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="computer_bootup_02" ID="{53E49301-8E9C-4F9F-A8CF-3979A6A22FBD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="computer_select_01" ID="{BBB9FA59-F46C-4D4F-B53B-1118DF2ECF41}" ShortID="569372028">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-19</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="computer_select_01" ID="{C30D5666-FADB-47E9-B8C4-D2A0100C0594}" ShortID="690713368">
+									<Language>SFX</Language>
+									<AudioFile>computer_select_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="computer_select_01" ID="{C30D5666-FADB-47E9-B8C4-D2A0100C0594}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="computer_select_02" ID="{D10E37AB-2016-4CE3-BBD1-1265C00044EF}" ShortID="835909636">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-18</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E300EF7D-C5EE-4F99-9F98-EFD3BA0AEE7C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3051E152-AB31-4C2B-BD27-2F048F0C2960}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="computer_select_02" ID="{DE2327DB-5328-4A88-95F6-04E75A5D4D6F}" ShortID="842560361">
+									<PropertyList>
+										<Property Name="TrimBegin" Type="Real64" Value="0.32724841889881"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>computer_select_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="computer_select_02" ID="{DE2327DB-5328-4A88-95F6-04E75A5D4D6F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

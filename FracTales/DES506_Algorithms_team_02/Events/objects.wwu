@@ -55,7 +55,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="frequency_generator_loop_02" ID="{AD74EAF6-E7EE-40BA-8E59-E0A9A1A0C336}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
+											<ObjectRef Name="sfx_street_light_01" ID="{8B241B43-0B46-40E6-97B8-352FB4E09111}" WorkUnitID="{5459FE81-D2CE-428B-B5AE-3C59ADD6F3D9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -143,6 +143,7 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="siren" ID="{EE43459C-5FC1-484B-8DF2-06E8ECBA5748}" ShortID="413532793"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="House" ID="{EDC744C3-1B2A-4161-8B76-0A6EE97D62D1}" ShortID="563178800">
@@ -368,11 +369,47 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Calendar" ID="{8422A6B4-B73E-4648-8939-EE1E101B9744}" ShortID="1056835371">
+							<ChildrenList>
+								<Event Name="calendar_click_start" ID="{594421EE-8FD2-4E2A-B05A-718C71EA30DF}">
+									<ChildrenList>
+										<Action Name="" ID="{C0C0DA26-CF39-465D-BD96-E33C4CA71AC9}" ShortID="608152745">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_alarm_turn_off" ID="{94B037D6-ECFD-4C63-99C2-098DAA48FB64}" WorkUnitID="{026E35F4-4037-4782-BAEC-B01745FF548D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="puzzles" ID="{A82201AB-EDE5-4453-9637-63C53427027A}" ShortID="851028797">
 					<ChildrenList>
 						<Event Name="puzzle03_complete" ID="{81D57E20-414A-4D7A-ABD9-D9219761F182}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Metal_Gate" ID="{FD218723-8A07-4EE5-A982-0BA44F72A5D6}" ShortID="685446782">
+					<ChildrenList>
+						<Event Name="metal_gate_open" ID="{04F3F0CD-7559-45A0-9534-63EE6159CC98}">
+							<ChildrenList>
+								<Action Name="" ID="{67787AC8-8D71-44A6-992F-2D5E313500E0}" ShortID="580356534">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_gate_open" ID="{9537F534-8847-4A8B-9105-4D6C353D6663}" WorkUnitID="{9277E9DA-0234-499B-882A-6CADB5778D06}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

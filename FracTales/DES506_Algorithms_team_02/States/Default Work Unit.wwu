@@ -158,6 +158,20 @@
 						<State Name="overworld" ID="{52097FDF-157C-4035-9059-E601F04673AF}"/>
 						<State Name="tower" ID="{2E5037B9-E1E2-45D1-A041-0AB1D2A6A6CB}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="overworld" ID="{52097FDF-157C-4035-9059-E601F04673AF}"/>
+							<EndState Name="tower" ID="{2E5037B9-E1E2-45D1-A041-0AB1D2A6A6CB}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="tower" ID="{2E5037B9-E1E2-45D1-A041-0AB1D2A6A6CB}"/>
+							<EndState Name="overworld" ID="{52097FDF-157C-4035-9059-E601F04673AF}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
