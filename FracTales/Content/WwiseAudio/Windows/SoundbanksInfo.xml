@@ -69,6 +69,7 @@
 				<Event Id="1059900002" Name="select_back_play" ObjectPath="\Events\Default Work Unit\ui\main_menu\select_back_play"/>
 				<Event Id="3309108327" Name="sink_tap_start" ObjectPath="\Events\Default Work Unit\objects\House\sink\sink_tap_start"/>
 				<Event Id="930464141" Name="sink_tap_stop" ObjectPath="\Events\Default Work Unit\objects\House\sink\sink_tap_stop"/>
+				<Event Id="3486841965" Name="siren_start" ObjectPath="\Events\Default Work Unit\objects\Tower\siren\siren_start"/>
 				<Event Id="709036204" Name="street_light_start" ObjectPath="\Events\Default Work Unit\objects\street_light\street_light_start"/>
 				<Event Id="2426244745" Name="street_lights_start" ObjectPath="\Events\Default Work Unit\objects\Tower\street_lights\street_lights_start"/>
 				<Event Id="1134601432" Name="system_initialised" ObjectPath="\Events\Default Work Unit\ui\ui_prompts\system_initialised"/>
@@ -242,10 +243,6 @@
 				<File Id="248089932" Language="SFX">
 					<ShortName>player_footstep_grass_short_walk_04.wav</ShortName>
 					<Path>SFX\player_footstep_grass_short_walk_04_4ABE18BA.wem</Path>
-				</File>
-				<File Id="255400739" Language="SFX">
-					<ShortName>Loud_Water.wav</ShortName>
-					<Path>SFX\Loud_Water_21CA2154.wem</Path>
 				</File>
 				<File Id="271627397" Language="SFX">
 					<ShortName>amb_emit_birds_03.wav</ShortName>
@@ -495,6 +492,10 @@
 					<ShortName>computer_select_01.wav</ShortName>
 					<Path>SFX\computer_select_01_8A6CA8BA.wem</Path>
 				</File>
+				<File Id="693969089" Language="SFX">
+					<ShortName>binary_siren_01.wav</ShortName>
+					<Path>SFX\binary_siren_01_8A6CA8BA.wem</Path>
+				</File>
 				<File Id="702287358" Language="SFX">
 					<ShortName>sfx_player_typing_enter_04.wav</ShortName>
 					<Path>SFX\sfx_player_typing_enter_04_C60C73B2.wem</Path>
@@ -510,10 +511,6 @@
 				<File Id="716975346" Language="SFX">
 					<ShortName>dlg_radio_line04_v1.wav</ShortName>
 					<Path>SFX\dlg_radio_line04_v1_21CA2154.wem</Path>
-				</File>
-				<File Id="735184499" Language="SFX">
-					<ShortName>Quiet_Water.wav</ShortName>
-					<Path>SFX\Quiet_Water_21CA2154.wem</Path>
 				</File>
 				<File Id="743505641" Language="SFX">
 					<ShortName>door_close_wooden_05.wav</ShortName>

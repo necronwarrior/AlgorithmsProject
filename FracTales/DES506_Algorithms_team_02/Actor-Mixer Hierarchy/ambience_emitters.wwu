@@ -6,6 +6,11 @@
 			<ChildrenList>
 				<ActorMixer Name="wind" ID="{F800BE6D-D1C4-4CF6-91F5-0E110CB12226}" ShortID="26940765">
 					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverridePositioning" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -1608,6 +1613,11 @@
 						<BlendContainer Name="river" ID="{E9CB4888-1119-425E-8035-B3137684A2C9}" ShortID="155408470">
 							<PropertyList>
 								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1902,6 +1912,11 @@
 						<BlendContainer Name="amb_emit_waves" ID="{486F8955-238E-4AB6-AE59-CC9D9925FA10}" ShortID="179610525">
 							<PropertyList>
 								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2160,11 +2175,6 @@
 								</Sound>
 								<Sound Name="wave_crashes_sea_rocks" ID="{D95C98F5-4F06-4795-9C0F-AF10D08151F1}" ShortID="901190830">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="InitialDelay" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
