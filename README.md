@@ -1,2 +1,2 @@
 # AlgorithmsProject
-MProf Naughty Dog Project
+MProf Project
